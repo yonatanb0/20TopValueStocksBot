@@ -2,7 +2,7 @@
   "ticker": "ETN",
   "name": "Eaton",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-07-29T14:13:50.220694+00:00",
+  "last_updated": "2026-07-29T16:22:05.474022+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -47,8 +47,23 @@
       },
       "dedupe_key": "96c1fdd04622ce05",
       "timestamp": "2026-07-29T13:39:12.331901+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-07-29",
+        "fires": false
+      },
+      "dedupe_key": "36ab8a93a3e43971",
+      "timestamp": "2026-07-29T16:22:05.474022+00:00"
     }
   ],
-  "last_price": 375.92,
+  "last_price": 359.63,
   "last_price_date": "2026-07-29"
 }
