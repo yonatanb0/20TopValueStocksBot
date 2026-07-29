@@ -327,7 +327,7 @@
     <div class="stats-row" id="stats"></div>
     <div class="lean-legend">Card color = where the indicators lean, independent of the badge: <span class="lean-legend-swatch lean-legend-surge"></span> about to surge, <span class="lean-legend-swatch lean-legend-fall"></span> about to fall hard, no tint = neither.</div>
     <main class="grid" id="grid"></main>
-    <footer>Data last refreshed 2026-07-29 17:36 Jerusalem. Personal research pool &mdash; not investment advice.</footer>
+    <footer>Data last refreshed 2026-07-29 17:55 Jerusalem. Personal research pool &mdash; not investment advice.</footer>
   </div>
 
   <div id="view-detail" class="detail" hidden></div>
@@ -511,14 +511,50 @@
     if (item) location.hash = '/' + item.dataset.ticker;
   });
 
+  // The real cron is "*/20 12-21 * * 1-5" UTC -- every 20 minutes, 12:00-21:40 UTC,
+  // Monday-Friday only (a window wide enough to cover the NYSE session across
+  // both US daylight-saving states, since cron can't shift for DST). No runs
+  // outside that window, so "next/last run" has to walk the actual schedule
+  // rather than just rounding to a fixed interval.
+  function isSchedWeekday(d) {
+    const day = d.getUTCDay(); // 0=Sun ... 6=Sat
+    return day >= 1 && day <= 5;
+  }
+
+  function atUTC(d, hour, minute) {
+    return new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate(), hour, minute, 0, 0));
+  }
+
+  function nextRunAtOrAfter(from) {
+    const twentyMin = 20 * 60 * 1000;
+    let d = new Date(Math.ceil(from.getTime() / twentyMin) * twentyMin);
+    for (let i = 0; i < 20; i++) {
+      const hour = d.getUTCHours();
+      if (isSchedWeekday(d) && hour >= 12 && hour <= 21) return d;
+      d = (hour > 21 || !isSchedWeekday(d))
+        ? atUTC(new Date(d.getTime() + 24 * 60 * 60 * 1000), 12, 0)
+        : atUTC(d, 12, 0);
+    }
+    return d;
+  }
+
+  function prevRunAtOrBefore(from) {
+    const twentyMin = 20 * 60 * 1000;
+    let d = new Date(Math.floor(from.getTime() / twentyMin) * twentyMin);
+    for (let i = 0; i < 20; i++) {
+      const hour = d.getUTCHours();
+      if (isSchedWeekday(d) && hour >= 12 && hour <= 21) return d;
+      d = (hour < 12 || !isSchedWeekday(d))
+        ? atUTC(new Date(d.getTime() - 24 * 60 * 60 * 1000), 21, 40)
+        : atUTC(d, 21, 40);
+    }
+    return d;
+  }
+
   function renderRunTimes() {
-    // The real cron is "0 */2 * * *" UTC -- every even UTC hour, on the hour.
-    // Unix epoch (1970-01-01 00:00 UTC) is itself an even hour, so rounding to
-    // the nearest 2-hour block in raw ms stays aligned to the real schedule.
-    const MS_PER_RUN = 2 * 60 * 60 * 1000;
-    const now = Date.now();
-    const nextRunUTC = new Date(Math.ceil(now / MS_PER_RUN) * MS_PER_RUN);
-    const lastRunUTC = new Date(nextRunUTC.getTime() - MS_PER_RUN);
+    const now = new Date();
+    const nextRunUTC = nextRunAtOrAfter(now);
+    const lastRunUTC = prevRunAtOrBefore(now);
 
     const fmt = new Intl.DateTimeFormat('en-GB', {
       timeZone: 'Asia/Jerusalem',

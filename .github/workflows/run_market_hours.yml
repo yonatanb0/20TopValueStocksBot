@@ -2,7 +2,12 @@ name: Refresh stock signal pool
 
 on:
   schedule:
-    - cron: "0 */2 * * *"
+    # Every 20 minutes, 12:00-21:40 UTC, Mon-Fri only -- a window wide enough
+    # to cover the full NYSE session across both US daylight-saving states
+    # (cron can't shift for DST). 30 runs/day x 20 TwelveData credits = 600,
+    # safely under the free plan's 800/day cap, and zero runs wasted overnight
+    # or on weekends when prices can't move.
+    - cron: "*/20 12-21 * * 1-5"
   workflow_dispatch: {}
 
 permissions:
