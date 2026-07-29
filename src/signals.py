@@ -230,7 +230,7 @@ def build_news_signals(tickers_meta, company_news_by_ticker, macro_articles, str
                             f"Headline suggests positive estimate revision ({', '.join(hits)}): "
                             f"\"{article.get('title')}\" -- verify against actual analyst EPS revisions."
                         ),
-                        "details": {"url": url, "matched_keywords": hits, "published": article.get("publishedAt")},
+                        "details": {"url": url, "headline": article.get("title"), "matched_keywords": hits, "published": article.get("publishedAt")},
                         "dedupe_key": _key(ticker, "eps_revision_proxy", url),
                     }
                 )
@@ -246,7 +246,7 @@ def build_news_signals(tickers_meta, company_news_by_ticker, macro_articles, str
                             f"EXIT WATCH -- headline suggests guidance rollover ({', '.join(hits)}): "
                             f"\"{article.get('title')}\""
                         ),
-                        "details": {"url": url, "matched_keywords": hits, "published": article.get("publishedAt")},
+                        "details": {"url": url, "headline": article.get("title"), "matched_keywords": hits, "published": article.get("publishedAt")},
                         "dedupe_key": _key(ticker, "guidance_rollover", url),
                     }
                 )
