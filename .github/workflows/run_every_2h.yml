@@ -1,0 +1,42 @@
+name: Refresh stock signal pool
+
+on:
+  schedule:
+    - cron: "0 */2 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run signal refresh
+        env:
+          TWELVEDATA_API_KEY: ${{ secrets.TWELVEDATA_API_KEY }}
+          NEWSAPI_API_KEY: ${{ secrets.NEWSAPI_API_KEY }}
+        run: python src/main.py
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name "stock-signal-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if [ -n "$(git status --porcelain data/)" ]; then
+            git add data/
+            git commit -m "Refresh signal pool $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+            git push
+          else
+            echo "No data changes to commit."
+          fi

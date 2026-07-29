@@ -1,0 +1,25 @@
+{
+  "_comment": "Sector buckets are used by the macro_gate rule in strategy.json — a sector must show a confirmed macro turn before new entries in that sector are 'hunted', independent of the always-on valuation override.",
+  "stocks": [
+    { "ticker": "GOOG",  "name": "Alphabet",           "sector": "enterprise_tech" },
+    { "ticker": "INTC",  "name": "Intel",              "sector": "semiconductors" },
+    { "ticker": "NVDA",  "name": "NVIDIA",             "sector": "semiconductors" },
+    { "ticker": "AAPL",  "name": "Apple",              "sector": "enterprise_tech" },
+    { "ticker": "CSCO",  "name": "Cisco",              "sector": "enterprise_tech" },
+    { "ticker": "IBM",   "name": "IBM",                "sector": "enterprise_tech" },
+    { "ticker": "BE",    "name": "Bloom Energy",       "sector": "clean_energy" },
+    { "ticker": "VRT",   "name": "Vertiv",             "sector": "ai_data_center_infra" },
+    { "ticker": "ETN",   "name": "Eaton",              "sector": "ai_data_center_infra" },
+    { "ticker": "PWR",   "name": "Quanta Services",    "sector": "ai_data_center_infra" },
+    { "ticker": "MDT",   "name": "Medtronic",          "sector": "healthcare_medtech" },
+    { "ticker": "BSX",   "name": "Boston Scientific",  "sector": "healthcare_medtech" },
+    { "ticker": "ISRG",  "name": "Intuitive Surgical", "sector": "healthcare_medtech" },
+    { "ticker": "VZ",    "name": "Verizon",            "sector": "telecom" },
+    { "ticker": "IREN",  "name": "IREN Limited",       "sector": "ai_data_center_infra" },
+    { "ticker": "CIFR",  "name": "Cipher Mining",      "sector": "ai_data_center_infra" },
+    { "ticker": "MRVL",  "name": "Marvell Technology", "sector": "semiconductors" },
+    { "ticker": "MU",    "name": "Micron Technology",  "sector": "semiconductors" },
+    { "ticker": "NOW",   "name": "ServiceNow",         "sector": "enterprise_tech" },
+    { "ticker": "AVGO",  "name": "Broadcom",           "sector": "semiconductors" }
+  ]
+}

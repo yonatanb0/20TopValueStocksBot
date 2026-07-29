@@ -1,0 +1,114 @@
+{
+  "_readme": "Structured encoding of the user's discretionary swing/position strategy. 'confidence' on each rule marks how reliably it can be computed from free-tier TwelveData + NewsAPI data: HARD = computed directly from price/volume, reliable. SOFT = keyword/heuristic proxy from news text, meant to prompt human review, not to fire an automatic buy/sell.",
+
+  "macro_gate": {
+    "description": "New hunting in a sector only opens once macro data has actually turned (not the rumor of it): capex guidance raised, Fed pause confirmed, money rotating into beaten-down sectors.",
+    "confidence": "SOFT",
+    "applies_to": "sector-level candidacy, all stocks in a gated sector",
+    "signals_watched": [
+      "Fed pause / rate-cut confirmation (FOMC statement language, not speculation)",
+      "sector capex guidance raised (from earnings calls / company guidance news)",
+      "reporting of rotation into beaten-down / out-of-favor sectors"
+    ],
+    "per_sector_keywords": {
+      "semiconductors": ["capex guidance raised", "chip demand recovery", "fab spending increase", "AI chip capex"],
+      "ai_data_center_infra": ["data center capex", "power demand", "grid buildout", "capacity expansion guidance"],
+      "healthcare_medtech": ["procedure volume recovery", "hospital capex", "device demand guidance raised"],
+      "enterprise_tech": ["IT spending recovery", "cloud capex guidance raised", "enterprise budget increase"],
+      "telecom": ["capex guidance raised", "network buildout spending"],
+      "clean_energy": ["capex guidance raised", "energy policy tailwind", "subsidy", "clean energy investment"]
+    },
+    "macro_keywords_general": ["Fed pause", "FOMC holds rates", "rate cut", "rotation into", "sector rotation"],
+    "output": "sector_macro_status flag per sector: NEUTRAL / TURNING (soft signal seen, needs manual confirm) -- never auto-set to CONFIRMED, that judgment call is left to the user"
+  },
+
+  "valuation_override": {
+    "description": "A stock trading at a notably low valuation vs its own history or peers ('on sale') triggers reevaluation on its own, regardless of the macro gate.",
+    "confidence": "HARD (as 52-week-range proxy) / SOFT (as true P/E-vs-history, limited by free-tier fundamentals)",
+    "primary_method": {
+      "name": "52-week range position",
+      "logic": "price in bottom X% of its own trailing 52-week high/low range",
+      "threshold_pct": 20,
+      "note": "This is a technical cheapness proxy, not true valuation. It's always computable for free from TwelveData price history."
+    },
+    "secondary_method": {
+      "name": "P/E vs own trailing history / peer sector median",
+      "logic": "current P/E notably below its own 3yr average or below sector peer median",
+      "note": "Free-tier fundamentals coverage varies by provider/plan -- treat this as best-effort. If unavailable, fall back to the 52-week range proxy alone and flag for manual valuation check."
+    }
+  },
+
+  "candidacy_filter": {
+    "description": "Before a stock is even a candidate, EPS revisions must be genuinely trending up.",
+    "confidence": "SOFT",
+    "method": "news keyword scan as a proxy for analyst EPS revisions",
+    "keywords_positive": ["raises guidance", "beats estimates", "price target raised", "upgrades EPS estimate", "raises outlook"],
+    "note": "True analyst EPS revision feeds (Zacks/Refinitiv-style) are not available on NewsAPI/TwelveData free tiers. This is a headline-based proxy meant to flag 'go check the actual estimate revisions', not a substitute for it."
+  },
+
+  "entry_triggers": {
+    "description": "Entry itself is pure confirmed technicals -- never early, never on divergence alone.",
+    "golden_cross": {
+      "confidence": "HARD",
+      "fast_ma": 50,
+      "slow_ma": 200,
+      "condition": "50-day SMA crosses above 200-day SMA",
+      "require_volume_expansion": true,
+      "volume_expansion_definition": "volume on the cross day (or within 3 trading days after) above its own 20-day average volume"
+    },
+    "range_breakout": {
+      "confidence": "HARD",
+      "lookback_days": 20,
+      "condition": "daily close above the prior N-day range high",
+      "min_volume_multiple": 2.0,
+      "volume_baseline": "20-day average volume"
+    },
+    "supply_demand_zone_reaction": {
+      "confidence": "HARD",
+      "zone_definition": "prior price area with at least 2 touches where price stalled/reversed with elevated volume, over the trailing 90 trading days",
+      "trigger": "price re-enters a tagged demand zone and reacts (closes back above zone low within 1-3 days)",
+      "zone_touch_tolerance_pct": 1.5
+    },
+    "watch_only_flags": {
+      "confidence": "HARD (detection) / judgment call (action)",
+      "rsi_macd_divergence": {
+        "action": "flag only -- 'watch closer', never a standalone buy trigger",
+        "rsi_period": 14,
+        "macd_params": [12, 26, 9]
+      },
+      "fibonacci_pullback": {
+        "action": "used only as an add-on-pullback zone within an already-confirmed uptrend (i.e. only relevant after an entry trigger already fired)",
+        "levels": [0.382, 0.5, 0.618],
+        "lookback": "most recent confirmed swing low-to-high"
+      }
+    }
+  },
+
+  "risk_management": {
+    "confidence": "HARD",
+    "stop_loss": {
+      "basis_priority": ["swing_low", "breakout_level", "demand_zone_low"],
+      "description": "Stop sits at a normal distance below whichever of these is relevant to the entry, so a slightly-late confirmed entry doesn't get shaken out by noise.",
+      "buffer_method": "ATR(14)-based buffer below the basis level",
+      "buffer_atr_multiple": 1.0
+    }
+  },
+
+  "exit_triggers": {
+    "description": "Exit when the reason for buying stops being true -- not just because momentum looks like it's stalling.",
+    "guidance_rollover": {
+      "confidence": "SOFT",
+      "method": "news keyword scan",
+      "keywords": ["guidance cut", "lowers outlook", "misses estimates", "cuts forecast", "warns on demand"]
+    },
+    "distribution_volume_and_trendline_break": {
+      "confidence": "HARD",
+      "distribution_volume_definition": "down-day volume notably above its 20-day average (heavier selling than the recent norm)",
+      "trendline_break": "confirmed uptrend line (connecting recent swing lows) closed below"
+    },
+    "failed_supply_zone_rejection": {
+      "confidence": "HARD",
+      "definition": "price fails to hold above a previously-reclaimed demand zone / support level and closes back below it"
+    }
+  }
+}
