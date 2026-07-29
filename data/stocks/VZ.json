@@ -3,39 +3,8 @@
   "name": "Verizon",
   "sector": "telecom",
   "thesis": "",
-  "last_updated": "2026-07-29T09:23:20.217358+00:00",
+  "last_updated": "2026-07-29T09:50:19.571347+00:00",
   "signal_log": [
-    {
-      "category": "technical",
-      "type": "range_breakout",
-      "fires": false,
-      "description": "Closed above 20-day range high (47.56) on 2026-07-28 but volume didn't confirm",
-      "details": {
-        "type": "range_breakout",
-        "date": "2026-07-28",
-        "range_high": 47.56,
-        "close": 48.19,
-        "volume_multiple": 0.7133829020080725,
-        "fires": false
-      },
-      "dedupe_key": "1630023d06763cbc",
-      "timestamp": "2026-07-29T09:12:34.326590+00:00"
-    },
-    {
-      "category": "technical",
-      "type": "demand_zone_reaction",
-      "fires": true,
-      "description": "Price touched demand zone ~44.28 (2 prior touches) and closed back above it (reaction confirmed)",
-      "details": {
-        "type": "demand_zone_reaction",
-        "zone_level": 44.285,
-        "zone_touches": 2,
-        "date": "2026-07-28",
-        "fires": true
-      },
-      "dedupe_key": "50dabd60aca2cdc3",
-      "timestamp": "2026-07-29T09:12:34.326590+00:00"
-    },
     {
       "category": "fundamental",
       "type": "eps_revision_proxy",
@@ -50,6 +19,40 @@
       },
       "dedupe_key": "38a9f77ab42641f7",
       "timestamp": "2026-07-29T09:12:34.326590+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (47.56) on 2026-07-28 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-07-28",
+        "range_high": 47.56,
+        "close": 48.19,
+        "volume_multiple": 0.7133829020080725,
+        "fires": false
+      },
+      "dedupe_key": "1630023d06763cbc",
+      "timestamp": "2026-07-29T09:50:19.571347+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~44.28 (2 prior touches) and closed back above it (reaction confirmed). Stop ~42.96, target ~63.88 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 44.285,
+        "zone_touches": 2,
+        "date": "2026-07-28",
+        "fires": true,
+        "stop_loss": 42.96,
+        "take_profit": 63.88,
+        "entry_reference_price": 48.19
+      },
+      "dedupe_key": "50dabd60aca2cdc3",
+      "timestamp": "2026-07-29T09:50:19.571347+00:00"
     }
   ]
 }

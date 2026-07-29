@@ -3,23 +3,8 @@
   "name": "NVIDIA",
   "sector": "semiconductors",
   "thesis": "",
-  "last_updated": "2026-07-29T09:23:20.201123+00:00",
+  "last_updated": "2026-07-29T09:50:19.533591+00:00",
   "signal_log": [
-    {
-      "category": "technical",
-      "type": "demand_zone_reaction",
-      "fires": true,
-      "description": "Price touched demand zone ~190.47 (2 prior touches) and closed back above it (reaction confirmed)",
-      "details": {
-        "type": "demand_zone_reaction",
-        "zone_level": 190.47,
-        "zone_touches": 2,
-        "date": "2026-07-28",
-        "fires": true
-      },
-      "dedupe_key": "6ea67adbcc5885a4",
-      "timestamp": "2026-07-29T09:12:34.316690+00:00"
-    },
     {
       "category": "technical",
       "type": "rsi_divergence_watch",
@@ -48,6 +33,24 @@
       },
       "dedupe_key": "0d95277c19124993",
       "timestamp": "2026-07-29T09:12:34.316690+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~190.47 (2 prior touches) and closed back above it (reaction confirmed). Stop ~182.91, target ~239.31 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 190.47,
+        "zone_touches": 2,
+        "date": "2026-07-28",
+        "fires": true,
+        "stop_loss": 182.91,
+        "take_profit": 239.31,
+        "entry_reference_price": 197.0099945
+      },
+      "dedupe_key": "6ea67adbcc5885a4",
+      "timestamp": "2026-07-29T09:50:19.533591+00:00"
     }
   ]
 }
