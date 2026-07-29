@@ -1,0 +1,134 @@
+{
+  "ticker": "NOW",
+  "company_name": "ServiceNow, Inc.",
+  "report_date": "2026-07-24",
+  "source_file": "NOW_ServiceNow_ניתוח_24.7.2026.pdf",
+
+  "verdict": {
+    "spot_price": 97.43,
+    "spot_price_date": "2026-07-24",
+    "weighted_fair_value": 128.60,
+    "analyst_consensus_price": 140.25,
+    "analyst_consensus_rating": "Strong Buy (44 of 49 analysts)",
+    "call": "Wait with positive bias -- not a full entry",
+    "note": "Internal weighted estimate is 8.3% below consensus -- within reasonable range, no material contradiction."
+  },
+
+  "key_finding": {
+    "summary": "Five executives (CEO McDermott, CFO Mastantuono, Vice Chair Tzitzon, Chief HR/AI Officer Canney, GC Elmer) simultaneously canceled scheduled 10b5-1 sale plans on 2026-02-06. 21 days later, McDermott bought 28,682 shares ($3.00M) in the open market at $104.60 -- his only open-market purchase since 2019, timed almost exactly at the SaaSpocalypse bottom.",
+    "caveat": "Small vs. his ~$8.77M in sales in Aug 2025 alone; insider ownership is only 0.14% company-wide; the cancellation wasn't total (Fipps didn't cancel), and 4 of 5 who canceled resumed routine selling within weeks."
+  },
+
+  "sector_context": {
+    "name": "Enterprise software / AI agents",
+    "proxy_etf": "IGV",
+    "fear_greed_index": 43,
+    "narrative": "\"SaaSpocalypse\": a new agentic-AI model (early 2026) sparked fear that AI agents make seat-based workflow software obsolete; IGV fell ~20%. Since Apr-May 2026 a reversal is emerging (IGV +40% in one month) as actual reports, including NOW's, show no disruption.",
+    "relative_positioning": "WDAY/CRM trade far cheaper on EV/Sales (3.15x/3.72x vs NOW's 6.91x) but grow much slower (~9-13% vs NOW's 22%). Sector is recovering but not yet richly re-rated."
+  },
+
+  "thesis_summary": {
+    "elevator_pitch": [
+      "NOW is the symbol of the SaaSpocalypse: -49% over 52 weeks on AI disruption fear, despite AI ACV actually accelerating past $1B (+40% qoq) and repeated beat-and-raise quarters.",
+      "The CEO put real money in at $105 in Feb 2026 and consensus (Strong Buy, $140 target) hasn't moved -- but two debt-funded mega-acquisitions (Moveworks + Armis) and a contracting margin are fresh, real risks.",
+      "Technical picture is still broken (below MA50/MA200) -- the recent jump needs confirmation, not chasing."
+    ],
+    "bull_case": [
+      "22% revenue growth is the fastest among enterprise software giants.",
+      "AI ACV crossed $1B, accelerating >40% QoQ -- direct quantitative rebuttal of the SaaSpocalypse thesis.",
+      "CEO backed words with a real open-market buy at the bottom, alongside a 5-executive sale-plan cancellation.",
+      "EV/Sales of 6.9x is a 5-year low vs. ~16x historical median, disconnected from fundamentals (Rule of 40 = 53.3).",
+      "Armis + Moveworks expand TAM into cybersecurity and AI agent orchestration, not just core ITSM.",
+      "Analyst consensus remains Strong Buy with target 44% above spot, despite the 49% drawdown."
+    ],
+    "bear_case": [
+      "Net debt flipped from +$3.9B to -$3.8B within 1-2 quarters funding two mega-acquisitions -- real integration risk.",
+      "Non-GAAP operating margin fell 32.0% -> 29.5% QoQ as integration costs peak.",
+      "GAAP operating margin is only 11.4% vs 29-32% Non-GAAP -- the gap is stock-based comp, not cash.",
+      "Microsoft's near-free Copilot/Power Platform bundling inside M365 is the same disruption thesis that hasn't actually gone away.",
+      "Liquidity is at its weakest point in company history (current ratio 0.70) exactly as debt tripled.",
+      "Price is still below both MA50 ($104) and MA200 ($127) -- no confirmed trend reversal yet.",
+      "FY2023 net income was 2.3x operating income (likely one-time tax item), making the headline 57x P/E less reliable than it looks.",
+      "Insider ownership is just 0.14%; only the CEO actually bought, others resumed selling within weeks."
+    ],
+    "decision_question": "Will the growth premium re-rate, or is the AI disruption fear correct? Open question: is the recent +6% jump the start of a confirmed reversal, or another 'sell the news' setup like Q1 2026 (-17% despite a full beat)?"
+  },
+
+  "valuation": {
+    "scenarios": [
+      {"case": "Bear", "ev_sales_multiple": "3.5x", "price_target": 51.40, "probability_pct": 20},
+      {"case": "Base", "ev_sales_multiple": "6.9x (current)", "price_target": 104.90, "probability_pct": 45},
+      {"case": "Bull", "ev_sales_multiple": "12.0x", "price_target": 185.20, "probability_pct": 25},
+      {"case": "Bull+", "ev_sales_multiple": "16.0x", "price_target": 248.10, "probability_pct": 10}
+    ],
+    "weighted_target": 128.60,
+    "reverse_dcf_note": "Regular DCF was abandoned (terminal value = 75% of EV, too sensitive to WACC). Reverse DCF: current price implies only ~14.3% 5yr FCF CAGR, well below the ~20-23% consensus actually forecasts -- a real fear premium, not just a rates effect."
+  },
+
+  "catalysts": {
+    "positive": [
+      "Continued AI ACV acceleration (field proof against SaaSpocalypse)",
+      "Armis/Moveworks integration synergies materializing",
+      "Continued federal + cybersecurity segment strength",
+      "Sector-wide (IGV) fear continuing to fade",
+      "Repeated beat-and-raise in Q3-Q4 2026"
+    ],
+    "negative": [
+      "10Y yield keeps rising / Fed stays hawkish",
+      "Actual evidence of AI agents displacing seats in flagship accounts",
+      "Integration execution risk -- margin keeps deteriorating",
+      "Renewed large-scale insider selling with no offsetting buys"
+    ]
+  },
+
+  "technical_snapshot": {
+    "as_of": "2026-07-24",
+    "ma50": 104.09,
+    "ma200": 126.69,
+    "price_vs_ma": "below both",
+    "rsi_daily": 44.04,
+    "range_52w": [81.24, 210.20],
+    "fibonacci_52w_high_to_low": {"23.6pct": 111.67, "38.2pct": 130.50, "50.0pct": 145.72, "61.8pct_golden_pocket": [160.90, 165.06], "78.6pct": 182.60}
+  },
+
+  "risk_management": {
+    "thesis_changing_risk": "A confirmed 2-consecutive-quarter slowdown in cRPO growth or AI ACV growth would confirm the SaaSpocalypse thesis rather than refute it, and reopen the downside multiple gap.",
+    "numeric_thresholds": [
+      {"metric": "cRPO growth (cc)", "break_below": "18% for 2 consecutive quarters", "current": "21.5% (Q2 2026)"},
+      {"metric": "Non-GAAP operating margin", "break_below": "28%", "current": "29.5% (Q2 2026), down from 32%"},
+      {"metric": "AI ACV growth (quarterly)", "break_below": "15%", "current": "40%+ (Q2 2026)"},
+      {"metric": "Net debt / EBITDA", "break_above": "3.5x", "current": "~1.1x"},
+      {"metric": "Closing price", "break_below": "52-week low $81.24, on a closing basis, not intraday wick", "current": "$97.43"}
+    ]
+  },
+
+  "entry_exit_plan": {
+    "dca_entries": [
+      {"tranche_pct": 33, "trigger": "Daily close above $104.09 (50MA) on above-average volume"},
+      {"tranche_pct": 33, "trigger": "Weekly close above $126.69 (200MA)"},
+      {"tranche_pct": 34, "trigger": "Q3 2026 confirmation (~Oct 2026): cRPO >= 20% and AI ACV growth >= 30%"}
+    ],
+    "take_profit": {"tp1": 140.25, "tp1_note": "consensus -- then partial roll toward $165-185"},
+    "stop_loss": {"price": 81.24, "basis": "closing price, not intraday wick"},
+    "risk_reward_to_tp1": "1:2.64",
+    "next_earnings_date": "~October 2026",
+    "ground_rules": ["Don't catch a falling knife", "Don't buy before earnings", "Exit on thesis break, not price"]
+  },
+
+  "key_facts": {
+    "balance_sheet": "Net debt flipped from +$3.88B (FY25) to -$3.79B (TTM), funding the Moveworks ($2.85B) and Armis (~$7.8B) acquisitions; refinanced May 2026 via $4B fixed-rate senior notes (2028-2056).",
+    "insider_activity": "CEO McDermott's $3M open-market buy (Feb 2026) is his only one since 2019; insider ownership overall is just 0.14%.",
+    "management": "No CEO/CFO turnover in 6+ years -- rare stability for the sector.",
+    "multiples": "P/S at 6.8x vs. its own 5-year median of ~16x, despite still growing 22% -- the fastest of its peer set (WDAY, CRM)."
+  },
+
+  "next_review": {
+    "estimated_date": "2026-10",
+    "checklist": [
+      "cRPO (cc): confirm >=20% for 2 straight quarters, or break if <18%",
+      "AI ACV growth (quarterly): confirm >=30% streak, or break if <15%",
+      "Non-GAAP operating margin: confirm stabilizing >=29%, or break if <28%",
+      "Insider trading: watch for large-scale sale renewal without offsetting buys"
+    ]
+  }
+}

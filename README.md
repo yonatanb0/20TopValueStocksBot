@@ -11,8 +11,12 @@ by a GitHub Actions cron job. Free-tier data sources: [TwelveData](https://twelv
 - `config/strategy.json` — your buy/sell strategy, encoded as structured rules. Each rule is
   tagged `HARD` (computed directly and reliably from price/volume data) or `SOFT` (a keyword/heuristic
   proxy from news headlines meant to prompt manual review, not to auto-fire a trade).
-- `data/stocks/<TICKER>.json` — one file per stock: `thesis` (fill this in yourself, freeform),
-  `sector`, and `signal_log` (append-only, deduplicated, populated by each run).
+- `data/stocks/<TICKER>.json` — one file per stock: `sector` and `signal_log` (append-only,
+  deduplicated, populated automatically every run by the bot). Never holds the thesis itself.
+- `data/thesis/<TICKER>.json` — the actual investment thesis per stock, updated by you (not the
+  bot) whenever you have a fresh research pass. Separate from `data/stocks/` on purpose: the
+  bot's 2-hourly commits never touch these files, and these files aren't overwritten by a run.
+  See "Thesis data pool" below for the schema.
 - `src/` — the fetch + indicator + rule-matching + orchestration code.
 - `.github/workflows/run_every_2h.yml` — the cron job.
 
@@ -62,8 +66,32 @@ Output: console log of what ran, plus updated files under `data/stocks/`.
 4. Each run commits any new signals straight back into `data/stocks/*.json` on the default
    branch, so your git history becomes a free audit trail of what fired and when.
 
-## Editing your thesis per stock
+## Thesis data pool
 
-`data/stocks/<TICKER>.json` has a `thesis` field that starts empty. Edit it directly (or ask me
-to draft one from a conversation) — it's never overwritten by the bot, only `signal_log` and
-`last_updated` are.
+`data/thesis/<TICKER>.json` holds the actual investment case per stock — distinct from
+`data/stocks/<TICKER>.json`, which only holds the bot's automated signal log. Schema, per file:
+
+- `verdict` — spot price, weighted fair value, analyst consensus, one-line call
+- `key_finding` — the single most decision-relevant fact from the research pass (e.g. an
+  insider-trading pattern), plus the caveat that weakens it
+- `sector_context` — proxy ETF, sector narrative, relative positioning vs. peers
+- `thesis_summary` — elevator pitch, bull case, bear case, the open decision question
+- `valuation` — bull/base/bear/bull+ scenarios with price targets and probability weights,
+  the weighted-average target, and a one-line note on the valuation method used
+- `catalysts` — positive/negative, next 12 months
+- `technical_snapshot` — MA50/200, RSI, 52-week range, Fibonacci levels, as of the report date
+- `risk_management.numeric_thresholds` — the concrete numbers that would break the thesis
+  (e.g. "cRPO growth below 18% for 2 straight quarters"). This is the most bot-relevant section:
+  a natural next step is cross-checking these thresholds against live data each run.
+- `entry_exit_plan` — DCA entry triggers, take-profit, stop-loss, risk:reward, next earnings date
+- `key_facts` — a few dense, load-bearing facts (balance sheet, insider activity, management,
+  multiples) that don't fit elsewhere
+- `next_review` — when the thesis should next be revisited and what to check then
+
+Populated by you uploading a research document (PDF or otherwise) per stock — I translate/structure
+it into this schema and write the file. Deliberately trimmed vs. a full research report: things like
+exhaustive trade-by-trade insider tables, full DCF-abandonment workings, and source-reliability
+tagging are useful for auditing the original analysis but don't add decision value once distilled
+here, so they're summarized rather than transcribed in full.
+
+`NOW.json` is the first populated example — see it for the exact shape.

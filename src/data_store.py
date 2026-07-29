@@ -15,7 +15,6 @@ def init_stock_file(ticker, name, sector):
         "ticker": ticker,
         "name": name,
         "sector": sector,
-        "thesis": "",
         "last_updated": None,
         "signal_log": [],
     }
