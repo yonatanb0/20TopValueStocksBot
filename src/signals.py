@@ -7,6 +7,20 @@ def _key(*parts):
     return hashlib.sha1("|".join(str(p) for p in parts).encode("utf-8")).hexdigest()[:16]
 
 
+def _stop_and_target(ohlcv, basis_price, entry_price, risk_cfg):
+    stop_cfg = risk_cfg["stop_loss"]
+    tp_cfg = risk_cfg["take_profit"]
+    stop = ind.stop_loss_level(ohlcv, basis_price, atr_multiple=stop_cfg["buffer_atr_multiple"])
+    target = ind.take_profit_level(entry_price, stop, tp_cfg["reward_to_risk_ratio"]) if stop is not None else None
+    return stop, target
+
+
+def _risk_suffix(stop, target, ratio):
+    if stop is None or target is None:
+        return ""
+    return f" Stop ~{stop}, target ~{target} ({ratio:.0f}:1 reward:risk)."
+
+
 def build_technical_signals(ticker, ohlcv, strategy):
     signals = []
     if len(ohlcv) < 30:
@@ -23,15 +37,24 @@ def build_technical_signals(ticker, ohlcv, strategy):
         slow=entry["golden_cross"]["slow_ma"],
     )
     if gc:
+        description = (
+            f"50/200 golden cross on {gc['cross_date']}"
+            + (" with volume expansion (entry trigger confirmed)." if gc["fires"] else " but WITHOUT volume expansion (not yet confirmed).")
+        )
+        if gc["fires"]:
+            basis = ind.last_swing_low_before(ohlcv, gc["cross_index"]) or ohlcv[gc["cross_index"]]["low"]
+            entry_price = ohlcv[-1]["close"]
+            stop, target = _stop_and_target(ohlcv, basis, entry_price, risk)
+            gc["stop_loss"] = stop
+            gc["take_profit"] = target
+            gc["entry_reference_price"] = entry_price
+            description += _risk_suffix(stop, target, risk["take_profit"]["reward_to_risk_ratio"])
         signals.append(
             {
                 "category": "technical",
                 "type": "golden_cross",
                 "fires": gc["fires"],
-                "description": (
-                    f"50/200 golden cross on {gc['cross_date']}"
-                    + (" with volume expansion (entry trigger confirmed)" if gc["fires"] else " but WITHOUT volume expansion (not yet confirmed)")
-                ),
+                "description": description,
                 "details": gc,
                 "dedupe_key": _key(ticker, "golden_cross", gc["cross_date"]),
             }
@@ -43,16 +66,22 @@ def build_technical_signals(ticker, ohlcv, strategy):
         min_volume_multiple=entry["range_breakout"]["min_volume_multiple"],
     )
     if bo:
+        description = (
+            f"Closed above {entry['range_breakout']['lookback_days']}-day range high "
+            f"({bo['range_high']:.2f}) on {bo['date']}"
+            + (f" with {bo['volume_multiple']:.1f}x avg volume (confirmed)." if bo["fires"] else " but volume didn't confirm.")
+        )
+        if bo["fires"]:
+            stop, target = _stop_and_target(ohlcv, bo["range_high"], bo["close"], risk)
+            bo["stop_loss"] = stop
+            bo["take_profit"] = target
+            description += _risk_suffix(stop, target, risk["take_profit"]["reward_to_risk_ratio"])
         signals.append(
             {
                 "category": "technical",
                 "type": "range_breakout",
                 "fires": bo["fires"],
-                "description": (
-                    f"Closed above {entry['range_breakout']['lookback_days']}-day range high "
-                    f"({bo['range_high']:.2f}) on {bo['date']}"
-                    + (f" with {bo['volume_multiple']:.1f}x avg volume (confirmed)" if bo["fires"] else " but volume didn't confirm")
-                ),
+                "description": description,
                 "details": bo,
                 "dedupe_key": _key(ticker, "range_breakout", bo["date"]),
             }
@@ -64,16 +93,24 @@ def build_technical_signals(ticker, ohlcv, strategy):
         tolerance_pct=entry["supply_demand_zone_reaction"]["zone_touch_tolerance_pct"],
     )
     if zone:
+        description = (
+            f"Price touched demand zone ~{zone['zone_level']:.2f} "
+            f"({zone['zone_touches']} prior touches)"
+            + (" and closed back above it (reaction confirmed)." if zone["fires"] else " -- watch for a close back above to confirm.")
+        )
+        if zone["fires"]:
+            entry_price = ohlcv[-1]["close"]
+            stop, target = _stop_and_target(ohlcv, zone["zone_level"], entry_price, risk)
+            zone["stop_loss"] = stop
+            zone["take_profit"] = target
+            zone["entry_reference_price"] = entry_price
+            description += _risk_suffix(stop, target, risk["take_profit"]["reward_to_risk_ratio"])
         signals.append(
             {
                 "category": "technical",
                 "type": "demand_zone_reaction",
                 "fires": zone["fires"],
-                "description": (
-                    f"Price touched demand zone ~{zone['zone_level']:.2f} "
-                    f"({zone['zone_touches']} prior touches)"
-                    + (" and closed back above it (reaction confirmed)" if zone["fires"] else " -- watch for a close back above to confirm")
-                ),
+                "description": description,
                 "details": zone,
                 "dedupe_key": _key(ticker, "demand_zone_reaction", zone["date"], round(zone["zone_level"], 1)),
             }

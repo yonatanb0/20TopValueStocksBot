@@ -118,6 +118,7 @@ def golden_cross_signal(ohlcv, fast=50, slow=200, lookback_days=5, vol_avg_perio
             return {
                 "type": "golden_cross",
                 "cross_date": ohlcv[i]["date"],
+                "cross_index": i,
                 "volume_expansion": expanded,
                 "fires": expanded,
             }
@@ -291,3 +292,21 @@ def stop_loss_level(ohlcv, basis_price, atr_multiple=1.0, atr_period=14):
     if last_atr is None:
         return None
     return round(basis_price - atr_multiple * last_atr, 2)
+
+
+def last_swing_low_before(ohlcv, index, window=3):
+    """Most recent confirmed swing low at or before `index` (a pivot needs
+    `window` bars on both sides to confirm, so this can't see the last
+    `window` bars before `index`)."""
+    sub = ohlcv[: index + 1]
+    _, swing_lows = _find_swing_points(sub, window=window)
+    if not swing_lows:
+        return None
+    return swing_lows[-1][1]
+
+
+def take_profit_level(entry_price, stop_price, reward_to_risk_ratio=3.0):
+    if stop_price is None or entry_price <= stop_price:
+        return None
+    risk = entry_price - stop_price
+    return round(entry_price + reward_to_risk_ratio * risk, 2)

@@ -91,6 +91,11 @@
       "description": "Stop sits at a normal distance below whichever of these is relevant to the entry, so a slightly-late confirmed entry doesn't get shaken out by noise.",
       "buffer_method": "ATR(14)-based buffer below the basis level",
       "buffer_atr_multiple": 1.0
+    },
+    "take_profit": {
+      "description": "Target is set purely off the stop distance so every fired entry trigger carries a fixed reward:risk ratio, computed at the moment the trigger fires.",
+      "method": "entry_price + reward_to_risk_ratio * (entry_price - stop_loss_price)",
+      "reward_to_risk_ratio": 3.0
     }
   },
 
