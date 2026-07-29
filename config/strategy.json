@@ -71,10 +71,14 @@
     },
     "watch_only_flags": {
       "confidence": "HARD (detection) / judgment call (action)",
-      "rsi_macd_divergence": {
+      "two_pole_oscillator": {
         "action": "flag only -- 'watch closer', never a standalone buy trigger",
-        "rsi_period": 14,
-        "macd_params": [12, 26, 9]
+        "source": "Two-Pole Oscillator [BigBeluga], https://www.tradingview.com/script/2Ssn4yDZ",
+        "description": "Two-pole (cascaded-EMA) filtered z-score of double-detrended price. A 'buy turn' fires when it crosses above its own value from `lag` bars back while still negative; a 'sell turn' is the mirror. Carries a volatility-sized invalidation level, logged as context.",
+        "filter_length": 15,
+        "deviation_period": 25,
+        "area_period": 100,
+        "lag": 4
       },
       "fibonacci_pullback": {
         "action": "used only as an add-on-pullback zone within an already-confirmed uptrend (i.e. only relevant after an entry trigger already fired)",

@@ -30,47 +30,6 @@ def ema_series(values, period):
     return out
 
 
-def rsi_series(closes, period=14):
-    out = [None] * len(closes)
-    if len(closes) <= period:
-        return out
-    gains, losses = [], []
-    for i in range(1, len(closes)):
-        change = closes[i] - closes[i - 1]
-        gains.append(max(change, 0))
-        losses.append(max(-change, 0))
-    avg_gain = sum(gains[:period]) / period
-    avg_loss = sum(losses[:period]) / period
-    out[period] = 100 - (100 / (1 + (avg_gain / avg_loss))) if avg_loss != 0 else 100
-    for i in range(period, len(gains)):
-        avg_gain = (avg_gain * (period - 1) + gains[i]) / period
-        avg_loss = (avg_loss * (period - 1) + losses[i]) / period
-        rs = avg_gain / avg_loss if avg_loss != 0 else None
-        out[i + 1] = 100 - (100 / (1 + rs)) if rs is not None else 100
-    return out
-
-
-def macd_series(closes, fast=12, slow=26, signal=9):
-    ema_fast = ema_series(closes, fast)
-    ema_slow = ema_series(closes, slow)
-    macd_line = [
-        (f - s) if (f is not None and s is not None) else None
-        for f, s in zip(ema_fast, ema_slow)
-    ]
-    valid_start = next((i for i, v in enumerate(macd_line) if v is not None), None)
-    signal_line = [None] * len(closes)
-    if valid_start is not None:
-        trimmed = [v for v in macd_line[valid_start:]]
-        sig_trimmed = ema_series(trimmed, signal)
-        for i, v in enumerate(sig_trimmed):
-            signal_line[valid_start + i] = v
-    histogram = [
-        (m - s) if (m is not None and s is not None) else None
-        for m, s in zip(macd_line, signal_line)
-    ]
-    return macd_line, signal_line, histogram
-
-
 def atr_series(highs, lows, closes, period=14):
     out = [None] * len(closes)
     trs = [highs[0] - lows[0]]
@@ -214,31 +173,114 @@ def demand_zone_reaction_signal(ohlcv, lookback_days=90, tolerance_pct=1.5, reac
     return None
 
 
-def rsi_macd_divergence_watch(ohlcv):
-    """Watch-only flag, never a standalone trigger per strategy.json."""
+def _sma_safe(values, period):
+    """Like sma_series, but skips (returns None for) any window containing a None,
+    needed because the deviation series below has a leading run of Nones."""
+    out = [None] * len(values)
+    for i in range(period - 1, len(values)):
+        window = values[i - period + 1 : i + 1]
+        if any(v is None for v in window):
+            continue
+        out[i] = sum(window) / period
+    return out
+
+
+def _stdev_safe(values, period):
+    """Population stdev (divide by N), matching Pine's ta.stdev default."""
+    out = [None] * len(values)
+    for i in range(period - 1, len(values)):
+        window = values[i - period + 1 : i + 1]
+        if any(v is None for v in window):
+            continue
+        mean = sum(window) / period
+        variance = sum((v - mean) ** 2 for v in window) / period
+        out[i] = variance ** 0.5
+    return out
+
+
+def _ema_immediate(values, length):
+    """
+    EMA seeded immediately with the first value, as in BigBeluga's Two-Pole
+    Oscillator (smooth1/smooth2) -- unlike ema_series, which seeds with an SMA
+    of the first `length` values and returns None until then.
+    """
+    alpha = 2.0 / (length + 1)
+    out = [None] * len(values)
+    prev = None
+    for i, v in enumerate(values):
+        if v is None:
+            continue
+        prev = v if prev is None else (1 - alpha) * prev + alpha * v
+        out[i] = prev
+    return out
+
+
+def two_pole_filter(values, length):
+    """Two cascaded immediate-seed EMA passes -- a proper 2-pole IIR low-pass filter."""
+    smooth1 = _ema_immediate(values, length)
+    return _ema_immediate(smooth1, length)
+
+
+def two_pole_oscillator_signal(ohlcv, length=15, deviation_period=25, area_period=100, lag=4):
+    """
+    BigBeluga's Two-Pole Oscillator [https://www.tradingview.com/script/2Ssn4yDZ],
+    verbatim formula verified against the published Pine source. Watch-only flag,
+    same role as the RSI/MACD divergence check it replaces -- never a standalone
+    trigger per strategy.json.
+
+    Input: a z-score of price deviation from its own 25-SMA, detrended again by
+    its own SMA and normalized by its stdev. Two-pole filtered, then compared to
+    itself `lag` bars back (the oscillator's own "signal line"). A buy turn fires
+    when it crosses above that lagged value while still negative; a sell turn is
+    the mirror. Each carries an invalidation level (a volatility-sized buffer
+    below/above the signal bar) -- included as context, not used as a stop here.
+    """
     closes = [c["close"] for c in ohlcv]
-    if len(closes) < 60:
+    highs = [c["high"] for c in ohlcv]
+    lows = [c["low"] for c in ohlcv]
+
+    sma1 = _sma_safe(closes, deviation_period)
+    deviation = [c - s if s is not None else None for c, s in zip(closes, sma1)]
+    dev_sma = _sma_safe(deviation, deviation_period)
+    dev_stdev = _stdev_safe(deviation, deviation_period)
+
+    sma_n1 = [
+        (d - m) / s if (d is not None and m is not None and s not in (None, 0)) else None
+        for d, m, s in zip(deviation, dev_sma, dev_stdev)
+    ]
+
+    first_valid = next((i for i, v in enumerate(sma_n1) if v is not None), None)
+    if first_valid is None or len(ohlcv) < first_valid + lag + 2:
         return None
-    rsi = rsi_series(closes, 14)
-    _, _, hist = macd_series(closes, 12, 26, 9)
-    swing_highs, swing_lows = _find_swing_points(ohlcv, window=3)
 
-    def check(points, higher_price_lower_indicator):
-        if len(points) < 2:
-            return False
-        (i1, p1), (i2, p2) = points[-2], points[-1]
-        r1, r2 = rsi[i1], rsi[i2]
-        if r1 is None or r2 is None:
-            return False
-        if higher_price_lower_indicator:
-            return p2 > p1 and r2 < r1
-        return p2 < p1 and r2 > r1
+    two_p = [None] * first_valid + two_pole_filter(sma_n1[first_valid:], length)
 
-    bearish = check(swing_highs, True)
-    bullish = check(swing_lows, False)
-    if bearish or bullish:
-        return {"type": "rsi_divergence_watch", "bearish": bearish, "bullish": bullish, "fires": False}
-    return None
+    i, j = len(ohlcv) - 1, len(ohlcv) - 1 - lag
+    prev_i, prev_j = i - 1, j - 1
+    if prev_j < 0 or None in (two_p[i], two_p[j], two_p[prev_i], two_p[prev_j]):
+        return None
+
+    turned_up = two_p[prev_i] <= two_p[prev_j] and two_p[i] > two_p[j]
+    turned_down = two_p[prev_i] >= two_p[prev_j] and two_p[i] < two_p[j]
+    buy = turned_up and two_p[i] < 0
+    sell = turned_down and two_p[i] > 0
+    if not (buy or sell):
+        return None
+
+    avg_range = _sma_safe([h - l for h, l in zip(highs, lows)], area_period)
+    area = avg_range[i]
+    level = None
+    if area is not None:
+        level = round(lows[i] - area, 2) if buy else round(highs[i] + area, 2)
+
+    return {
+        "type": "two_pole_turn",
+        "direction": "buy" if buy else "sell",
+        "value": round(two_p[i], 3),
+        "invalidation_level": level,
+        "date": ohlcv[i]["date"],
+        "fires": False,
+    }
 
 
 def position_in_52w_range(ohlcv, lookback_days=252):

@@ -2,7 +2,7 @@
   "ticker": "VRT",
   "name": "Vertiv",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-07-29T13:11:11.137185+00:00",
+  "last_updated": "2026-07-29T13:39:12.329300+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -18,8 +18,38 @@
       },
       "dedupe_key": "b0430ff71c4a7c71",
       "timestamp": "2026-07-29T09:50:19.549415+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~274.05 (2 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 274.05499,
+        "zone_touches": 2,
+        "date": "2026-07-29",
+        "fires": false
+      },
+      "dedupe_key": "7074a2c7cc96848d",
+      "timestamp": "2026-07-29T13:39:12.329300+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-07-29",
+        "fires": false
+      },
+      "dedupe_key": "3e086226a5ad8d11",
+      "timestamp": "2026-07-29T13:39:12.329300+00:00"
     }
   ],
-  "last_price": 269.56,
-  "last_price_date": "2026-07-28"
+  "last_price": 242.2,
+  "last_price_date": "2026-07-29"
 }

@@ -116,17 +116,20 @@ def build_technical_signals(ticker, ohlcv, strategy):
             }
         )
 
-    div = ind.rsi_macd_divergence_watch(ohlcv)
-    if div:
-        kind = "bearish" if div["bearish"] else "bullish"
+    two_pole = ind.two_pole_oscillator_signal(ohlcv)
+    if two_pole:
+        level_note = f", invalidation level ~{two_pole['invalidation_level']}" if two_pole["invalidation_level"] else ""
         signals.append(
             {
                 "category": "technical",
-                "type": "rsi_divergence_watch",
+                "type": "two_pole_turn",
                 "fires": False,
-                "description": f"{kind.capitalize()} RSI divergence detected -- watch closer, not a standalone trigger.",
-                "details": div,
-                "dedupe_key": _key(ticker, "rsi_divergence_watch", ohlcv[-1]["date"], kind),
+                "description": (
+                    f"Two-Pole Oscillator {two_pole['direction']} turn (value {two_pole['value']}) "
+                    f"-- watch closer, not a standalone trigger{level_note}."
+                ),
+                "details": two_pole,
+                "dedupe_key": _key(ticker, "two_pole_turn", two_pole["date"], two_pole["direction"]),
             }
         )
 
