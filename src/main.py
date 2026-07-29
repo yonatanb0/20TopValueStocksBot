@@ -53,8 +53,12 @@ def main():
         technical_signals = build_technical_signals_safe(ticker, ohlcv, strategy)
         news_signals = news_signals_by_ticker.get(ticker, [])
 
+        last_price, last_price_date = (None, None)
+        if ohlcv:
+            last_price, last_price_date = ohlcv[-1]["close"], ohlcv[-1]["date"]
+
         all_signals = technical_signals + news_signals
-        added = data_store.append_signals(ticker, all_signals)
+        added = data_store.append_signals(ticker, all_signals, last_price, last_price_date)
         total_added += added
         if added:
             print(f"[main] {ticker}: +{added} new signal(s)")
