@@ -167,28 +167,56 @@ def build_technical_signals(ticker, ohlcv, strategy):
     return signals
 
 
-def _article_matches(article, terms):
-    text = f"{article.get('title') or ''} {article.get('description') or ''}".lower()
+def _text_matches(text, terms):
+    text = (text or "").lower()
     return [t for t in terms if t.lower() in text]
+
+
+def _article_matches(article, terms):
+    """Broad match across title + description -- used for the macro/sector scan,
+    which isn't tied to a single company's identity so body text is fair game."""
+    combined = f"{article.get('title') or ''} {article.get('description') or ''}"
+    return _text_matches(combined, terms)
+
+
+def _company_headline_matches(article, terms, company_name, ticker):
+    """
+    Stricter match for per-company signals (EPS-revision proxy, guidance rollover).
+    Two guards against false positives like an "Applied Digital beats estimates"
+    article surfacing under Cisco's news feed and matching "misses estimates"
+    from unrelated body text:
+      1. Keywords must appear in the headline title itself, not the body --
+         body text often describes a different company in the same roundup piece.
+      2. The company's own name or ticker must appear in the title -- a sanity
+         check that the headline is actually about this company at all.
+    """
+    title = article.get("title") or ""
+    title_lower = title.lower()
+    if company_name.lower() not in title_lower and ticker.lower() not in title_lower:
+        return []
+    return _text_matches(title, terms)
 
 
 def build_news_signals(tickers_meta, company_news_by_ticker, macro_articles, strategy):
     """
     company_news_by_ticker: dict[ticker] -> list of articles already scoped to that
-    ticker by the news source (Finnhub's company-news is per-symbol, so no text
-    matching against company names is needed here).
+    ticker by the news source (Finnhub's company-news is per-symbol), though Finnhub
+    can still return loosely-related roundup articles under a company's feed -- see
+    _company_headline_matches for the guards against that.
     Returns dict[ticker] -> list of signal dicts (macro, fundamental/candidacy, exit-guidance).
     """
     by_ticker = {t["ticker"]: [] for t in tickers_meta}
+    ticker_to_name = {t["ticker"]: t["name"] for t in tickers_meta}
 
     candidacy_kw = strategy["candidacy_filter"]["keywords_positive"]
     rollover_kw = strategy["exit_triggers"]["guidance_rollover"]["keywords"]
 
     for ticker, articles in company_news_by_ticker.items():
+        company_name = ticker_to_name.get(ticker, ticker)
         for article in articles:
             url = article.get("url", "")
 
-            hits = _article_matches(article, candidacy_kw)
+            hits = _company_headline_matches(article, candidacy_kw, company_name, ticker)
             if hits:
                 by_ticker[ticker].append(
                     {
@@ -204,7 +232,7 @@ def build_news_signals(tickers_meta, company_news_by_ticker, macro_articles, str
                     }
                 )
 
-            hits = _article_matches(article, rollover_kw)
+            hits = _company_headline_matches(article, rollover_kw, company_name, ticker)
             if hits:
                 by_ticker[ticker].append(
                     {
