@@ -3,6 +3,22 @@
   "name": "Quanta Services",
   "sector": "ai_data_center_infra",
   "thesis": "",
-  "last_updated": null,
-  "signal_log": []
+  "last_updated": "2026-07-29T09:12:34.322341+00:00",
+  "signal_log": [
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~611.65 (2 prior touches) -- watch for a close back above to confirm",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 611.650025,
+        "zone_touches": 2,
+        "date": "2026-07-28",
+        "fires": false
+      },
+      "dedupe_key": "0f372659114202f5",
+      "timestamp": "2026-07-29T09:12:34.322341+00:00"
+    }
+  ]
 }

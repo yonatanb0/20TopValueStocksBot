@@ -1,5 +1,5 @@
 {
-  "_readme": "Structured encoding of the user's discretionary swing/position strategy. 'confidence' on each rule marks how reliably it can be computed from free-tier TwelveData + NewsAPI data: HARD = computed directly from price/volume, reliable. SOFT = keyword/heuristic proxy from news text, meant to prompt human review, not to fire an automatic buy/sell.",
+  "_readme": "Structured encoding of the user's discretionary swing/position strategy. 'confidence' on each rule marks how reliably it can be computed from free-tier TwelveData + Finnhub data: HARD = computed directly from price/volume, reliable. SOFT = keyword/heuristic proxy from news text, meant to prompt human review, not to fire an automatic buy/sell.",
 
   "macro_gate": {
     "description": "New hunting in a sector only opens once macro data has actually turned (not the rumor of it): capex guidance raised, Fed pause confirmed, money rotating into beaten-down sectors.",
@@ -43,7 +43,7 @@
     "confidence": "SOFT",
     "method": "news keyword scan as a proxy for analyst EPS revisions",
     "keywords_positive": ["raises guidance", "beats estimates", "price target raised", "upgrades EPS estimate", "raises outlook"],
-    "note": "True analyst EPS revision feeds (Zacks/Refinitiv-style) are not available on NewsAPI/TwelveData free tiers. This is a headline-based proxy meant to flag 'go check the actual estimate revisions', not a substitute for it."
+    "note": "True analyst EPS revision feeds (Zacks/Refinitiv-style) are not available on Finnhub/TwelveData free tiers. This is a headline-based proxy meant to flag 'go check the actual estimate revisions', not a substitute for it."
   },
 
   "entry_triggers": {

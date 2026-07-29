@@ -3,6 +3,22 @@
   "name": "Vertiv",
   "sector": "ai_data_center_infra",
   "thesis": "",
-  "last_updated": null,
-  "signal_log": []
+  "last_updated": "2026-07-29T09:12:34.322341+00:00",
+  "signal_log": [
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~274.05 (2 prior touches) -- watch for a close back above to confirm",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 274.05499,
+        "zone_touches": 2,
+        "date": "2026-07-28",
+        "fires": false
+      },
+      "dedupe_key": "b0430ff71c4a7c71",
+      "timestamp": "2026-07-29T09:12:34.322341+00:00"
+    }
+  ]
 }

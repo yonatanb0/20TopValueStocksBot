@@ -7,7 +7,7 @@ load_dotenv()
 from config import load_tickers, load_strategy, get_api_keys
 import data_store
 import twelvedata_client
-import newsapi_client
+import finnhub_client
 import signals as sig
 
 
@@ -15,7 +15,7 @@ def main():
     tickers_meta = load_tickers()
     strategy = load_strategy()
     try:
-        twelvedata_key, newsapi_key = get_api_keys()
+        twelvedata_key, finnhub_key = get_api_keys()
     except RuntimeError as e:
         print(f"[main] FATAL: {e}", file=sys.stderr)
         sys.exit(1)
@@ -32,25 +32,18 @@ def main():
         print(f"[main] FATAL: TwelveData fetch failed: {e}", file=sys.stderr)
         sys.exit(1)
 
-    print("[main] Fetching news from NewsAPI (company chunks + macro query)...")
-    try:
-        company_articles = newsapi_client.fetch_company_news(
-            [t["name"] for t in tickers_meta], newsapi_key
-        )
-    except Exception as e:
-        print(f"[main] WARNING: company news fetch failed: {e}")
-        company_articles = []
+    print(f"[main] Fetching company news from Finnhub for {len(ticker_symbols)} tickers...")
+    company_news_by_ticker = finnhub_client.fetch_company_news_batch(ticker_symbols, finnhub_key)
 
+    print("[main] Fetching general market news from Finnhub...")
     try:
-        macro_articles = newsapi_client.fetch_macro_news(
-            strategy["macro_gate"]["macro_keywords_general"], newsapi_key
-        )
+        macro_articles = finnhub_client.fetch_general_news(finnhub_key)
     except Exception as e:
-        print(f"[main] WARNING: macro news fetch failed: {e}")
+        print(f"[main] WARNING: general news fetch failed: {e}")
         macro_articles = []
 
     news_signals_by_ticker = sig.build_news_signals(
-        tickers_meta, company_articles, macro_articles, strategy
+        tickers_meta, company_news_by_ticker, macro_articles, strategy
     )
 
     total_added = 0

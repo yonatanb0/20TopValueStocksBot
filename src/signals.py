@@ -135,21 +135,20 @@ def _article_matches(article, terms):
     return [t for t in terms if t.lower() in text]
 
 
-def build_news_signals(tickers_meta, company_articles, macro_articles, strategy):
+def build_news_signals(tickers_meta, company_news_by_ticker, macro_articles, strategy):
     """
+    company_news_by_ticker: dict[ticker] -> list of articles already scoped to that
+    ticker by the news source (Finnhub's company-news is per-symbol, so no text
+    matching against company names is needed here).
     Returns dict[ticker] -> list of signal dicts (macro, fundamental/candidacy, exit-guidance).
     """
     by_ticker = {t["ticker"]: [] for t in tickers_meta}
-    name_to_ticker = {t["name"]: t["ticker"] for t in tickers_meta}
-    ticker_to_sector = {t["ticker"]: t["sector"] for t in tickers_meta}
 
     candidacy_kw = strategy["candidacy_filter"]["keywords_positive"]
     rollover_kw = strategy["exit_triggers"]["guidance_rollover"]["keywords"]
 
-    for article in company_articles:
-        matched_names = _article_matches(article, list(name_to_ticker.keys()))
-        for name in matched_names:
-            ticker = name_to_ticker[name]
+    for ticker, articles in company_news_by_ticker.items():
+        for article in articles:
             url = article.get("url", "")
 
             hits = _article_matches(article, candidacy_kw)

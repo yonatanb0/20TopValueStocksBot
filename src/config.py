@@ -22,10 +22,10 @@ def load_strategy():
 
 def get_api_keys():
     twelvedata_key = os.environ.get("TWELVEDATA_API_KEY")
-    newsapi_key = os.environ.get("NEWSAPI_API_KEY")
+    finnhub_key = os.environ.get("FINNHUB_API_KEY")
     missing = [
         name
-        for name, val in (("TWELVEDATA_API_KEY", twelvedata_key), ("NEWSAPI_API_KEY", newsapi_key))
+        for name, val in (("TWELVEDATA_API_KEY", twelvedata_key), ("FINNHUB_API_KEY", finnhub_key))
         if not val
     ]
     if missing:
@@ -33,4 +33,4 @@ def get_api_keys():
             f"Missing required environment variable(s): {', '.join(missing)}. "
             "Set them locally before running, or as GitHub Actions secrets for the scheduled workflow."
         )
-    return twelvedata_key, newsapi_key
+    return twelvedata_key, finnhub_key

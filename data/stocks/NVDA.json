@@ -3,6 +3,51 @@
   "name": "NVIDIA",
   "sector": "semiconductors",
   "thesis": "",
-  "last_updated": null,
-  "signal_log": []
+  "last_updated": "2026-07-29T09:12:34.316690+00:00",
+  "signal_log": [
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~190.47 (2 prior touches) and closed back above it (reaction confirmed)",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 190.47,
+        "zone_touches": 2,
+        "date": "2026-07-28",
+        "fires": true
+      },
+      "dedupe_key": "6ea67adbcc5885a4",
+      "timestamp": "2026-07-29T09:12:34.316690+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "rsi_divergence_watch",
+      "fires": false,
+      "description": "Bearish RSI divergence detected -- watch closer, not a standalone trigger.",
+      "details": {
+        "type": "rsi_divergence_watch",
+        "bearish": true,
+        "bullish": false,
+        "fires": false
+      },
+      "dedupe_key": "f75c6bb765a3755a",
+      "timestamp": "2026-07-29T09:12:34.316690+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-07-28",
+        "fires": false
+      },
+      "dedupe_key": "0d95277c19124993",
+      "timestamp": "2026-07-29T09:12:34.316690+00:00"
+    }
+  ]
 }

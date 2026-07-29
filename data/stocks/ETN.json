@@ -3,6 +3,36 @@
   "name": "Eaton",
   "sector": "ai_data_center_infra",
   "thesis": "",
-  "last_updated": null,
-  "signal_log": []
+  "last_updated": "2026-07-29T09:12:34.322341+00:00",
+  "signal_log": [
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~386.51 (4 prior touches) -- watch for a close back above to confirm",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 386.505005,
+        "zone_touches": 4,
+        "date": "2026-07-28",
+        "fires": false
+      },
+      "dedupe_key": "12994c9ebec395cf",
+      "timestamp": "2026-07-29T09:12:34.322341+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "rsi_divergence_watch",
+      "fires": false,
+      "description": "Bullish RSI divergence detected -- watch closer, not a standalone trigger.",
+      "details": {
+        "type": "rsi_divergence_watch",
+        "bearish": false,
+        "bullish": true,
+        "fires": false
+      },
+      "dedupe_key": "f6ca1c628059bb21",
+      "timestamp": "2026-07-29T09:12:34.322341+00:00"
+    }
+  ]
 }

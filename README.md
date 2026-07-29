@@ -3,7 +3,7 @@
 A private data pool that tracks 20 stocks: per-stock thesis notes plus a running
 log of technical / fundamental / macro / news signals, refreshed every 2 hours
 by a GitHub Actions cron job. Free-tier data sources: [TwelveData](https://twelvedata.com)
-(price/volume) and [NewsAPI](https://newsapi.org) (headlines).
+(price/volume) and [Finnhub](https://finnhub.io) (company news + general market news).
 
 ## Layout
 
@@ -18,15 +18,20 @@ by a GitHub Actions cron job. Free-tier data sources: [TwelveData](https://twelv
 
 ## Known free-tier limitations
 
-- **NewsAPI free "Developer" plan**: articles lag live news by ~24h, and the plan caps at
-  100 requests/day. The bot batches company names into ~3-4 queries per run (well under
-  the cap even at 12 runs/day), but the ~24h lag means news-derived signals (macro gate,
-  EPS-revision proxy, guidance rollover) are never truly real-time — treat them as "worth
-  checking", not breaking news.
-- **TwelveData free plan**: 800 credits/day, 8 requests/min. One batched `time_series` call
-  per run covering all 20 tickers costs ~20 credits; at 12 runs/day that's ~240/day, leaving
-  headroom. Don't add per-symbol indicator API calls (they're computed locally in `indicators.py`
-  instead, specifically to avoid burning extra credits).
+- **Finnhub free tier**: 60 API calls/minute, no hard daily cap, and company-news is
+  scoped per-symbol directly (no text-matching needed to attribute an article to a
+  ticker). One call per ticker per run (20 calls) plus one general-news call comfortably
+  fits the per-minute limit with a small throttle between calls. Unlike NewsAPI's free
+  plan, there's no ~24h article lag, so news-derived signals (macro gate, EPS-revision
+  proxy, guidance rollover) can actually reflect same-day news — still treat them as
+  "worth checking" (`SOFT` confidence), not confirmed facts.
+- **TwelveData free plan**: capped at 8 API *credits* per minute (confirmed directly from the
+  API's error response), and each symbol in a batch call costs 1 credit regardless of batching --
+  so one call for all 20 tickers instantly blows the per-minute budget. The client chunks into
+  groups of 8 symbols and pauses ~61s between chunks, adding ~2 minutes to each run (harmless on
+  a 2-hour cadence). Don't add per-symbol indicator API calls on top of this (indicators are
+  computed locally in `indicators.py` from the one daily-history pull, specifically to avoid
+  burning more credits than necessary).
 - **EPS revisions & true valuation-vs-history**: real analyst estimate-revision feeds and
   historical P/E percentile data generally aren't available for free. The bot substitutes:
   a 52-week price-range position as a "cheap vs. own history" proxy (always computed), and a
@@ -50,7 +55,7 @@ Output: console log of what ran, plus updated files under `data/stocks/`.
 1. Push this repo to GitHub (already done if you're reading this from the repo).
 2. In the repo's Settings → Secrets and variables → Actions, add two repository secrets:
    - `TWELVEDATA_API_KEY`
-   - `NEWSAPI_API_KEY`
+   - `FINNHUB_API_KEY`
 3. The workflow runs automatically every 2 hours (`0 */2 * * *`), and can also be triggered
    manually from the Actions tab ("Run workflow") to test it immediately rather than waiting
    for the next scheduled tick.
