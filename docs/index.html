@@ -5,60 +5,60 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>20TopValueStocksBot — Desk</title>
 <style>
+  /* Palette modeled on the Financial Times: signature salmon "paper" ground,
+     black serif headlines, claret accent. Dark mode is FT's own dark theme
+     (near-black ground, same claret, brightened for contrast) -- not an
+     inverted salmon, which would just look muddy. */
   :root {
-    --brass: #A8752A;
-    --brass-soft: #A8752A22;
-    --green: #3F7550;
-    --green-soft: #3F755018;
-    --red: #A8462E;
-    --red-soft: #A8462E18;
-    --amber: #A8790C;
-    --amber-soft: #A8790C18;
-    --slate: #4F6172;
-    --slate-soft: #4F617218;
-    --quiet: #8C8C82;
-    --quiet-soft: #8C8C8218;
+    --claret: #990F3D;
+    --claret-soft: #990F3D16;
+    --forest: #1C5C39;
+    --forest-soft: #1C5C3916;
+    --ochre: #9C6D0E;
+    --ochre-soft: #9C6D0E16;
+    --oxford: #48566B;
+    --oxford-soft: #48566B16;
+    --quiet: #8B8178;
+    --quiet-soft: #8B817816;
 
-    --bg: #EEEFE8;
-    --card: #F9F9F5;
-    --card-hover: #FFFFFF;
-    --border: #DBDCD2;
-    --ink: #1C1F20;
-    --ink-muted: #5B5F58;
-    --ink-faint: #8A8D84;
+    --bg: #FFF1E5;
+    --card: #FFF1E5;
+    --card-hover: #FFF8F1;
+    --border: #C9BFB3;
+    --rule: #1A1A1A;
+    --ink: #1A1A1A;
+    --ink-muted: #66605C;
+    --ink-faint: #8C8579;
   }
 
   @media (prefers-color-scheme: dark) {
     :root {
-      --brass: #D9A94C; --brass-soft: #D9A94C22;
-      --green: #74B583; --green-soft: #74B58322;
-      --red: #DD8267; --red-soft: #DD826722;
-      --amber: #E0AC4A; --amber-soft: #E0AC4A22;
-      --slate: #93A8BA; --slate-soft: #93A8BA22;
-      --quiet: #7A7D78; --quiet-soft: #7A7D7822;
-      --bg: #14171B; --card: #1B1F25; --card-hover: #21262E;
-      --border: #2B3038; --ink: #E8E9E4; --ink-muted: #9AA0A0; --ink-faint: #6C716E;
+      --claret: #E8567E; --claret-soft: #E8567E1F;
+      --forest: #5FA97D; --forest-soft: #5FA97D1F;
+      --ochre: #D9A233; --ochre-soft: #D9A2331F;
+      --oxford: #8BA0B5; --oxford-soft: #8BA0B51F;
+      --quiet: #948C82; --quiet-soft: #948C821F;
+      --bg: #0D0C0C; --card: #0D0C0C; --card-hover: #181615;
+      --border: #3A342E; --rule: #F2E9E4; --ink: #F2E9E4; --ink-muted: #B5ACA5; --ink-faint: #857D74;
     }
   }
   :root[data-theme="dark"] {
-    --brass: #D9A94C; --brass-soft: #D9A94C22;
-    --green: #74B583; --green-soft: #74B58322;
-    --red: #DD8267; --red-soft: #DD826722;
-    --amber: #E0AC4A; --amber-soft: #E0AC4A22;
-    --slate: #93A8BA; --slate-soft: #93A8BA22;
-    --quiet: #7A7D78; --quiet-soft: #7A7D7822;
-    --bg: #14171B; --card: #1B1F25; --card-hover: #21262E;
-    --border: #2B3038; --ink: #E8E9E4; --ink-muted: #9AA0A0; --ink-faint: #6C716E;
+    --claret: #E8567E; --claret-soft: #E8567E1F;
+    --forest: #5FA97D; --forest-soft: #5FA97D1F;
+    --ochre: #D9A233; --ochre-soft: #D9A2331F;
+    --oxford: #8BA0B5; --oxford-soft: #8BA0B51F;
+    --quiet: #948C82; --quiet-soft: #948C821F;
+    --bg: #0D0C0C; --card: #0D0C0C; --card-hover: #181615;
+    --border: #3A342E; --rule: #F2E9E4; --ink: #F2E9E4; --ink-muted: #B5ACA5; --ink-faint: #857D74;
   }
   :root[data-theme="light"] {
-    --brass: #A8752A; --brass-soft: #A8752A22;
-    --green: #3F7550; --green-soft: #3F755018;
-    --red: #A8462E; --red-soft: #A8462E18;
-    --amber: #A8790C; --amber-soft: #A8790C18;
-    --slate: #4F6172; --slate-soft: #4F617218;
-    --quiet: #8C8C82; --quiet-soft: #8C8C8218;
-    --bg: #EEEFE8; --card: #F9F9F5; --card-hover: #FFFFFF;
-    --border: #DBDCD2; --ink: #1C1F20; --ink-muted: #5B5F58; --ink-faint: #8A8D84;
+    --claret: #990F3D; --claret-soft: #990F3D16;
+    --forest: #1C5C39; --forest-soft: #1C5C3916;
+    --ochre: #9C6D0E; --ochre-soft: #9C6D0E16;
+    --oxford: #48566B; --oxford-soft: #48566B16;
+    --quiet: #8B8178; --quiet-soft: #8B817816;
+    --bg: #FFF1E5; --card: #FFF1E5; --card-hover: #FFF8F1;
+    --border: #C9BFB3; --rule: #1A1A1A; --ink: #1A1A1A; --ink-muted: #66605C; --ink-faint: #8C8579;
   }
 
   * { box-sizing: border-box; }
@@ -70,11 +70,11 @@
   .app {
     background: var(--bg);
     color: var(--ink);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    font-family: "FT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     min-height: 100vh;
     padding-bottom: 3rem;
   }
-  .serif { font-family: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif; }
+  .serif { font-family: "Financier Display", Georgia, "Times New Roman", Times, serif; }
   .mono { font-family: ui-monospace, "SF Mono", "Cascadia Mono", Consolas, "Roboto Mono", monospace; font-variant-numeric: tabular-nums; }
   a { color: inherit; }
 
@@ -85,23 +85,26 @@
     gap: 1rem;
     padding: 0.65rem 1.25rem;
     background: var(--card);
-    border-bottom: 1px solid var(--border);
+    border-bottom: 3px solid var(--rule);
     backdrop-filter: blur(6px);
   }
   .statusbar-left { display: flex; align-items: center; gap: 0.6rem; }
   .pulse {
     width: 8px; height: 8px; border-radius: 50%;
-    background: var(--green);
-    box-shadow: 0 0 0 0 var(--green-soft);
+    background: var(--forest);
+    box-shadow: 0 0 0 0 var(--forest-soft);
     animation: pulse 2.4s ease-out infinite;
   }
   @keyframes pulse {
-    0%   { box-shadow: 0 0 0 0 var(--green-soft); }
+    0%   { box-shadow: 0 0 0 0 var(--forest-soft); }
     70%  { box-shadow: 0 0 0 7px transparent; }
     100% { box-shadow: 0 0 0 0 transparent; }
   }
   @media (prefers-reduced-motion: reduce) { .pulse { animation: none; } }
-  .statusbar-title { font-weight: 600; font-size: 0.92rem; letter-spacing: 0.01em; cursor: pointer; }
+  .statusbar-title {
+    font-family: "Financier Display", Georgia, "Times New Roman", Times, serif;
+    font-weight: 700; font-size: 1.05rem; letter-spacing: 0.005em; cursor: pointer;
+  }
   .statusbar-sub { color: var(--ink-muted); font-size: 0.8rem; }
   .statusbar-right { font-size: 0.78rem; color: var(--ink-muted); text-align: right; }
 
@@ -144,8 +147,8 @@
   .stat-chip {
     display: flex; align-items: center; gap: 0.45rem;
     padding: 0.4rem 0.75rem;
-    border: 1px solid var(--border);
-    border-radius: 3px;
+    border: 1px solid var(--rule);
+    border-radius: 0;
     background: var(--card);
     font-size: 0.78rem;
     cursor: pointer;
@@ -159,9 +162,9 @@
   .stat-chip .label { color: var(--ink-muted); }
 
   .lean-legend { padding: 0.35rem 1.25rem 0; font-size: 0.72rem; color: var(--ink-faint); display: flex; align-items: center; gap: 0.3rem; flex-wrap: wrap; }
-  .lean-legend-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin: 0 0.15rem; vertical-align: middle; }
-  .lean-legend-surge { background: var(--green-soft); border: 1px solid var(--green); }
-  .lean-legend-fall { background: var(--red-soft); border: 1px solid var(--red); }
+  .lean-legend-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 0; margin: 0 0.15rem; vertical-align: middle; }
+  .lean-legend-surge { background: var(--forest-soft); border: 1px solid var(--forest); }
+  .lean-legend-fall { background: var(--claret-soft); border: 1px solid var(--claret); }
 
   /* ---------- grid ---------- */
   .grid {
@@ -172,8 +175,9 @@
   }
   .card {
     border: 1px solid var(--border);
+    border-top: 2px solid var(--rule);
     background: var(--card);
-    border-radius: 3px;
+    border-radius: 0;
     padding: 0.95rem 1.05rem;
     display: flex; flex-direction: column; gap: 0.55rem;
     cursor: pointer;
@@ -187,25 +191,26 @@
      the badge says what your STRATEGY calls actionable; this says what the
      INDICATORS lean toward, which can differ (e.g. a two-pole turn alone is
      "watching" by strategy rules, but still worth coloring as a bullish lean). */
-  .card.lean-surge { background: var(--green-soft); border-color: var(--green); }
-  .card.lean-surge:hover, .card.lean-surge:focus-visible { background: var(--green-soft); border-color: var(--green); filter: brightness(1.08); }
-  .card.lean-fall { background: var(--red-soft); border-color: var(--red); }
-  .card.lean-fall:hover, .card.lean-fall:focus-visible { background: var(--red-soft); border-color: var(--red); filter: brightness(1.08); }
+  .card.lean-surge { background: var(--forest-soft); border-color: var(--forest); }
+  .card.lean-surge:hover, .card.lean-surge:focus-visible { background: var(--forest-soft); border-color: var(--forest); filter: brightness(1.08); }
+  .card.lean-fall { background: var(--claret-soft); border-color: var(--claret); }
+  .card.lean-fall:hover, .card.lean-fall:focus-visible { background: var(--claret-soft); border-color: var(--claret); filter: brightness(1.08); }
 
   .card-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 0.6rem; }
   .card-id { display: flex; flex-direction: column; gap: 0.15rem; }
-  .card-ticker { font-family: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif; font-size: 1.35rem; font-weight: 700; letter-spacing: 0.01em; }
+  .card-ticker { font-family: "Financier Display", Georgia, "Times New Roman", Times, serif; font-size: 1.35rem; font-weight: 700; letter-spacing: 0.01em; }
   .card-name { font-size: 0.74rem; color: var(--ink-muted); }
   .card-sector { font-size: 0.68rem; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 0.1rem; }
 
   .badge {
-    font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em;
-    padding: 0.28rem 0.55rem; border-radius: 2px; white-space: nowrap;
+    font-size: 0.66rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
+    padding: 0.22rem 0.5rem 0.18rem; border-radius: 0; white-space: nowrap;
+    border-bottom: 2px solid currentColor;
   }
-  .badge-entry    { color: var(--green); background: var(--green-soft); }
-  .badge-onsale   { color: var(--amber); background: var(--amber-soft); }
-  .badge-exit     { color: var(--red);   background: var(--red-soft); }
-  .badge-watching { color: var(--slate); background: var(--slate-soft); }
+  .badge-entry    { color: var(--forest); background: var(--forest-soft); }
+  .badge-onsale   { color: var(--ochre); background: var(--ochre-soft); }
+  .badge-exit     { color: var(--claret);   background: var(--claret-soft); }
+  .badge-watching { color: var(--oxford); background: var(--oxford-soft); }
   .badge-quiet    { color: var(--quiet); background: var(--quiet-soft); }
 
   .card-price { font-size: 1.05rem; font-weight: 600; }
@@ -216,7 +221,7 @@
 
   .card-thesis-tag {
     display: inline-flex; align-items: center; gap: 0.3rem;
-    font-size: 0.68rem; color: var(--brass); font-weight: 600;
+    font-size: 0.68rem; color: var(--claret); font-weight: 600;
     text-transform: uppercase; letter-spacing: 0.04em;
   }
   .card-thesis-tag::before { content: "◆"; font-size: 0.6rem; }
@@ -243,7 +248,7 @@
     display: flex; align-items: flex-start; justify-content: space-between;
     gap: 1rem; padding: 0.5rem 0 1rem; border-bottom: 1px solid var(--border);
   }
-  .detail-ticker { font-family: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif; font-size: 2.1rem; font-weight: 700; }
+  .detail-ticker { font-family: "Financier Display", Georgia, "Times New Roman", Times, serif; font-size: 2.1rem; font-weight: 700; }
   .detail-name { font-size: 0.9rem; color: var(--ink-muted); }
   .detail-sector { font-size: 0.72rem; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 0.2rem; }
   .detail-price-block { text-align: right; }
@@ -259,14 +264,14 @@
 
   .verdict-panel {
     border: 1px solid var(--border);
-    border-left: 3px solid var(--brass);
+    border-left: 4px solid var(--claret);
     background: var(--card);
     padding: 0.9rem 1.1rem;
-    border-radius: 2px;
+    border-radius: 0;
   }
   .verdict-panel p { margin: 0; font-size: 0.94rem; line-height: 1.55; }
   .verdict-call {
-    display: inline-block; font-weight: 700; color: var(--brass);
+    display: inline-block; font-weight: 700; color: var(--claret);
     margin-bottom: 0.4rem; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.03em;
   }
 
@@ -278,16 +283,16 @@
   .headline-meta { font-size: 0.72rem; color: var(--ink-faint); margin-top: 0.25rem; display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; }
   .headline-tag {
     font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.03em; font-weight: 700;
-    padding: 0.1rem 0.4rem; border-radius: 2px;
+    padding: 0.1rem 0.4rem; border-radius: 0;
   }
-  .headline-tag.positive { color: var(--green); background: var(--green-soft); }
-  .headline-tag.negative { color: var(--red); background: var(--red-soft); }
-  .headline-tag.neutral { color: var(--slate); background: var(--slate-soft); }
+  .headline-tag.positive { color: var(--forest); background: var(--forest-soft); }
+  .headline-tag.negative { color: var(--claret); background: var(--claret-soft); }
+  .headline-tag.neutral { color: var(--oxford); background: var(--oxford-soft); }
   .empty-note { font-size: 0.84rem; color: var(--ink-faint); font-style: italic; }
 
   .sig-row { display: flex; align-items: baseline; gap: 0.5rem; font-size: 0.85rem; padding: 0.45rem 0; }
   .sig-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; margin-top: 0.4rem; }
-  .sig-dot.on  { background: var(--green); }
+  .sig-dot.on  { background: var(--forest); }
   .sig-dot.off { background: var(--ink-faint); }
   .sig-type { font-weight: 600; }
   .sig-note { color: var(--ink-muted); }
@@ -322,7 +327,7 @@
     <div class="stats-row" id="stats"></div>
     <div class="lean-legend">Card color = where the indicators lean, independent of the badge: <span class="lean-legend-swatch lean-legend-surge"></span> about to surge, <span class="lean-legend-swatch lean-legend-fall"></span> about to fall hard, no tint = neither.</div>
     <main class="grid" id="grid"></main>
-    <footer>Data last refreshed 2026-07-29 17:23 Jerusalem. Personal research pool &mdash; not investment advice.</footer>
+    <footer>Data last refreshed 2026-07-29 17:36 Jerusalem. Personal research pool &mdash; not investment advice.</footer>
   </div>
 
   <div id="view-detail" class="detail" hidden></div>
@@ -334,10 +339,10 @@
   const STOCK_BY_TICKER = Object.fromEntries(STOCKS.map(s => [s.ticker, s]));
 
   const STATUS_META = {
-    entry:    { label:"Entry confirmed", badge:"badge-entry",    color:"var(--green)" },
-    onsale:   { label:"On sale",         badge:"badge-onsale",   color:"var(--amber)" },
-    exit:     { label:"Exit watch",      badge:"badge-exit",     color:"var(--red)" },
-    watching: { label:"Watching",        badge:"badge-watching", color:"var(--slate)" },
+    entry:    { label:"Entry confirmed", badge:"badge-entry",    color:"var(--forest)" },
+    onsale:   { label:"On sale",         badge:"badge-onsale",   color:"var(--ochre)" },
+    exit:     { label:"Exit watch",      badge:"badge-exit",     color:"var(--claret)" },
+    watching: { label:"Watching",        badge:"badge-watching", color:"var(--oxford)" },
     quiet:    { label:"No signal",       badge:"badge-quiet",    color:"var(--quiet)" }
   };
 
