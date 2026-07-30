@@ -6,20 +6,6 @@
   "signal_log": [
     {
       "category": "technical",
-      "type": "rsi_divergence_watch",
-      "fires": false,
-      "description": "Bearish RSI divergence detected -- watch closer, not a standalone trigger.",
-      "details": {
-        "type": "rsi_divergence_watch",
-        "bearish": true,
-        "bullish": false,
-        "fires": false
-      },
-      "dedupe_key": "f75c6bb765a3755a",
-      "timestamp": "2026-07-29T09:12:34.316690+00:00"
-    },
-    {
-      "category": "technical",
       "type": "distribution_and_trendline_break",
       "fires": false,
       "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",

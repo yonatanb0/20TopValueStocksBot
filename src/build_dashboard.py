@@ -31,7 +31,6 @@ TYPE_LABELS = {
     "golden_cross": "Golden cross",
     "range_breakout": "Range breakout",
     "demand_zone_reaction": "Demand zone reaction",
-    "rsi_divergence_watch": "RSI divergence (legacy)",
     "valuation_override_52w": "Valuation override (52w)",
     "distribution_and_trendline_break": "Distribution / trendline break",
     "eps_revision_proxy": "EPS revision proxy",
