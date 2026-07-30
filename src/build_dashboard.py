@@ -13,6 +13,14 @@ TEMPLATE_PATH = ROOT / "dashboard" / "template.html"
 OUTPUT_PATH = ROOT / "docs" / "index.html"
 THESIS_DIR = ROOT / "data" / "thesis"
 STOCKS_DIR = ROOT / "data" / "stocks"
+STATE_DIR = ROOT / "data" / "state"
+
+REVISION_LABELS = {
+    "up": "Estimates rising",
+    "down": "Estimates falling",
+    "flat": "Estimates flat",
+    "insufficient_history": "Not enough history yet",
+}
 
 BULLISH_ENTRY_TYPES = {"golden_cross", "range_breakout", "demand_zone_reaction"}
 EXIT_TYPE = "distribution_and_trendline_break"
@@ -126,6 +134,65 @@ def _truncate(text, limit=220):
     return text if len(text) <= limit else text[: limit - 1].rsplit(" ", 1)[0] + "…"
 
 
+def _position_view(position):
+    """position: the `position` block from data/state/{TICKER}.json (itself
+    sourced from the IBKR Flex Query in data/positions.json). None if IBKR
+    wasn't configured for this run or the ticker isn't currently held."""
+    if not position or not position.get("held"):
+        return None
+    shares = position.get("shares")
+    avg_cost = position.get("avg_cost")
+    cost_basis = (shares * avg_cost) if (shares and avg_cost) else None
+    pnl = position.get("unrealized_pnl")
+    pnl_pct = round(pnl / cost_basis * 100, 2) if (cost_basis and pnl is not None) else None
+    return {
+        "shares": shares,
+        "avgCost": avg_cost,
+        "marketValue": position.get("market_value"),
+        "unrealizedPnl": pnl,
+        "unrealizedPnlPct": pnl_pct,
+    }
+
+
+def _state_vector_view(state):
+    """Distilled view of data/state/{TICKER}.json for the dashboard -- the
+    decision-relevant fields (price vs. plan, trend, vol, fundamentals,
+    catalyst timing), not every raw field the state vector computes
+    (volume ratio, consolidation range, etc. stay data-only, same "distilled
+    not exhaustive" approach as the thesis schema)."""
+    if not state:
+        return None
+    pvp = state.get("price_vs_plan") or {}
+    trend = state.get("trend") or {}
+    vol = state.get("volatility") or {}
+    fund = state.get("fundamentals") or {}
+    cat = state.get("catalysts_and_review") or {}
+
+    has_any = any([pvp.get("stop_price"), trend, vol, fund.get("forward_pe"), fund.get("ev_ebitda_ttm")])
+    if not has_any:
+        return None
+
+    return {
+        "stopPrice": pvp.get("stop_price"),
+        "targetPrice": pvp.get("target_price"),
+        "pctFromStop": pvp.get("pct_from_stop"),
+        "pctFromTarget": pvp.get("pct_from_target"),
+        "atrUnitsFromStop": pvp.get("atr_units_from_stop"),
+        "priceVsSma20": trend.get("price_vs_sma20"),
+        "priceVsSma50": trend.get("price_vs_sma50"),
+        "priceVsSma200": trend.get("price_vs_sma200"),
+        "atr14": vol.get("atr14"),
+        "realizedVol20d": vol.get("realized_vol_20d_annualized_pct"),
+        "forwardPe": fund.get("forward_pe"),
+        "evEbitdaTtm": fund.get("ev_ebitda_ttm"),
+        "revisionDirection": REVISION_LABELS.get(fund.get("estimate_revision_direction"), fund.get("estimate_revision_direction")),
+        "revisionPct": fund.get("estimate_revision_pct"),
+        "daysToNextEarnings": cat.get("days_to_next_earnings"),
+        "daysSinceReviewDue": cat.get("days_since_review_due"),
+        "lastUpdated": state.get("last_updated"),
+    }
+
+
 def build_stock_entry(ticker_meta):
     ticker = ticker_meta["ticker"]
     name = ticker_meta["name"]
@@ -137,6 +204,9 @@ def build_stock_entry(ticker_meta):
 
     thesis_path = THESIS_DIR / f"{ticker}.json"
     thesis = load_json(thesis_path) if thesis_path.exists() else None
+
+    state_path = STATE_DIR / f"{ticker}.json"
+    state = load_json(state_path) if state_path.exists() else None
 
     latest = _latest_by_type(signal_log)
     status, lean, bullish_entries = _status_and_lean(latest)
@@ -219,6 +289,8 @@ def build_stock_entry(ticker_meta):
         "signals": signals,
         "levels": levels,
         "review": review,
+        "position": _position_view(state.get("position") if state else None),
+        "stateVector": _state_vector_view(state),
     }
 
 

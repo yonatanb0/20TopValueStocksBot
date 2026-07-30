@@ -226,6 +226,16 @@
   }
   .card-thesis-tag::before { content: "◆"; font-size: 0.6rem; }
 
+  .card-position-tag {
+    display: inline-flex; align-items: center; gap: 0.3rem;
+    font-size: 0.68rem; font-weight: 700;
+    padding: 0.15rem 0.4rem; border-radius: 0; width: fit-content;
+  }
+  .card-position-tag.pos { color: var(--forest); background: var(--forest-soft); }
+  .card-position-tag.neg { color: var(--claret); background: var(--claret-soft); }
+  .pnl.pos { color: var(--forest); }
+  .pnl.neg { color: var(--claret); }
+
   .card-goto { font-size: 0.7rem; color: var(--ink-faint); margin-top: 0.15rem; }
 
   footer {
@@ -346,6 +356,14 @@
     quiet:    { label:"No signal",       badge:"badge-quiet",    color:"var(--quiet)" }
   };
 
+  function fmtN(v, digits, suffix) {
+    return v == null ? '—' : v.toFixed(digits) + (suffix || '');
+  }
+
+  function fmtSigned(v, digits, suffix) {
+    return v == null ? '—' : (v >= 0 ? '+' : '') + v.toFixed(digits) + (suffix || '');
+  }
+
   function fmtPrice(p) {
     return p == null
       ? '<span class="card-price none">no live quote logged</span>'
@@ -384,6 +402,11 @@
     const html = sorted.map(s => {
       const meta = STATUS_META[s.status];
       const thesisTag = s.hasThesis ? '<span class="card-thesis-tag">Full thesis on file</span>' : '';
+      const positionTag = s.position
+        ? '<span class="card-position-tag ' + (s.position.unrealizedPnl >= 0 ? 'pos' : 'neg') + '">Held: ' + s.position.shares + ' sh' +
+          (s.position.unrealizedPnlPct != null ? ' &middot; ' + (s.position.unrealizedPnlPct >= 0 ? '+' : '') + s.position.unrealizedPnlPct.toFixed(1) + '%' : '') +
+          '</span>'
+        : '';
       const leanClass = s.lean === 'surge' ? ' lean-surge' : s.lean === 'fall' ? ' lean-fall' : '';
       return '<a class="card' + leanClass + '" href="#/' + s.ticker + '" data-status="' + s.status + '">' +
         '<div class="card-head">' +
@@ -396,6 +419,7 @@
         '</div>' +
         fmtPrice(s.price) +
         '<p class="card-pitch">' + s.pitch + '</p>' +
+        positionTag +
         thesisTag +
         '<div class="card-goto">View headlines &amp; verdict →</div>' +
       '</a>';
@@ -442,6 +466,40 @@
         ).join('')
       : '<p class="empty-note">Nothing fired this cycle.</p>';
 
+    const positionHtml = s.position ? (
+      '<div class="section"><h2 class="section-title">Your Position (IBKR, read-only)</h2>' +
+      '<div class="levels-row">' +
+        '<div class="level"><span class="k">Shares</span><span class="v mono">' + fmtN(s.position.shares, 2) + '</span></div>' +
+        '<div class="level"><span class="k">Avg Cost</span><span class="v mono">$' + fmtN(s.position.avgCost, 2) + '</span></div>' +
+        '<div class="level"><span class="k">Market Value</span><span class="v mono">$' + fmtN(s.position.marketValue, 2) + '</span></div>' +
+        '<div class="level"><span class="k">Unrealized P&amp;L</span><span class="v mono pnl ' + (s.position.unrealizedPnl >= 0 ? 'pos' : 'neg') + '">' +
+          fmtSigned(s.position.unrealizedPnl, 2, '') +
+          (s.position.unrealizedPnlPct != null ? ' (' + fmtSigned(s.position.unrealizedPnlPct, 1, '%') + ')' : '') +
+        '</span></div>' +
+      '</div></div>'
+    ) : '';
+
+    const sv = s.stateVector;
+    const stateVectorHtml = sv ? (
+      '<div class="section"><h2 class="section-title">State Vector (live technicals &amp; fundamentals)</h2>' +
+      '<div class="levels-row">' +
+        (sv.stopPrice != null ? '<div class="level"><span class="k">Stop</span><span class="v mono">$' + fmtN(sv.stopPrice, 2) + ' (' + fmtSigned(sv.pctFromStop, 1, '%') + ')</span></div>' : '') +
+        (sv.targetPrice != null ? '<div class="level"><span class="k">Target</span><span class="v mono">$' + fmtN(sv.targetPrice, 2) + ' (' + fmtSigned(sv.pctFromTarget, 1, '%') + ')</span></div>' : '') +
+        (sv.atrUnitsFromStop != null ? '<div class="level"><span class="k">ATR Units From Stop</span><span class="v mono">' + fmtN(sv.atrUnitsFromStop, 2) + '</span></div>' : '') +
+        '<div class="level"><span class="k">Trend (20d/50d/200d)</span><span class="v">' +
+          [sv.priceVsSma20, sv.priceVsSma50, sv.priceVsSma200].map(p => p || '—').join(' / ') +
+        '</span></div>' +
+        '<div class="level"><span class="k">ATR(14)</span><span class="v mono">' + (sv.atr14 != null ? '$' + fmtN(sv.atr14, 2) : '—') + '</span></div>' +
+        '<div class="level"><span class="k">Realized Vol (20d, ann.)</span><span class="v mono">' + fmtN(sv.realizedVol20d, 1, '%') + '</span></div>' +
+        '<div class="level"><span class="k">Forward P/E</span><span class="v mono">' + fmtN(sv.forwardPe, 1) + '</span></div>' +
+        '<div class="level"><span class="k">EV/EBITDA (TTM)</span><span class="v mono">' + fmtN(sv.evEbitdaTtm, 1) + '</span></div>' +
+        '<div class="level"><span class="k">Estimate Revisions</span><span class="v">' +
+          (sv.revisionDirection || '—') + (sv.revisionPct != null ? ' (' + fmtSigned(sv.revisionPct, 1, '%') + ')' : '') +
+        '</span></div>' +
+        (sv.daysToNextEarnings != null ? '<div class="level"><span class="k">Next Earnings</span><span class="v">' + sv.daysToNextEarnings + ' days</span></div>' : '') +
+      '</div></div>'
+    ) : '';
+
     const levelsHtml = (s.levels && s.levels.length) ? (
       '<div class="section"><h2 class="section-title">Entry / Exit Levels</h2>' +
       '<div class="levels-row">' + s.levels.map(l =>
@@ -473,6 +531,9 @@
           '<p>' + s.verdictParagraph + '</p>' +
         '</div>' +
       '</div>' +
+
+      positionHtml +
+      stateVectorHtml +
 
       '<div class="section">' +
         '<h2 class="section-title">Latest headlines</h2>' +
