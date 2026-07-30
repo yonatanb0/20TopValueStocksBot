@@ -2,7 +2,7 @@
   "ticker": "BSX",
   "name": "Boston Scientific",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-07-30T20:12:56.153338+00:00",
+  "last_updated": "2026-07-30T21:35:27.124355+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -112,8 +112,23 @@
       },
       "dedupe_key": "95d734d94ecf0a84",
       "timestamp": "2026-07-30T15:14:28.176242+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Distribution volume detected. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": true,
+        "trendline_break": false,
+        "date": "2026-07-30",
+        "fires": false
+      },
+      "dedupe_key": "7e84a93a0447a171",
+      "timestamp": "2026-07-30T21:35:27.124355+00:00"
     }
   ],
-  "last_price": 45.96,
+  "last_price": 45.99,
   "last_price_date": "2026-07-30"
 }
