@@ -86,10 +86,11 @@ computes a per-ticker state vector — see "Positions & state vector" below.
   a state vector with `fundamentals` fields left `null` — never a crash. Upgrading the FMP
   plan (or finding a different free fundamentals source) would be the fix if this data
   matters enough to pay for; not decided yet.
-- **IBKR Flex Query**: this account's configured query doesn't include a `position` (share
-  count) attribute at all — confirmed live against the real report, only `positionValue` +
-  `markPrice` are present — so `ibkr_client.py` derives share count as
-  `positionValue / markPrice` rather than trusting a field that isn't actually there.
+- **IBKR Flex Query**: the configured query includes a `position` (share count) field and
+  `ibkr_client.py` uses it directly. It initially didn't (an early version of the query
+  config), so the client also derives shares as `positionValue / markPrice` as a fallback —
+  confirmed live to match `position` exactly, kept for robustness in case the query config
+  ever changes again.
 
 ## Local setup
 

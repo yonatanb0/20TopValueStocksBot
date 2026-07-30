@@ -53,10 +53,11 @@ def _parse_positions(xml_text):
 
     positions = []
     for pos in root.iter("OpenPosition"):
-        # This Flex Query config doesn't include a `position` (share count)
-        # attribute at all -- confirmed live, only positionValue + markPrice
-        # are present. Derive shares from those instead of trusting `position`,
-        # but prefer it if a differently-configured query does include it.
+        # `position` (share count) is now included in the Flex Query config
+        # and preferred when present. Kept the positionValue/markPrice
+        # fallback for robustness -- it's what this originally had to derive
+        # shares from before the field was added, and matched `position`
+        # exactly when both were compared live.
         market_value = float(pos.get("positionValue", 0) or 0)
         mark_price = float(pos.get("markPrice", 0) or 0)
         if pos.get("position") is not None:
