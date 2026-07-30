@@ -2,7 +2,7 @@
   "ticker": "BSX",
   "name": "Boston Scientific",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-07-29T22:16:01.412181+00:00",
+  "last_updated": "2026-07-30T13:25:47.232094+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -64,8 +64,24 @@
       },
       "dedupe_key": "8fc87a2093191b8e",
       "timestamp": "2026-07-29T21:15:23.231891+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "guidance_rollover",
+      "fires": false,
+      "description": "EXIT WATCH -- headline suggests guidance rollover (cuts forecast): \"Boston Scientific Cuts Forecast on Product Slowdown and Competition\"",
+      "details": {
+        "url": "https://finnhub.io/api/news?id=6376171615604a98b32c21788089b2c3acd452df932a86e32db140e963129c91",
+        "headline": "Boston Scientific Cuts Forecast on Product Slowdown and Competition",
+        "matched_keywords": [
+          "cuts forecast"
+        ],
+        "published": "2026-07-29T11:12:23+00:00"
+      },
+      "dedupe_key": "b762ddb23ad562f0",
+      "timestamp": "2026-07-30T13:25:47.232094+00:00"
     }
   ],
-  "last_price": 46.029999,
+  "last_price": 46.040001,
   "last_price_date": "2026-07-29"
 }
