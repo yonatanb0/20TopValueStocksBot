@@ -50,6 +50,32 @@ def atr_series(highs, lows, closes, period=14):
     return out
 
 
+def rsi_series(closes, period=14):
+    """
+    Wilder's RSI. Reintroduced for state_vector.py as a plain state-vector
+    field (part of the fundamentals/technical snapshot) -- NOT a trigger.
+    The Two-Pole Oscillator above is what replaced RSI/MACD divergence as the
+    watch-only momentum signal in strategy.json; this is unrelated to that.
+    """
+    out = [None] * len(closes)
+    if len(closes) <= period:
+        return out
+    gains, losses = [], []
+    for i in range(1, len(closes)):
+        change = closes[i] - closes[i - 1]
+        gains.append(max(change, 0))
+        losses.append(max(-change, 0))
+    avg_gain = sum(gains[:period]) / period
+    avg_loss = sum(losses[:period]) / period
+    out[period] = 100 - (100 / (1 + (avg_gain / avg_loss))) if avg_loss != 0 else 100
+    for i in range(period, len(gains)):
+        avg_gain = (avg_gain * (period - 1) + gains[i]) / period
+        avg_loss = (avg_loss * (period - 1) + losses[i]) / period
+        rs = avg_gain / avg_loss if avg_loss != 0 else None
+        out[i + 1] = 100 - (100 / (1 + rs)) if rs is not None else 100
+    return out
+
+
 def golden_cross_signal(ohlcv, fast=50, slow=200, lookback_days=5, vol_avg_period=20):
     closes = [c["close"] for c in ohlcv]
     volumes = [c["volume"] for c in ohlcv]

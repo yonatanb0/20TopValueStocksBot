@@ -1,6 +1,10 @@
 import json
 from datetime import datetime, timezone
-from config import DATA_DIR
+from config import DATA_DIR, ROOT
+
+THESIS_DIR = ROOT / "data" / "thesis"
+STATE_DIR = ROOT / "data" / "state"
+POSITIONS_PATH = ROOT / "data" / "positions.json"
 
 
 def _path(ticker):
@@ -63,3 +67,37 @@ def append_signals(ticker, signals, last_price=None, last_price_date=None):
     with open(_path(ticker), "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
     return added
+
+
+def load_thesis(ticker):
+    """Read-only: never written to by this bot. Returns None if the user
+    hasn't uploaded a research thesis for this ticker yet."""
+    path = THESIS_DIR / f"{ticker}.json"
+    if not path.exists():
+        return None
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def load_prior_state(ticker):
+    path = STATE_DIR / f"{ticker}.json"
+    if not path.exists():
+        return None
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def write_state(ticker, state):
+    STATE_DIR.mkdir(parents=True, exist_ok=True)
+    with open(STATE_DIR / f"{ticker}.json", "w", encoding="utf-8") as f:
+        json.dump(state, f, indent=2)
+
+
+def write_positions(positions_by_ticker):
+    payload = {
+        "last_updated": datetime.now(timezone.utc).isoformat(),
+        "positions": positions_by_ticker,
+    }
+    POSITIONS_PATH.parent.mkdir(parents=True, exist_ok=True)
+    with open(POSITIONS_PATH, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2)
