@@ -2,7 +2,7 @@
   "ticker": "BSX",
   "name": "Boston Scientific",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-07-30T13:25:47.232094+00:00",
+  "last_updated": "2026-07-30T15:14:28.176242+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -80,8 +80,40 @@
       },
       "dedupe_key": "b762ddb23ad562f0",
       "timestamp": "2026-07-30T13:25:47.232094+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~42.32 (3 prior touches) and closed back above it (reaction confirmed). Stop ~40.64, target ~58.1 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 42.31666666666667,
+        "zone_touches": 3,
+        "date": "2026-07-30",
+        "fires": true,
+        "stop_loss": 40.64,
+        "take_profit": 58.1,
+        "entry_reference_price": 45.005
+      },
+      "dedupe_key": "4a3273538b13c3ad",
+      "timestamp": "2026-07-30T15:14:28.176242+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (4.2%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 4.2,
+        "close": 45.005,
+        "low_52w": 42.2,
+        "high_52w": 109.5
+      },
+      "dedupe_key": "95d734d94ecf0a84",
+      "timestamp": "2026-07-30T15:14:28.176242+00:00"
     }
   ],
-  "last_price": 46.040001,
-  "last_price_date": "2026-07-29"
+  "last_price": 45.005,
+  "last_price_date": "2026-07-30"
 }
