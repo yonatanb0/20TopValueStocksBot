@@ -166,6 +166,16 @@
   .lean-legend-surge { background: var(--forest-soft); border: 1px solid var(--forest); }
   .lean-legend-fall { background: var(--claret-soft); border: 1px solid var(--claret); }
 
+  /* ---------- basket widget (home page) ---------- */
+  .basket-panel {
+    margin: 1rem 1.25rem 0;
+    border: 1px solid var(--border);
+    border-top: 2px solid var(--rule);
+    background: var(--card);
+    padding: 0.95rem 1.1rem;
+  }
+  .basket-asof { font-size: 0.65rem; color: var(--ink-faint); text-transform: none; letter-spacing: 0; margin-left: 0.5rem; font-weight: 400; }
+
   /* ---------- grid ---------- */
   .grid {
     display: grid;
@@ -336,6 +346,7 @@
   <div id="view-grid">
     <div class="stats-row" id="stats"></div>
     <div class="lean-legend">Card color = where the indicators lean, independent of the badge: <span class="lean-legend-swatch lean-legend-surge"></span> about to surge, <span class="lean-legend-swatch lean-legend-fall"></span> about to fall hard, no tint = neither.</div>
+    <div id="basket-widget"></div>
     <main class="grid" id="grid"></main>
     <footer>Data last refreshed __GENERATED_AT_JERUSALEM__ Jerusalem. Personal research pool &mdash; not investment advice.</footer>
   </div>
@@ -345,6 +356,7 @@
 
 <script>
   const STOCKS = __STOCKS_JSON__;
+  const BASKET = __BASKET_JSON__;
 
   const STOCK_BY_TICKER = Object.fromEntries(STOCKS.map(s => [s.ticker, s]));
 
@@ -379,6 +391,30 @@
              '<span class="tape-price mono">' + price + '</span></div>';
     }).join('');
     document.getElementById('tape').innerHTML = items + items; // duplicate for seamless loop
+  }
+
+  function renderBasketWidget() {
+    const el = document.getElementById('basket-widget');
+    const dp = BASKET && BASKET.dry_powder;
+    if (!dp) { el.innerHTML = ''; return; }
+
+    if (!dp.available) {
+      el.innerHTML =
+        '<div class="basket-panel"><h2 class="section-title">Dry Powder</h2>' +
+        '<p class="empty-note">' + dp.note + '</p></div>';
+      return;
+    }
+
+    el.innerHTML =
+      '<div class="basket-panel">' +
+        '<h2 class="section-title">Dry Powder<span class="basket-asof">as of ' + (dp.as_of || '') + '</span></h2>' +
+        '<div class="levels-row">' +
+          '<div class="level"><span class="k">Cash</span><span class="v mono">$' + dp.cash.toFixed(2) + '</span></div>' +
+          '<div class="level"><span class="k">Tracked Holdings</span><span class="v mono">$' + dp.tracked_holdings_market_value.toFixed(2) + '</span></div>' +
+          '<div class="level"><span class="k">Cash + Holdings</span><span class="v mono">$' + dp.cash_plus_tracked_holdings.toFixed(2) + '</span></div>' +
+          '<div class="level"><span class="k">% Cash</span><span class="v mono">' + (dp.pct_cash_of_cash_plus_tracked != null ? dp.pct_cash_of_cash_plus_tracked.toFixed(1) + '%' : '—') + '</span></div>' +
+        '</div>' +
+      '</div>';
   }
 
   function renderStats() {
@@ -630,6 +666,7 @@
   }
 
   renderTape();
+  renderBasketWidget();
   renderStats();
   renderGrid();
   renderRunTimes();

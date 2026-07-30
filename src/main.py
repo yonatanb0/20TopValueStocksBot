@@ -3,7 +3,7 @@ import sys
 from dotenv import load_dotenv
 load_dotenv()
 
-from config import load_tickers, load_strategy, get_api_keys, get_ibkr_credentials
+from config import load_tickers, load_strategy, get_api_keys, get_ibkr_credentials, get_ibkr_cash_credentials
 import data_store
 import twelvedata_client
 import finnhub_client
@@ -124,13 +124,27 @@ def run_positions_and_state_phase(tickers_meta, ticker_symbols, history, finnhub
 def run_basket_analytics_phase(tickers_meta, history, benchmark_ohlcv, positions):
     """
     Layer 2: basket-level analytics (60d correlation matrix, beta vs. the
-    benchmark, sector concentration) -- pure Python math (basket_analytics.py),
-    reuses the OHLCV history already fetched this run. Written to
-    data/basket.json, one file for the whole basket (not per-ticker).
+    benchmark, sector concentration, cash/dry-powder) -- pure Python math
+    (basket_analytics.py), reuses the OHLCV history already fetched this run.
+    Cash comes from a SEPARATE Flex Query (its own query ID) than positions --
+    independently optional, skips just that one field if not configured.
+    Written to data/basket.json, one file for the whole basket (not per-ticker).
     """
-    print("[main] Computing basket analytics (correlation, beta, sector concentration)...")
+    cash_balance = None
+    cash_creds = get_ibkr_cash_credentials()
+    if cash_creds is None:
+        print("[main] Skipping IBKR cash balance fetch: IBKR_FLEX_CASH_QUERY_ID not configured.")
+    else:
+        ibkr_token, cash_query_id = cash_creds
+        print("[main] Fetching IBKR cash balance (read-only)...")
+        try:
+            cash_balance = ibkr_client.fetch_cash_balance(ibkr_token, cash_query_id)
+        except Exception as e:
+            print(f"[main] WARNING: IBKR cash balance fetch failed: {e}")
+
+    print("[main] Computing basket analytics (correlation, beta, sector concentration, dry powder)...")
     try:
-        basket = ba.compute_basket_analytics(tickers_meta, history, benchmark_ohlcv, positions)
+        basket = ba.compute_basket_analytics(tickers_meta, history, benchmark_ohlcv, positions, cash_balance)
         data_store.write_basket_analytics(basket)
         print("[main] Basket analytics written to data/basket.json.")
     except Exception as e:

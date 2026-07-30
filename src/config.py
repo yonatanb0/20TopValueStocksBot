@@ -50,3 +50,17 @@ def get_ibkr_credentials():
     if not (ibkr_token and ibkr_query_id):
         return None
     return ibkr_token, ibkr_query_id
+
+
+def get_ibkr_cash_credentials():
+    """
+    IBKR Flex Query credentials for the read-only cash-balance ("dry
+    powder") fetch -- a SEPARATE Flex Query (its own query ID) from
+    get_ibkr_credentials() above, same account token. Optional -- returns
+    None if not configured, so main.py can skip just this fetch.
+    """
+    ibkr_token = os.environ.get("IBKR_FLEX_TOKEN")
+    cash_query_id = os.environ.get("IBKR_FLEX_CASH_QUERY_ID")
+    if not (ibkr_token and cash_query_id):
+        return None
+    return ibkr_token, cash_query_id

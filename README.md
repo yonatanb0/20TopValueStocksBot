@@ -32,6 +32,8 @@ and computes a per-ticker state vector — see "Positions & state vector" below.
 - `data/state/<TICKER>.json` — mutable per-ticker state vector (price vs. plan, trend,
   volatility, fundamentals, catalyst/review timing), rewritten every run. See "Positions
   & state vector" below.
+- `data/basket.json` — basket-wide analytics (correlation matrix, beta vs. SPY, sector
+  concentration, cash/dry-powder), rewritten every run. See "Basket analytics (Layer 2)" below.
 - `src/` — the fetch + indicator + rule-matching + orchestration code.
 - `dashboard/template.html` — the dashboard's HTML/CSS/JS shell, with a `__STOCKS_JSON__`
   placeholder for real data and `__GENERATED_AT_JERUSALEM__` for the build timestamp.
@@ -87,6 +89,14 @@ and computes a per-ticker state vector — see "Positions & state vector" below.
   config), so the client also derives shares as `positionValue / markPrice` as a fallback —
   confirmed live to match `position` exactly, kept for robustness in case the query config
   ever changes again.
+- **Cash balance is a SEPARATE Flex Query** (its own query ID, `IBKR_FLEX_CASH_QUERY_ID`,
+  same account token) from positions — IBKR scopes report sections to one query at a time, not
+  everything at once. The Cash Report section's *default* field selection doesn't include an
+  actual ending-cash-balance field, only same-day deltas (`startingCash`, `commissions`,
+  `withdrawals`, `accountTransfers`) — found live, not from docs. The query must have
+  **"Ending Cash"** explicitly checked in its field list for `ibkr_client.fetch_cash_balance`
+  to get a real number; without it, `dry_powder.available` stays `false` rather than guessing
+  at a reconstructed balance from an incomplete cash-flow formula.
 
 ## Local setup
 
@@ -105,6 +115,7 @@ and (if IBKR is configured) `data/positions.json`.
 2. In the repo's Settings → Secrets and variables → Actions, add repository secrets:
    - `TWELVEDATA_API_KEY`, `FINNHUB_API_KEY` (required)
    - `IBKR_FLEX_QUERY_ID`, `IBKR_FLEX_TOKEN` (optional — enables the real-positions fetch)
+   - `IBKR_FLEX_CASH_QUERY_ID` (optional, needs `IBKR_FLEX_TOKEN` too — enables the cash/dry-powder fetch)
 3. The workflow runs automatically every 20 minutes during market hours
    (`*/20 12-21 * * 1-5` UTC, Mon-Fri -- wide enough to cover NYSE hours across both US
    daylight-saving states), and can also be triggered manually from the Actions tab
@@ -164,7 +175,24 @@ Every run also does two purely-additive things on top of the signal pool above:
    `data/state/<TICKER>.json`, one file per ticker, rewritten every run. This is pure Python
    math (`src/state_vector.py`) — **no LLM is in the runtime loop anywhere in this repo yet.**
 
-Explicitly out of scope for this phase (deferred): a macro regime gate (VIX/credit
-spreads/yields), basket-level correlation/beta/sector-cap analytics, the actual LLM
-verdict engine, and dashboard display of this new data — each waits for its own pass once
-the layer below it has run for a while and been checked against reality.
+## Basket analytics (Layer 2)
+
+Also purely additive, computed every run (`src/basket_analytics.py`, pure Python math, no
+LLM, no I/O — same pattern as `state_vector.py`) and written to `data/basket.json`:
+
+- **60-day pairwise correlation matrix** across all 20 tickers — zero extra API cost, reuses
+  the daily OHLCV already fetched for the signal pipeline.
+- **Beta vs. SPY** (60-day) — SPY is fetched as a 21st symbol in the same batched TwelveData
+  call (`main.py`'s `BENCHMARK_SYMBOL`), popped out of `history` before the per-ticker signal
+  loop so it never becomes a 21st basket stock. Adds ~1 TwelveData credit/run.
+- **Sector concentration** — % of your tracked holdings' market value per sector, computed
+  from real `data/positions.json`.
+- **Cash / dry powder** — real IBKR account cash (all currencies converted to base), from the
+  separate Cash Report Flex Query described above. `dry_powder.cash_plus_tracked_holdings` is
+  explicitly *not* total account NAV — the account may hold positions outside the tracked
+  20-name basket (it does, live), which aren't fetched, so this is a lower bound on true total
+  value, not the full number. Shown as the "Dry Powder" widget on the dashboard's home page.
+
+Explicitly out of scope so far: a macro regime gate (VIX/credit spreads/yields), the actual
+LLM verdict engine, and dashboard display of the correlation matrix / beta — each waits for
+its own pass once checked against reality for a while.

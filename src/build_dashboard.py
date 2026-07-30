@@ -297,14 +297,19 @@ def main():
     tickers_meta = load_tickers()
     stocks = [build_stock_entry(t) for t in tickers_meta]
 
+    basket_path = ROOT / "data" / "basket.json"
+    basket = load_json(basket_path) if basket_path.exists() else None
+
     now = datetime.now(timezone.utc)
     from zoneinfo import ZoneInfo
 
     jerusalem_time = now.astimezone(ZoneInfo("Asia/Jerusalem")).strftime("%Y-%m-%d %H:%M")
 
     template = TEMPLATE_PATH.read_text(encoding="utf-8")
-    rendered = template.replace("__STOCKS_JSON__", json.dumps(stocks)).replace(
-        "__GENERATED_AT_JERUSALEM__", jerusalem_time
+    rendered = (
+        template.replace("__STOCKS_JSON__", json.dumps(stocks))
+        .replace("__BASKET_JSON__", json.dumps(basket))
+        .replace("__GENERATED_AT_JERUSALEM__", jerusalem_time)
     )
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)

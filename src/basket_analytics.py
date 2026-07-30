@@ -126,18 +126,47 @@ def compute_sector_concentration(positions_by_ticker, tickers_meta):
     }
 
 
-def compute_basket_analytics(tickers_meta, history, benchmark_ohlcv, positions_by_ticker, lookback_days=60):
+def compute_dry_powder(cash_balance, total_tracked_market_value):
+    """
+    cash_balance: the dict from ibkr_client.fetch_cash_balance, or None if
+    the cash Flex Query isn't configured / failed this run.
+
+    'cash_plus_tracked_holdings' is NOT the account's true total value --
+    the account may hold positions outside the tracked 20-name basket (seen
+    live: it does), which aren't fetched at all, so this is a lower bound on
+    real total account value, not full NAV. Said explicitly in the note
+    rather than mislabeling it as a portfolio total.
+    """
+    cash = (cash_balance or {}).get("base_currency_ending_cash")
+    if cash is None:
+        return {
+            "available": False,
+            "note": "IBKR_FLEX_CASH_QUERY_ID not configured, or the Cash Report fetch failed/"
+                    "didn't return data this run.",
+        }
+    cash = round(cash, 2)
+    combined = round(cash + total_tracked_market_value, 2)
+    return {
+        "available": True,
+        "cash": cash,
+        "as_of": cash_balance.get("as_of"),
+        "tracked_holdings_market_value": round(total_tracked_market_value, 2),
+        "cash_plus_tracked_holdings": combined,
+        "pct_cash_of_cash_plus_tracked": round(cash / combined * 100, 2) if combined else None,
+        "note": "Cash is real (whole account, all currencies converted to base). "
+                "'Cash + tracked holdings' excludes any account holdings outside the tracked "
+                "20-name basket, so it's a lower bound on true total account value, not full NAV.",
+    }
+
+
+def compute_basket_analytics(tickers_meta, history, benchmark_ohlcv, positions_by_ticker, cash_balance=None, lookback_days=60):
     tickers = [t["ticker"] for t in tickers_meta]
+    sector_concentration = compute_sector_concentration(positions_by_ticker, tickers_meta)
     return {
         "last_updated": datetime.now(timezone.utc).isoformat(),
         "lookback_days": lookback_days,
         "correlation": compute_correlation_matrix(tickers, history, lookback_days),
         "beta_vs_spy": compute_betas(tickers, history, benchmark_ohlcv, lookback_days),
-        "sector_concentration": compute_sector_concentration(positions_by_ticker, tickers_meta),
-        "dry_powder": {
-            "available": False,
-            "note": "The configured IBKR Flex Query only reports OpenPositions, no cash/NAV "
-                    "section -- add a 'Cash Report' (or NAV) section to the same Flex Query in "
-                    "Client Portal to enable this.",
-        },
+        "sector_concentration": sector_concentration,
+        "dry_powder": compute_dry_powder(cash_balance, sector_concentration["total_tracked_market_value"]),
     }
