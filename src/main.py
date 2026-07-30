@@ -4,11 +4,10 @@ import time
 from dotenv import load_dotenv
 load_dotenv()
 
-from config import load_tickers, load_strategy, get_api_keys, get_extended_api_keys
+from config import load_tickers, load_strategy, get_api_keys, get_ibkr_credentials
 import data_store
 import twelvedata_client
 import finnhub_client
-import fmp_client
 import ibkr_client
 import signals as sig
 import state_vector as sv
@@ -68,39 +67,35 @@ def main():
 
     print(f"[main] Done. {total_added} new signal(s) written across {len(tickers_meta)} tickers.")
 
-    run_positions_and_state_phase(tickers_meta, ticker_symbols, history)
+    run_positions_and_state_phase(tickers_meta, ticker_symbols, history, finnhub_key)
 
 
-def run_positions_and_state_phase(tickers_meta, ticker_symbols, history):
+def run_positions_and_state_phase(tickers_meta, ticker_symbols, history, finnhub_key):
     """
-    Purely additive on top of the signal pipeline above: IBKR positions +
-    FMP fundamentals -> state_vector.py -> data/positions.json and
-    data/state/{TICKER}.json. Skips cleanly (with a warning) if the extended
-    credentials aren't configured yet, rather than failing the whole run --
-    the existing data/stocks/ signal log must keep working either way.
+    Purely additive on top of the signal pipeline above: IBKR positions
+    (needs its own credentials, independently optional) + Finnhub
+    fundamentals (reuses the finnhub_key already required for news -- no
+    extra credential needed) -> state_vector.py -> data/positions.json and
+    data/state/{TICKER}.json. IBKR being unconfigured/expired only skips the
+    positions fetch, not the whole phase -- the state vector is still useful
+    from fundamentals + thesis + technicals alone.
     """
-    extended_keys = get_extended_api_keys()
-    if extended_keys is None:
-        print("[main] Skipping positions/state-vector phase: FMP_API_KEY / IBKR_FLEX_TOKEN / "
-              "IBKR_FLEX_QUERY_ID not fully configured.")
-        return
-    fmp_key, ibkr_token, ibkr_query_id = extended_keys
+    positions = {}
+    ibkr_creds = get_ibkr_credentials()
+    if ibkr_creds is None:
+        print("[main] Skipping IBKR positions fetch: IBKR_FLEX_TOKEN / IBKR_FLEX_QUERY_ID not configured.")
+    else:
+        ibkr_token, ibkr_query_id = ibkr_creds
+        print("[main] Fetching IBKR Flex Query positions (read-only)...")
+        try:
+            positions = ibkr_client.fetch_positions(ibkr_token, ibkr_query_id, ticker_symbols)
+            data_store.write_positions(positions)
+        except Exception as e:
+            print(f"[main] WARNING: IBKR positions fetch failed: {e}")
+            positions = {}
 
-    print("[main] Fetching IBKR Flex Query positions (read-only)...")
-    try:
-        positions = ibkr_client.fetch_positions(ibkr_token, ibkr_query_id, ticker_symbols)
-    except Exception as e:
-        print(f"[main] WARNING: IBKR positions fetch failed, skipping positions/state-vector phase: {e}")
-        return
-    data_store.write_positions(positions)
-
-    prices_for_fmp = {}
-    for ticker in ticker_symbols:
-        ohlcv = history.get(ticker)
-        prices_for_fmp[ticker] = ohlcv[-1]["close"] if ohlcv else None
-
-    print(f"[main] Fetching FMP fundamentals for {len(ticker_symbols)} tickers...")
-    fundamentals_by_ticker = fmp_client.fetch_fundamentals_batch(prices_for_fmp, fmp_key)
+    print(f"[main] Fetching Finnhub fundamentals for {len(ticker_symbols)} tickers...")
+    fundamentals_by_ticker = finnhub_client.fetch_fundamentals_batch(ticker_symbols, finnhub_key)
 
     for t in tickers_meta:
         ticker = t["ticker"]

@@ -12,8 +12,8 @@ GitHub Pages on the free plan, and it also makes Actions minutes unlimited/free)
 API keys and tokens only ever exist as encrypted GitHub Actions secrets and a local,
 gitignored `.env`; they were never committed.
 
-Each run also fetches your real IBKR positions (read-only) and FMP fundamentals, and
-computes a per-ticker state vector — see "Positions & state vector" below.
+Each run also fetches your real IBKR positions (read-only) and Finnhub-based fundamentals,
+and computes a per-ticker state vector — see "Positions & state vector" below.
 
 ## Layout
 
@@ -70,22 +70,18 @@ computes a per-ticker state vector — see "Positions & state vector" below.
   explicitly wants to make deliberately, not something to auto-confirm. The bot only ever
   raises a `macro_sector_turning` flag for you to evaluate — it never marks a sector as
   confirmed-open on its own.
-- **FMP free tier**: the old `/api/v3/*` endpoints are fully retired (confirmed live — they
-  return a "Legacy Endpoint" error regardless of key); everything here uses the newer
-  `/stable/*` API. No endpoint on the free tier exposes forward P/E directly or a
-  point-in-time analyst-estimate history, so `fmp_client.py`/`state_vector.py` derive both:
-  forward P/E is computed as `price / consensus forward-year EPS`, and "estimate revision
-  direction" compares this run's EPS estimate against a baseline snapshot carried in the
-  ticker's own `data/state/<TICKER>.json` until ~75 days have actually elapsed (a real
-  ~3-month delta, not a proxy that resets every run).
-  **Bigger caveat, found by testing live rather than assumed**: the free plan also gates
-  `key-metrics-ttm` and `analyst-estimates` to a small allowed-symbol list, not a request
-  quota — confirmed by testing all 20 tickers directly. Only **INTC, NVDA, AAPL, CSCO, VZ**
-  are supported today; the other 15 (GOOG, IBM, BE, VRT, ETN, PWR, MDT, BSX, ISRG, IREN,
-  CIFR, MRVL, MU, NOW, AVGO) get a clear "FMP free-tier restriction" warning in the log and
-  a state vector with `fundamentals` fields left `null` — never a crash. Upgrading the FMP
-  plan (or finding a different free fundamentals source) would be the fix if this data
-  matters enough to pay for; not decided yet.
+- **Fundamentals source history**: originally used FMP, replaced 2026-07-30 after finding
+  live that its free tier gates `key-metrics-ttm`/`analyst-estimates` to a small
+  allowed-symbol list (15 of our 20 tickers were blocked, not a quota issue) *and* burns
+  quota fast at 2 calls/ticker every 20-minute run (~1,200/day against a 250/day cap).
+  Now uses Finnhub's `/stock/metric` endpoint instead (`finnhub_client.fetch_fundamentals`)
+  — reuses the Finnhub key already required for news, one call/ticker, no daily cap, and
+  confirmed live to work for all 20 tickers except CIFR/IREN (no analyst coverage at all for
+  those two — a real data gap, not a plan restriction). Finnhub's free tier doesn't expose a
+  raw forward-EPS number either, so `state_vector.py` backs one out as
+  `price / forwardPE` and tracks *that* for "estimate revision direction" — a baseline
+  snapshot carried in the ticker's own `data/state/<TICKER>.json` until ~75 days have
+  actually elapsed (a real ~3-month delta, not a proxy that resets every run).
 - **IBKR Flex Query**: the configured query includes a `position` (share count) field and
   `ibkr_client.py` uses it directly. It initially didn't (an early version of the query
   config), so the client also derives shares as `positionValue / markPrice` as a fallback —
@@ -94,21 +90,21 @@ computes a per-ticker state vector — see "Positions & state vector" below.
 
 ## Local setup
 
-1. Copy `.env.example` to `.env` and fill in your API keys/tokens (TwelveData, Finnhub,
-   FMP, IBKR Flex query ID + token — the last three are optional; without them the bot
-   still runs, it just skips the positions/state-vector phase).
+1. Copy `.env.example` to `.env` and fill in your API keys/tokens (TwelveData + Finnhub are
+   required; IBKR Flex query ID + token are optional — without them the bot still runs and
+   still computes the state vector, it just skips the real-positions fetch).
 2. `pip install -r requirements.txt`
 3. `python src/main.py`
 
-Output: console log of what ran, plus updated files under `data/stocks/`, and (if the
-extended keys are set) `data/positions.json` + `data/state/`.
+Output: console log of what ran, plus updated files under `data/stocks/` and `data/state/`,
+and (if IBKR is configured) `data/positions.json`.
 
 ## Deploying the scheduled job
 
 1. Push this repo to GitHub (already done if you're reading this from the repo).
 2. In the repo's Settings → Secrets and variables → Actions, add repository secrets:
    - `TWELVEDATA_API_KEY`, `FINNHUB_API_KEY` (required)
-   - `FMP_API_KEY`, `IBKR_FLEX_QUERY_ID`, `IBKR_FLEX_TOKEN` (optional — enables positions/state)
+   - `IBKR_FLEX_QUERY_ID`, `IBKR_FLEX_TOKEN` (optional — enables the real-positions fetch)
 3. The workflow runs automatically every 20 minutes during market hours
    (`*/20 12-21 * * 1-5` UTC, Mon-Fri -- wide enough to cover NYSE hours across both US
    daylight-saving states), and can also be triggered manually from the Actions tab
@@ -156,16 +152,17 @@ Every run also does two purely-additive things on top of the signal pool above:
    login. It will never place, modify, or cancel an order, full stop. Written to
    `data/positions.json`. The token has an expiry (configurable in that same screen,
    default 6h — pick the longest option offered); when it expires, generate a new one and
-   update the `IBKR_FLEX_TOKEN` secret.
-2. **Fetches FMP fundamentals** (forward P/E, EV/EBITDA TTM, consensus forward-year EPS)
-   and combines them with the IBKR position and (where one exists) the ticker's thesis
-   `entry_exit_plan`/`next_review` into a deterministic **state vector** — price vs.
-   entry/stop/target in % and ATR units, 20/50/200-day trend, ATR/realized vol, RSI(14) as
-   plain data (not a trigger — Two-Pole stays the only momentum trigger per `strategy.json`),
-   up/down volume ratio, consolidation range, days to next earnings, days since the thesis's
-   `next_review` came due. Written to `data/state/<TICKER>.json`, one file per ticker,
-   rewritten every run. This is pure Python math (`src/state_vector.py`) — **no LLM is in
-   the runtime loop anywhere in this repo yet.**
+   update the `IBKR_FLEX_TOKEN` secret. If it's not configured or fails, only this step is
+   skipped — everything below still runs.
+2. **Fetches fundamentals from Finnhub** (forward P/E, EV/EBITDA TTM — see "Known free-tier
+   limitations" above for why this isn't FMP) and combines them with the IBKR position (if
+   any) and (where one exists) the ticker's thesis `entry_exit_plan`/`next_review` into a
+   deterministic **state vector** — price vs. entry/stop/target in % and ATR units,
+   20/50/200-day trend, ATR/realized vol, RSI(14) as plain data (not a trigger — Two-Pole
+   stays the only momentum trigger per `strategy.json`), up/down volume ratio, consolidation
+   range, days to next earnings, days since the thesis's `next_review` came due. Written to
+   `data/state/<TICKER>.json`, one file per ticker, rewritten every run. This is pure Python
+   math (`src/state_vector.py`) — **no LLM is in the runtime loop anywhere in this repo yet.**
 
 Explicitly out of scope for this phase (deferred): a macro regime gate (VIX/credit
 spreads/yields), basket-level correlation/beta/sector-cap analytics, the actual LLM

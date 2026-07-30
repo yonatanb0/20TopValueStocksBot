@@ -61,3 +61,36 @@ def fetch_general_news(api_key, category="general", timeout=20):
     resp = requests.get(f"{BASE_URL}/news", params=params, timeout=timeout)
     resp.raise_for_status()
     return [_normalize(a) for a in resp.json()]
+
+
+def fetch_fundamentals(ticker, api_key, timeout=20):
+    """
+    Forward P/E and EV/EBITDA (TTM) from Finnhub's basic-financials endpoint.
+    Replaced FMP here (2026-07-30): FMP's free tier gated these to a small
+    allowed-symbol list (15 of our 20 tickers were blocked) and burned quota
+    fast at 2 calls/ticker every 20-minute run. This is one call/ticker,
+    reuses the Finnhub key already required for news, and confirmed live
+    across all 20 tickers -- no symbol restriction. Small/speculative names
+    with no analyst coverage (e.g. CIFR, IREN) simply get forwardPE=None,
+    same real-world gap any source would have.
+    """
+    params = {"symbol": ticker, "metric": "all", "token": api_key}
+    resp = requests.get(f"{BASE_URL}/stock/metric", params=params, timeout=timeout)
+    resp.raise_for_status()
+    metric = resp.json().get("metric", {})
+    return {
+        "forward_pe": metric.get("forwardPE"),
+        "ev_ebitda_ttm": metric.get("evEbitdaTTM"),
+    }
+
+
+def fetch_fundamentals_batch(tickers, api_key, throttle_seconds=0.3):
+    result = {}
+    for ticker in tickers:
+        try:
+            result[ticker] = fetch_fundamentals(ticker, api_key)
+        except Exception as e:
+            print(f"[finnhub_client] WARNING: fundamentals fetch failed for {ticker}: {e}")
+            result[ticker] = {"forward_pe": None, "ev_ebitda_ttm": None}
+        time.sleep(throttle_seconds)
+    return result

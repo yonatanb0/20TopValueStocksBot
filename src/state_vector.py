@@ -175,42 +175,42 @@ def _catalyst_review_block(thesis, today):
     }
 
 
-def _fundamentals_block(fundamentals, prior_state, today):
+def _fundamentals_block(fundamentals, price, prior_state, today):
     """
-    No FMP endpoint on the free tier exposes a point-in-time estimate
-    history, so revision direction is approximated by comparing this run's
-    forward-year epsAvg against a baseline snapshot carried in the prior
-    state file. The baseline only advances once REVISION_WINDOW_DAYS have
-    actually elapsed, so the comparison stays a real ~3-month delta instead
-    of drifting shorter every run.
+    Finnhub's free tier (like FMP's) doesn't expose a raw forward-EPS-estimate
+    number -- only the derived forwardPE. We back out an implied consensus
+    forward EPS as price / forwardPE (approximately recovers the same number
+    Finnhub used to compute forwardPE) and track *that* for revision
+    direction: compare this run's implied EPS against a baseline snapshot
+    carried in the prior state file, only advancing the baseline once
+    REVISION_WINDOW_DAYS have actually elapsed, so the comparison stays a
+    real ~3-month delta instead of drifting shorter every run.
     """
     fundamentals = fundamentals or {}
-    estimate = fundamentals.get("forward_estimate") or {}
-    current_eps = estimate.get("eps_avg")
-    current_fy = estimate.get("fiscal_year_end")
+    forward_pe = fundamentals.get("forward_pe")
+    ev_ebitda_ttm = fundamentals.get("ev_ebitda_ttm")
+    implied_forward_eps = round(price / forward_pe, 4) if (forward_pe and price) else None
 
     result = {
-        "forward_pe": fundamentals.get("forward_pe"),
-        "ev_ebitda_ttm": fundamentals.get("ev_ebitda_ttm"),
-        "forward_eps_avg": current_eps,
-        "forward_fiscal_year_end": current_fy,
+        "forward_pe": forward_pe,
+        "ev_ebitda_ttm": ev_ebitda_ttm,
+        "implied_forward_eps": implied_forward_eps,
         "estimate_revision_direction": "insufficient_history",
         "estimate_revision_pct": None,
         "estimate_baseline_date": today.isoformat(),
-        "estimate_baseline_eps_avg": current_eps,
+        "estimate_baseline_implied_eps": implied_forward_eps,
     }
-    if current_eps is None:
+    if implied_forward_eps is None:
         return result
 
     prior_fundamentals = (prior_state or {}).get("fundamentals") or {}
     baseline_date_str = prior_fundamentals.get("estimate_baseline_date")
-    baseline_eps = prior_fundamentals.get("estimate_baseline_eps_avg")
-    baseline_fy = prior_fundamentals.get("forward_fiscal_year_end")
+    baseline_eps = prior_fundamentals.get("estimate_baseline_implied_eps")
 
-    if baseline_date_str and baseline_eps is not None and baseline_fy == current_fy:
+    if baseline_date_str and baseline_eps is not None:
         elapsed = (today - date.fromisoformat(baseline_date_str)).days
         if elapsed >= REVISION_WINDOW_DAYS:
-            pct = _pct(current_eps, baseline_eps)
+            pct = _pct(implied_forward_eps, baseline_eps)
             result["estimate_revision_pct"] = pct
             if pct is not None:
                 result["estimate_revision_direction"] = "up" if pct > 1 else "down" if pct < -1 else "flat"
@@ -218,7 +218,7 @@ def _fundamentals_block(fundamentals, prior_state, today):
         else:
             # window still open -- keep carrying the same baseline forward
             result["estimate_baseline_date"] = baseline_date_str
-            result["estimate_baseline_eps_avg"] = baseline_eps
+            result["estimate_baseline_implied_eps"] = baseline_eps
 
     return result
 
@@ -244,6 +244,6 @@ def compute_state_vector(ticker, ohlcv, thesis, position, fundamentals, prior_st
         "volume": _volume_block(ohlcv) if has_technicals else None,
         "consolidation": _consolidation_block(ohlcv) if has_technicals else None,
         "catalysts_and_review": _catalyst_review_block(thesis, today),
-        "fundamentals": _fundamentals_block(fundamentals, prior_state, today),
+        "fundamentals": _fundamentals_block(fundamentals, price, prior_state, today),
         "last_verdict": (prior_state or {}).get("last_verdict"),
     }

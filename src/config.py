@@ -36,17 +36,17 @@ def get_api_keys():
     return twelvedata_key, finnhub_key
 
 
-def get_extended_api_keys():
+def get_ibkr_credentials():
     """
-    FMP + IBKR Flex credentials for the positions/fundamentals/state-vector
-    phase. Unlike get_api_keys() above (TwelveData/Finnhub, which the whole
-    run depends on), missing extended keys don't fail the run -- returns
-    None so main.py can skip just this phase, since it's purely additive on
-    top of the existing signal pipeline.
+    IBKR Flex Query credentials for the read-only positions fetch. Optional --
+    returns None if not configured (or if the token has expired -- it has a
+    configurable expiry in Client Portal, default 6h), so main.py can skip
+    just the positions fetch. Fundamentals + state vector still compute
+    either way, from Finnhub (already required for news) + thesis +
+    technicals alone -- positions are the only thing that needs this.
     """
-    fmp_key = os.environ.get("FMP_API_KEY")
     ibkr_token = os.environ.get("IBKR_FLEX_TOKEN")
     ibkr_query_id = os.environ.get("IBKR_FLEX_QUERY_ID")
-    if not (fmp_key and ibkr_token and ibkr_query_id):
+    if not (ibkr_token and ibkr_query_id):
         return None
-    return fmp_key, ibkr_token, ibkr_query_id
+    return ibkr_token, ibkr_query_id
