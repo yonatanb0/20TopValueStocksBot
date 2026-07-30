@@ -5,6 +5,7 @@ from config import DATA_DIR, ROOT
 THESIS_DIR = ROOT / "data" / "thesis"
 STATE_DIR = ROOT / "data" / "state"
 POSITIONS_PATH = ROOT / "data" / "positions.json"
+BASKET_PATH = ROOT / "data" / "basket.json"
 
 
 def _path(ticker):
@@ -101,3 +102,9 @@ def write_positions(positions_by_ticker):
     POSITIONS_PATH.parent.mkdir(parents=True, exist_ok=True)
     with open(POSITIONS_PATH, "w", encoding="utf-8") as f:
         json.dump(payload, f, indent=2)
+
+
+def write_basket_analytics(basket):
+    BASKET_PATH.parent.mkdir(parents=True, exist_ok=True)
+    with open(BASKET_PATH, "w", encoding="utf-8") as f:
+        json.dump(basket, f, indent=2)

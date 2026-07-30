@@ -10,6 +10,9 @@ import finnhub_client
 import ibkr_client
 import signals as sig
 import state_vector as sv
+import basket_analytics as ba
+
+BENCHMARK_SYMBOL = "SPY"
 
 
 def main():
@@ -26,12 +29,15 @@ def main():
 
     ticker_symbols = [t["ticker"] for t in tickers_meta]
 
-    print(f"[main] Fetching daily history for {len(ticker_symbols)} tickers from TwelveData...")
+    print(f"[main] Fetching daily history for {len(ticker_symbols)} tickers + benchmark from TwelveData...")
     try:
-        history = twelvedata_client.fetch_daily_history(ticker_symbols, twelvedata_key)
+        history = twelvedata_client.fetch_daily_history(ticker_symbols + [BENCHMARK_SYMBOL], twelvedata_key)
     except Exception as e:
         print(f"[main] FATAL: TwelveData fetch failed: {e}", file=sys.stderr)
         sys.exit(1)
+    benchmark_ohlcv = history.pop(BENCHMARK_SYMBOL, None)
+    if benchmark_ohlcv is None:
+        print(f"[main] WARNING: {BENCHMARK_SYMBOL} benchmark history missing this run -- beta will be skipped.")
 
     print(f"[main] Fetching company news from Finnhub for {len(ticker_symbols)} tickers...")
     company_news_by_ticker = finnhub_client.fetch_company_news_batch(ticker_symbols, finnhub_key)
@@ -66,7 +72,8 @@ def main():
 
     print(f"[main] Done. {total_added} new signal(s) written across {len(tickers_meta)} tickers.")
 
-    run_positions_and_state_phase(tickers_meta, ticker_symbols, history, finnhub_key)
+    positions = run_positions_and_state_phase(tickers_meta, ticker_symbols, history, finnhub_key)
+    run_basket_analytics_phase(tickers_meta, history, benchmark_ohlcv, positions)
 
 
 def run_positions_and_state_phase(tickers_meta, ticker_symbols, history, finnhub_key):
@@ -111,6 +118,23 @@ def run_positions_and_state_phase(tickers_meta, ticker_symbols, history, finnhub
             print(f"[main] WARNING: state vector computation failed for {ticker}: {e}")
 
     print(f"[main] Positions/state-vector phase done for {len(tickers_meta)} tickers.")
+    return positions
+
+
+def run_basket_analytics_phase(tickers_meta, history, benchmark_ohlcv, positions):
+    """
+    Layer 2: basket-level analytics (60d correlation matrix, beta vs. the
+    benchmark, sector concentration) -- pure Python math (basket_analytics.py),
+    reuses the OHLCV history already fetched this run. Written to
+    data/basket.json, one file for the whole basket (not per-ticker).
+    """
+    print("[main] Computing basket analytics (correlation, beta, sector concentration)...")
+    try:
+        basket = ba.compute_basket_analytics(tickers_meta, history, benchmark_ohlcv, positions)
+        data_store.write_basket_analytics(basket)
+        print("[main] Basket analytics written to data/basket.json.")
+    except Exception as e:
+        print(f"[main] WARNING: basket analytics computation failed: {e}")
 
 
 def build_technical_signals_safe(ticker, ohlcv, strategy):
