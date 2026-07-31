@@ -2,7 +2,7 @@
   "ticker": "IBM",
   "name": "IBM",
   "sector": "enterprise_tech",
-  "last_updated": "2026-07-31T13:29:53.845914+00:00",
+  "last_updated": "2026-07-31T15:41:33.812312+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -64,8 +64,37 @@
       },
       "dedupe_key": "d36334e74ea0377e",
       "timestamp": "2026-07-30T15:14:28.159427+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~223.31 (2 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 223.314995,
+        "zone_touches": 2,
+        "date": "2026-07-31",
+        "fires": false
+      },
+      "dedupe_key": "855f5512e06b030c",
+      "timestamp": "2026-07-31T15:41:33.812312+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (14.8%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 14.8,
+        "close": 218.95,
+        "low_52w": 199.19,
+        "high_52w": 332.45999
+      },
+      "dedupe_key": "9c141c037f50619c",
+      "timestamp": "2026-07-31T15:41:33.812312+00:00"
     }
   ],
-  "last_price": 221.74001,
-  "last_price_date": "2026-07-30"
+  "last_price": 218.95,
+  "last_price_date": "2026-07-31"
 }
