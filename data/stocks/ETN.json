@@ -2,7 +2,7 @@
   "ticker": "ETN",
   "name": "Eaton",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-07-30T22:42:34.293165+00:00",
+  "last_updated": "2026-07-31T13:29:53.854065+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -48,8 +48,25 @@
       },
       "dedupe_key": "36ab8a93a3e43971",
       "timestamp": "2026-07-29T16:22:05.474022+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "eps_revision_proxy",
+      "fires": false,
+      "description": "Headline suggests positive estimate revision (beats estimates, raises outlook): \"Eaton (NYSE:ETN) Posts Record Q2 Revenue, Beats Estimates and Raises Outlook\" -- verify against actual analyst EPS revisions.",
+      "details": {
+        "url": "https://finnhub.io/api/news?id=383375c375633824a14f5098608dd7d9b63b97542852d2e31d3feb4f473f7d75",
+        "headline": "Eaton (NYSE:ETN) Posts Record Q2 Revenue, Beats Estimates and Raises Outlook",
+        "matched_keywords": [
+          "beats estimates",
+          "raises outlook"
+        ],
+        "published": "2026-07-31T11:43:54+00:00"
+      },
+      "dedupe_key": "eda15efa7cb6cb7a",
+      "timestamp": "2026-07-31T13:29:53.854065+00:00"
     }
   ],
-  "last_price": 387.22,
+  "last_price": 386.89001,
   "last_price_date": "2026-07-30"
 }
