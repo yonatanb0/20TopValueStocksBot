@@ -1,14 +1,14 @@
 {
   "ticker": "GOOG",
-  "last_updated": "2026-07-31T22:39:55.575954+00:00",
+  "last_updated": "2026-08-02T09:19:36.730863+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "GOOG",
     "held": true,
     "shares": 2.0,
     "avg_cost": 353.905,
-    "market_value": 667.36,
-    "unrealized_pnl": -40.45
+    "market_value": 713.3,
+    "unrealized_pnl": 5.49
   },
   "price_vs_plan": {
     "current_price": 356.64999,
@@ -61,12 +61,26 @@
   },
   "fundamentals": {
     "forward_pe": 19.28932,
-    "ev_ebitda_ttm": 28.1791,
+    "ev_ebitda_ttm": 28.0831,
     "implied_forward_eps": 18.4895,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
     "estimate_baseline_implied_eps": 13.7103
+  },
+  "turtle": {
+    "gate_open": false,
+    "n": 11.775,
+    "system1": {
+      "state": {},
+      "signal": null
+    },
+    "system2": {
+      "state": {},
+      "signal": null
+    },
+    "position_plan": null,
+    "unit_size": null
   },
   "last_verdict": null
 }

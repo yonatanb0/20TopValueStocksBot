@@ -1,6 +1,6 @@
 {
   "ticker": "NOW",
-  "last_updated": "2026-07-31T22:39:55.598317+00:00",
+  "last_updated": "2026-08-02T09:19:36.758999+00:00",
   "has_thesis": true,
   "position": {
     "ticker": "NOW",
@@ -18,7 +18,7 @@
     "pct_from_entry": null,
     "pct_from_stop": 36.92,
     "pct_from_target": -20.69,
-    "atr_units_from_stop": 4.45
+    "atr_units_from_stop": 4.42
   },
   "trend": {
     "sma20": 105.86,
@@ -32,8 +32,8 @@
     "price_vs_sma200": "below"
   },
   "volatility": {
-    "atr14": 6.74,
-    "atr14_pct_of_price": 6.06,
+    "atr14": 6.78,
+    "atr14_pct_of_price": 6.1,
     "realized_vol_20d_annualized_pct": 62.82
   },
   "range": {
@@ -46,7 +46,7 @@
     "rsi14": 56.47
   },
   "volume": {
-    "up_down_volume_ratio_20d": 1.56
+    "up_down_volume_ratio_20d": 1.57
   },
   "consolidation": {
     "range_width_pct": 29.31,
@@ -55,18 +55,32 @@
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": "~October 2026",
-    "days_to_next_earnings": 62,
+    "days_to_next_earnings": 60,
     "next_review_date_approx": "2026-10",
-    "days_since_review_due": -62
+    "days_since_review_due": -60
   },
   "fundamentals": {
     "forward_pe": 27.315010363152364,
-    "ev_ebitda_ttm": 43.799,
+    "ev_ebitda_ttm": 43.6299,
     "implied_forward_eps": 4.0721,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
     "estimate_baseline_implied_eps": 4.0042
+  },
+  "turtle": {
+    "gate_open": false,
+    "n": 6.633,
+    "system1": {
+      "state": {},
+      "signal": null
+    },
+    "system2": {
+      "state": {},
+      "signal": null
+    },
+    "position_plan": null,
+    "unit_size": null
   },
   "last_verdict": null
 }

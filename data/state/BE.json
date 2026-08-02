@@ -1,21 +1,21 @@
 {
   "ticker": "BE",
-  "last_updated": "2026-07-31T22:39:55.583718+00:00",
+  "last_updated": "2026-08-02T09:19:36.740568+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "BE",
-    "held": false,
-    "shares": 0,
-    "avg_cost": null,
-    "market_value": 0,
-    "unrealized_pnl": 0
+    "held": true,
+    "shares": 4.0,
+    "avg_cost": 216.025,
+    "market_value": 823.24,
+    "unrealized_pnl": -40.86
   },
   "price_vs_plan": {
     "current_price": 205.81,
-    "entry_price": null,
+    "entry_price": 216.025,
     "stop_price": null,
     "target_price": null,
-    "pct_from_entry": null,
+    "pct_from_entry": -4.73,
     "pct_from_stop": null,
     "pct_from_target": null,
     "atr_units_from_stop": null
@@ -32,7 +32,7 @@
     "price_vs_sma200": "above"
   },
   "volatility": {
-    "atr14": 29.82,
+    "atr14": 29.83,
     "atr14_pct_of_price": 14.49,
     "realized_vol_20d_annualized_pct": 154.41
   },
@@ -61,12 +61,26 @@
   },
   "fundamentals": {
     "forward_pe": 78.62849231270002,
-    "ev_ebitda_ttm": 529.2607,
+    "ev_ebitda_ttm": 519.4214,
     "implied_forward_eps": 2.6175,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
     "estimate_baseline_implied_eps": 2.5533
+  },
+  "turtle": {
+    "gate_open": false,
+    "n": 29.31,
+    "system1": {
+      "state": {},
+      "signal": null
+    },
+    "system2": {
+      "state": {},
+      "signal": null
+    },
+    "position_plan": null,
+    "unit_size": null
   },
   "last_verdict": null
 }

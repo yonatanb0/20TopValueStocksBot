@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-31T22:39:55.873540+00:00",
+  "last_updated": "2026-08-02T09:19:37.061923+00:00",
   "lookback_days": 60,
   "correlation": {
     "GOOG": {
@@ -468,19 +468,27 @@
   "sector_concentration": {
     "by_sector": {
       "enterprise_tech": {
-        "market_value": 667.36,
-        "pct_of_tracked_holdings": 100.0
+        "market_value": 713.3,
+        "pct_of_tracked_holdings": 31.19
+      },
+      "clean_energy": {
+        "market_value": 823.24,
+        "pct_of_tracked_holdings": 36.0
+      },
+      "semiconductors": {
+        "market_value": 750.24,
+        "pct_of_tracked_holdings": 32.81
       }
     },
-    "total_tracked_market_value": 667.36
+    "total_tracked_market_value": 2286.78
   },
   "dry_powder": {
     "available": true,
-    "cash": 2612.88,
-    "as_of": "31/07/2026;09:30:01 EDT",
-    "tracked_holdings_market_value": 667.36,
-    "cash_plus_tracked_holdings": 3280.24,
-    "pct_cash_of_cash_plus_tracked": 79.66,
+    "cash": 308.36,
+    "as_of": "02/08/2026;05:14:44 EDT",
+    "tracked_holdings_market_value": 2286.78,
+    "cash_plus_tracked_holdings": 2595.14,
+    "pct_cash_of_cash_plus_tracked": 11.88,
     "note": "Cash is real (whole account, all currencies converted to base). 'Cash + tracked holdings' excludes any account holdings outside the tracked 20-name basket, so it's a lower bound on true total account value, not full NAV."
   }
 }
