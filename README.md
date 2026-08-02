@@ -196,3 +196,43 @@ LLM, no I/O — same pattern as `state_vector.py`) and written to `data/basket.j
 Explicitly out of scope so far: a macro regime gate (VIX/credit spreads/yields), the actual
 LLM verdict engine, and dashboard display of the correlation matrix / beta — each waits for
 its own pass once checked against reality for a while.
+
+## Turtle Trading signals
+
+A second, independent signal system (`src/turtle.py`) implementing the classic Dennis/Eckhardt
+Turtle Trading rules as **read-only decision support** — it computes what Turtle's rules would
+do; like the IBKR integration, it never places, modifies, or cancels an order. Adapted onto
+this basket with three explicit decisions (2026-07-31 conversation, not defaults):
+
+- **Long-only.** No short entries — doesn't fit a thesis-driven "stocks I believe in" basket.
+- **Gated**, not unconditional. A Turtle breakout only actually fires if the ticker currently
+  has an active `valuation_override_52w` flag or its sector has had a `macro_sector_turning`
+  flag within the last 30 days (`main.py`'s `TURTLE_VALUATION_WINDOW_DAYS`/`TURTLE_MACRO_WINDOW_DAYS`)
+  — a deliberate blur of Turtle's own "ignore fundamentals entirely" philosophy, not an
+  oversight. Otherwise Turtle is fully inert for that ticker: no state tracked, nothing computed.
+- **Unit sizing needs true account equity**, which isn't wired in yet — `compute_unit_size()`
+  returns `None` until a NAV Flex Query section is added (same pattern as the Cash Report fix).
+  Everything else (N, breakout detection, pyramid levels, the ratcheting stop) works today
+  without it.
+
+What it computes, per ticker, in `data/state/<TICKER>.json`'s `turtle` field:
+
+- **N** — Turtle's volatility unit is just a 20-day ATR; reuses `indicators.py`'s existing
+  `atr_series` rather than reimplementing it.
+- **System 1** (20-day breakout, 10-day-low exit) and **System 2** (55-day breakout, 20-day-low
+  exit) — both long-only. System 1 carries Turtle's real skip-after-winner filter: if the last
+  System 1 signal, once resolved, made money, the next breakout is filtered out rather than
+  fired. This needs state carried run-to-run (was the last hypothetical trade open/resolved,
+  win/loss) — the same `data/state/<TICKER>.json`-carries-state-forward mechanism
+  `state_vector.py` already uses for estimate-revision tracking. System 2 has no filter, per
+  the real rules.
+- **Pyramid ladder + ratcheting stop** — once a signal is open, four unit-entry prices at
+  `Pe`, `Pe + 0.5N`, `Pe + 1.0N`, `Pe + 1.5N` (N locked in at the original entry, not
+  recomputed daily — matches real Turtle behavior), and a unified stop sitting exactly `2N`
+  behind whichever unit price has actually been reached, ratcheting forward as price climbs
+  through more units.
+
+Verified against synthetic data before going live: exact N from a constant-range series,
+exact win/loss resolution and skip-filter behavior in both directions, exact pyramid unit
+prices and ratcheting stop at each unit level, exact unit-size formula. No dashboard display
+yet — same "data first, verify, then a UI pass" precedent as the earlier layers.

@@ -14,6 +14,16 @@ import basket_analytics as ba
 
 BENCHMARK_SYMBOL = "SPY"
 
+# Turtle gate windows: valuation_override_52w is recomputed fresh every run
+# (only present today if still currently true), so a short window just
+# guards day-boundary/timezone edge cases. macro_sector_turning is deduped
+# per-article and never re-fires while the same article stays the most
+# recent one for that sector -- without a window, one old article would gate
+# Turtle open forever, the same staleness trap already hit once with a dead
+# legacy signal type (see data_store.has_recent_signal's docstring).
+TURTLE_VALUATION_WINDOW_DAYS = 2
+TURTLE_MACRO_WINDOW_DAYS = 30
+
 
 def main():
     tickers_meta = load_tickers()
@@ -112,7 +122,11 @@ def run_positions_and_state_phase(tickers_meta, ticker_symbols, history, finnhub
         prior_state = data_store.load_prior_state(ticker)
 
         try:
-            state = sv.compute_state_vector(ticker, ohlcv, thesis, position, fundamentals, prior_state)
+            valuation_flag = data_store.has_recent_signal(ticker, "valuation_override_52w", TURTLE_VALUATION_WINDOW_DAYS)
+            macro_flag = data_store.has_recent_signal(ticker, "macro_sector_turning", TURTLE_MACRO_WINDOW_DAYS)
+            gate_open = valuation_flag or macro_flag
+
+            state = sv.compute_state_vector(ticker, ohlcv, thesis, position, fundamentals, prior_state, gate_open=gate_open)
             data_store.write_state(ticker, state)
         except Exception as e:
             print(f"[main] WARNING: state vector computation failed for {ticker}: {e}")

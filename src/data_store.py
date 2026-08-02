@@ -1,5 +1,5 @@
 import json
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from config import DATA_DIR, ROOT
 
 THESIS_DIR = ROOT / "data" / "thesis"
@@ -68,6 +68,30 @@ def append_signals(ticker, signals, last_price=None, last_price_date=None):
     with open(_path(ticker), "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
     return added
+
+
+def has_recent_signal(ticker, signal_type, within_days, today=None):
+    """
+    True if `ticker`'s signal_log has an entry of `signal_type` timestamped
+    within the last `within_days` days. Guards against the staleness trap
+    already hit once with a dead legacy signal type (rsi_divergence_watch)
+    being treated as permanently "current" -- applied here deliberately to a
+    live type (macro_sector_turning) whose dedupe key is per-article, so a
+    single old article would otherwise gate something open forever without
+    this window.
+    """
+    today = today or datetime.now(timezone.utc).date()
+    cutoff = today - timedelta(days=within_days)
+    data = load_stock(ticker)
+    for sig in data["signal_log"]:
+        if sig.get("type") != signal_type:
+            continue
+        ts = sig.get("timestamp")
+        if not ts:
+            continue
+        if datetime.fromisoformat(ts).date() >= cutoff:
+            return True
+    return False
 
 
 def load_thesis(ticker):

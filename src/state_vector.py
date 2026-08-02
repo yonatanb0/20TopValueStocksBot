@@ -15,6 +15,7 @@ import re
 from datetime import date, datetime, timezone
 
 import indicators as ind
+import turtle
 
 MONTH_NAMES = {
     "jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
@@ -223,7 +224,7 @@ def _fundamentals_block(fundamentals, price, prior_state, today):
     return result
 
 
-def compute_state_vector(ticker, ohlcv, thesis, position, fundamentals, prior_state, today=None):
+def compute_state_vector(ticker, ohlcv, thesis, position, fundamentals, prior_state, gate_open=False, account_equity=None, today=None):
     today = today or datetime.now(timezone.utc).date()
     has_technicals = bool(ohlcv) and len(ohlcv) >= 20
     price = ohlcv[-1]["close"] if ohlcv else None
@@ -245,5 +246,6 @@ def compute_state_vector(ticker, ohlcv, thesis, position, fundamentals, prior_st
         "consolidation": _consolidation_block(ohlcv) if has_technicals else None,
         "catalysts_and_review": _catalyst_review_block(thesis, today),
         "fundamentals": _fundamentals_block(fundamentals, price, prior_state, today),
+        "turtle": turtle.compute_turtle_state(ohlcv, (prior_state or {}).get("turtle"), gate_open, account_equity),
         "last_verdict": (prior_state or {}).get("last_verdict"),
     }
