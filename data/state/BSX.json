@@ -1,6 +1,6 @@
 {
   "ticker": "BSX",
-  "last_updated": "2026-08-03T18:33:36.974308+00:00",
+  "last_updated": "2026-08-03T20:18:34.387412+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "BSX",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 48.18,
+    "current_price": 48.435,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -21,11 +21,11 @@
     "atr_units_from_stop": null
   },
   "trend": {
-    "sma20": 44.76,
-    "sma20_slope_5d_pct": 1.59,
+    "sma20": 44.77,
+    "sma20_slope_5d_pct": 1.62,
     "price_vs_sma20": "above",
-    "sma50": 46.44,
-    "sma50_slope_5d_pct": -1.8,
+    "sma50": 46.45,
+    "sma50_slope_5d_pct": -1.79,
     "price_vs_sma50": "above",
     "sma200": 72.93,
     "sma200_slope_5d_pct": -1.67,
@@ -33,8 +33,8 @@
   },
   "volatility": {
     "atr14": 1.77,
-    "atr14_pct_of_price": 3.68,
-    "realized_vol_20d_annualized_pct": 29.57
+    "atr14_pct_of_price": 3.66,
+    "realized_vol_20d_annualized_pct": 30.29
   },
   "range": {
     "high_20d": 48.92,
@@ -43,15 +43,15 @@
     "low_60d": 42.2
   },
   "momentum": {
-    "rsi14": 64.44
+    "rsi14": 65.35
   },
   "volume": {
-    "up_down_volume_ratio_20d": 1.94
+    "up_down_volume_ratio_20d": 1.96
   },
   "consolidation": {
     "range_width_pct": 15.92,
-    "distance_from_high_pct": -1.51,
-    "distance_from_low_pct": 14.17
+    "distance_from_high_pct": -0.99,
+    "distance_from_low_pct": 14.77
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -60,9 +60,9 @@
     "days_since_review_due": null
   },
   "fundamentals": {
-    "forward_pe": 14.589624247928256,
+    "forward_pe": 14.606273886555417,
     "ev_ebitda_ttm": 16.8049,
-    "implied_forward_eps": 3.3023,
+    "implied_forward_eps": 3.316,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
@@ -75,7 +75,7 @@
       "state": {
         "status": "open",
         "entry_date": "2026-08-03",
-        "entry_price": 48.18,
+        "entry_price": 48.435,
         "n_at_entry": 1.7390207750021347,
         "exit_date": null,
         "exit_price": null,
@@ -85,7 +85,7 @@
         "resolution": null,
         "entry_fired": true,
         "filtered": false,
-        "entry_price": 48.18,
+        "entry_price": 48.435,
         "system": "system1"
       }
     },
@@ -93,7 +93,10 @@
       "state": {
         "state": {
           "state": {
-            "state": {},
+            "state": {
+              "state": {},
+              "signal": null
+            },
             "signal": null
           },
           "signal": null
@@ -104,13 +107,13 @@
     },
     "position_plan": {
       "unit_prices": [
-        48.18,
-        49.05,
-        49.92,
-        50.79
+        48.44,
+        49.3,
+        50.17,
+        51.04
       ],
       "units_reached": 1,
-      "stop_price": 44.7,
+      "stop_price": 44.96,
       "n_at_entry": 1.739
     },
     "unit_size": null
