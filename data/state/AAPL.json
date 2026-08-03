@@ -1,6 +1,6 @@
 {
   "ticker": "AAPL",
-  "last_updated": "2026-08-03T20:18:34.374575+00:00",
+  "last_updated": "2026-08-03T21:34:01.792609+00:00",
   "has_thesis": true,
   "position": {
     "ticker": "AAPL",
@@ -11,14 +11,14 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 303.41,
+    "current_price": 303.26999,
     "entry_price": null,
     "stop_price": 276.79,
     "target_price": 395.6,
     "pct_from_entry": null,
-    "pct_from_stop": 9.62,
-    "pct_from_target": -23.3,
-    "atr_units_from_stop": 2.71
+    "pct_from_stop": 9.57,
+    "pct_from_target": -23.34,
+    "atr_units_from_stop": 2.69
   },
   "trend": {
     "sma20": 323.9,
@@ -32,9 +32,9 @@
     "price_vs_sma200": "above"
   },
   "volatility": {
-    "atr14": 9.82,
+    "atr14": 9.83,
     "atr14_pct_of_price": 3.24,
-    "realized_vol_20d_annualized_pct": 36.96
+    "realized_vol_20d_annualized_pct": 36.98
   },
   "range": {
     "high_20d": 344.57,
@@ -43,15 +43,15 @@
     "low_60d": 273.75
   },
   "momentum": {
-    "rsi14": 40.33
+    "rsi14": 40.27
   },
   "volume": {
-    "up_down_volume_ratio_20d": 3.21
+    "up_down_volume_ratio_20d": 2.7
   },
   "consolidation": {
     "range_width_pct": 14.86,
-    "distance_from_high_pct": -11.95,
-    "distance_from_low_pct": 1.14
+    "distance_from_high_pct": -11.99,
+    "distance_from_low_pct": 1.09
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": "2026-07-30, after market close (Q3 FY26 -- Tim Cook's last as CEO)",
@@ -62,7 +62,7 @@
   "fundamentals": {
     "forward_pe": 34.85022,
     "ev_ebitda_ttm": 27.2797,
-    "implied_forward_eps": 8.7061,
+    "implied_forward_eps": 8.7021,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
@@ -70,13 +70,16 @@
   },
   "turtle": {
     "gate_open": false,
-    "n": 9.224,
+    "n": 9.226,
     "system1": {
       "state": {
         "state": {
           "state": {
             "state": {
-              "state": {},
+              "state": {
+                "state": {},
+                "signal": null
+              },
               "signal": null
             },
             "signal": null
@@ -92,7 +95,10 @@
         "state": {
           "state": {
             "state": {
-              "state": {},
+              "state": {
+                "state": {},
+                "signal": null
+              },
               "signal": null
             },
             "signal": null
