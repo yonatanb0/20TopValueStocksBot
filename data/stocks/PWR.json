@@ -2,7 +2,7 @@
   "ticker": "PWR",
   "name": "Quanta Services",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-08-02T09:19:26.550919+00:00",
+  "last_updated": "2026-08-03T14:14:38.486968+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -81,8 +81,42 @@
       },
       "dedupe_key": "e7868f6f227ed3b5",
       "timestamp": "2026-07-31T15:41:33.823848+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~642.01 (2 prior touches) and closed back above it (reaction confirmed). Stop ~609.0, target ~853.48 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 642.00998,
+        "zone_touches": 2,
+        "date": "2026-08-03",
+        "fires": true,
+        "stop_loss": 609.0,
+        "take_profit": 853.48,
+        "entry_reference_price": 670.12
+      },
+      "dedupe_key": "fa1c2af5a108411a",
+      "timestamp": "2026-08-03T14:14:38.486968+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator buy turn (value -0.611) -- watch closer, not a standalone trigger, invalidation level ~630.98.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "buy",
+        "value": -0.611,
+        "invalidation_level": 630.98,
+        "date": "2026-08-03",
+        "fires": false
+      },
+      "dedupe_key": "781b6dc12d5fdbaa",
+      "timestamp": "2026-08-03T14:14:38.486968+00:00"
     }
   ],
-  "last_price": 667.35999,
-  "last_price_date": "2026-07-31"
+  "last_price": 670.12,
+  "last_price_date": "2026-08-03"
 }

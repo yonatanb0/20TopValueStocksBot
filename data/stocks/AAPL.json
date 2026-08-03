@@ -2,7 +2,7 @@
   "ticker": "AAPL",
   "name": "Apple",
   "sector": "enterprise_tech",
-  "last_updated": "2026-08-02T09:19:26.533749+00:00",
+  "last_updated": "2026-08-03T14:14:38.468273+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -65,8 +65,39 @@
       },
       "dedupe_key": "9e156aed63f0ece5",
       "timestamp": "2026-07-31T15:41:33.806458+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 0.587) -- watch closer, not a standalone trigger, invalidation level ~318.24.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 0.587,
+        "invalidation_level": 318.24,
+        "date": "2026-08-03",
+        "fires": false
+      },
+      "dedupe_key": "48868c4d207ca7a0",
+      "timestamp": "2026-08-03T14:14:38.468273+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-08-03",
+        "fires": false
+      },
+      "dedupe_key": "1eb1a4129a496ef7",
+      "timestamp": "2026-08-03T14:14:38.468273+00:00"
     }
   ],
-  "last_price": 308.91,
-  "last_price_date": "2026-07-31"
+  "last_price": 305.57,
+  "last_price_date": "2026-08-03"
 }

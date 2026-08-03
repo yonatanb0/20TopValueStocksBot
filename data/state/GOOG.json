@@ -1,6 +1,6 @@
 {
   "ticker": "GOOG",
-  "last_updated": "2026-08-02T09:19:36.730863+00:00",
+  "last_updated": "2026-08-03T14:14:46.224696+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "GOOG",
@@ -11,30 +11,30 @@
     "unrealized_pnl": 5.49
   },
   "price_vs_plan": {
-    "current_price": 356.64999,
+    "current_price": 370.11,
     "entry_price": 353.905,
     "stop_price": null,
     "target_price": null,
-    "pct_from_entry": 0.78,
+    "pct_from_entry": 4.58,
     "pct_from_stop": null,
     "pct_from_target": null,
     "atr_units_from_stop": null
   },
   "trend": {
-    "sma20": 346.94,
-    "sma20_slope_5d_pct": -0.97,
+    "sma20": 347.2,
+    "sma20_slope_5d_pct": -0.78,
     "price_vs_sma20": "above",
-    "sma50": 356.7,
-    "sma50_slope_5d_pct": -1.56,
-    "price_vs_sma50": "below",
-    "sma200": 325.51,
-    "sma200_slope_5d_pct": 0.72,
+    "sma50": 356.41,
+    "sma50_slope_5d_pct": -1.24,
+    "price_vs_sma50": "above",
+    "sma200": 326.13,
+    "sma200_slope_5d_pct": 0.79,
     "price_vs_sma200": "above"
   },
   "volatility": {
-    "atr14": 12.16,
-    "atr14_pct_of_price": 3.41,
-    "realized_vol_20d_annualized_pct": 46.37
+    "atr14": 12.55,
+    "atr14_pct_of_price": 3.39,
+    "realized_vol_20d_annualized_pct": 47.5
   },
   "range": {
     "high_20d": 374.35,
@@ -43,15 +43,15 @@
     "low_60d": 314.89
   },
   "momentum": {
-    "rsi14": 55.2
+    "rsi14": 60.62
   },
   "volume": {
-    "up_down_volume_ratio_20d": 1.64
+    "up_down_volume_ratio_20d": 1.49
   },
   "consolidation": {
     "range_width_pct": 18.88,
-    "distance_from_high_pct": -4.73,
-    "distance_from_low_pct": 13.26
+    "distance_from_high_pct": -1.13,
+    "distance_from_low_pct": 17.54
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -62,7 +62,7 @@
   "fundamentals": {
     "forward_pe": 19.28932,
     "ev_ebitda_ttm": 28.0831,
-    "implied_forward_eps": 18.4895,
+    "implied_forward_eps": 19.1873,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
@@ -70,13 +70,19 @@
   },
   "turtle": {
     "gate_open": false,
-    "n": 11.775,
+    "n": 12.065,
     "system1": {
-      "state": {},
+      "state": {
+        "state": {},
+        "signal": null
+      },
       "signal": null
     },
     "system2": {
-      "state": {},
+      "state": {
+        "state": {},
+        "signal": null
+      },
       "signal": null
     },
     "position_plan": null,

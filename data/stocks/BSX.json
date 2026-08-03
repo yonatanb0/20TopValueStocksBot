@@ -2,7 +2,7 @@
   "ticker": "BSX",
   "name": "Boston Scientific",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-08-02T09:19:26.556510+00:00",
+  "last_updated": "2026-08-03T14:14:38.492381+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -159,8 +159,38 @@
       },
       "dedupe_key": "efab067c0ec4eb68",
       "timestamp": "2026-07-31T15:41:33.829569+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (47.16) on 2026-08-03 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-08-03",
+        "range_high": 47.16,
+        "close": 48.11,
+        "volume_multiple": 0.062339630356170905,
+        "fires": false
+      },
+      "dedupe_key": "63aeaa0655525168",
+      "timestamp": "2026-08-03T14:14:38.492381+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (8.8%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 8.8,
+        "close": 48.11,
+        "low_52w": 42.2,
+        "high_52w": 109.5
+      },
+      "dedupe_key": "d8514ea30499230e",
+      "timestamp": "2026-08-03T14:14:38.492381+00:00"
     }
   ],
-  "last_price": 46.73,
-  "last_price_date": "2026-07-31"
+  "last_price": 48.11,
+  "last_price_date": "2026-08-03"
 }

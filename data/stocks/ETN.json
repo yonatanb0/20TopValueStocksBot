@@ -2,7 +2,7 @@
   "ticker": "ETN",
   "name": "Eaton",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-08-02T09:19:26.548011+00:00",
+  "last_updated": "2026-08-03T14:14:38.483340+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -83,8 +83,42 @@
       },
       "dedupe_key": "cc95533f113a4ba1",
       "timestamp": "2026-07-31T15:41:33.820877+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (420.25) on 2026-08-03 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-08-03",
+        "range_high": 420.25,
+        "close": 423.28,
+        "volume_multiple": 0.04552296570254331,
+        "fires": false
+      },
+      "dedupe_key": "e772052fcd2423ec",
+      "timestamp": "2026-08-03T14:14:38.483340+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~399.88 (2 prior touches) and closed back above it (reaction confirmed). Stop ~380.76, target ~550.84 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 399.884995,
+        "zone_touches": 2,
+        "date": "2026-08-03",
+        "fires": true,
+        "stop_loss": 380.76,
+        "take_profit": 550.84,
+        "entry_reference_price": 423.28
+      },
+      "dedupe_key": "e5d71aedeebe80a4",
+      "timestamp": "2026-08-03T14:14:38.483340+00:00"
     }
   ],
-  "last_price": 415.20001,
-  "last_price_date": "2026-07-31"
+  "last_price": 423.28,
+  "last_price_date": "2026-08-03"
 }
