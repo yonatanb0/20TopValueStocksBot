@@ -1,6 +1,6 @@
 {
   "ticker": "IREN",
-  "last_updated": "2026-08-03T16:47:11.514886+00:00",
+  "last_updated": "2026-08-03T18:33:36.977944+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "IREN",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 39.12,
+    "current_price": 39.73,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -21,20 +21,20 @@
     "atr_units_from_stop": null
   },
   "trend": {
-    "sma20": 38.21,
-    "sma20_slope_5d_pct": -5.01,
+    "sma20": 38.24,
+    "sma20_slope_5d_pct": -4.93,
     "price_vs_sma20": "above",
-    "sma50": 48.83,
-    "sma50_slope_5d_pct": -3.36,
+    "sma50": 48.85,
+    "sma50_slope_5d_pct": -3.33,
     "price_vs_sma50": "below",
     "sma200": 47.94,
-    "sma200_slope_5d_pct": -1.44,
+    "sma200_slope_5d_pct": -1.43,
     "price_vs_sma200": "below"
   },
   "volatility": {
-    "atr14": 4.56,
-    "atr14_pct_of_price": 11.65,
-    "realized_vol_20d_annualized_pct": 161.69
+    "atr14": 4.59,
+    "atr14_pct_of_price": 11.56,
+    "realized_vol_20d_annualized_pct": 162.67
   },
   "range": {
     "high_20d": 45.54,
@@ -43,15 +43,15 @@
     "low_60d": 28.93
   },
   "momentum": {
-    "rsi14": 47.61
+    "rsi14": 48.43
   },
   "volume": {
-    "up_down_volume_ratio_20d": 0.49
+    "up_down_volume_ratio_20d": 0.5
   },
   "consolidation": {
     "range_width_pct": 57.41,
-    "distance_from_high_pct": -14.1,
-    "distance_from_low_pct": 35.22
+    "distance_from_high_pct": -12.76,
+    "distance_from_low_pct": 37.33
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -70,11 +70,14 @@
   },
   "turtle": {
     "gate_open": false,
-    "n": 4.571,
+    "n": 4.596,
     "system1": {
       "state": {
         "state": {
-          "state": {},
+          "state": {
+            "state": {},
+            "signal": null
+          },
           "signal": null
         },
         "signal": null
@@ -84,7 +87,10 @@
     "system2": {
       "state": {
         "state": {
-          "state": {},
+          "state": {
+            "state": {},
+            "signal": null
+          },
           "signal": null
         },
         "signal": null

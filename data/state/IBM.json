@@ -1,6 +1,6 @@
 {
   "ticker": "IBM",
-  "last_updated": "2026-08-03T16:47:11.500722+00:00",
+  "last_updated": "2026-08-03T18:33:36.967025+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "IBM",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 226.82,
+    "current_price": 227.735,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -21,20 +21,20 @@
     "atr_units_from_stop": null
   },
   "trend": {
-    "sma20": 236.69,
-    "sma20_slope_5d_pct": -6.11,
+    "sma20": 236.74,
+    "sma20_slope_5d_pct": -6.1,
     "price_vs_sma20": "below",
-    "sma50": 260.47,
-    "sma50_slope_5d_pct": 0.14,
+    "sma50": 260.49,
+    "sma50_slope_5d_pct": 0.15,
     "price_vs_sma50": "below",
-    "sma200": 270.24,
+    "sma200": 270.25,
     "sma200_slope_5d_pct": -0.52,
     "price_vs_sma200": "below"
   },
   "volatility": {
-    "atr14": 11.25,
-    "atr14_pct_of_price": 4.96,
-    "realized_vol_20d_annualized_pct": 97.2
+    "atr14": 11.27,
+    "atr14_pct_of_price": 4.95,
+    "realized_vol_20d_annualized_pct": 97.35
   },
   "range": {
     "high_20d": 311.8,
@@ -43,15 +43,15 @@
     "low_60d": 199.19
   },
   "momentum": {
-    "rsi14": 43.38
+    "rsi14": 43.93
   },
   "volume": {
     "up_down_volume_ratio_20d": 0.62
   },
   "consolidation": {
     "range_width_pct": 56.53,
-    "distance_from_high_pct": -27.25,
-    "distance_from_low_pct": 13.87
+    "distance_from_high_pct": -26.96,
+    "distance_from_low_pct": 14.33
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -62,7 +62,7 @@
   "fundamentals": {
     "forward_pe": 17.35182,
     "ev_ebitda_ttm": 22.188,
-    "implied_forward_eps": 13.0718,
+    "implied_forward_eps": 13.1246,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
@@ -70,11 +70,14 @@
   },
   "turtle": {
     "gate_open": true,
-    "n": 11.698,
+    "n": 11.712,
     "system1": {
       "state": {
         "state": {
-          "state": {},
+          "state": {
+            "state": {},
+            "signal": null
+          },
           "signal": null
         },
         "signal": null
@@ -84,7 +87,10 @@
     "system2": {
       "state": {
         "state": {
-          "state": {},
+          "state": {
+            "state": {},
+            "signal": null
+          },
           "signal": null
         },
         "signal": null

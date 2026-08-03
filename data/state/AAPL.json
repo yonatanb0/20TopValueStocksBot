@@ -1,6 +1,6 @@
 {
   "ticker": "AAPL",
-  "last_updated": "2026-08-03T16:47:11.497364+00:00",
+  "last_updated": "2026-08-03T18:33:36.964392+00:00",
   "has_thesis": true,
   "position": {
     "ticker": "AAPL",
@@ -11,30 +11,30 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 306.97,
+    "current_price": 305.525,
     "entry_price": null,
     "stop_price": 276.79,
     "target_price": 395.6,
     "pct_from_entry": null,
-    "pct_from_stop": 10.9,
-    "pct_from_target": -22.4,
-    "atr_units_from_stop": 3.07
+    "pct_from_stop": 10.38,
+    "pct_from_target": -22.77,
+    "atr_units_from_stop": 2.93
   },
   "trend": {
-    "sma20": 324.08,
-    "sma20_slope_5d_pct": 2.22,
+    "sma20": 324.01,
+    "sma20_slope_5d_pct": 2.2,
     "price_vs_sma20": "below",
-    "sma50": 309.59,
-    "sma50_slope_5d_pct": 0.85,
+    "sma50": 309.56,
+    "sma50_slope_5d_pct": 0.84,
     "price_vs_sma50": "below",
-    "sma200": 278.26,
+    "sma200": 278.25,
     "sma200_slope_5d_pct": 0.68,
     "price_vs_sma200": "above"
   },
   "volatility": {
     "atr14": 9.82,
-    "atr14_pct_of_price": 3.2,
-    "realized_vol_20d_annualized_pct": 36.49
+    "atr14_pct_of_price": 3.22,
+    "realized_vol_20d_annualized_pct": 36.63
   },
   "range": {
     "high_20d": 344.57,
@@ -43,15 +43,15 @@
     "low_60d": 273.75
   },
   "momentum": {
-    "rsi14": 42.17
+    "rsi14": 41.41
   },
   "volume": {
-    "up_down_volume_ratio_20d": 3.29
+    "up_down_volume_ratio_20d": 3.26
   },
   "consolidation": {
     "range_width_pct": 14.86,
-    "distance_from_high_pct": -10.91,
-    "distance_from_low_pct": 2.32
+    "distance_from_high_pct": -11.33,
+    "distance_from_low_pct": 1.84
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": "2026-07-30, after market close (Q3 FY26 -- Tim Cook's last as CEO)",
@@ -62,7 +62,7 @@
   "fundamentals": {
     "forward_pe": 34.85022,
     "ev_ebitda_ttm": 27.2797,
-    "implied_forward_eps": 8.8083,
+    "implied_forward_eps": 8.7668,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
@@ -74,7 +74,10 @@
     "system1": {
       "state": {
         "state": {
-          "state": {},
+          "state": {
+            "state": {},
+            "signal": null
+          },
           "signal": null
         },
         "signal": null
@@ -84,7 +87,10 @@
     "system2": {
       "state": {
         "state": {
-          "state": {},
+          "state": {
+            "state": {},
+            "signal": null
+          },
           "signal": null
         },
         "signal": null
