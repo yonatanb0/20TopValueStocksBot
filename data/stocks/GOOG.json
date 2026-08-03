@@ -2,7 +2,7 @@
   "ticker": "GOOG",
   "name": "Alphabet",
   "sector": "enterprise_tech",
-  "last_updated": "2026-08-03T14:14:38.459030+00:00",
+  "last_updated": "2026-08-03T16:47:02.468729+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -72,8 +72,24 @@
       },
       "dedupe_key": "ef0c90025dded032",
       "timestamp": "2026-08-03T14:14:38.459030+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (374.35) on 2026-08-03 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-08-03",
+        "range_high": 374.35001,
+        "close": 375.325,
+        "volume_multiple": 0.07926592539369376,
+        "fires": false
+      },
+      "dedupe_key": "d1bfd0428432e9cf",
+      "timestamp": "2026-08-03T16:47:02.468729+00:00"
     }
   ],
-  "last_price": 370.11,
+  "last_price": 375.325,
   "last_price_date": "2026-08-03"
 }
