@@ -2,7 +2,7 @@
   "ticker": "CSCO",
   "name": "Cisco",
   "sector": "enterprise_tech",
-  "last_updated": "2026-08-04T18:05:56.042360+00:00",
+  "last_updated": "2026-08-04T19:59:20.980194+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -111,8 +111,24 @@
       },
       "dedupe_key": "6ec155bc7d3007fc",
       "timestamp": "2026-08-04T13:45:01.266024+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (121.61) on 2026-08-04 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-08-04",
+        "range_high": 121.61,
+        "close": 121.81,
+        "volume_multiple": 0.17368662153936398,
+        "fires": false
+      },
+      "dedupe_key": "ca591b150ed901db",
+      "timestamp": "2026-08-04T19:59:20.980194+00:00"
     }
   ],
-  "last_price": 120.83,
+  "last_price": 121.81,
   "last_price_date": "2026-08-04"
 }
