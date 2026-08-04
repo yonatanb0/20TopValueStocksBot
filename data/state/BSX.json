@@ -1,6 +1,6 @@
 {
   "ticker": "BSX",
-  "last_updated": "2026-08-04T21:07:09.140781+00:00",
+  "last_updated": "2026-08-04T22:32:17.551175+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "BSX",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 49.099998,
+    "current_price": 49.09,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -34,7 +34,7 @@
   "volatility": {
     "atr14": 1.73,
     "atr14_pct_of_price": 3.53,
-    "realized_vol_20d_annualized_pct": 30.19
+    "realized_vol_20d_annualized_pct": 30.18
   },
   "range": {
     "high_20d": 49.21,
@@ -43,15 +43,15 @@
     "low_60d": 42.2
   },
   "momentum": {
-    "rsi14": 67.67
+    "rsi14": 67.64
   },
   "volume": {
-    "up_down_volume_ratio_20d": 2.42
+    "up_down_volume_ratio_20d": 2.45
   },
   "consolidation": {
     "range_width_pct": 16.61,
-    "distance_from_high_pct": -0.22,
-    "distance_from_low_pct": 16.35
+    "distance_from_high_pct": -0.24,
+    "distance_from_low_pct": 16.33
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -62,7 +62,7 @@
   "fundamentals": {
     "forward_pe": 14.815151171150717,
     "ev_ebitda_ttm": 17.4022,
-    "implied_forward_eps": 3.3142,
+    "implied_forward_eps": 3.3135,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
@@ -75,7 +75,7 @@
       "state": {
         "status": "open",
         "entry_date": "2026-08-04",
-        "entry_price": 49.099998,
+        "entry_price": 49.09,
         "n_at_entry": 1.7135693155136562,
         "exit_date": null,
         "exit_price": null,
@@ -85,7 +85,7 @@
         "resolution": null,
         "entry_fired": true,
         "filtered": false,
-        "entry_price": 49.099998,
+        "entry_price": 49.09,
         "system": "system1"
       }
     },
@@ -101,7 +101,10 @@
                       "state": {
                         "state": {
                           "state": {
-                            "state": {},
+                            "state": {
+                              "state": {},
+                              "signal": null
+                            },
                             "signal": null
                           },
                           "signal": null
@@ -128,13 +131,13 @@
     },
     "position_plan": {
       "unit_prices": [
-        49.1,
-        49.96,
-        50.81,
-        51.67
+        49.09,
+        49.95,
+        50.8,
+        51.66
       ],
       "units_reached": 1,
-      "stop_price": 45.67,
+      "stop_price": 45.66,
       "n_at_entry": 1.714
     },
     "unit_size": null
