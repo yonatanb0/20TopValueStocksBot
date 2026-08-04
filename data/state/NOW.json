@@ -1,6 +1,6 @@
 {
   "ticker": "NOW",
-  "last_updated": "2026-08-03T22:37:47.895550+00:00",
+  "last_updated": "2026-08-04T13:45:10.402410+00:00",
   "has_thesis": true,
   "position": {
     "ticker": "NOW",
@@ -11,30 +11,30 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 114.19,
+    "current_price": 114.54,
     "entry_price": null,
     "stop_price": 81.24,
     "target_price": 140.25,
     "pct_from_entry": null,
-    "pct_from_stop": 40.56,
-    "pct_from_target": -18.58,
-    "atr_units_from_stop": 4.78
+    "pct_from_stop": 40.99,
+    "pct_from_target": -18.33,
+    "atr_units_from_stop": 5.02
   },
   "trend": {
-    "sma20": 106.18,
-    "sma20_slope_5d_pct": 2.05,
+    "sma20": 106.37,
+    "sma20_slope_5d_pct": 1.71,
     "price_vs_sma20": "above",
-    "sma50": 105.84,
-    "sma50_slope_5d_pct": 1.3,
+    "sma50": 106.14,
+    "sma50_slope_5d_pct": 1.19,
     "price_vs_sma50": "above",
-    "sma200": 124.58,
-    "sma200_slope_5d_pct": -1.38,
+    "sma200": 124.25,
+    "sma200_slope_5d_pct": -1.36,
     "price_vs_sma200": "below"
   },
   "volatility": {
-    "atr14": 6.9,
-    "atr14_pct_of_price": 6.04,
-    "realized_vol_20d_annualized_pct": 63.24
+    "atr14": 6.64,
+    "atr14_pct_of_price": 5.8,
+    "realized_vol_20d_annualized_pct": 62.69
   },
   "range": {
     "high_20d": 119.63,
@@ -43,26 +43,26 @@
     "low_60d": 85.44
   },
   "momentum": {
-    "rsi14": 59.0
+    "rsi14": 59.3
   },
   "volume": {
-    "up_down_volume_ratio_20d": 1.33
+    "up_down_volume_ratio_20d": 1.48
   },
   "consolidation": {
     "range_width_pct": 30.7,
-    "distance_from_high_pct": -4.55,
-    "distance_from_low_pct": 24.76
+    "distance_from_high_pct": -4.25,
+    "distance_from_low_pct": 25.14
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": "~October 2026",
-    "days_to_next_earnings": 59,
+    "days_to_next_earnings": 58,
     "next_review_date_approx": "2026-10",
-    "days_since_review_due": -59
+    "days_since_review_due": -58
   },
   "fundamentals": {
     "forward_pe": 28.042000871293627,
-    "ev_ebitda_ttm": 45.0036,
-    "implied_forward_eps": 4.0721,
+    "ev_ebitda_ttm": 44.7424,
+    "implied_forward_eps": 4.0846,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
@@ -70,7 +70,7 @@
   },
   "turtle": {
     "gate_open": false,
-    "n": 6.721,
+    "n": 6.55,
     "system1": {
       "state": {
         "state": {
@@ -78,7 +78,10 @@
             "state": {
               "state": {
                 "state": {
-                  "state": {},
+                  "state": {
+                    "state": {},
+                    "signal": null
+                  },
                   "signal": null
                 },
                 "signal": null
@@ -100,7 +103,10 @@
             "state": {
               "state": {
                 "state": {
-                  "state": {},
+                  "state": {
+                    "state": {},
+                    "signal": null
+                  },
                   "signal": null
                 },
                 "signal": null

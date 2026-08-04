@@ -2,7 +2,7 @@
   "ticker": "AVGO",
   "name": "Broadcom",
   "sector": "semiconductors",
-  "last_updated": "2026-08-03T22:37:40.128855+00:00",
+  "last_updated": "2026-08-04T13:45:01.312726+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -21,8 +21,42 @@
       },
       "dedupe_key": "7931dc5373dfa303",
       "timestamp": "2026-08-03T14:14:38.514414+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (407.52) on 2026-08-04 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-08-04",
+        "range_high": 407.51999,
+        "close": 410.72,
+        "volume_multiple": 0.024551496639587705,
+        "fires": false
+      },
+      "dedupe_key": "697278d1c448ceeb",
+      "timestamp": "2026-08-04T13:45:01.312726+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~369.92 (2 prior touches) and closed back above it (reaction confirmed). Stop ~353.09, target ~583.61 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 369.92,
+        "zone_touches": 2,
+        "date": "2026-08-04",
+        "fires": true,
+        "stop_loss": 353.09,
+        "take_profit": 583.61,
+        "entry_reference_price": 410.72
+      },
+      "dedupe_key": "072726d434aa8bf2",
+      "timestamp": "2026-08-04T13:45:01.312726+00:00"
     }
   ],
-  "last_price": 392.23001,
-  "last_price_date": "2026-08-03"
+  "last_price": 410.72,
+  "last_price_date": "2026-08-04"
 }

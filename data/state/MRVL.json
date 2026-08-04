@@ -1,40 +1,40 @@
 {
   "ticker": "MRVL",
-  "last_updated": "2026-08-03T22:37:47.892293+00:00",
+  "last_updated": "2026-08-04T13:45:10.399073+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "MRVL",
     "held": true,
     "shares": 4.0,
     "avg_cost": 196.705,
-    "market_value": 750.24,
-    "unrealized_pnl": -36.58
+    "market_value": 775.1,
+    "unrealized_pnl": -11.72
   },
   "price_vs_plan": {
-    "current_price": 193.77499,
+    "current_price": 215.245,
     "entry_price": 196.705,
     "stop_price": null,
     "target_price": null,
-    "pct_from_entry": -1.49,
+    "pct_from_entry": 9.43,
     "pct_from_stop": null,
     "pct_from_target": null,
     "atr_units_from_stop": null
   },
   "trend": {
-    "sma20": 203.69,
-    "sma20_slope_5d_pct": -9.74,
-    "price_vs_sma20": "below",
-    "sma50": 239.59,
-    "sma50_slope_5d_pct": 0.09,
+    "sma20": 202.92,
+    "sma20_slope_5d_pct": -7.98,
+    "price_vs_sma20": "above",
+    "sma50": 240.08,
+    "sma50_slope_5d_pct": 0.37,
     "price_vs_sma50": "below",
-    "sma200": 135.6,
-    "sma200_slope_5d_pct": 1.72,
+    "sma200": 136.23,
+    "sma200_slope_5d_pct": 1.88,
     "price_vs_sma200": "above"
   },
   "volatility": {
-    "atr14": 19.34,
-    "atr14_pct_of_price": 9.98,
-    "realized_vol_20d_annualized_pct": 92.32
+    "atr14": 19.78,
+    "atr14_pct_of_price": 9.19,
+    "realized_vol_20d_annualized_pct": 98.61
   },
   "range": {
     "high_20d": 251.7,
@@ -43,15 +43,15 @@
     "low_60d": 157.96
   },
   "momentum": {
-    "rsi14": 43.94
+    "rsi14": 51.22
   },
   "volume": {
-    "up_down_volume_ratio_20d": 0.61
+    "up_down_volume_ratio_20d": 0.7
   },
   "consolidation": {
     "range_width_pct": 54.51,
-    "distance_from_high_pct": -23.01,
-    "distance_from_low_pct": 18.95
+    "distance_from_high_pct": -14.48,
+    "distance_from_low_pct": 32.13
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -61,8 +61,8 @@
   },
   "fundamentals": {
     "forward_pe": 35.87093,
-    "ev_ebitda_ttm": 46.5652,
-    "implied_forward_eps": 5.402,
+    "ev_ebitda_ttm": 48.0978,
+    "implied_forward_eps": 6.0005,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
@@ -70,7 +70,7 @@
   },
   "turtle": {
     "gate_open": false,
-    "n": 19.927,
+    "n": 20.207,
     "system1": {
       "state": {
         "state": {
@@ -78,7 +78,10 @@
             "state": {
               "state": {
                 "state": {
-                  "state": {},
+                  "state": {
+                    "state": {},
+                    "signal": null
+                  },
                   "signal": null
                 },
                 "signal": null
@@ -100,7 +103,10 @@
             "state": {
               "state": {
                 "state": {
-                  "state": {},
+                  "state": {
+                    "state": {},
+                    "signal": null
+                  },
                   "signal": null
                 },
                 "signal": null
