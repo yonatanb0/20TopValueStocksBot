@@ -1,6 +1,6 @@
 {
   "ticker": "BSX",
-  "last_updated": "2026-08-05T20:23:16.595796+00:00",
+  "last_updated": "2026-08-05T21:53:34.316070+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "BSX",
@@ -46,7 +46,7 @@
     "rsi14": 58.99
   },
   "volume": {
-    "up_down_volume_ratio_20d": 2.21
+    "up_down_volume_ratio_20d": 2.08
   },
   "consolidation": {
     "range_width_pct": 17.3,
@@ -78,21 +78,24 @@
             "state": {
               "state": {
                 "state": {
-                  "status": "open",
-                  "entry_date": "2026-08-04",
-                  "entry_price": 49.09,
-                  "n_at_entry": 1.7135693155136562,
-                  "exit_date": null,
-                  "exit_price": null,
-                  "outcome": null
+                  "state": {
+                    "status": "open",
+                    "entry_date": "2026-08-04",
+                    "entry_price": 49.09,
+                    "n_at_entry": 1.7135693155136562,
+                    "exit_date": null,
+                    "exit_price": null,
+                    "outcome": null
+                  },
+                  "signal": {
+                    "resolution": null,
+                    "entry_fired": true,
+                    "filtered": false,
+                    "entry_price": 49.09,
+                    "system": "system1"
+                  }
                 },
-                "signal": {
-                  "resolution": null,
-                  "entry_fired": true,
-                  "filtered": false,
-                  "entry_price": 49.09,
-                  "system": "system1"
-                }
+                "signal": null
               },
               "signal": null
             },
@@ -122,7 +125,10 @@
                                   "state": {
                                     "state": {
                                       "state": {
-                                        "state": {},
+                                        "state": {
+                                          "state": {},
+                                          "signal": null
+                                        },
                                         "signal": null
                                       },
                                       "signal": null
