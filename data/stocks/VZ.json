@@ -2,7 +2,7 @@
   "ticker": "VZ",
   "name": "Verizon",
   "sector": "telecom",
-  "last_updated": "2026-08-05T13:40:59.047701+00:00",
+  "last_updated": "2026-08-05T15:51:28.374686+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -175,8 +175,23 @@
       },
       "dedupe_key": "40cb4090884b15a3",
       "timestamp": "2026-08-05T13:40:59.047701+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~45.86 (5 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 45.86,
+        "zone_touches": 5,
+        "date": "2026-08-05",
+        "fires": false
+      },
+      "dedupe_key": "3b303ae78fa353d5",
+      "timestamp": "2026-08-05T15:51:28.374686+00:00"
     }
   ],
-  "last_price": 46.66,
+  "last_price": 45.725,
   "last_price_date": "2026-08-05"
 }
