@@ -1,6 +1,6 @@
 {
   "ticker": "BSX",
-  "last_updated": "2026-08-05T15:51:37.545362+00:00",
+  "last_updated": "2026-08-05T17:19:56.759732+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "BSX",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 47.62,
+    "current_price": 47.46,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -21,8 +21,8 @@
     "atr_units_from_stop": null
   },
   "trend": {
-    "sma20": 45.1,
-    "sma20_slope_5d_pct": 1.69,
+    "sma20": 45.09,
+    "sma20_slope_5d_pct": 1.67,
     "price_vs_sma20": "above",
     "sma50": 46.08,
     "sma50_slope_5d_pct": -1.98,
@@ -33,8 +33,8 @@
   },
   "volatility": {
     "atr14": 1.76,
-    "atr14_pct_of_price": 3.69,
-    "realized_vol_20d_annualized_pct": 32.14
+    "atr14_pct_of_price": 3.71,
+    "realized_vol_20d_annualized_pct": 32.6
   },
   "range": {
     "high_20d": 49.5,
@@ -43,15 +43,15 @@
     "low_60d": 42.2
   },
   "momentum": {
-    "rsi14": 58.32
+    "rsi14": 57.46
   },
   "volume": {
-    "up_down_volume_ratio_20d": 2.3
+    "up_down_volume_ratio_20d": 2.26
   },
   "consolidation": {
     "range_width_pct": 17.3,
-    "distance_from_high_pct": -3.8,
-    "distance_from_low_pct": 12.84
+    "distance_from_high_pct": -4.12,
+    "distance_from_low_pct": 12.46
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -62,7 +62,7 @@
   "fundamentals": {
     "forward_pe": 14.860559276497522,
     "ev_ebitda_ttm": 17.4022,
-    "implied_forward_eps": 3.2045,
+    "implied_forward_eps": 3.1937,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
@@ -70,26 +70,29 @@
   },
   "turtle": {
     "gate_open": true,
-    "n": 1.731,
+    "n": 1.733,
     "system1": {
       "state": {
         "state": {
           "state": {
-            "status": "open",
-            "entry_date": "2026-08-04",
-            "entry_price": 49.09,
-            "n_at_entry": 1.7135693155136562,
-            "exit_date": null,
-            "exit_price": null,
-            "outcome": null
+            "state": {
+              "status": "open",
+              "entry_date": "2026-08-04",
+              "entry_price": 49.09,
+              "n_at_entry": 1.7135693155136562,
+              "exit_date": null,
+              "exit_price": null,
+              "outcome": null
+            },
+            "signal": {
+              "resolution": null,
+              "entry_fired": true,
+              "filtered": false,
+              "entry_price": 49.09,
+              "system": "system1"
+            }
           },
-          "signal": {
-            "resolution": null,
-            "entry_fired": true,
-            "filtered": false,
-            "entry_price": 49.09,
-            "system": "system1"
-          }
+          "signal": null
         },
         "signal": null
       },
@@ -110,7 +113,10 @@
                             "state": {
                               "state": {
                                 "state": {
-                                  "state": {},
+                                  "state": {
+                                    "state": {},
+                                    "signal": null
+                                  },
                                   "signal": null
                                 },
                                 "signal": null
