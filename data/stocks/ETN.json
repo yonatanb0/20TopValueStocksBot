@@ -2,7 +2,7 @@
   "ticker": "ETN",
   "name": "Eaton",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-08-04T22:32:08.191524+00:00",
+  "last_updated": "2026-08-05T13:40:59.033051+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -151,8 +151,24 @@
       },
       "dedupe_key": "1fc34da36aa5be26",
       "timestamp": "2026-08-04T13:45:01.279710+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator buy turn (value -0.305) -- watch closer, not a standalone trigger, invalidation level ~430.31.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "buy",
+        "value": -0.305,
+        "invalidation_level": 430.31,
+        "date": "2026-08-05",
+        "fires": false
+      },
+      "dedupe_key": "f0a8ee4465fe8d81",
+      "timestamp": "2026-08-05T13:40:59.033051+00:00"
     }
   ],
-  "last_price": 444.76999,
-  "last_price_date": "2026-08-04"
+  "last_price": 445.74,
+  "last_price_date": "2026-08-05"
 }

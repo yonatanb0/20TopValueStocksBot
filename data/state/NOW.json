@@ -1,6 +1,6 @@
 {
   "ticker": "NOW",
-  "last_updated": "2026-08-04T22:32:17.562950+00:00",
+  "last_updated": "2026-08-05T13:41:06.907468+00:00",
   "has_thesis": true,
   "position": {
     "ticker": "NOW",
@@ -11,58 +11,58 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 118.14,
+    "current_price": 118.205,
     "entry_price": null,
     "stop_price": 81.24,
     "target_price": 140.25,
     "pct_from_entry": null,
-    "pct_from_stop": 45.42,
-    "pct_from_target": -15.76,
-    "atr_units_from_stop": 5.38
+    "pct_from_stop": 45.5,
+    "pct_from_target": -15.72,
+    "atr_units_from_stop": 5.66
   },
   "trend": {
-    "sma20": 106.55,
-    "sma20_slope_5d_pct": 1.88,
+    "sma20": 107.07,
+    "sma20_slope_5d_pct": 1.58,
     "price_vs_sma20": "above",
-    "sma50": 106.21,
-    "sma50_slope_5d_pct": 1.26,
+    "sma50": 106.53,
+    "sma50_slope_5d_pct": 1.17,
     "price_vs_sma50": "above",
-    "sma200": 124.27,
-    "sma200_slope_5d_pct": -1.35,
+    "sma200": 123.96,
+    "sma200_slope_5d_pct": -1.32,
     "price_vs_sma200": "below"
   },
   "volatility": {
-    "atr14": 6.86,
-    "atr14_pct_of_price": 5.81,
-    "realized_vol_20d_annualized_pct": 63.72
+    "atr14": 6.53,
+    "atr14_pct_of_price": 5.52,
+    "realized_vol_20d_annualized_pct": 62.71
   },
   "range": {
-    "high_20d": 119.64,
+    "high_20d": 119.78,
     "low_20d": 91.53,
     "high_60d": 139.2,
     "low_60d": 85.44
   },
   "momentum": {
-    "rsi14": 62.16
+    "rsi14": 62.21
   },
   "volume": {
-    "up_down_volume_ratio_20d": 1.57
+    "up_down_volume_ratio_20d": 1.49
   },
   "consolidation": {
-    "range_width_pct": 30.71,
-    "distance_from_high_pct": -1.25,
-    "distance_from_low_pct": 29.07
+    "range_width_pct": 30.87,
+    "distance_from_high_pct": -1.32,
+    "distance_from_low_pct": 29.14
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": "~October 2026",
-    "days_to_next_earnings": 58,
+    "days_to_next_earnings": 57,
     "next_review_date_approx": "2026-10",
-    "days_since_review_due": -58
+    "days_since_review_due": -57
   },
   "fundamentals": {
-    "forward_pe": 29.01957856696265,
+    "forward_pe": 29.01239964519117,
     "ev_ebitda_ttm": 44.7424,
-    "implied_forward_eps": 4.071,
+    "implied_forward_eps": 4.0743,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
@@ -70,7 +70,7 @@
   },
   "turtle": {
     "gate_open": false,
-    "n": 6.702,
+    "n": 6.476,
     "system1": {
       "state": {
         "state": {
@@ -84,7 +84,10 @@
                         "state": {
                           "state": {
                             "state": {
-                              "state": {},
+                              "state": {
+                                "state": {},
+                                "signal": null
+                              },
                               "signal": null
                             },
                             "signal": null
@@ -124,7 +127,10 @@
                         "state": {
                           "state": {
                             "state": {
-                              "state": {},
+                              "state": {
+                                "state": {},
+                                "signal": null
+                              },
                               "signal": null
                             },
                             "signal": null

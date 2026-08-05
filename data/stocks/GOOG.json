@@ -2,7 +2,7 @@
   "ticker": "GOOG",
   "name": "Alphabet",
   "sector": "enterprise_tech",
-  "last_updated": "2026-08-04T22:32:08.167109+00:00",
+  "last_updated": "2026-08-05T13:40:59.008764+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -88,8 +88,42 @@
       },
       "dedupe_key": "d1bfd0428432e9cf",
       "timestamp": "2026-08-03T16:47:02.468729+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (377.67) on 2026-08-05 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-08-05",
+        "range_high": 377.66901,
+        "close": 379.46,
+        "volume_multiple": 0.003912775106322418,
+        "fires": false
+      },
+      "dedupe_key": "fd0f42bf4e10fa9b",
+      "timestamp": "2026-08-05T13:40:59.008764+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~378.99 (2 prior touches) and closed back above it (reaction confirmed). Stop ~366.86, target ~417.26 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 378.990005,
+        "zone_touches": 2,
+        "date": "2026-08-05",
+        "fires": true,
+        "stop_loss": 366.86,
+        "take_profit": 417.26,
+        "entry_reference_price": 379.46
+      },
+      "dedupe_key": "20192c7642ce6050",
+      "timestamp": "2026-08-05T13:40:59.008764+00:00"
     }
   ],
-  "last_price": 375.42999,
-  "last_price_date": "2026-08-04"
+  "last_price": 379.46,
+  "last_price_date": "2026-08-05"
 }
