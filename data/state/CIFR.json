@@ -1,6 +1,6 @@
 {
   "ticker": "CIFR",
-  "last_updated": "2026-08-05T21:53:34.322959+00:00",
+  "last_updated": "2026-08-06T13:33:16.596773+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "CIFR",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 18.705,
+    "current_price": 17.81,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -21,20 +21,20 @@
     "atr_units_from_stop": null
   },
   "trend": {
-    "sma20": 21.27,
-    "sma20_slope_5d_pct": 0.3,
+    "sma20": 20.99,
+    "sma20_slope_5d_pct": -0.94,
     "price_vs_sma20": "below",
-    "sma50": 23.19,
-    "sma50_slope_5d_pct": 0.64,
+    "sma50": 23.08,
+    "sma50_slope_5d_pct": -0.12,
     "price_vs_sma50": "below",
-    "sma200": 18.66,
-    "sma200_slope_5d_pct": 0.28,
-    "price_vs_sma200": "above"
+    "sma200": 18.65,
+    "sma200_slope_5d_pct": 0.1,
+    "price_vs_sma200": "below"
   },
   "volatility": {
-    "atr14": 2.96,
-    "atr14_pct_of_price": 15.82,
-    "realized_vol_20d_annualized_pct": 174.47
+    "atr14": 2.83,
+    "atr14_pct_of_price": 15.89,
+    "realized_vol_20d_annualized_pct": 173.31
   },
   "range": {
     "high_20d": 26.84,
@@ -43,15 +43,15 @@
     "low_60d": 16.13
   },
   "momentum": {
-    "rsi14": 43.48
+    "rsi14": 41.9
   },
   "volume": {
-    "up_down_volume_ratio_20d": 1.24
+    "up_down_volume_ratio_20d": 1.13
   },
   "consolidation": {
     "range_width_pct": 66.4,
-    "distance_from_high_pct": -30.31,
-    "distance_from_low_pct": 15.96
+    "distance_from_high_pct": -33.64,
+    "distance_from_low_pct": 10.42
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -61,16 +61,16 @@
   },
   "fundamentals": {
     "forward_pe": null,
-    "ev_ebitda_ttm": 155.9589,
+    "ev_ebitda_ttm": 146.7804,
     "implied_forward_eps": null,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
-    "estimate_baseline_date": "2026-08-05",
+    "estimate_baseline_date": "2026-08-06",
     "estimate_baseline_implied_eps": null
   },
   "turtle": {
     "gate_open": false,
-    "n": 2.817,
+    "n": 2.734,
     "system1": {
       "state": {
         "state": {
@@ -90,7 +90,10 @@
                                     "state": {
                                       "state": {
                                         "state": {
-                                          "state": {},
+                                          "state": {
+                                            "state": {},
+                                            "signal": null
+                                          },
                                           "signal": null
                                         },
                                         "signal": null
@@ -148,7 +151,10 @@
                                     "state": {
                                       "state": {
                                         "state": {
-                                          "state": {},
+                                          "state": {
+                                            "state": {},
+                                            "signal": null
+                                          },
                                           "signal": null
                                         },
                                         "signal": null

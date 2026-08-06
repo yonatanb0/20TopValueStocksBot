@@ -2,7 +2,7 @@
   "ticker": "CIFR",
   "name": "Cipher Mining",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-08-05T21:53:25.212202+00:00",
+  "last_updated": "2026-08-06T13:33:08.283373+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -18,8 +18,41 @@
       },
       "dedupe_key": "c48c0c489b6c9ba5",
       "timestamp": "2026-08-04T22:32:08.211215+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~17.53 (2 prior touches) and closed back above it (reaction confirmed). Stop ~14.7, target ~27.14 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 17.531,
+        "zone_touches": 2,
+        "date": "2026-08-06",
+        "fires": true,
+        "stop_loss": 14.7,
+        "take_profit": 27.14,
+        "entry_reference_price": 17.81
+      },
+      "dedupe_key": "096775149fe36b4f",
+      "timestamp": "2026-08-06T13:33:08.283373+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-08-06",
+        "fires": false
+      },
+      "dedupe_key": "ee14cfd50e451f36",
+      "timestamp": "2026-08-06T13:33:08.283373+00:00"
     }
   ],
-  "last_price": 18.705,
-  "last_price_date": "2026-08-05"
+  "last_price": 17.81,
+  "last_price_date": "2026-08-06"
 }

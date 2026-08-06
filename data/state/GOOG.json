@@ -1,27 +1,27 @@
 {
   "ticker": "GOOG",
-  "last_updated": "2026-08-05T21:53:34.295514+00:00",
+  "last_updated": "2026-08-06T13:33:16.569639+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "GOOG",
-    "held": true,
-    "shares": 4.001,
-    "avg_cost": 364.664883779,
-    "market_value": 1501.78,
-    "unrealized_pnl": 42.755799
+    "held": false,
+    "shares": 0,
+    "avg_cost": null,
+    "market_value": 0,
+    "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 360.10999,
-    "entry_price": 364.664883779,
+    "current_price": 360.13,
+    "entry_price": null,
     "stop_price": null,
     "target_price": null,
-    "pct_from_entry": -1.25,
+    "pct_from_entry": null,
     "pct_from_stop": null,
     "pct_from_target": null,
     "atr_units_from_stop": null
   },
   "trend": {
-    "sma20": 347.97,
+    "sma20": 347.98,
     "sma20_slope_5d_pct": -0.04,
     "price_vs_sma20": "above",
     "sma50": 355.91,
@@ -32,26 +32,26 @@
     "price_vs_sma200": "above"
   },
   "volatility": {
-    "atr14": 13.57,
+    "atr14": 13.58,
     "atr14_pct_of_price": 3.77,
     "realized_vol_20d_annualized_pct": 50.31
   },
   "range": {
-    "high_20d": 381.49,
+    "high_20d": 381.54,
     "low_20d": 314.89,
     "high_60d": 404.47,
     "low_60d": 314.89
   },
   "momentum": {
-    "rsi14": 54.25
+    "rsi14": 54.26
   },
   "volume": {
-    "up_down_volume_ratio_20d": 1.86
+    "up_down_volume_ratio_20d": 1.82
   },
   "consolidation": {
-    "range_width_pct": 21.15,
-    "distance_from_high_pct": -5.6,
-    "distance_from_low_pct": 14.36
+    "range_width_pct": 21.17,
+    "distance_from_high_pct": -5.61,
+    "distance_from_low_pct": 14.37
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -60,17 +60,17 @@
     "days_since_review_due": null
   },
   "fundamentals": {
-    "forward_pe": null,
-    "ev_ebitda_ttm": null,
-    "implied_forward_eps": null,
+    "forward_pe": 19.28932,
+    "ev_ebitda_ttm": 28.4533,
+    "implied_forward_eps": 18.6699,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
-    "estimate_baseline_date": "2026-08-05",
-    "estimate_baseline_implied_eps": null
+    "estimate_baseline_date": "2026-08-06",
+    "estimate_baseline_implied_eps": 18.6699
   },
   "turtle": {
     "gate_open": false,
-    "n": 12.829,
+    "n": 12.839,
     "system1": {
       "state": {
         "state": {
@@ -90,7 +90,10 @@
                                     "state": {
                                       "state": {
                                         "state": {
-                                          "state": {},
+                                          "state": {
+                                            "state": {},
+                                            "signal": null
+                                          },
                                           "signal": null
                                         },
                                         "signal": null
@@ -148,7 +151,10 @@
                                     "state": {
                                       "state": {
                                         "state": {
-                                          "state": {},
+                                          "state": {
+                                            "state": {},
+                                            "signal": null
+                                          },
                                           "signal": null
                                         },
                                         "signal": null
