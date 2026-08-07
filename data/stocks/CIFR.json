@@ -2,7 +2,7 @@
   "ticker": "CIFR",
   "name": "Cipher Mining",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-08-07T00:37:55.153423+00:00",
+  "last_updated": "2026-08-07T12:39:20.665022+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -51,6 +51,22 @@
       },
       "dedupe_key": "ee14cfd50e451f36",
       "timestamp": "2026-08-06T13:33:08.283373+00:00"
+    },
+    {
+      "category": "macro",
+      "type": "macro_sector_turning",
+      "fires": false,
+      "description": "Sector 'ai_data_center_infra' macro signal (power demand): \"AI\u2019s volatile power demand is damaging its own data centers\" -- confirm before treating the macro gate as open.",
+      "details": {
+        "url": "https://www.bloomberg.com/news/articles/2026-08-06/data-centers-are-being-damaged-by-ai-s-volatile-power-demand",
+        "title": "AI\u2019s volatile power demand is damaging its own data centers",
+        "matched": [
+          "power demand"
+        ],
+        "published": "2026-08-06T04:49:33+00:00"
+      },
+      "dedupe_key": "e9d8fe0e54b399b6",
+      "timestamp": "2026-08-07T12:39:20.665022+00:00"
     }
   ],
   "last_price": 18.21,

@@ -2,7 +2,7 @@
   "ticker": "ETN",
   "name": "Eaton",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-08-07T00:37:55.132522+00:00",
+  "last_updated": "2026-08-07T12:39:20.643859+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -167,6 +167,22 @@
       },
       "dedupe_key": "f0a8ee4465fe8d81",
       "timestamp": "2026-08-05T13:40:59.033051+00:00"
+    },
+    {
+      "category": "macro",
+      "type": "macro_sector_turning",
+      "fires": false,
+      "description": "Sector 'ai_data_center_infra' macro signal (power demand): \"AI\u2019s volatile power demand is damaging its own data centers\" -- confirm before treating the macro gate as open.",
+      "details": {
+        "url": "https://www.bloomberg.com/news/articles/2026-08-06/data-centers-are-being-damaged-by-ai-s-volatile-power-demand",
+        "title": "AI\u2019s volatile power demand is damaging its own data centers",
+        "matched": [
+          "power demand"
+        ],
+        "published": "2026-08-06T04:49:33+00:00"
+      },
+      "dedupe_key": "784ec8a6fb1de3fe",
+      "timestamp": "2026-08-07T12:39:20.643859+00:00"
     }
   ],
   "last_price": 448.19,

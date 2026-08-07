@@ -2,7 +2,7 @@
   "ticker": "PWR",
   "name": "Quanta Services",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-08-07T00:37:55.135389+00:00",
+  "last_updated": "2026-08-07T12:39:20.646759+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -179,6 +179,22 @@
       },
       "dedupe_key": "8554c0fca73c3d1d",
       "timestamp": "2026-08-06T13:33:08.265105+00:00"
+    },
+    {
+      "category": "macro",
+      "type": "macro_sector_turning",
+      "fires": false,
+      "description": "Sector 'ai_data_center_infra' macro signal (power demand): \"AI\u2019s volatile power demand is damaging its own data centers\" -- confirm before treating the macro gate as open.",
+      "details": {
+        "url": "https://www.bloomberg.com/news/articles/2026-08-06/data-centers-are-being-damaged-by-ai-s-volatile-power-demand",
+        "title": "AI\u2019s volatile power demand is damaging its own data centers",
+        "matched": [
+          "power demand"
+        ],
+        "published": "2026-08-06T04:49:33+00:00"
+      },
+      "dedupe_key": "ce2ecb56fb58e046",
+      "timestamp": "2026-08-07T12:39:20.646759+00:00"
     }
   ],
   "last_price": 667.84003,
