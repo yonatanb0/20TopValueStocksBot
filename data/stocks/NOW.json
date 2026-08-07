@@ -2,7 +2,7 @@
   "ticker": "NOW",
   "name": "ServiceNow",
   "sector": "enterprise_tech",
-  "last_updated": "2026-08-07T12:39:20.673317+00:00",
+  "last_updated": "2026-08-07T13:57:51.719875+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -49,8 +49,24 @@
       },
       "dedupe_key": "1746302d63987293",
       "timestamp": "2026-08-06T13:33:08.291700+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (120.00) on 2026-08-07 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-08-07",
+        "range_high": 120.0,
+        "close": 122.79,
+        "volume_multiple": 0.050572347940582706,
+        "fires": false
+      },
+      "dedupe_key": "da6ee7a31bfb87fe",
+      "timestamp": "2026-08-07T13:57:51.719875+00:00"
     }
   ],
-  "last_price": 117.35,
-  "last_price_date": "2026-08-06"
+  "last_price": 122.79,
+  "last_price_date": "2026-08-07"
 }
