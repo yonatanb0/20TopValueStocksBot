@@ -1,6 +1,6 @@
 {
   "ticker": "AAPL",
-  "last_updated": "2026-08-06T13:33:16.575308+00:00",
+  "last_updated": "2026-08-07T00:38:04.080230+00:00",
   "has_thesis": true,
   "position": {
     "ticker": "AAPL",
@@ -11,30 +11,30 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 311.0,
+    "current_price": 312.41,
     "entry_price": null,
     "stop_price": 276.79,
     "target_price": 395.6,
     "pct_from_entry": null,
-    "pct_from_stop": 12.36,
-    "pct_from_target": -21.39,
-    "atr_units_from_stop": 3.6
+    "pct_from_stop": 12.87,
+    "pct_from_target": -21.03,
+    "atr_units_from_stop": 3.82
   },
   "trend": {
-    "sma20": 323.72,
-    "sma20_slope_5d_pct": 0.41,
+    "sma20": 323.53,
+    "sma20_slope_5d_pct": -0.25,
     "price_vs_sma20": "below",
-    "sma50": 309.65,
-    "sma50_slope_5d_pct": 0.35,
+    "sma50": 309.74,
+    "sma50_slope_5d_pct": 0.14,
     "price_vs_sma50": "above",
-    "sma200": 278.86,
-    "sma200_slope_5d_pct": 0.59,
+    "sma200": 279.16,
+    "sma200_slope_5d_pct": 0.54,
     "price_vs_sma200": "above"
   },
   "volatility": {
-    "atr14": 9.51,
-    "atr14_pct_of_price": 3.06,
-    "realized_vol_20d_annualized_pct": 37.53
+    "atr14": 9.33,
+    "atr14_pct_of_price": 2.99,
+    "realized_vol_20d_annualized_pct": 37.42
   },
   "range": {
     "high_20d": 344.57,
@@ -43,26 +43,26 @@
     "low_60d": 273.75
   },
   "momentum": {
-    "rsi14": 45.84
+    "rsi14": 46.88
   },
   "volume": {
-    "up_down_volume_ratio_20d": 3.25
+    "up_down_volume_ratio_20d": 2.64
   },
   "consolidation": {
     "range_width_pct": 14.86,
-    "distance_from_high_pct": -9.74,
-    "distance_from_low_pct": 3.67
+    "distance_from_high_pct": -9.33,
+    "distance_from_low_pct": 4.14
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": "2026-07-30, after market close (Q3 FY26 -- Tim Cook's last as CEO)",
-    "days_to_next_earnings": -36,
+    "days_to_next_earnings": -37,
     "next_review_date_approx": "2026-10",
-    "days_since_review_due": -56
+    "days_since_review_due": -55
   },
   "fundamentals": {
     "forward_pe": 34.85022,
-    "ev_ebitda_ttm": 27.1726,
-    "implied_forward_eps": 8.9239,
+    "ev_ebitda_ttm": 27.3386,
+    "implied_forward_eps": 8.9644,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
@@ -70,7 +70,7 @@
   },
   "turtle": {
     "gate_open": false,
-    "n": 9.061,
+    "n": 8.961,
     "system1": {
       "state": {
         "state": {
@@ -91,7 +91,10 @@
                                       "state": {
                                         "state": {
                                           "state": {
-                                            "state": {},
+                                            "state": {
+                                              "state": {},
+                                              "signal": null
+                                            },
                                             "signal": null
                                           },
                                           "signal": null
@@ -152,7 +155,10 @@
                                       "state": {
                                         "state": {
                                           "state": {
-                                            "state": {},
+                                            "state": {
+                                              "state": {},
+                                              "signal": null
+                                            },
                                             "signal": null
                                           },
                                           "signal": null

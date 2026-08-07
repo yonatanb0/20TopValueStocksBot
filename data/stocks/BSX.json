@@ -2,7 +2,7 @@
   "ticker": "BSX",
   "name": "Boston Scientific",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-08-06T13:33:08.270741+00:00",
+  "last_updated": "2026-08-07T00:37:55.140913+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -247,8 +247,24 @@
       },
       "dedupe_key": "8962761840185632",
       "timestamp": "2026-08-06T13:33:08.270741+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "guidance_rollover",
+      "fires": false,
+      "description": "EXIT WATCH -- headline suggests guidance rollover (guidance cut): \"Boston Scientific's 2026 Guidance Cut Puts Its Recovery to the Test\"",
+      "details": {
+        "url": "https://finnhub.io/api/news?id=e587e417ff17f1c9de001d7a7f49dbe4c620ff53f6978304c2295dd28035c946",
+        "headline": "Boston Scientific's 2026 Guidance Cut Puts Its Recovery to the Test",
+        "matched_keywords": [
+          "guidance cut"
+        ],
+        "published": "2026-08-06T14:38:00+00:00"
+      },
+      "dedupe_key": "4d389ab5a7d60c73",
+      "timestamp": "2026-08-07T00:37:55.140913+00:00"
     }
   ],
-  "last_price": 49.18,
+  "last_price": 49.3,
   "last_price_date": "2026-08-06"
 }
