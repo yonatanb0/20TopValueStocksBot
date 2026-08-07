@@ -1,6 +1,6 @@
 {
   "ticker": "BSX",
-  "last_updated": "2026-08-07T20:12:12.509877+00:00",
+  "last_updated": "2026-08-07T21:01:39.736665+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "BSX",
@@ -60,9 +60,9 @@
     "days_since_review_due": null
   },
   "fundamentals": {
-    "forward_pe": 14.93775305558709,
+    "forward_pe": 14.918076209936808,
     "ev_ebitda_ttm": 17.3065,
-    "implied_forward_eps": 3.301,
+    "implied_forward_eps": 3.3054,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
@@ -90,21 +90,24 @@
                                     "state": {
                                       "state": {
                                         "state": {
-                                          "status": "open",
-                                          "entry_date": "2026-08-04",
-                                          "entry_price": 49.09,
-                                          "n_at_entry": 1.7135693155136562,
-                                          "exit_date": null,
-                                          "exit_price": null,
-                                          "outcome": null
+                                          "state": {
+                                            "status": "open",
+                                            "entry_date": "2026-08-04",
+                                            "entry_price": 49.09,
+                                            "n_at_entry": 1.7135693155136562,
+                                            "exit_date": null,
+                                            "exit_price": null,
+                                            "outcome": null
+                                          },
+                                          "signal": {
+                                            "resolution": null,
+                                            "entry_fired": true,
+                                            "filtered": false,
+                                            "entry_price": 49.09,
+                                            "system": "system1"
+                                          }
                                         },
-                                        "signal": {
-                                          "resolution": null,
-                                          "entry_fired": true,
-                                          "filtered": false,
-                                          "entry_price": 49.09,
-                                          "system": "system1"
-                                        }
+                                        "signal": null
                                       },
                                       "signal": null
                                     },
@@ -170,7 +173,10 @@
                                                           "state": {
                                                             "state": {
                                                               "state": {
-                                                                "state": {},
+                                                                "state": {
+                                                                  "state": {},
+                                                                  "signal": null
+                                                                },
                                                                 "signal": null
                                                               },
                                                               "signal": null
