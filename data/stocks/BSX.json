@@ -2,7 +2,7 @@
   "ticker": "BSX",
   "name": "Boston Scientific",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-08-12T16:12:02.406961+00:00",
+  "last_updated": "2026-08-12T17:15:38.416143+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -351,8 +351,24 @@
       },
       "dedupe_key": "2b70336eda877e01",
       "timestamp": "2026-08-12T14:13:53.646704+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (51.50) on 2026-08-12 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-08-12",
+        "range_high": 51.5,
+        "close": 51.535,
+        "volume_multiple": 0.05299403657000816,
+        "fires": false
+      },
+      "dedupe_key": "a67841d9c5e030c7",
+      "timestamp": "2026-08-12T17:15:38.416143+00:00"
     }
   ],
-  "last_price": 51.435,
+  "last_price": 51.535,
   "last_price_date": "2026-08-12"
 }
