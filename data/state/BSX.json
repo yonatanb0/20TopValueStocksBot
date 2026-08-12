@@ -1,6 +1,6 @@
 {
   "ticker": "BSX",
-  "last_updated": "2026-08-12T15:17:15.538213+00:00",
+  "last_updated": "2026-08-12T16:12:10.204398+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "BSX",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 51.05,
+    "current_price": 51.435,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -21,20 +21,20 @@
     "atr_units_from_stop": null
   },
   "trend": {
-    "sma20": 46.67,
-    "sma20_slope_5d_pct": 3.46,
+    "sma20": 46.69,
+    "sma20_slope_5d_pct": 3.5,
     "price_vs_sma20": "above",
-    "sma50": 46.04,
-    "sma50_slope_5d_pct": -0.1,
+    "sma50": 46.05,
+    "sma50_slope_5d_pct": -0.08,
     "price_vs_sma50": "above",
     "sma200": 71.17,
-    "sma200_slope_5d_pct": -1.76,
+    "sma200_slope_5d_pct": -1.75,
     "price_vs_sma200": "below"
   },
   "volatility": {
-    "atr14": 1.68,
-    "atr14_pct_of_price": 3.3,
-    "realized_vol_20d_annualized_pct": 28.16
+    "atr14": 1.7,
+    "atr14_pct_of_price": 3.31,
+    "realized_vol_20d_annualized_pct": 27.88
   },
   "range": {
     "high_20d": 51.5,
@@ -43,15 +43,15 @@
     "low_60d": 42.2
   },
   "momentum": {
-    "rsi14": 69.52
+    "rsi14": 71.18
   },
   "volume": {
     "up_down_volume_ratio_20d": 3.08
   },
   "consolidation": {
     "range_width_pct": 21.18,
-    "distance_from_high_pct": -0.87,
-    "distance_from_low_pct": 20.12
+    "distance_from_high_pct": -0.13,
+    "distance_from_low_pct": 21.02
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -60,9 +60,9 @@
     "days_since_review_due": null
   },
   "fundamentals": {
-    "forward_pe": 15.291936277292164,
+    "forward_pe": 15.508381579445263,
     "ev_ebitda_ttm": 17.6609,
-    "implied_forward_eps": 3.3384,
+    "implied_forward_eps": 3.3166,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
@@ -70,26 +70,29 @@
   },
   "turtle": {
     "gate_open": true,
-    "n": 1.687,
+    "n": 1.7,
     "system1": {
       "state": {
         "state": {
           "state": {
-            "status": "open",
-            "entry_date": "2026-08-11",
-            "entry_price": 51.19,
-            "n_at_entry": 1.7150603110643186,
-            "exit_date": null,
-            "exit_price": null,
-            "outcome": null
+            "state": {
+              "status": "open",
+              "entry_date": "2026-08-11",
+              "entry_price": 51.19,
+              "n_at_entry": 1.7150603110643186,
+              "exit_date": null,
+              "exit_price": null,
+              "outcome": null
+            },
+            "signal": {
+              "resolution": null,
+              "entry_fired": true,
+              "filtered": false,
+              "entry_price": 51.19,
+              "system": "system1"
+            }
           },
-          "signal": {
-            "resolution": null,
-            "entry_fired": true,
-            "filtered": false,
-            "entry_price": 51.19,
-            "system": "system1"
-          }
+          "signal": null
         },
         "signal": null
       },
@@ -151,7 +154,10 @@
                                                                                                               "state": {
                                                                                                                 "state": {
                                                                                                                   "state": {
-                                                                                                                    "state": {},
+                                                                                                                    "state": {
+                                                                                                                      "state": {},
+                                                                                                                      "signal": null
+                                                                                                                    },
                                                                                                                     "signal": null
                                                                                                                   },
                                                                                                                   "signal": null
