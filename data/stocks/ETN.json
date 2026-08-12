@@ -2,7 +2,7 @@
   "ticker": "ETN",
   "name": "Eaton",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-08-11T22:07:31.255815+00:00",
+  "last_updated": "2026-08-12T12:43:12.196490+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -199,8 +199,24 @@
       },
       "dedupe_key": "b583aee5bc7bdae2",
       "timestamp": "2026-08-11T14:05:21.993963+00:00"
+    },
+    {
+      "category": "macro",
+      "type": "macro_sector_turning",
+      "fires": false,
+      "description": "Sector 'ai_data_center_infra' macro signal (power demand): \"Global gas turbine orders soar to record quarter, JPMorgan says\" -- confirm before treating the macro gate as open.",
+      "details": {
+        "url": "https://www.bloomberg.com/news/articles/2026-08-11/global-gas-turbine-orders-soar-to-record-quarter-jpmorgan-says",
+        "title": "Global gas turbine orders soar to record quarter, JPMorgan says",
+        "matched": [
+          "power demand"
+        ],
+        "published": "2026-08-11T03:34:38+00:00"
+      },
+      "dedupe_key": "1d115fde3bf020dc",
+      "timestamp": "2026-08-12T12:43:12.196490+00:00"
     }
   ],
-  "last_price": 459.41,
+  "last_price": 459.29001,
   "last_price_date": "2026-08-11"
 }

@@ -2,7 +2,7 @@
   "ticker": "VRT",
   "name": "Vertiv",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-08-11T22:07:31.253032+00:00",
+  "last_updated": "2026-08-12T12:43:12.193483+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -228,8 +228,24 @@
       },
       "dedupe_key": "91778d6d5aa77841",
       "timestamp": "2026-08-11T14:05:21.991863+00:00"
+    },
+    {
+      "category": "macro",
+      "type": "macro_sector_turning",
+      "fires": false,
+      "description": "Sector 'ai_data_center_infra' macro signal (power demand): \"Global gas turbine orders soar to record quarter, JPMorgan says\" -- confirm before treating the macro gate as open.",
+      "details": {
+        "url": "https://www.bloomberg.com/news/articles/2026-08-11/global-gas-turbine-orders-soar-to-record-quarter-jpmorgan-says",
+        "title": "Global gas turbine orders soar to record quarter, JPMorgan says",
+        "matched": [
+          "power demand"
+        ],
+        "published": "2026-08-11T03:34:38+00:00"
+      },
+      "dedupe_key": "224287e2b1a6f770",
+      "timestamp": "2026-08-12T12:43:12.193483+00:00"
     }
   ],
-  "last_price": 281.82001,
+  "last_price": 281.81,
   "last_price_date": "2026-08-11"
 }
