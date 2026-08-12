@@ -1,6 +1,6 @@
 {
   "ticker": "IREN",
-  "last_updated": "2026-08-12T14:14:01.857791+00:00",
+  "last_updated": "2026-08-12T15:17:15.545169+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "IREN",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 43.8,
+    "current_price": 42.83,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -21,20 +21,20 @@
     "atr_units_from_stop": null
   },
   "trend": {
-    "sma20": 38.22,
-    "sma20_slope_5d_pct": 0.36,
+    "sma20": 38.17,
+    "sma20_slope_5d_pct": 0.23,
     "price_vs_sma20": "above",
-    "sma50": 45.76,
-    "sma50_slope_5d_pct": -4.95,
+    "sma50": 45.74,
+    "sma50_slope_5d_pct": -4.99,
     "price_vs_sma50": "below",
-    "sma200": 47.29,
-    "sma200_slope_5d_pct": -0.85,
+    "sma200": 47.28,
+    "sma200_slope_5d_pct": -0.86,
     "price_vs_sma200": "below"
   },
   "volatility": {
     "atr14": 4.05,
-    "atr14_pct_of_price": 9.26,
-    "realized_vol_20d_annualized_pct": 164.41
+    "atr14_pct_of_price": 9.47,
+    "realized_vol_20d_annualized_pct": 162.85
   },
   "range": {
     "high_20d": 44.67,
@@ -43,15 +43,15 @@
     "low_60d": 28.93
   },
   "momentum": {
-    "rsi14": 54.79
+    "rsi14": 53.52
   },
   "volume": {
     "up_down_volume_ratio_20d": 0.83
   },
   "consolidation": {
     "range_width_pct": 54.41,
-    "distance_from_high_pct": -1.95,
-    "distance_from_low_pct": 51.4
+    "distance_from_high_pct": -4.12,
+    "distance_from_low_pct": 48.05
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -73,21 +73,24 @@
     "n": 4.189,
     "system1": {
       "state": {
-        "status": "open",
-        "entry_date": "2026-08-12",
-        "entry_price": 43.8,
-        "n_at_entry": 4.189348199580131,
-        "exit_date": null,
-        "exit_price": null,
-        "outcome": null
+        "state": {
+          "status": "open",
+          "entry_date": "2026-08-12",
+          "entry_price": 43.8,
+          "n_at_entry": 4.189348199580131,
+          "exit_date": null,
+          "exit_price": null,
+          "outcome": null
+        },
+        "signal": {
+          "resolution": null,
+          "entry_fired": true,
+          "filtered": false,
+          "entry_price": 43.8,
+          "system": "system1"
+        }
       },
-      "signal": {
-        "resolution": null,
-        "entry_fired": true,
-        "filtered": false,
-        "entry_price": 43.8,
-        "system": "system1"
-      }
+      "signal": null
     },
     "system2": {
       "state": {
@@ -144,7 +147,10 @@
                                                                                                             "state": {
                                                                                                               "state": {
                                                                                                                 "state": {
-                                                                                                                  "state": {},
+                                                                                                                  "state": {
+                                                                                                                    "state": {},
+                                                                                                                    "signal": null
+                                                                                                                  },
                                                                                                                   "signal": null
                                                                                                                 },
                                                                                                                 "signal": null
@@ -255,17 +261,7 @@
       },
       "signal": null
     },
-    "position_plan": {
-      "unit_prices": [
-        43.8,
-        45.89,
-        47.99,
-        50.08
-      ],
-      "units_reached": 1,
-      "stop_price": 35.42,
-      "n_at_entry": 4.189
-    },
+    "position_plan": null,
     "unit_size": null
   },
   "last_verdict": null
