@@ -2,7 +2,7 @@
   "ticker": "IREN",
   "name": "IREN Limited",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-08-13T12:44:12.236504+00:00",
+  "last_updated": "2026-08-13T14:15:59.868330+00:00",
   "signal_log": [
     {
       "category": "macro",
@@ -51,8 +51,24 @@
       },
       "dedupe_key": "f262432d7bd3b25a",
       "timestamp": "2026-08-12T14:13:53.654675+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (44.67) on 2026-08-13 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-08-13",
+        "range_high": 44.67,
+        "close": 48.1,
+        "volume_multiple": 0.01769111146859084,
+        "fires": false
+      },
+      "dedupe_key": "3c675db4ebe724c8",
+      "timestamp": "2026-08-13T14:15:59.868330+00:00"
     }
   ],
-  "last_price": 43.67,
-  "last_price_date": "2026-08-12"
+  "last_price": 48.1,
+  "last_price_date": "2026-08-13"
 }

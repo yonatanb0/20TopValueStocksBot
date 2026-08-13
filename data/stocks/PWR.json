@@ -2,7 +2,7 @@
   "ticker": "PWR",
   "name": "Quanta Services",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-08-13T12:44:12.221391+00:00",
+  "last_updated": "2026-08-13T14:15:59.853131+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -259,8 +259,38 @@
       },
       "dedupe_key": "82c9100083b55a60",
       "timestamp": "2026-08-12T14:13:53.641743+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~685.68 (3 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 685.68333,
+        "zone_touches": 3,
+        "date": "2026-08-13",
+        "fires": false
+      },
+      "dedupe_key": "d8ab9dec6f08ef58",
+      "timestamp": "2026-08-13T14:15:59.853131+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-08-13",
+        "fires": false
+      },
+      "dedupe_key": "52a2a08ee535453c",
+      "timestamp": "2026-08-13T14:15:59.853131+00:00"
     }
   ],
-  "last_price": 678.02002,
-  "last_price_date": "2026-08-12"
+  "last_price": 680.47,
+  "last_price_date": "2026-08-13"
 }

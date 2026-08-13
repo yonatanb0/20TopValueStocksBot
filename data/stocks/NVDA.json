@@ -2,7 +2,7 @@
   "ticker": "NVDA",
   "name": "NVIDIA",
   "sector": "semiconductors",
-  "last_updated": "2026-08-13T12:44:12.200865+00:00",
+  "last_updated": "2026-08-13T14:15:59.831991+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -237,8 +237,24 @@
       },
       "dedupe_key": "7a4feab3a5a370b4",
       "timestamp": "2026-08-07T15:44:41.593899+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (225.10) on 2026-08-13 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-08-13",
+        "range_high": 225.10001,
+        "close": 226.18,
+        "volume_multiple": 0.009996804073022407,
+        "fires": false
+      },
+      "dedupe_key": "189997eceb5155b8",
+      "timestamp": "2026-08-13T14:15:59.831991+00:00"
     }
   ],
-  "last_price": 224.089996,
-  "last_price_date": "2026-08-12"
+  "last_price": 226.18,
+  "last_price_date": "2026-08-13"
 }
