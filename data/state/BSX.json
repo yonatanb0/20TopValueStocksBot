@@ -1,6 +1,6 @@
 {
   "ticker": "BSX",
-  "last_updated": "2026-08-13T21:06:36.565391+00:00",
+  "last_updated": "2026-08-13T22:06:07.780744+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "BSX",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 51.71,
+    "current_price": 51.69,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -43,15 +43,15 @@
     "low_60d": 42.2
   },
   "momentum": {
-    "rsi14": 71.98
+    "rsi14": 71.92
   },
   "volume": {
-    "up_down_volume_ratio_20d": 3.21
+    "up_down_volume_ratio_20d": 3.28
   },
   "consolidation": {
     "range_width_pct": 23.14,
-    "distance_from_high_pct": -1.19,
-    "distance_from_low_pct": 21.67
+    "distance_from_high_pct": -1.23,
+    "distance_from_low_pct": 21.62
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -60,9 +60,9 @@
     "days_since_review_due": null
   },
   "fundamentals": {
-    "forward_pe": 15.667309948159081,
+    "forward_pe": 15.647633102508797,
     "ev_ebitda_ttm": 17.1675,
-    "implied_forward_eps": 3.3005,
+    "implied_forward_eps": 3.3034,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
@@ -75,21 +75,24 @@
       "state": {
         "state": {
           "state": {
-            "status": "open",
-            "entry_date": "2026-08-13",
-            "entry_price": 51.86,
-            "n_at_entry": 1.684817002943903,
-            "exit_date": null,
-            "exit_price": null,
-            "outcome": null
+            "state": {
+              "status": "open",
+              "entry_date": "2026-08-13",
+              "entry_price": 51.86,
+              "n_at_entry": 1.684817002943903,
+              "exit_date": null,
+              "exit_price": null,
+              "outcome": null
+            },
+            "signal": {
+              "resolution": null,
+              "entry_fired": true,
+              "filtered": false,
+              "entry_price": 51.86,
+              "system": "system1"
+            }
           },
-          "signal": {
-            "resolution": null,
-            "entry_fired": true,
-            "filtered": false,
-            "entry_price": 51.86,
-            "system": "system1"
-          }
+          "signal": null
         },
         "signal": null
       },
@@ -167,7 +170,10 @@
                                                                                                                                               "state": {
                                                                                                                                                 "state": {
                                                                                                                                                   "state": {
-                                                                                                                                                    "state": {},
+                                                                                                                                                    "state": {
+                                                                                                                                                      "state": {},
+                                                                                                                                                      "signal": null
+                                                                                                                                                    },
                                                                                                                                                     "signal": null
                                                                                                                                                   },
                                                                                                                                                   "signal": null
