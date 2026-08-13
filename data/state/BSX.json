@@ -1,6 +1,6 @@
 {
   "ticker": "BSX",
-  "last_updated": "2026-08-13T19:27:31.637711+00:00",
+  "last_updated": "2026-08-13T20:09:42.918830+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "BSX",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 51.86,
+    "current_price": 51.71,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -21,11 +21,11 @@
     "atr_units_from_stop": null
   },
   "trend": {
-    "sma20": 47.05,
-    "sma20_slope_5d_pct": 3.81,
+    "sma20": 47.04,
+    "sma20_slope_5d_pct": 3.79,
     "price_vs_sma20": "above",
     "sma50": 46.13,
-    "sma50_slope_5d_pct": 0.47,
+    "sma50_slope_5d_pct": 0.46,
     "price_vs_sma50": "above",
     "sma200": 70.92,
     "sma200_slope_5d_pct": -1.76,
@@ -33,8 +33,8 @@
   },
   "volatility": {
     "atr14": 1.68,
-    "atr14_pct_of_price": 3.24,
-    "realized_vol_20d_annualized_pct": 25.91
+    "atr14_pct_of_price": 3.25,
+    "realized_vol_20d_annualized_pct": 25.92
   },
   "range": {
     "high_20d": 52.34,
@@ -43,15 +43,15 @@
     "low_60d": 42.2
   },
   "momentum": {
-    "rsi14": 72.4
+    "rsi14": 71.98
   },
   "volume": {
     "up_down_volume_ratio_20d": 3.09
   },
   "consolidation": {
     "range_width_pct": 23.14,
-    "distance_from_high_pct": -0.91,
-    "distance_from_low_pct": 22.02
+    "distance_from_high_pct": -1.19,
+    "distance_from_low_pct": 21.67
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -60,9 +60,9 @@
     "days_since_review_due": null
   },
   "fundamentals": {
-    "forward_pe": 15.562871305861428,
+    "forward_pe": 15.667309948159081,
     "ev_ebitda_ttm": 17.1675,
-    "implied_forward_eps": 3.3323,
+    "implied_forward_eps": 3.3005,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
@@ -73,21 +73,24 @@
     "n": 1.685,
     "system1": {
       "state": {
-        "status": "open",
-        "entry_date": "2026-08-13",
-        "entry_price": 51.86,
-        "n_at_entry": 1.684817002943903,
-        "exit_date": null,
-        "exit_price": null,
-        "outcome": null
+        "state": {
+          "status": "open",
+          "entry_date": "2026-08-13",
+          "entry_price": 51.86,
+          "n_at_entry": 1.684817002943903,
+          "exit_date": null,
+          "exit_price": null,
+          "outcome": null
+        },
+        "signal": {
+          "resolution": null,
+          "entry_fired": true,
+          "filtered": false,
+          "entry_price": 51.86,
+          "system": "system1"
+        }
       },
-      "signal": {
-        "resolution": null,
-        "entry_fired": true,
-        "filtered": false,
-        "entry_price": 51.86,
-        "system": "system1"
-      }
+      "signal": null
     },
     "system2": {
       "state": {
@@ -159,7 +162,10 @@
                                                                                                                                           "state": {
                                                                                                                                             "state": {
                                                                                                                                               "state": {
-                                                                                                                                                "state": {},
+                                                                                                                                                "state": {
+                                                                                                                                                  "state": {},
+                                                                                                                                                  "signal": null
+                                                                                                                                                },
                                                                                                                                                 "signal": null
                                                                                                                                               },
                                                                                                                                               "signal": null
@@ -300,17 +306,7 @@
       },
       "signal": null
     },
-    "position_plan": {
-      "unit_prices": [
-        51.86,
-        52.7,
-        53.54,
-        54.39
-      ],
-      "units_reached": 1,
-      "stop_price": 48.49,
-      "n_at_entry": 1.685
-    },
+    "position_plan": null,
     "unit_size": null
   },
   "last_verdict": null
