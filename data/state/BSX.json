@@ -1,6 +1,6 @@
 {
   "ticker": "BSX",
-  "last_updated": "2026-08-13T17:15:48.526882+00:00",
+  "last_updated": "2026-08-13T18:10:04.204805+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "BSX",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 51.355,
+    "current_price": 51.515,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -21,11 +21,11 @@
     "atr_units_from_stop": null
   },
   "trend": {
-    "sma20": 47.02,
-    "sma20_slope_5d_pct": 3.75,
+    "sma20": 47.03,
+    "sma20_slope_5d_pct": 3.77,
     "price_vs_sma20": "above",
-    "sma50": 46.12,
-    "sma50_slope_5d_pct": 0.44,
+    "sma50": 46.13,
+    "sma50_slope_5d_pct": 0.45,
     "price_vs_sma50": "above",
     "sma200": 70.92,
     "sma200_slope_5d_pct": -1.76,
@@ -33,8 +33,8 @@
   },
   "volatility": {
     "atr14": 1.68,
-    "atr14_pct_of_price": 3.27,
-    "realized_vol_20d_annualized_pct": 26.1
+    "atr14_pct_of_price": 3.26,
+    "realized_vol_20d_annualized_pct": 25.99
   },
   "range": {
     "high_20d": 52.34,
@@ -43,15 +43,15 @@
     "low_60d": 42.2
   },
   "momentum": {
-    "rsi14": 70.66
+    "rsi14": 71.42
   },
   "volume": {
     "up_down_volume_ratio_20d": 3.05
   },
   "consolidation": {
     "range_width_pct": 23.14,
-    "distance_from_high_pct": -1.87,
-    "distance_from_low_pct": 20.84
+    "distance_from_high_pct": -1.57,
+    "distance_from_low_pct": 21.21
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -60,9 +60,9 @@
     "days_since_review_due": null
   },
   "fundamentals": {
-    "forward_pe": 15.656714723578158,
+    "forward_pe": 15.562871305861428,
     "ev_ebitda_ttm": 17.1675,
-    "implied_forward_eps": 3.2801,
+    "implied_forward_eps": 3.3101,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
@@ -76,21 +76,24 @@
         "state": {
           "state": {
             "state": {
-              "status": "open",
-              "entry_date": "2026-08-13",
-              "entry_price": 52.075,
-              "n_at_entry": 1.6670670029439028,
-              "exit_date": null,
-              "exit_price": null,
-              "outcome": null
+              "state": {
+                "status": "open",
+                "entry_date": "2026-08-13",
+                "entry_price": 52.075,
+                "n_at_entry": 1.6670670029439028,
+                "exit_date": null,
+                "exit_price": null,
+                "outcome": null
+              },
+              "signal": {
+                "resolution": null,
+                "entry_fired": true,
+                "filtered": false,
+                "entry_price": 52.075,
+                "system": "system1"
+              }
             },
-            "signal": {
-              "resolution": null,
-              "entry_fired": true,
-              "filtered": false,
-              "entry_price": 52.075,
-              "system": "system1"
-            }
+            "signal": null
           },
           "signal": null
         },
@@ -166,7 +169,10 @@
                                                                                                                                       "state": {
                                                                                                                                         "state": {
                                                                                                                                           "state": {
-                                                                                                                                            "state": {},
+                                                                                                                                            "state": {
+                                                                                                                                              "state": {},
+                                                                                                                                              "signal": null
+                                                                                                                                            },
                                                                                                                                             "signal": null
                                                                                                                                           },
                                                                                                                                           "signal": null
