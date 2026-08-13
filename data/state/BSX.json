@@ -1,6 +1,6 @@
 {
   "ticker": "BSX",
-  "last_updated": "2026-08-13T14:16:10.549414+00:00",
+  "last_updated": "2026-08-13T15:17:48.501248+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "BSX",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 52.075,
+    "current_price": 51.685,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -21,37 +21,37 @@
     "atr_units_from_stop": null
   },
   "trend": {
-    "sma20": 47.06,
-    "sma20_slope_5d_pct": 3.83,
+    "sma20": 47.04,
+    "sma20_slope_5d_pct": 3.79,
     "price_vs_sma20": "above",
-    "sma50": 46.14,
-    "sma50_slope_5d_pct": 0.48,
+    "sma50": 46.13,
+    "sma50_slope_5d_pct": 0.46,
     "price_vs_sma50": "above",
     "sma200": 70.92,
-    "sma200_slope_5d_pct": -1.75,
+    "sma200_slope_5d_pct": -1.76,
     "price_vs_sma200": "below"
   },
   "volatility": {
-    "atr14": 1.65,
-    "atr14_pct_of_price": 3.18,
-    "realized_vol_20d_annualized_pct": 25.97
+    "atr14": 1.67,
+    "atr14_pct_of_price": 3.23,
+    "realized_vol_20d_annualized_pct": 25.92
   },
   "range": {
-    "high_20d": 52.1,
+    "high_20d": 52.34,
     "low_20d": 42.5,
     "high_60d": 58.51,
     "low_60d": 42.2
   },
   "momentum": {
-    "rsi14": 72.98
+    "rsi14": 71.91
   },
   "volume": {
     "up_down_volume_ratio_20d": 3.08
   },
   "consolidation": {
-    "range_width_pct": 22.6,
-    "distance_from_high_pct": -0.06,
-    "distance_from_low_pct": 22.53
+    "range_width_pct": 23.14,
+    "distance_from_high_pct": -1.24,
+    "distance_from_low_pct": 21.61
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -62,7 +62,7 @@
   "fundamentals": {
     "forward_pe": 15.635524274416316,
     "ev_ebitda_ttm": 17.6609,
-    "implied_forward_eps": 3.3306,
+    "implied_forward_eps": 3.3056,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
@@ -70,24 +70,27 @@
   },
   "turtle": {
     "gate_open": true,
-    "n": 1.667,
+    "n": 1.679,
     "system1": {
       "state": {
-        "status": "open",
-        "entry_date": "2026-08-13",
-        "entry_price": 52.075,
-        "n_at_entry": 1.6670670029439028,
-        "exit_date": null,
-        "exit_price": null,
-        "outcome": null
+        "state": {
+          "status": "open",
+          "entry_date": "2026-08-13",
+          "entry_price": 52.075,
+          "n_at_entry": 1.6670670029439028,
+          "exit_date": null,
+          "exit_price": null,
+          "outcome": null
+        },
+        "signal": {
+          "resolution": null,
+          "entry_fired": true,
+          "filtered": false,
+          "entry_price": 52.075,
+          "system": "system1"
+        }
       },
-      "signal": {
-        "resolution": null,
-        "entry_fired": true,
-        "filtered": false,
-        "entry_price": 52.075,
-        "system": "system1"
-      }
+      "signal": null
     },
     "system2": {
       "state": {
@@ -154,7 +157,10 @@
                                                                                                                                 "state": {
                                                                                                                                   "state": {
                                                                                                                                     "state": {
-                                                                                                                                      "state": {},
+                                                                                                                                      "state": {
+                                                                                                                                        "state": {},
+                                                                                                                                        "signal": null
+                                                                                                                                      },
                                                                                                                                       "signal": null
                                                                                                                                     },
                                                                                                                                     "signal": null
@@ -285,17 +291,7 @@
       },
       "signal": null
     },
-    "position_plan": {
-      "unit_prices": [
-        52.08,
-        52.91,
-        53.74,
-        54.58
-      ],
-      "units_reached": 1,
-      "stop_price": 48.75,
-      "n_at_entry": 1.667
-    },
+    "position_plan": null,
     "unit_size": null
   },
   "last_verdict": null
