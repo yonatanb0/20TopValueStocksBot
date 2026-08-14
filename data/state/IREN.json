@@ -1,6 +1,6 @@
 {
   "ticker": "IREN",
-  "last_updated": "2026-08-14T14:01:44.443440+00:00",
+  "last_updated": "2026-08-14T14:52:59.294849+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "IREN",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 45.38,
+    "current_price": 44.74,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -21,20 +21,20 @@
     "atr_units_from_stop": null
   },
   "trend": {
-    "sma20": 39.3,
-    "sma20_slope_5d_pct": 3.69,
+    "sma20": 39.27,
+    "sma20_slope_5d_pct": 3.61,
     "price_vs_sma20": "above",
-    "sma50": 44.92,
-    "sma50_slope_5d_pct": -4.78,
-    "price_vs_sma50": "above",
-    "sma200": 47.1,
+    "sma50": 44.91,
+    "sma50_slope_5d_pct": -4.81,
+    "price_vs_sma50": "below",
+    "sma200": 47.09,
     "sma200_slope_5d_pct": -0.83,
     "price_vs_sma200": "below"
   },
   "volatility": {
     "atr14": 4.03,
-    "atr14_pct_of_price": 8.89,
-    "realized_vol_20d_annualized_pct": 158.61
+    "atr14_pct_of_price": 9.01,
+    "realized_vol_20d_annualized_pct": 158.76
   },
   "range": {
     "high_20d": 49.19,
@@ -43,15 +43,15 @@
     "low_60d": 28.93
   },
   "momentum": {
-    "rsi14": 56.92
+    "rsi14": 56.04
   },
   "volume": {
     "up_down_volume_ratio_20d": 0.96
   },
   "consolidation": {
     "range_width_pct": 70.01,
-    "distance_from_high_pct": -7.74,
-    "distance_from_low_pct": 56.86
+    "distance_from_high_pct": -9.04,
+    "distance_from_low_pct": 54.65
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -74,21 +74,24 @@
     "system1": {
       "state": {
         "state": {
-          "status": "open",
-          "entry_date": "2026-08-13",
-          "entry_price": 44.76,
-          "n_at_entry": 4.255621837070578,
-          "exit_date": null,
-          "exit_price": null,
-          "outcome": null
+          "state": {
+            "status": "open",
+            "entry_date": "2026-08-13",
+            "entry_price": 44.76,
+            "n_at_entry": 4.255621837070578,
+            "exit_date": null,
+            "exit_price": null,
+            "outcome": null
+          },
+          "signal": {
+            "resolution": null,
+            "entry_fired": true,
+            "filtered": false,
+            "entry_price": 44.76,
+            "system": "system1"
+          }
         },
-        "signal": {
-          "resolution": null,
-          "entry_fired": true,
-          "filtered": false,
-          "entry_price": 44.76,
-          "system": "system1"
-        }
+        "signal": null
       },
       "signal": null
     },
@@ -167,7 +170,10 @@
                                                                                                                                                     "state": {
                                                                                                                                                       "state": {
                                                                                                                                                         "state": {
-                                                                                                                                                          "state": {},
+                                                                                                                                                          "state": {
+                                                                                                                                                            "state": {},
+                                                                                                                                                            "signal": null
+                                                                                                                                                          },
                                                                                                                                                           "signal": null
                                                                                                                                                         },
                                                                                                                                                         "signal": null
