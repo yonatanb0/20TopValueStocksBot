@@ -1,6 +1,6 @@
 {
   "ticker": "PWR",
-  "last_updated": "2026-08-17T18:22:54.006407+00:00",
+  "last_updated": "2026-08-17T19:11:38.329292+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "PWR",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 722.62,
+    "current_price": 720.32,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -21,20 +21,20 @@
     "atr_units_from_stop": null
   },
   "trend": {
-    "sma20": 657.18,
-    "sma20_slope_5d_pct": 1.76,
+    "sma20": 657.07,
+    "sma20_slope_5d_pct": 1.75,
     "price_vs_sma20": "above",
-    "sma50": 672.89,
+    "sma50": 672.85,
     "sma50_slope_5d_pct": -0.33,
     "price_vs_sma50": "above",
-    "sma200": 574.88,
-    "sma200_slope_5d_pct": 1.12,
+    "sma200": 574.87,
+    "sma200_slope_5d_pct": 1.11,
     "price_vs_sma200": "above"
   },
   "volatility": {
     "atr14": 29.23,
-    "atr14_pct_of_price": 4.05,
-    "realized_vol_20d_annualized_pct": 74.03
+    "atr14_pct_of_price": 4.06,
+    "realized_vol_20d_annualized_pct": 73.77
   },
   "range": {
     "high_20d": 724.68,
@@ -43,15 +43,15 @@
     "low_60d": 554.12
   },
   "momentum": {
-    "rsi14": 62.75
+    "rsi14": 62.38
   },
   "volume": {
     "up_down_volume_ratio_20d": 0.6
   },
   "consolidation": {
     "range_width_pct": 30.78,
-    "distance_from_high_pct": -0.28,
-    "distance_from_low_pct": 30.41
+    "distance_from_high_pct": -0.6,
+    "distance_from_low_pct": 29.99
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -62,7 +62,7 @@
   "fundamentals": {
     "forward_pe": 42.20505,
     "ev_ebitda_ttm": 40.99,
-    "implied_forward_eps": 17.1216,
+    "implied_forward_eps": 17.0672,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
@@ -75,7 +75,7 @@
       "state": {
         "status": "open",
         "entry_date": "2026-08-17",
-        "entry_price": 722.62,
+        "entry_price": 720.32,
         "n_at_entry": 29.261309378915115,
         "exit_date": null,
         "exit_price": null,
@@ -85,7 +85,7 @@
         "resolution": null,
         "entry_fired": true,
         "filtered": false,
-        "entry_price": 722.62,
+        "entry_price": 720.32,
         "system": "system1"
       }
     },
@@ -186,7 +186,10 @@
                                                                                                                                                                                                 "state": {
                                                                                                                                                                                                   "state": {
                                                                                                                                                                                                     "state": {
-                                                                                                                                                                                                      "state": {},
+                                                                                                                                                                                                      "state": {
+                                                                                                                                                                                                        "state": {},
+                                                                                                                                                                                                        "signal": null
+                                                                                                                                                                                                      },
                                                                                                                                                                                                       "signal": null
                                                                                                                                                                                                     },
                                                                                                                                                                                                     "signal": null
@@ -383,13 +386,13 @@
     },
     "position_plan": {
       "unit_prices": [
-        722.62,
-        737.25,
-        751.88,
-        766.51
+        720.32,
+        734.95,
+        749.58,
+        764.21
       ],
       "units_reached": 1,
-      "stop_price": 664.1,
+      "stop_price": 661.8,
       "n_at_entry": 29.261
     },
     "unit_size": null
