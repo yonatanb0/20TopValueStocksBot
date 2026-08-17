@@ -2,7 +2,7 @@
   "ticker": "PWR",
   "name": "Quanta Services",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-08-17T15:43:31.917075+00:00",
+  "last_updated": "2026-08-17T16:15:44.084967+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -352,8 +352,24 @@
       },
       "dedupe_key": "dcf91575e86a34c2",
       "timestamp": "2026-08-17T13:55:48.322885+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (708.06) on 2026-08-17 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-08-17",
+        "range_high": 708.059998,
+        "close": 710.16,
+        "volume_multiple": 0.021370598480903558,
+        "fires": false
+      },
+      "dedupe_key": "a6ed24ffd7fdeba0",
+      "timestamp": "2026-08-17T16:15:44.084967+00:00"
     }
   ],
-  "last_price": 707.78,
+  "last_price": 710.16,
   "last_price_date": "2026-08-17"
 }
