@@ -2,8 +2,25 @@
   "ticker": "MU",
   "name": "Micron Technology",
   "sector": "semiconductors",
-  "last_updated": "2026-08-17T13:12:34.607588+00:00",
-  "signal_log": [],
-  "last_price": 971.65997,
-  "last_price_date": "2026-08-14"
+  "last_updated": "2026-08-17T13:55:48.346504+00:00",
+  "signal_log": [
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (1011.77) on 2026-08-17 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-08-17",
+        "range_high": 1011.77002,
+        "close": 1015.675,
+        "volume_multiple": 0.00421483164153096,
+        "fires": false
+      },
+      "dedupe_key": "b5162a36564df509",
+      "timestamp": "2026-08-17T13:55:48.346504+00:00"
+    }
+  ],
+  "last_price": 1015.675,
+  "last_price_date": "2026-08-17"
 }

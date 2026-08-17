@@ -2,7 +2,7 @@
   "ticker": "PWR",
   "name": "Quanta Services",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-08-17T13:12:34.583944+00:00",
+  "last_updated": "2026-08-17T13:55:48.322885+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -319,8 +319,41 @@
       },
       "dedupe_key": "36ba2c5fb54bf97c",
       "timestamp": "2026-08-14T14:01:36.592451+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~685.68 (3 prior touches) and closed back above it (reaction confirmed). Stop ~658.03, target ~819.95 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 685.68333,
+        "zone_touches": 3,
+        "date": "2026-08-17",
+        "fires": true,
+        "stop_loss": 658.03,
+        "take_profit": 819.95,
+        "entry_reference_price": 698.51
+      },
+      "dedupe_key": "8c49f39a2df5137a",
+      "timestamp": "2026-08-17T13:55:48.322885+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-08-17",
+        "fires": false
+      },
+      "dedupe_key": "dcf91575e86a34c2",
+      "timestamp": "2026-08-17T13:55:48.322885+00:00"
     }
   ],
-  "last_price": 685.78003,
-  "last_price_date": "2026-08-14"
+  "last_price": 698.51,
+  "last_price_date": "2026-08-17"
 }

@@ -2,7 +2,7 @@
   "ticker": "GOOG",
   "name": "Alphabet",
   "sector": "enterprise_tech",
-  "last_updated": "2026-08-17T13:12:34.557213+00:00",
+  "last_updated": "2026-08-17T13:55:48.294912+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -188,8 +188,54 @@
       },
       "dedupe_key": "f683adb221c95697",
       "timestamp": "2026-08-14T14:01:36.566818+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~343.31 (4 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 343.3087525,
+        "zone_touches": 4,
+        "date": "2026-08-17",
+        "fires": false
+      },
+      "dedupe_key": "432a458efbe36d07",
+      "timestamp": "2026-08-17T13:55:48.294912+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 0.299) -- watch closer, not a standalone trigger, invalidation level ~354.02.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 0.299,
+        "invalidation_level": 354.02,
+        "date": "2026-08-17",
+        "fires": false
+      },
+      "dedupe_key": "c39a91c864a48493",
+      "timestamp": "2026-08-17T13:55:48.294912+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-08-17",
+        "fires": false
+      },
+      "dedupe_key": "271c47d2e2f13e07",
+      "timestamp": "2026-08-17T13:55:48.294912+00:00"
     }
   ],
-  "last_price": 343.54001,
-  "last_price_date": "2026-08-14"
+  "last_price": 342.8,
+  "last_price_date": "2026-08-17"
 }
