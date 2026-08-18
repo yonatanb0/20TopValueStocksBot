@@ -2,7 +2,7 @@
   "ticker": "VZ",
   "name": "Verizon",
   "sector": "telecom",
-  "last_updated": "2026-08-18T13:28:15.626536+00:00",
+  "last_updated": "2026-08-18T14:11:07.338063+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -280,8 +280,24 @@
       },
       "dedupe_key": "dc8fa53af587f1dd",
       "timestamp": "2026-08-12T14:13:53.652121+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 0.834) -- watch closer, not a standalone trigger, invalidation level ~49.94.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 0.834,
+        "invalidation_level": 49.94,
+        "date": "2026-08-18",
+        "fires": false
+      },
+      "dedupe_key": "f071245bd418c0b2",
+      "timestamp": "2026-08-18T14:11:07.338063+00:00"
     }
   ],
-  "last_price": 48.060001,
-  "last_price_date": "2026-08-17"
+  "last_price": 48.865,
+  "last_price_date": "2026-08-18"
 }

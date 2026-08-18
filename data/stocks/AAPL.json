@@ -2,7 +2,7 @@
   "ticker": "AAPL",
   "name": "Apple",
   "sector": "enterprise_tech",
-  "last_updated": "2026-08-18T13:28:15.603091+00:00",
+  "last_updated": "2026-08-18T14:11:07.306421+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -129,8 +129,26 @@
       },
       "dedupe_key": "2d7bcca156edf3ca",
       "timestamp": "2026-08-17T13:55:48.303814+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~301.86 (3 prior touches) and closed back above it (reaction confirmed). Stop ~294.5, target ~354.06 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 301.863333,
+        "zone_touches": 3,
+        "date": "2026-08-18",
+        "fires": true,
+        "stop_loss": 294.5,
+        "take_profit": 354.06,
+        "entry_reference_price": 309.39
+      },
+      "dedupe_key": "a5b94e7380f40db1",
+      "timestamp": "2026-08-18T14:11:07.306421+00:00"
     }
   ],
-  "last_price": 305.59,
-  "last_price_date": "2026-08-17"
+  "last_price": 309.39,
+  "last_price_date": "2026-08-18"
 }

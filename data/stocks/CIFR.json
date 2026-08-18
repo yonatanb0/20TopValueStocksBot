@@ -2,7 +2,7 @@
   "ticker": "CIFR",
   "name": "Cipher Mining",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-08-18T13:28:15.631112+00:00",
+  "last_updated": "2026-08-18T14:11:07.344001+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -263,8 +263,26 @@
       },
       "dedupe_key": "e5cab8f3be5756c4",
       "timestamp": "2026-08-17T13:55:48.340874+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~16.16 (2 prior touches) and closed back above it (reaction confirmed). Stop ~13.84, target ~28.0 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 16.165,
+        "zone_touches": 2,
+        "date": "2026-08-18",
+        "fires": true,
+        "stop_loss": 13.84,
+        "take_profit": 28.0,
+        "entry_reference_price": 17.38
+      },
+      "dedupe_key": "a9fb53b0d95ac91d",
+      "timestamp": "2026-08-18T14:11:07.344001+00:00"
     }
   ],
-  "last_price": 18.5,
-  "last_price_date": "2026-08-17"
+  "last_price": 17.38,
+  "last_price_date": "2026-08-18"
 }
