@@ -1,6 +1,6 @@
 {
   "ticker": "PWR",
-  "last_updated": "2026-08-17T21:44:13.552066+00:00",
+  "last_updated": "2026-08-18T12:23:33.871988+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "PWR",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 722.435,
+    "current_price": 722.31,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -32,26 +32,26 @@
     "price_vs_sma200": "above"
   },
   "volatility": {
-    "atr14": 29.24,
+    "atr14": 29.23,
     "atr14_pct_of_price": 4.05,
-    "realized_vol_20d_annualized_pct": 74.01
+    "realized_vol_20d_annualized_pct": 74.0
   },
   "range": {
-    "high_20d": 724.8,
+    "high_20d": 724.62,
     "low_20d": 554.12,
     "high_60d": 748.69,
     "low_60d": 554.12
   },
   "momentum": {
-    "rsi14": 62.72
+    "rsi14": 62.7
   },
   "volume": {
     "up_down_volume_ratio_20d": 0.68
   },
   "consolidation": {
-    "range_width_pct": 30.8,
-    "distance_from_high_pct": -0.33,
-    "distance_from_low_pct": 30.38
+    "range_width_pct": 30.77,
+    "distance_from_high_pct": -0.32,
+    "distance_from_low_pct": 30.35
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -62,7 +62,7 @@
   "fundamentals": {
     "forward_pe": 42.20505,
     "ev_ebitda_ttm": 40.99,
-    "implied_forward_eps": 17.1173,
+    "implied_forward_eps": 17.1143,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
@@ -70,13 +70,13 @@
   },
   "turtle": {
     "gate_open": true,
-    "n": 29.267,
+    "n": 29.258,
     "system1": {
       "state": {
         "status": "open",
         "entry_date": "2026-08-17",
-        "entry_price": 722.435,
-        "n_at_entry": 29.267308878915117,
+        "entry_price": 722.31,
+        "n_at_entry": 29.25830937891512,
         "exit_date": null,
         "exit_price": null,
         "outcome": null
@@ -85,7 +85,7 @@
         "resolution": null,
         "entry_fired": true,
         "filtered": false,
-        "entry_price": 722.435,
+        "entry_price": 722.31,
         "system": "system1"
       }
     },
@@ -192,7 +192,10 @@
                                                                                                                                                                                                             "state": {
                                                                                                                                                                                                               "state": {
                                                                                                                                                                                                                 "state": {
-                                                                                                                                                                                                                  "state": {},
+                                                                                                                                                                                                                  "state": {
+                                                                                                                                                                                                                    "state": {},
+                                                                                                                                                                                                                    "signal": null
+                                                                                                                                                                                                                  },
                                                                                                                                                                                                                   "signal": null
                                                                                                                                                                                                                 },
                                                                                                                                                                                                                 "signal": null
@@ -401,14 +404,14 @@
     },
     "position_plan": {
       "unit_prices": [
-        722.43,
-        737.07,
-        751.7,
-        766.34
+        722.31,
+        736.94,
+        751.57,
+        766.2
       ],
       "units_reached": 1,
-      "stop_price": 663.9,
-      "n_at_entry": 29.267
+      "stop_price": 663.79,
+      "n_at_entry": 29.258
     },
     "unit_size": null
   },
