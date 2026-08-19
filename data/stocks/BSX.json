@@ -2,7 +2,7 @@
   "ticker": "BSX",
   "name": "Boston Scientific",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-08-19T13:29:27.860511+00:00",
+  "last_updated": "2026-08-19T14:10:55.932722+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -455,8 +455,38 @@
       },
       "dedupe_key": "33a7870d553aa105",
       "timestamp": "2026-08-18T14:11:07.330884+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 1.499) -- watch closer, not a standalone trigger, invalidation level ~53.71.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 1.499,
+        "invalidation_level": 53.71,
+        "date": "2026-08-19",
+        "fires": false
+      },
+      "dedupe_key": "9c5328b1ee577c89",
+      "timestamp": "2026-08-19T14:10:55.932722+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (14.7%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 14.7,
+        "close": 52.08,
+        "low_52w": 42.2,
+        "high_52w": 109.5
+      },
+      "dedupe_key": "b75eaa36964179ca",
+      "timestamp": "2026-08-19T14:10:55.932722+00:00"
     }
   ],
-  "last_price": 50.47,
-  "last_price_date": "2026-08-18"
+  "last_price": 52.08,
+  "last_price_date": "2026-08-19"
 }

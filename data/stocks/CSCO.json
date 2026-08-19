@@ -2,7 +2,7 @@
   "ticker": "CSCO",
   "name": "Cisco",
   "sector": "enterprise_tech",
-  "last_updated": "2026-08-19T13:29:27.839114+00:00",
+  "last_updated": "2026-08-19T14:10:55.910502+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -303,8 +303,39 @@
       },
       "dedupe_key": "cb6214e22b33a7f0",
       "timestamp": "2026-08-18T14:11:07.309354+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~111.90 (5 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 111.89599960000001,
+        "zone_touches": 5,
+        "date": "2026-08-19",
+        "fires": false
+      },
+      "dedupe_key": "04ea0cdabd18fa36",
+      "timestamp": "2026-08-19T14:10:55.910502+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 0.534) -- watch closer, not a standalone trigger, invalidation level ~115.35.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 0.534,
+        "invalidation_level": 115.35,
+        "date": "2026-08-19",
+        "fires": false
+      },
+      "dedupe_key": "b84c9c2a745bb2da",
+      "timestamp": "2026-08-19T14:10:55.910502+00:00"
     }
   ],
-  "last_price": 111.61,
-  "last_price_date": "2026-08-18"
+  "last_price": 110.84,
+  "last_price_date": "2026-08-19"
 }

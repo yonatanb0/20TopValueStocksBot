@@ -2,7 +2,7 @@
   "ticker": "VZ",
   "name": "Verizon",
   "sector": "telecom",
-  "last_updated": "2026-08-19T13:29:27.867404+00:00",
+  "last_updated": "2026-08-19T14:10:55.939211+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -296,8 +296,24 @@
       },
       "dedupe_key": "f071245bd418c0b2",
       "timestamp": "2026-08-18T14:11:07.338063+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (49.01) on 2026-08-19 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-08-19",
+        "range_high": 49.0099983,
+        "close": 49.405,
+        "volume_multiple": 0.007419351340747269,
+        "fires": false
+      },
+      "dedupe_key": "3bd296b3a1546616",
+      "timestamp": "2026-08-19T14:10:55.939211+00:00"
     }
   ],
-  "last_price": 48.54,
-  "last_price_date": "2026-08-18"
+  "last_price": 49.405,
+  "last_price_date": "2026-08-19"
 }
