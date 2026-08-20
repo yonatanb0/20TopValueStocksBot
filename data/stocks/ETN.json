@@ -2,7 +2,7 @@
   "ticker": "ETN",
   "name": "Eaton",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-08-19T21:43:48.034824+00:00",
+  "last_updated": "2026-08-20T12:24:53.339618+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -231,6 +231,22 @@
       },
       "dedupe_key": "a4dcc94051246f45",
       "timestamp": "2026-08-12T14:13:53.639063+00:00"
+    },
+    {
+      "category": "macro",
+      "type": "macro_sector_turning",
+      "fires": false,
+      "description": "Sector 'ai_data_center_infra' macro signal (power demand): \"US natural gas rises as Texas heat outlook boosts power demand\" -- confirm before treating the macro gate as open.",
+      "details": {
+        "url": "https://www.bloomberg.com/news/articles/2026-08-18/us-natural-gas-futures-rise-as-texas-heat-boosts-power-demand",
+        "title": "US natural gas rises as Texas heat outlook boosts power demand",
+        "matched": [
+          "power demand"
+        ],
+        "published": "2026-08-19T09:57:34+00:00"
+      },
+      "dedupe_key": "375210165bcbe7c6",
+      "timestamp": "2026-08-20T12:24:53.339618+00:00"
     }
   ],
   "last_price": 424.67001,

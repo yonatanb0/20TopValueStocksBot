@@ -2,7 +2,7 @@
   "ticker": "PWR",
   "name": "Quanta Services",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-08-19T21:43:48.037982+00:00",
+  "last_updated": "2026-08-20T12:24:53.341353+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -431,6 +431,22 @@
       },
       "dedupe_key": "daeea479b3bb4134",
       "timestamp": "2026-08-19T14:10:55.925923+00:00"
+    },
+    {
+      "category": "macro",
+      "type": "macro_sector_turning",
+      "fires": false,
+      "description": "Sector 'ai_data_center_infra' macro signal (power demand): \"US natural gas rises as Texas heat outlook boosts power demand\" -- confirm before treating the macro gate as open.",
+      "details": {
+        "url": "https://www.bloomberg.com/news/articles/2026-08-18/us-natural-gas-futures-rise-as-texas-heat-boosts-power-demand",
+        "title": "US natural gas rises as Texas heat outlook boosts power demand",
+        "matched": [
+          "power demand"
+        ],
+        "published": "2026-08-19T09:57:34+00:00"
+      },
+      "dedupe_key": "6c0976f3d194e4ef",
+      "timestamp": "2026-08-20T12:24:53.341353+00:00"
     }
   ],
   "last_price": 677.40997,
