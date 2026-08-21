@@ -2,7 +2,7 @@
   "ticker": "AVGO",
   "name": "Broadcom",
   "sector": "semiconductors",
-  "last_updated": "2026-08-21T13:30:53.170059+00:00",
+  "last_updated": "2026-08-21T14:11:22.316510+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -304,8 +304,41 @@
       },
       "dedupe_key": "6476e51f608c7054",
       "timestamp": "2026-08-20T13:31:52.336373+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~357.11 (2 prior touches) and closed back above it (reaction confirmed). Stop ~341.83, target ~441.93 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 357.11499,
+        "zone_touches": 2,
+        "date": "2026-08-21",
+        "fires": true,
+        "stop_loss": 341.83,
+        "take_profit": 441.93,
+        "entry_reference_price": 366.855
+      },
+      "dedupe_key": "2af72407f4ebad13",
+      "timestamp": "2026-08-21T14:11:22.316510+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-08-21",
+        "fires": false
+      },
+      "dedupe_key": "b8c052257ec2ad86",
+      "timestamp": "2026-08-21T14:11:22.316510+00:00"
     }
   ],
-  "last_price": 364.029999,
-  "last_price_date": "2026-08-20"
+  "last_price": 366.855,
+  "last_price_date": "2026-08-21"
 }

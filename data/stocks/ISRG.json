@@ -2,7 +2,7 @@
   "ticker": "ISRG",
   "name": "Intuitive Surgical",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-08-21T13:30:53.148794+00:00",
+  "last_updated": "2026-08-21T14:11:22.294380+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -326,8 +326,37 @@
       },
       "dedupe_key": "bae193bbf13ddf95",
       "timestamp": "2026-08-20T17:20:49.150769+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~397.10 (2 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 397.09999,
+        "zone_touches": 2,
+        "date": "2026-08-21",
+        "fires": false
+      },
+      "dedupe_key": "e2ffcd51ffc89742",
+      "timestamp": "2026-08-21T14:11:22.294380+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (17.5%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 17.5,
+        "close": 376.8,
+        "low_52w": 328.57001,
+        "high_52w": 603.88
+      },
+      "dedupe_key": "5f63c3a5ad85e4e9",
+      "timestamp": "2026-08-21T14:11:22.294380+00:00"
     }
   ],
-  "last_price": 374.48001,
-  "last_price_date": "2026-08-20"
+  "last_price": 376.8,
+  "last_price_date": "2026-08-21"
 }

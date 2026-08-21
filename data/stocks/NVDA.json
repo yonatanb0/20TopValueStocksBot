@@ -2,7 +2,7 @@
   "ticker": "NVDA",
   "name": "NVIDIA",
   "sector": "semiconductors",
-  "last_updated": "2026-08-21T13:30:53.116866+00:00",
+  "last_updated": "2026-08-21T14:11:22.262692+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -328,8 +328,39 @@
       },
       "dedupe_key": "fbd47f62de985859",
       "timestamp": "2026-08-20T14:19:08.529810+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 0.801) -- watch closer, not a standalone trigger, invalidation level ~225.1.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 0.801,
+        "invalidation_level": 225.1,
+        "date": "2026-08-21",
+        "fires": false
+      },
+      "dedupe_key": "3fe0e9d623d32b2c",
+      "timestamp": "2026-08-21T14:11:22.262692+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-08-21",
+        "fires": false
+      },
+      "dedupe_key": "4002eac4d222ec7b",
+      "timestamp": "2026-08-21T14:11:22.262692+00:00"
     }
   ],
-  "last_price": 216.85001,
-  "last_price_date": "2026-08-20"
+  "last_price": 216.275,
+  "last_price_date": "2026-08-21"
 }
