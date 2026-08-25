@@ -2,7 +2,7 @@
   "ticker": "PWR",
   "name": "Quanta Services",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-08-25T12:25:37.662132+00:00",
+  "last_updated": "2026-08-25T13:33:25.780442+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -558,8 +558,41 @@
       },
       "dedupe_key": "d0867ea6fb1a0fbb",
       "timestamp": "2026-08-24T14:23:27.712746+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~611.65 (2 prior touches) and closed back above it (reaction confirmed). Stop ~582.75, target ~761.67 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 611.650025,
+        "zone_touches": 2,
+        "date": "2026-08-25",
+        "fires": true,
+        "stop_loss": 582.75,
+        "take_profit": 761.67,
+        "entry_reference_price": 627.48
+      },
+      "dedupe_key": "dfc44616e36b7f07",
+      "timestamp": "2026-08-25T13:33:25.780442+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-08-25",
+        "fires": false
+      },
+      "dedupe_key": "d16aed6f01914c69",
+      "timestamp": "2026-08-25T13:33:25.780442+00:00"
     }
   ],
-  "last_price": 616.78003,
-  "last_price_date": "2026-08-24"
+  "last_price": 627.48,
+  "last_price_date": "2026-08-25"
 }
