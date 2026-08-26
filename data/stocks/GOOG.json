@@ -2,7 +2,7 @@
   "ticker": "GOOG",
   "name": "Alphabet",
   "sector": "enterprise_tech",
-  "last_updated": "2026-08-26T13:38:41.129214+00:00",
+  "last_updated": "2026-08-26T14:24:04.659391+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -369,8 +369,23 @@
       },
       "dedupe_key": "1c879cfb635f3d31",
       "timestamp": "2026-08-26T13:38:41.129214+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-08-26",
+        "fires": false
+      },
+      "dedupe_key": "8f33ba3e3ee1c397",
+      "timestamp": "2026-08-26T14:24:04.659391+00:00"
     }
   ],
-  "last_price": 341.52,
+  "last_price": 338.3,
   "last_price_date": "2026-08-26"
 }
