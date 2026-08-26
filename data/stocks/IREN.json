@@ -2,7 +2,7 @@
   "ticker": "IREN",
   "name": "IREN Limited",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-08-26T12:28:05.455158+00:00",
+  "last_updated": "2026-08-26T13:38:41.175628+00:00",
   "signal_log": [
     {
       "category": "macro",
@@ -113,8 +113,39 @@
       },
       "dedupe_key": "37133731c3a53829",
       "timestamp": "2026-08-25T13:33:25.796762+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 0.973) -- watch closer, not a standalone trigger, invalidation level ~45.59.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 0.973,
+        "invalidation_level": 45.59,
+        "date": "2026-08-26",
+        "fires": false
+      },
+      "dedupe_key": "5fd3e1b63a3abfdb",
+      "timestamp": "2026-08-26T13:38:41.175628+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-08-26",
+        "fires": false
+      },
+      "dedupe_key": "960531e7398c1e4e",
+      "timestamp": "2026-08-26T13:38:41.175628+00:00"
     }
   ],
-  "last_price": 42.21,
-  "last_price_date": "2026-08-25"
+  "last_price": 40.885,
+  "last_price_date": "2026-08-26"
 }

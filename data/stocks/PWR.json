@@ -2,7 +2,7 @@
   "ticker": "PWR",
   "name": "Quanta Services",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-08-26T12:28:05.440899+00:00",
+  "last_updated": "2026-08-26T13:38:41.158742+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -591,8 +591,54 @@
       },
       "dedupe_key": "d16aed6f01914c69",
       "timestamp": "2026-08-25T13:33:25.780442+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~611.65 (2 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 611.650025,
+        "zone_touches": 2,
+        "date": "2026-08-26",
+        "fires": false
+      },
+      "dedupe_key": "13a5e3f08daa1dfb",
+      "timestamp": "2026-08-26T13:38:41.158742+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 0.493) -- watch closer, not a standalone trigger, invalidation level ~637.46.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 0.493,
+        "invalidation_level": 637.46,
+        "date": "2026-08-26",
+        "fires": false
+      },
+      "dedupe_key": "c60e42d8a1fdcc29",
+      "timestamp": "2026-08-26T13:38:41.158742+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-08-26",
+        "fires": false
+      },
+      "dedupe_key": "f46d32d41fdda240",
+      "timestamp": "2026-08-26T13:38:41.158742+00:00"
     }
   ],
-  "last_price": 603.78003,
-  "last_price_date": "2026-08-25"
+  "last_price": 606.74,
+  "last_price_date": "2026-08-26"
 }
