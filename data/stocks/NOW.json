@@ -2,7 +2,7 @@
   "ticker": "NOW",
   "name": "ServiceNow",
   "sector": "enterprise_tech",
-  "last_updated": "2026-08-26T22:11:05.656085+00:00",
+  "last_updated": "2026-08-27T21:25:44.834153+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -158,8 +158,40 @@
       },
       "dedupe_key": "41a7889e7b396c45",
       "timestamp": "2026-08-21T14:11:22.313347+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (131.18) on 2026-08-27 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-08-27",
+        "range_high": 131.17999,
+        "close": 138.44,
+        "volume_multiple": 1.415958859230422,
+        "fires": false
+      },
+      "dedupe_key": "b7fe98a1cc6e23f9",
+      "timestamp": "2026-08-27T21:25:44.834153+00:00"
+    },
+    {
+      "category": "macro",
+      "type": "macro_sector_turning",
+      "fires": false,
+      "description": "Sector 'enterprise_tech' macro signal (rate cut): \"What Warsh will say and how the market will react, according to prediction markets\" -- confirm before treating the macro gate as open.",
+      "details": {
+        "url": "https://www.cnbc.com/2026/08/27/what-warsh-will-say-and-how-the-market-will-react-according-to-prediction-markets.html",
+        "title": "What Warsh will say and how the market will react, according to prediction markets",
+        "matched": [
+          "rate cut"
+        ],
+        "published": "2026-08-27T18:14:57+00:00"
+      },
+      "dedupe_key": "3c58ea4196ff8e7e",
+      "timestamp": "2026-08-27T21:25:44.834153+00:00"
     }
   ],
-  "last_price": 125.8,
-  "last_price_date": "2026-08-26"
+  "last_price": 138.44,
+  "last_price_date": "2026-08-27"
 }

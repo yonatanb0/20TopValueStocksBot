@@ -2,7 +2,7 @@
   "ticker": "MDT",
   "name": "Medtronic",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-08-26T22:11:05.630022+00:00",
+  "last_updated": "2026-08-27T21:25:44.809539+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -131,8 +131,55 @@
       },
       "dedupe_key": "616fefef13f2dccb",
       "timestamp": "2026-08-19T14:10:55.929072+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 0.781) -- watch closer, not a standalone trigger, invalidation level ~93.43.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 0.781,
+        "invalidation_level": 93.43,
+        "date": "2026-08-27",
+        "fires": false
+      },
+      "dedupe_key": "e923cd4d889a454f",
+      "timestamp": "2026-08-27T21:25:44.809539+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": true,
+      "description": "EXIT WATCH: Distribution volume detected. Uptrend trendline broken. Both confirmed -- thesis likely invalidated.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": true,
+        "trendline_break": true,
+        "date": "2026-08-27",
+        "fires": true
+      },
+      "dedupe_key": "09f7d6f39d8ebad5",
+      "timestamp": "2026-08-27T21:25:44.809539+00:00"
+    },
+    {
+      "category": "macro",
+      "type": "macro_sector_turning",
+      "fires": false,
+      "description": "Sector 'healthcare_medtech' macro signal (rate cut): \"What Warsh will say and how the market will react, according to prediction markets\" -- confirm before treating the macro gate as open.",
+      "details": {
+        "url": "https://www.cnbc.com/2026/08/27/what-warsh-will-say-and-how-the-market-will-react-according-to-prediction-markets.html",
+        "title": "What Warsh will say and how the market will react, according to prediction markets",
+        "matched": [
+          "rate cut"
+        ],
+        "published": "2026-08-27T18:14:57+00:00"
+      },
+      "dedupe_key": "de263f316e252e26",
+      "timestamp": "2026-08-27T21:25:44.809539+00:00"
     }
   ],
-  "last_price": 92.019997,
-  "last_price_date": "2026-08-26"
+  "last_price": 89.97,
+  "last_price_date": "2026-08-27"
 }

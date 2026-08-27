@@ -2,7 +2,7 @@
   "ticker": "BSX",
   "name": "Boston Scientific",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-08-26T22:11:05.633050+00:00",
+  "last_updated": "2026-08-27T21:25:44.812535+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -570,8 +570,38 @@
       },
       "dedupe_key": "0c3996b3878c6974",
       "timestamp": "2026-08-26T22:11:05.633050+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (6.6%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 6.6,
+        "close": 46.65,
+        "low_52w": 42.2,
+        "high_52w": 109.5
+      },
+      "dedupe_key": "29aafee18c3f50ee",
+      "timestamp": "2026-08-27T21:25:44.812535+00:00"
+    },
+    {
+      "category": "macro",
+      "type": "macro_sector_turning",
+      "fires": false,
+      "description": "Sector 'healthcare_medtech' macro signal (rate cut): \"What Warsh will say and how the market will react, according to prediction markets\" -- confirm before treating the macro gate as open.",
+      "details": {
+        "url": "https://www.cnbc.com/2026/08/27/what-warsh-will-say-and-how-the-market-will-react-according-to-prediction-markets.html",
+        "title": "What Warsh will say and how the market will react, according to prediction markets",
+        "matched": [
+          "rate cut"
+        ],
+        "published": "2026-08-27T18:14:57+00:00"
+      },
+      "dedupe_key": "6f9f66b7d04b7653",
+      "timestamp": "2026-08-27T21:25:44.812535+00:00"
     }
   ],
-  "last_price": 48.17,
-  "last_price_date": "2026-08-26"
+  "last_price": 46.65,
+  "last_price_date": "2026-08-27"
 }

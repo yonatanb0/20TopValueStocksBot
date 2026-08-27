@@ -2,7 +2,7 @@
   "ticker": "ETN",
   "name": "Eaton",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-08-26T22:11:05.622399+00:00",
+  "last_updated": "2026-08-27T21:25:44.802093+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -263,8 +263,42 @@
       },
       "dedupe_key": "8e13ac675a232ab3",
       "timestamp": "2026-08-24T13:35:20.721410+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~402.24 (3 prior touches) and closed back above it (reaction confirmed). Stop ~387.22, target ~501.9 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 402.24,
+        "zone_touches": 3,
+        "date": "2026-08-27",
+        "fires": true,
+        "stop_loss": 387.22,
+        "take_profit": 501.9,
+        "entry_reference_price": 415.89001
+      },
+      "dedupe_key": "cabf0ac540ff8e48",
+      "timestamp": "2026-08-27T21:25:44.802093+00:00"
+    },
+    {
+      "category": "macro",
+      "type": "macro_sector_turning",
+      "fires": false,
+      "description": "Sector 'ai_data_center_infra' macro signal (rate cut): \"What Warsh will say and how the market will react, according to prediction markets\" -- confirm before treating the macro gate as open.",
+      "details": {
+        "url": "https://www.cnbc.com/2026/08/27/what-warsh-will-say-and-how-the-market-will-react-according-to-prediction-markets.html",
+        "title": "What Warsh will say and how the market will react, according to prediction markets",
+        "matched": [
+          "rate cut"
+        ],
+        "published": "2026-08-27T18:14:57+00:00"
+      },
+      "dedupe_key": "a8fbfe0683380716",
+      "timestamp": "2026-08-27T21:25:44.802093+00:00"
     }
   ],
-  "last_price": 419.44,
-  "last_price_date": "2026-08-26"
+  "last_price": 415.89001,
+  "last_price_date": "2026-08-27"
 }

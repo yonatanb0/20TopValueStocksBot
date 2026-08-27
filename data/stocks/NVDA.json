@@ -2,7 +2,7 @@
   "ticker": "NVDA",
   "name": "NVIDIA",
   "sector": "semiconductors",
-  "last_updated": "2026-08-26T22:11:05.602874+00:00",
+  "last_updated": "2026-08-27T21:25:44.782195+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -404,8 +404,60 @@
       },
       "dedupe_key": "c044f30a684d2da4",
       "timestamp": "2026-08-26T13:38:41.135540+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": true,
+      "description": "Closed above 20-day range high (227.92) on 2026-08-27 with 2.3x avg volume (confirmed). Stop ~220.63, target ~250.31 (3:1 reward:risk).",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-08-27",
+        "range_high": 227.92,
+        "close": 228.050003,
+        "volume_multiple": 2.2952888963909914,
+        "fires": true,
+        "stop_loss": 220.63,
+        "take_profit": 250.31
+      },
+      "dedupe_key": "3a5d719c779f121c",
+      "timestamp": "2026-08-27T21:25:44.782195+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~208.01 (2 prior touches) and closed back above it (reaction confirmed). Stop ~200.72, target ~310.04 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 208.015,
+        "zone_touches": 2,
+        "date": "2026-08-27",
+        "fires": true,
+        "stop_loss": 200.72,
+        "take_profit": 310.04,
+        "entry_reference_price": 228.050003
+      },
+      "dedupe_key": "410cc07640fb9a84",
+      "timestamp": "2026-08-27T21:25:44.782195+00:00"
+    },
+    {
+      "category": "macro",
+      "type": "macro_sector_turning",
+      "fires": false,
+      "description": "Sector 'semiconductors' macro signal (rate cut): \"What Warsh will say and how the market will react, according to prediction markets\" -- confirm before treating the macro gate as open.",
+      "details": {
+        "url": "https://www.cnbc.com/2026/08/27/what-warsh-will-say-and-how-the-market-will-react-according-to-prediction-markets.html",
+        "title": "What Warsh will say and how the market will react, according to prediction markets",
+        "matched": [
+          "rate cut"
+        ],
+        "published": "2026-08-27T18:14:57+00:00"
+      },
+      "dedupe_key": "bffe744fc42a4963",
+      "timestamp": "2026-08-27T21:25:44.782195+00:00"
     }
   ],
-  "last_price": 209.66,
-  "last_price_date": "2026-08-26"
+  "last_price": 228.050003,
+  "last_price_date": "2026-08-27"
 }

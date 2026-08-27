@@ -2,7 +2,7 @@
   "ticker": "GOOG",
   "name": "Alphabet",
   "sector": "enterprise_tech",
-  "last_updated": "2026-08-26T22:11:05.596405+00:00",
+  "last_updated": "2026-08-27T21:25:44.775649+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -384,8 +384,54 @@
       },
       "dedupe_key": "8f33ba3e3ee1c397",
       "timestamp": "2026-08-26T14:24:04.659391+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~340.66 (5 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 340.655002,
+        "zone_touches": 5,
+        "date": "2026-08-27",
+        "fires": false
+      },
+      "dedupe_key": "9711d5849e398aae",
+      "timestamp": "2026-08-27T21:25:44.775649+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-08-27",
+        "fires": false
+      },
+      "dedupe_key": "4082bfbfadc68621",
+      "timestamp": "2026-08-27T21:25:44.775649+00:00"
+    },
+    {
+      "category": "macro",
+      "type": "macro_sector_turning",
+      "fires": false,
+      "description": "Sector 'enterprise_tech' macro signal (rate cut): \"What Warsh will say and how the market will react, according to prediction markets\" -- confirm before treating the macro gate as open.",
+      "details": {
+        "url": "https://www.cnbc.com/2026/08/27/what-warsh-will-say-and-how-the-market-will-react-according-to-prediction-markets.html",
+        "title": "What Warsh will say and how the market will react, according to prediction markets",
+        "matched": [
+          "rate cut"
+        ],
+        "published": "2026-08-27T18:14:57+00:00"
+      },
+      "dedupe_key": "dabfe1a1d0933af6",
+      "timestamp": "2026-08-27T21:25:44.775649+00:00"
     }
   ],
-  "last_price": 339.10001,
-  "last_price_date": "2026-08-26"
+  "last_price": 337.55499,
+  "last_price_date": "2026-08-27"
 }

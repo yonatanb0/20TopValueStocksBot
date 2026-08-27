@@ -2,7 +2,7 @@
   "ticker": "CSCO",
   "name": "Cisco",
   "sector": "enterprise_tech",
-  "last_updated": "2026-08-26T22:11:05.609476+00:00",
+  "last_updated": "2026-08-27T21:25:44.789248+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -427,8 +427,42 @@
       },
       "dedupe_key": "93020ba432a35a43",
       "timestamp": "2026-08-26T13:38:41.142071+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~111.45 (6 prior touches) and closed back above it (reaction confirmed). Stop ~108.18, target ~123.98 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 111.45166633333334,
+        "zone_touches": 6,
+        "date": "2026-08-27",
+        "fires": true,
+        "stop_loss": 108.18,
+        "take_profit": 123.98,
+        "entry_reference_price": 112.13
+      },
+      "dedupe_key": "6704d532f5e38d6f",
+      "timestamp": "2026-08-27T21:25:44.789248+00:00"
+    },
+    {
+      "category": "macro",
+      "type": "macro_sector_turning",
+      "fires": false,
+      "description": "Sector 'enterprise_tech' macro signal (rate cut): \"What Warsh will say and how the market will react, according to prediction markets\" -- confirm before treating the macro gate as open.",
+      "details": {
+        "url": "https://www.cnbc.com/2026/08/27/what-warsh-will-say-and-how-the-market-will-react-according-to-prediction-markets.html",
+        "title": "What Warsh will say and how the market will react, according to prediction markets",
+        "matched": [
+          "rate cut"
+        ],
+        "published": "2026-08-27T18:14:57+00:00"
+      },
+      "dedupe_key": "a5fb43c0ee23a953",
+      "timestamp": "2026-08-27T21:25:44.789248+00:00"
     }
   ],
-  "last_price": 112.36,
-  "last_price_date": "2026-08-26"
+  "last_price": 112.13,
+  "last_price_date": "2026-08-27"
 }

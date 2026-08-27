@@ -2,7 +2,7 @@
   "ticker": "ISRG",
   "name": "Intuitive Surgical",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-08-26T22:11:05.636508+00:00",
+  "last_updated": "2026-08-27T21:25:44.815926+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -397,8 +397,38 @@
       },
       "dedupe_key": "63b2d439ddcbdf80",
       "timestamp": "2026-08-26T13:38:41.168503+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (14.0%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 14.0,
+        "close": 367.0,
+        "low_52w": 328.57001,
+        "high_52w": 603.88
+      },
+      "dedupe_key": "b9ed0eac2d411fa1",
+      "timestamp": "2026-08-27T21:25:44.815926+00:00"
+    },
+    {
+      "category": "macro",
+      "type": "macro_sector_turning",
+      "fires": false,
+      "description": "Sector 'healthcare_medtech' macro signal (rate cut): \"What Warsh will say and how the market will react, according to prediction markets\" -- confirm before treating the macro gate as open.",
+      "details": {
+        "url": "https://www.cnbc.com/2026/08/27/what-warsh-will-say-and-how-the-market-will-react-according-to-prediction-markets.html",
+        "title": "What Warsh will say and how the market will react, according to prediction markets",
+        "matched": [
+          "rate cut"
+        ],
+        "published": "2026-08-27T18:14:57+00:00"
+      },
+      "dedupe_key": "99de799ea93580bb",
+      "timestamp": "2026-08-27T21:25:44.815926+00:00"
     }
   ],
-  "last_price": 370.42001,
-  "last_price_date": "2026-08-26"
+  "last_price": 367.0,
+  "last_price_date": "2026-08-27"
 }

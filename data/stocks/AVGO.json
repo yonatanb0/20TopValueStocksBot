@@ -2,7 +2,7 @@
   "ticker": "AVGO",
   "name": "Broadcom",
   "sector": "semiconductors",
-  "last_updated": "2026-08-26T22:11:05.659245+00:00",
+  "last_updated": "2026-08-27T21:25:44.837309+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -406,8 +406,42 @@
       },
       "dedupe_key": "483947a7dcf0d1c9",
       "timestamp": "2026-08-26T14:24:04.721382+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~357.28 (3 prior touches) and closed back above it (reaction confirmed). Stop ~343.11, target ~456.91 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 357.27999,
+        "zone_touches": 3,
+        "date": "2026-08-27",
+        "fires": true,
+        "stop_loss": 343.11,
+        "take_profit": 456.91,
+        "entry_reference_price": 371.56
+      },
+      "dedupe_key": "4fb2d1d460be5add",
+      "timestamp": "2026-08-27T21:25:44.837309+00:00"
+    },
+    {
+      "category": "macro",
+      "type": "macro_sector_turning",
+      "fires": false,
+      "description": "Sector 'semiconductors' macro signal (rate cut): \"What Warsh will say and how the market will react, according to prediction markets\" -- confirm before treating the macro gate as open.",
+      "details": {
+        "url": "https://www.cnbc.com/2026/08/27/what-warsh-will-say-and-how-the-market-will-react-according-to-prediction-markets.html",
+        "title": "What Warsh will say and how the market will react, according to prediction markets",
+        "matched": [
+          "rate cut"
+        ],
+        "published": "2026-08-27T18:14:57+00:00"
+      },
+      "dedupe_key": "327fe8b74c09a139",
+      "timestamp": "2026-08-27T21:25:44.837309+00:00"
     }
   ],
-  "last_price": 355.59,
-  "last_price_date": "2026-08-26"
+  "last_price": 371.56,
+  "last_price_date": "2026-08-27"
 }

@@ -2,7 +2,7 @@
   "ticker": "AAPL",
   "name": "Apple",
   "sector": "enterprise_tech",
-  "last_updated": "2026-08-26T22:11:05.606144+00:00",
+  "last_updated": "2026-08-27T21:25:44.786052+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -198,8 +198,40 @@
       },
       "dedupe_key": "f52cc899d1d67634",
       "timestamp": "2026-08-21T21:14:55.944698+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator buy turn (value -0.626) -- watch closer, not a standalone trigger, invalidation level ~302.74.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "buy",
+        "value": -0.626,
+        "invalidation_level": 302.74,
+        "date": "2026-08-27",
+        "fires": false
+      },
+      "dedupe_key": "c1112becc84f0625",
+      "timestamp": "2026-08-27T21:25:44.786052+00:00"
+    },
+    {
+      "category": "macro",
+      "type": "macro_sector_turning",
+      "fires": false,
+      "description": "Sector 'enterprise_tech' macro signal (rate cut): \"What Warsh will say and how the market will react, according to prediction markets\" -- confirm before treating the macro gate as open.",
+      "details": {
+        "url": "https://www.cnbc.com/2026/08/27/what-warsh-will-say-and-how-the-market-will-react-according-to-prediction-markets.html",
+        "title": "What Warsh will say and how the market will react, according to prediction markets",
+        "matched": [
+          "rate cut"
+        ],
+        "published": "2026-08-27T18:14:57+00:00"
+      },
+      "dedupe_key": "1dd9439f5ac3ad3b",
+      "timestamp": "2026-08-27T21:25:44.786052+00:00"
     }
   ],
-  "last_price": 313.45001,
-  "last_price_date": "2026-08-26"
+  "last_price": 314.57501,
+  "last_price_date": "2026-08-27"
 }
