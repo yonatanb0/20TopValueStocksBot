@@ -1,6 +1,6 @@
 {
   "ticker": "NOW",
-  "last_updated": "2026-08-27T21:25:54.987371+00:00",
+  "last_updated": "2026-08-28T05:37:55.612549+00:00",
   "has_thesis": true,
   "position": {
     "ticker": "NOW",
@@ -11,13 +11,13 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 138.44,
+    "current_price": 138.42999,
     "entry_price": null,
     "stop_price": 81.24,
     "target_price": 140.25,
     "pct_from_entry": null,
-    "pct_from_stop": 70.41,
-    "pct_from_target": -1.29,
+    "pct_from_stop": 70.4,
+    "pct_from_target": -1.3,
     "atr_units_from_stop": 8.95
   },
   "trend": {
@@ -34,7 +34,7 @@
   "volatility": {
     "atr14": 6.39,
     "atr14_pct_of_price": 4.62,
-    "realized_vol_20d_annualized_pct": 55.04
+    "realized_vol_20d_annualized_pct": 55.02
   },
   "range": {
     "high_20d": 139.32,
@@ -46,23 +46,23 @@
     "rsi14": 69.01
   },
   "volume": {
-    "up_down_volume_ratio_20d": 2.65
+    "up_down_volume_ratio_20d": 2.68
   },
   "consolidation": {
     "range_width_pct": 31.37,
-    "distance_from_high_pct": -0.63,
-    "distance_from_low_pct": 30.54
+    "distance_from_high_pct": -0.64,
+    "distance_from_low_pct": 30.53
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": "~October 2026",
-    "days_to_next_earnings": 35,
+    "days_to_next_earnings": 34,
     "next_review_date_approx": "2026-10",
-    "days_since_review_due": -35
+    "days_since_review_due": -34
   },
   "fundamentals": {
-    "forward_pe": 34.046716495761835,
+    "forward_pe": 33.99514544509746,
     "ev_ebitda_ttm": 49.6512,
-    "implied_forward_eps": 4.0662,
+    "implied_forward_eps": 4.0721,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
@@ -75,7 +75,7 @@
       "state": {
         "status": "open",
         "entry_date": "2026-08-27",
-        "entry_price": 138.44,
+        "entry_price": 138.42999,
         "n_at_entry": 6.378600424430855,
         "exit_date": null,
         "exit_price": null,
@@ -85,7 +85,7 @@
         "resolution": null,
         "entry_fired": true,
         "filtered": false,
-        "entry_price": 138.44,
+        "entry_price": 138.42999,
         "system": "system1"
       }
     },
@@ -93,7 +93,7 @@
       "state": {
         "status": "open",
         "entry_date": "2026-08-27",
-        "entry_price": 138.44,
+        "entry_price": 138.42999,
         "n_at_entry": 6.378600424430855,
         "exit_date": null,
         "exit_price": null,
@@ -103,19 +103,19 @@
         "resolution": null,
         "entry_fired": true,
         "filtered": false,
-        "entry_price": 138.44,
+        "entry_price": 138.42999,
         "system": "system2"
       }
     },
     "position_plan": {
       "unit_prices": [
-        138.44,
-        141.63,
-        144.82,
-        148.01
+        138.43,
+        141.62,
+        144.81,
+        148.0
       ],
       "units_reached": 1,
-      "stop_price": 125.68,
+      "stop_price": 125.67,
       "n_at_entry": 6.379
     },
     "unit_size": null
