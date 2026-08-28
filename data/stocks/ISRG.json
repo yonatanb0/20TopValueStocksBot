@@ -2,7 +2,7 @@
   "ticker": "ISRG",
   "name": "Intuitive Surgical",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-08-28T05:37:45.904842+00:00",
+  "last_updated": "2026-08-28T21:36:23.165951+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -427,8 +427,38 @@
       },
       "dedupe_key": "99de799ea93580bb",
       "timestamp": "2026-08-27T21:25:44.815926+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 0.543) -- watch closer, not a standalone trigger, invalidation level ~385.55.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 0.543,
+        "invalidation_level": 385.55,
+        "date": "2026-08-28",
+        "fires": false
+      },
+      "dedupe_key": "057a40207319db77",
+      "timestamp": "2026-08-28T21:36:23.165951+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (16.0%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 16.0,
+        "close": 372.60001,
+        "low_52w": 328.57001,
+        "high_52w": 603.88
+      },
+      "dedupe_key": "0b27007c6431a042",
+      "timestamp": "2026-08-28T21:36:23.165951+00:00"
     }
   ],
-  "last_price": 367.070007,
-  "last_price_date": "2026-08-27"
+  "last_price": 372.60001,
+  "last_price_date": "2026-08-28"
 }

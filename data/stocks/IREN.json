@@ -2,7 +2,7 @@
   "ticker": "IREN",
   "name": "IREN Limited",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-08-28T05:37:45.909925+00:00",
+  "last_updated": "2026-08-28T21:36:23.172692+00:00",
   "signal_log": [
     {
       "category": "macro",
@@ -175,8 +175,23 @@
       },
       "dedupe_key": "7cb58115f303c96b",
       "timestamp": "2026-08-27T21:25:44.822282+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": true,
+      "description": "EXIT WATCH: Distribution volume detected. Uptrend trendline broken. Both confirmed -- thesis likely invalidated.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": true,
+        "trendline_break": true,
+        "date": "2026-08-28",
+        "fires": true
+      },
+      "dedupe_key": "1f07a618d1502f0b",
+      "timestamp": "2026-08-28T21:36:23.172692+00:00"
     }
   ],
-  "last_price": 40.53,
-  "last_price_date": "2026-08-27"
+  "last_price": 35.45,
+  "last_price_date": "2026-08-28"
 }
