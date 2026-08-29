@@ -1,6 +1,6 @@
 {
   "ticker": "NVDA",
-  "last_updated": "2026-08-28T21:36:30.856349+00:00",
+  "last_updated": "2026-08-29T03:22:09.415079+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "NVDA",
@@ -46,7 +46,7 @@
     "rsi14": 52.34
   },
   "volume": {
-    "up_down_volume_ratio_20d": 0.82
+    "up_down_volume_ratio_20d": 0.83
   },
   "consolidation": {
     "range_width_pct": 17.08,
@@ -74,42 +74,48 @@
     "system1": {
       "state": {
         "state": {
-          "status": "open",
-          "entry_date": "2026-08-27",
-          "entry_price": 227.98,
-          "n_at_entry": 7.232071184770723,
-          "exit_date": null,
-          "exit_price": null,
-          "outcome": null
+          "state": {
+            "status": "open",
+            "entry_date": "2026-08-27",
+            "entry_price": 227.98,
+            "n_at_entry": 7.232071184770723,
+            "exit_date": null,
+            "exit_price": null,
+            "outcome": null
+          },
+          "signal": {
+            "resolution": null,
+            "entry_fired": true,
+            "filtered": false,
+            "entry_price": 227.98,
+            "system": "system1"
+          }
         },
-        "signal": {
-          "resolution": null,
-          "entry_fired": true,
-          "filtered": false,
-          "entry_price": 227.98,
-          "system": "system1"
-        }
+        "signal": null
       },
       "signal": null
     },
     "system2": {
       "state": {
         "state": {
-          "status": "open",
-          "entry_date": "2026-08-27",
-          "entry_price": 227.98,
-          "n_at_entry": 7.232071184770723,
-          "exit_date": null,
-          "exit_price": null,
-          "outcome": null
+          "state": {
+            "status": "open",
+            "entry_date": "2026-08-27",
+            "entry_price": 227.98,
+            "n_at_entry": 7.232071184770723,
+            "exit_date": null,
+            "exit_price": null,
+            "outcome": null
+          },
+          "signal": {
+            "resolution": null,
+            "entry_fired": true,
+            "filtered": false,
+            "entry_price": 227.98,
+            "system": "system2"
+          }
         },
-        "signal": {
-          "resolution": null,
-          "entry_fired": true,
-          "filtered": false,
-          "entry_price": 227.98,
-          "system": "system2"
-        }
+        "signal": null
       },
       "signal": null
     },
