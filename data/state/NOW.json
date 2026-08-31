@@ -1,6 +1,6 @@
 {
   "ticker": "NOW",
-  "last_updated": "2026-08-31T18:23:16.101929+00:00",
+  "last_updated": "2026-08-31T23:02:27.840791+00:00",
   "has_thesis": true,
   "position": {
     "ticker": "NOW",
@@ -11,47 +11,47 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 148.46,
+    "current_price": 147.99001,
     "entry_price": null,
     "stop_price": 81.24,
     "target_price": 140.25,
     "pct_from_entry": null,
-    "pct_from_stop": 82.74,
-    "pct_from_target": 5.85,
-    "atr_units_from_stop": 10.29
+    "pct_from_stop": 82.16,
+    "pct_from_target": 5.52,
+    "atr_units_from_stop": 10.11
   },
   "trend": {
-    "sma20": 127.19,
-    "sma20_slope_5d_pct": 5.06,
+    "sma20": 127.17,
+    "sma20_slope_5d_pct": 5.04,
     "price_vs_sma20": "above",
-    "sma50": 113.15,
+    "sma50": 113.14,
     "sma50_slope_5d_pct": 3.4,
     "price_vs_sma50": "above",
     "sma200": 119.15,
-    "sma200_slope_5d_pct": -0.75,
+    "sma200_slope_5d_pct": -0.76,
     "price_vs_sma200": "above"
   },
   "volatility": {
-    "atr14": 6.53,
-    "atr14_pct_of_price": 4.4,
-    "realized_vol_20d_annualized_pct": 56.25
+    "atr14": 6.6,
+    "atr14_pct_of_price": 4.46,
+    "realized_vol_20d_annualized_pct": 56.17
   },
   "range": {
-    "high_20d": 148.75,
+    "high_20d": 149.6,
     "low_20d": 111.8,
-    "high_60d": 148.75,
+    "high_60d": 149.6,
     "low_60d": 89.39
   },
   "momentum": {
-    "rsi14": 74.67
+    "rsi14": 74.44
   },
   "volume": {
-    "up_down_volume_ratio_20d": 3.72
+    "up_down_volume_ratio_20d": 4.07
   },
   "consolidation": {
-    "range_width_pct": 33.05,
-    "distance_from_high_pct": -0.2,
-    "distance_from_low_pct": 32.79
+    "range_width_pct": 33.81,
+    "distance_from_high_pct": -1.08,
+    "distance_from_low_pct": 32.37
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": "~October 2026",
@@ -60,9 +60,9 @@
     "days_since_review_due": -31
   },
   "fundamentals": {
-    "forward_pe": 36.26058802785426,
+    "forward_pe": 36.34285613248554,
     "ev_ebitda_ttm": 49.6512,
-    "implied_forward_eps": 4.0943,
+    "implied_forward_eps": 4.0721,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
@@ -70,13 +70,13 @@
   },
   "turtle": {
     "gate_open": true,
-    "n": 6.481,
+    "n": 6.528,
     "system1": {
       "state": {
         "status": "open",
         "entry_date": "2026-08-31",
-        "entry_price": 148.46,
-        "n_at_entry": 6.480636956750556,
+        "entry_price": 147.99001,
+        "n_at_entry": 6.528387456750556,
         "exit_date": null,
         "exit_price": null,
         "outcome": null
@@ -85,7 +85,7 @@
         "resolution": null,
         "entry_fired": true,
         "filtered": false,
-        "entry_price": 148.46,
+        "entry_price": 147.99001,
         "system": "system1"
       }
     },
@@ -93,8 +93,8 @@
       "state": {
         "status": "open",
         "entry_date": "2026-08-31",
-        "entry_price": 148.46,
-        "n_at_entry": 6.480636956750556,
+        "entry_price": 147.99001,
+        "n_at_entry": 6.528387456750556,
         "exit_date": null,
         "exit_price": null,
         "outcome": null
@@ -103,20 +103,20 @@
         "resolution": null,
         "entry_fired": true,
         "filtered": false,
-        "entry_price": 148.46,
+        "entry_price": 147.99001,
         "system": "system2"
       }
     },
     "position_plan": {
       "unit_prices": [
-        148.46,
-        151.7,
-        154.94,
-        158.18
+        147.99,
+        151.25,
+        154.52,
+        157.78
       ],
       "units_reached": 1,
-      "stop_price": 135.5,
-      "n_at_entry": 6.481
+      "stop_price": 134.93,
+      "n_at_entry": 6.528
     },
     "unit_size": null
   },
