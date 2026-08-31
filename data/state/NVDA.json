@@ -1,6 +1,6 @@
 {
   "ticker": "NVDA",
-  "last_updated": "2026-08-29T03:22:09.415079+00:00",
+  "last_updated": "2026-08-31T18:23:15.942476+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "NVDA",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 217.55,
+    "current_price": 219.425,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -21,37 +21,37 @@
     "atr_units_from_stop": null
   },
   "trend": {
-    "sma20": 218.05,
-    "sma20_slope_5d_pct": 2.28,
-    "price_vs_sma20": "below",
-    "sma50": 208.42,
-    "sma50_slope_5d_pct": 0.41,
+    "sma20": 218.69,
+    "sma20_slope_5d_pct": 2.3,
+    "price_vs_sma20": "above",
+    "sma50": 208.59,
+    "sma50_slope_5d_pct": 0.46,
     "price_vs_sma50": "above",
-    "sma200": 195.83,
-    "sma200_slope_5d_pct": 0.28,
+    "sma200": 195.96,
+    "sma200_slope_5d_pct": 0.32,
     "price_vs_sma200": "above"
   },
   "volatility": {
-    "atr14": 7.66,
-    "atr14_pct_of_price": 3.52,
-    "realized_vol_20d_annualized_pct": 46.99
+    "atr14": 7.43,
+    "atr14_pct_of_price": 3.38,
+    "realized_vol_20d_annualized_pct": 46.1
   },
   "range": {
     "high_20d": 230.47,
-    "low_20d": 196.85,
+    "low_20d": 207.25,
     "high_60d": 230.47,
     "low_60d": 189.8
   },
   "momentum": {
-    "rsi14": 52.34
+    "rsi14": 53.66
   },
   "volume": {
-    "up_down_volume_ratio_20d": 0.83
+    "up_down_volume_ratio_20d": 0.73
   },
   "consolidation": {
-    "range_width_pct": 17.08,
-    "distance_from_high_pct": -5.61,
-    "distance_from_low_pct": 10.52
+    "range_width_pct": 11.2,
+    "distance_from_high_pct": -4.79,
+    "distance_from_low_pct": 5.87
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -62,7 +62,7 @@
   "fundamentals": {
     "forward_pe": 18.10034,
     "ev_ebitda_ttm": 32.7357,
-    "implied_forward_eps": 12.0191,
+    "implied_forward_eps": 12.1227,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
@@ -70,26 +70,29 @@
   },
   "turtle": {
     "gate_open": true,
-    "n": 7.492,
+    "n": 7.337,
     "system1": {
       "state": {
         "state": {
           "state": {
-            "status": "open",
-            "entry_date": "2026-08-27",
-            "entry_price": 227.98,
-            "n_at_entry": 7.232071184770723,
-            "exit_date": null,
-            "exit_price": null,
-            "outcome": null
+            "state": {
+              "status": "open",
+              "entry_date": "2026-08-27",
+              "entry_price": 227.98,
+              "n_at_entry": 7.232071184770723,
+              "exit_date": null,
+              "exit_price": null,
+              "outcome": null
+            },
+            "signal": {
+              "resolution": null,
+              "entry_fired": true,
+              "filtered": false,
+              "entry_price": 227.98,
+              "system": "system1"
+            }
           },
-          "signal": {
-            "resolution": null,
-            "entry_fired": true,
-            "filtered": false,
-            "entry_price": 227.98,
-            "system": "system1"
-          }
+          "signal": null
         },
         "signal": null
       },
@@ -99,21 +102,24 @@
       "state": {
         "state": {
           "state": {
-            "status": "open",
-            "entry_date": "2026-08-27",
-            "entry_price": 227.98,
-            "n_at_entry": 7.232071184770723,
-            "exit_date": null,
-            "exit_price": null,
-            "outcome": null
+            "state": {
+              "status": "open",
+              "entry_date": "2026-08-27",
+              "entry_price": 227.98,
+              "n_at_entry": 7.232071184770723,
+              "exit_date": null,
+              "exit_price": null,
+              "outcome": null
+            },
+            "signal": {
+              "resolution": null,
+              "entry_fired": true,
+              "filtered": false,
+              "entry_price": 227.98,
+              "system": "system2"
+            }
           },
-          "signal": {
-            "resolution": null,
-            "entry_fired": true,
-            "filtered": false,
-            "entry_price": 227.98,
-            "system": "system2"
-          }
+          "signal": null
         },
         "signal": null
       },

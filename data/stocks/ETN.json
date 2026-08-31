@@ -2,7 +2,7 @@
   "ticker": "ETN",
   "name": "Eaton",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-08-29T03:22:00.110318+00:00",
+  "last_updated": "2026-08-31T18:23:05.684502+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -330,8 +330,41 @@
       },
       "dedupe_key": "68fd89301215ed60",
       "timestamp": "2026-08-28T21:36:23.151471+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~402.24 (3 prior touches) and closed back above it (reaction confirmed). Stop ~387.71, target ~446.87 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 402.24,
+        "zone_touches": 3,
+        "date": "2026-08-31",
+        "fires": true,
+        "stop_loss": 387.71,
+        "take_profit": 446.87,
+        "entry_reference_price": 402.5
+      },
+      "dedupe_key": "0941c3cd2bb9e6dd",
+      "timestamp": "2026-08-31T18:23:05.684502+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-08-31",
+        "fires": false
+      },
+      "dedupe_key": "562a8660cbb0157d",
+      "timestamp": "2026-08-31T18:23:05.684502+00:00"
     }
   ],
-  "last_price": 402.78,
-  "last_price_date": "2026-08-28"
+  "last_price": 402.5,
+  "last_price_date": "2026-08-31"
 }
