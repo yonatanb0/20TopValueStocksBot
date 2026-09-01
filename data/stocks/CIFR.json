@@ -2,7 +2,7 @@
   "ticker": "CIFR",
   "name": "Cipher Mining",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-08-31T23:02:19.581436+00:00",
+  "last_updated": "2026-09-01T15:43:43.345247+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -421,8 +421,24 @@
       },
       "dedupe_key": "43bbdd86a7337a23",
       "timestamp": "2026-08-31T18:23:05.707870+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator buy turn (value -0.325) -- watch closer, not a standalone trigger, invalidation level ~12.47.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "buy",
+        "value": -0.325,
+        "invalidation_level": 12.47,
+        "date": "2026-09-01",
+        "fires": false
+      },
+      "dedupe_key": "b6bc5856255235ed",
+      "timestamp": "2026-09-01T15:43:43.345247+00:00"
     }
   ],
-  "last_price": 15.5,
-  "last_price_date": "2026-08-31"
+  "last_price": 14.955,
+  "last_price_date": "2026-09-01"
 }
