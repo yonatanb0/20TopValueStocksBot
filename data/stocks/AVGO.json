@@ -2,7 +2,7 @@
   "ticker": "AVGO",
   "name": "Broadcom",
   "sector": "semiconductors",
-  "last_updated": "2026-09-02T18:57:54.568062+00:00",
+  "last_updated": "2026-09-02T21:28:09.302740+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -512,8 +512,24 @@
       },
       "dedupe_key": "2b24c54b8ea04f65",
       "timestamp": "2026-09-02T15:33:56.523600+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "guidance_rollover",
+      "fires": false,
+      "description": "EXIT WATCH -- headline suggests guidance rollover (misses estimates): \"Broadcom Forecast Misses Estimates, Disappointing Investors\"",
+      "details": {
+        "url": "https://finnhub.io/api/news?id=b565e1d7176ec0200f2370fc307a6ab40e6e1a902e67d6f0d175ad78daccf52f",
+        "headline": "Broadcom Forecast Misses Estimates, Disappointing Investors",
+        "matched_keywords": [
+          "misses estimates"
+        ],
+        "published": "2026-09-02T21:19:59+00:00"
+      },
+      "dedupe_key": "247807394b11a48d",
+      "timestamp": "2026-09-02T21:28:09.302740+00:00"
     }
   ],
-  "last_price": 369.14,
+  "last_price": 367.76999,
   "last_price_date": "2026-09-02"
 }
