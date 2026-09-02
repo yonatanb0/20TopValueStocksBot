@@ -2,7 +2,7 @@
   "ticker": "BE",
   "name": "Bloom Energy",
   "sector": "clean_energy",
-  "last_updated": "2026-09-01T23:34:21.239279+00:00",
+  "last_updated": "2026-09-02T15:33:56.484210+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -215,8 +215,24 @@
       },
       "dedupe_key": "2434ed516a6f6309",
       "timestamp": "2026-08-27T21:25:44.795681+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 0.532) -- watch closer, not a standalone trigger, invalidation level ~235.25.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 0.532,
+        "invalidation_level": 235.25,
+        "date": "2026-09-02",
+        "fires": false
+      },
+      "dedupe_key": "883d97d29a05f1a3",
+      "timestamp": "2026-09-02T15:33:56.484210+00:00"
     }
   ],
-  "last_price": 213.63,
-  "last_price_date": "2026-09-01"
+  "last_price": 207.73,
+  "last_price_date": "2026-09-02"
 }
