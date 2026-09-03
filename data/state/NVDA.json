@@ -1,6 +1,6 @@
 {
   "ticker": "NVDA",
-  "last_updated": "2026-09-03T21:33:01.262617+00:00",
+  "last_updated": "2026-09-03T23:32:20.887446+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "NVDA",
@@ -60,13 +60,13 @@
     "days_since_review_due": null
   },
   "fundamentals": {
-    "forward_pe": null,
-    "ev_ebitda_ttm": null,
-    "implied_forward_eps": null,
+    "forward_pe": 18.10034,
+    "ev_ebitda_ttm": 26.9418,
+    "implied_forward_eps": 12.6185,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-09-03",
-    "estimate_baseline_implied_eps": null
+    "estimate_baseline_implied_eps": 12.6185
   },
   "turtle": {
     "gate_open": true,
@@ -88,21 +88,24 @@
                                 "state": {
                                   "state": {
                                     "state": {
-                                      "status": "open",
-                                      "entry_date": "2026-08-27",
-                                      "entry_price": 227.98,
-                                      "n_at_entry": 7.232071184770723,
-                                      "exit_date": null,
-                                      "exit_price": null,
-                                      "outcome": null
+                                      "state": {
+                                        "status": "open",
+                                        "entry_date": "2026-08-27",
+                                        "entry_price": 227.98,
+                                        "n_at_entry": 7.232071184770723,
+                                        "exit_date": null,
+                                        "exit_price": null,
+                                        "outcome": null
+                                      },
+                                      "signal": {
+                                        "resolution": null,
+                                        "entry_fired": true,
+                                        "filtered": false,
+                                        "entry_price": 227.98,
+                                        "system": "system1"
+                                      }
                                     },
-                                    "signal": {
-                                      "resolution": null,
-                                      "entry_fired": true,
-                                      "filtered": false,
-                                      "entry_price": 227.98,
-                                      "system": "system1"
-                                    }
+                                    "signal": null
                                   },
                                   "signal": null
                                 },
@@ -151,21 +154,24 @@
                                 "state": {
                                   "state": {
                                     "state": {
-                                      "status": "open",
-                                      "entry_date": "2026-08-27",
-                                      "entry_price": 227.98,
-                                      "n_at_entry": 7.232071184770723,
-                                      "exit_date": null,
-                                      "exit_price": null,
-                                      "outcome": null
+                                      "state": {
+                                        "status": "open",
+                                        "entry_date": "2026-08-27",
+                                        "entry_price": 227.98,
+                                        "n_at_entry": 7.232071184770723,
+                                        "exit_date": null,
+                                        "exit_price": null,
+                                        "outcome": null
+                                      },
+                                      "signal": {
+                                        "resolution": null,
+                                        "entry_fired": true,
+                                        "filtered": false,
+                                        "entry_price": 227.98,
+                                        "system": "system2"
+                                      }
                                     },
-                                    "signal": {
-                                      "resolution": null,
-                                      "entry_fired": true,
-                                      "filtered": false,
-                                      "entry_price": 227.98,
-                                      "system": "system2"
-                                    }
+                                    "signal": null
                                   },
                                   "signal": null
                                 },
