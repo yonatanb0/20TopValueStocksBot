@@ -2,7 +2,7 @@
   "ticker": "AAPL",
   "name": "Apple",
   "sector": "enterprise_tech",
-  "last_updated": "2026-09-02T23:34:00.092768+00:00",
+  "last_updated": "2026-09-03T15:26:04.376943+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -246,8 +246,24 @@
       },
       "dedupe_key": "329be111bad89ac0",
       "timestamp": "2026-09-01T15:43:43.317010+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (328.40) on 2026-09-03 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-09-03",
+        "range_high": 328.39999,
+        "close": 329.93,
+        "volume_multiple": 0.012229586807248458,
+        "fires": false
+      },
+      "dedupe_key": "4c535ae7cacc0161",
+      "timestamp": "2026-09-03T15:26:04.376943+00:00"
     }
   ],
-  "last_price": 324.98999,
-  "last_price_date": "2026-09-02"
+  "last_price": 329.93,
+  "last_price_date": "2026-09-03"
 }
