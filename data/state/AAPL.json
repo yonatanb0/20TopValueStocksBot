@@ -1,6 +1,6 @@
 {
   "ticker": "AAPL",
-  "last_updated": "2026-09-03T15:26:18.000366+00:00",
+  "last_updated": "2026-09-03T18:53:16.069586+00:00",
   "has_thesis": true,
   "position": {
     "ticker": "AAPL",
@@ -11,30 +11,30 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 329.93,
+    "current_price": 326.795,
     "entry_price": null,
     "stop_price": 276.79,
     "target_price": 395.6,
     "pct_from_entry": null,
-    "pct_from_stop": 19.2,
-    "pct_from_target": -16.6,
-    "atr_units_from_stop": 7.21
+    "pct_from_stop": 18.07,
+    "pct_from_target": -17.39,
+    "atr_units_from_stop": 6.78
   },
   "trend": {
-    "sma20": 312.89,
-    "sma20_slope_5d_pct": 1.15,
+    "sma20": 312.74,
+    "sma20_slope_5d_pct": 1.1,
     "price_vs_sma20": "above",
-    "sma50": 314.29,
-    "sma50_slope_5d_pct": 0.89,
+    "sma50": 314.23,
+    "sma50_slope_5d_pct": 0.87,
     "price_vs_sma50": "above",
-    "sma200": 283.62,
-    "sma200_slope_5d_pct": 0.45,
+    "sma200": 283.6,
+    "sma200_slope_5d_pct": 0.44,
     "price_vs_sma200": "above"
   },
   "volatility": {
     "atr14": 7.37,
-    "atr14_pct_of_price": 2.23,
-    "realized_vol_20d_annualized_pct": 19.5
+    "atr14_pct_of_price": 2.26,
+    "realized_vol_20d_annualized_pct": 18.97
   },
   "range": {
     "high_20d": 330.79,
@@ -43,15 +43,15 @@
     "low_60d": 273.75
   },
   "momentum": {
-    "rsi14": 64.59
+    "rsi14": 62.33
   },
   "volume": {
     "up_down_volume_ratio_20d": 1.04
   },
   "consolidation": {
     "range_width_pct": 10.05,
-    "distance_from_high_pct": -0.26,
-    "distance_from_low_pct": 9.77
+    "distance_from_high_pct": -1.21,
+    "distance_from_low_pct": 8.73
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": "2026-07-30, after market close (Q3 FY26 -- Tim Cook's last as CEO)",
@@ -61,8 +61,8 @@
   },
   "fundamentals": {
     "forward_pe": 34.85022,
-    "ev_ebitda_ttm": 26.643,
-    "implied_forward_eps": 9.4671,
+    "ev_ebitda_ttm": 28.9122,
+    "implied_forward_eps": 9.3771,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
@@ -73,21 +73,24 @@
     "n": 7.513,
     "system1": {
       "state": {
-        "status": "open",
-        "entry_date": "2026-09-03",
-        "entry_price": 329.93,
-        "n_at_entry": 7.513057830000255,
-        "exit_date": null,
-        "exit_price": null,
-        "outcome": null
+        "state": {
+          "status": "open",
+          "entry_date": "2026-09-03",
+          "entry_price": 329.93,
+          "n_at_entry": 7.513057830000255,
+          "exit_date": null,
+          "exit_price": null,
+          "outcome": null
+        },
+        "signal": {
+          "resolution": null,
+          "entry_fired": true,
+          "filtered": false,
+          "entry_price": 329.93,
+          "system": "system1"
+        }
       },
-      "signal": {
-        "resolution": null,
-        "entry_fired": true,
-        "filtered": false,
-        "entry_price": 329.93,
-        "system": "system1"
-      }
+      "signal": null
     },
     "system2": {
       "state": {
@@ -312,7 +315,10 @@
                                                                                                                                                                                                                                                                                                                                                                                                                                                             "state": {
                                                                                                                                                                                                                                                                                                                                                                                                                                                               "state": {
                                                                                                                                                                                                                                                                                                                                                                                                                                                                 "state": {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                  "state": {},
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                  "state": {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "state": {},
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "signal": null
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                  },
                                                                                                                                                                                                                                                                                                                                                                                                                                                                   "signal": null
                                                                                                                                                                                                                                                                                                                                                                                                                                                                 },
                                                                                                                                                                                                                                                                                                                                                                                                                                                                 "signal": null
@@ -759,17 +765,7 @@
       },
       "signal": null
     },
-    "position_plan": {
-      "unit_prices": [
-        329.93,
-        333.69,
-        337.44,
-        341.2
-      ],
-      "units_reached": 1,
-      "stop_price": 314.9,
-      "n_at_entry": 7.513
-    },
+    "position_plan": null,
     "unit_size": null
   },
   "last_verdict": null
