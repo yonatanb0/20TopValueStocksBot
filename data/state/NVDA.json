@@ -1,6 +1,6 @@
 {
   "ticker": "NVDA",
-  "last_updated": "2026-09-04T18:31:10.083558+00:00",
+  "last_updated": "2026-09-04T21:02:16.837823+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "NVDA",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 230.28,
+    "current_price": 230.345,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -24,7 +24,7 @@
     "sma20": 220.08,
     "sma20_slope_5d_pct": 0.93,
     "price_vs_sma20": "above",
-    "sma50": 210.56,
+    "sma50": 210.57,
     "sma50_slope_5d_pct": 1.03,
     "price_vs_sma50": "above",
     "sma200": 196.68,
@@ -34,24 +34,24 @@
   "volatility": {
     "atr14": 7.38,
     "atr14_pct_of_price": 3.2,
-    "realized_vol_20d_annualized_pct": 45.53
+    "realized_vol_20d_annualized_pct": 45.54
   },
   "range": {
-    "high_20d": 234.75,
+    "high_20d": 234.76,
     "low_20d": 207.25,
-    "high_60d": 234.75,
+    "high_60d": 234.76,
     "low_60d": 189.8
   },
   "momentum": {
-    "rsi14": 60.34
+    "rsi14": 60.38
   },
   "volume": {
-    "up_down_volume_ratio_20d": 0.89
+    "up_down_volume_ratio_20d": 0.82
   },
   "consolidation": {
     "range_width_pct": 13.27,
-    "distance_from_high_pct": -1.9,
-    "distance_from_low_pct": 11.11
+    "distance_from_high_pct": -1.88,
+    "distance_from_low_pct": 11.14
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -62,7 +62,7 @@
   "fundamentals": {
     "forward_pe": 18.10034,
     "ev_ebitda_ttm": 26.9418,
-    "implied_forward_eps": 12.7224,
+    "implied_forward_eps": 12.726,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-09-03",
@@ -70,46 +70,52 @@
   },
   "turtle": {
     "gate_open": true,
-    "n": 7.322,
+    "n": 7.323,
     "system1": {
       "state": {
         "state": {
-          "status": "open",
-          "entry_date": "2026-09-04",
-          "entry_price": 232.18,
-          "n_at_entry": 7.32248873074745,
-          "exit_date": null,
-          "exit_price": null,
-          "outcome": null
+          "state": {
+            "status": "open",
+            "entry_date": "2026-09-04",
+            "entry_price": 232.18,
+            "n_at_entry": 7.32248873074745,
+            "exit_date": null,
+            "exit_price": null,
+            "outcome": null
+          },
+          "signal": {
+            "resolution": null,
+            "entry_fired": true,
+            "filtered": false,
+            "entry_price": 232.18,
+            "system": "system1"
+          }
         },
-        "signal": {
-          "resolution": null,
-          "entry_fired": true,
-          "filtered": false,
-          "entry_price": 232.18,
-          "system": "system1"
-        }
+        "signal": null
       },
       "signal": null
     },
     "system2": {
       "state": {
         "state": {
-          "status": "open",
-          "entry_date": "2026-09-04",
-          "entry_price": 232.18,
-          "n_at_entry": 7.32248873074745,
-          "exit_date": null,
-          "exit_price": null,
-          "outcome": null
+          "state": {
+            "status": "open",
+            "entry_date": "2026-09-04",
+            "entry_price": 232.18,
+            "n_at_entry": 7.32248873074745,
+            "exit_date": null,
+            "exit_price": null,
+            "outcome": null
+          },
+          "signal": {
+            "resolution": null,
+            "entry_fired": true,
+            "filtered": false,
+            "entry_price": 232.18,
+            "system": "system2"
+          }
         },
-        "signal": {
-          "resolution": null,
-          "entry_fired": true,
-          "filtered": false,
-          "entry_price": 232.18,
-          "system": "system2"
-        }
+        "signal": null
       },
       "signal": null
     },
