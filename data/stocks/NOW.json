@@ -2,7 +2,7 @@
   "ticker": "NOW",
   "name": "ServiceNow",
   "sector": "enterprise_tech",
-  "last_updated": "2026-09-03T23:32:11.178689+00:00",
+  "last_updated": "2026-09-04T15:22:25.811735+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -222,8 +222,24 @@
       },
       "dedupe_key": "94c89b3db2ebce52",
       "timestamp": "2026-08-31T18:23:05.717017+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 0.854) -- watch closer, not a standalone trigger, invalidation level ~150.57.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 0.854,
+        "invalidation_level": 150.57,
+        "date": "2026-09-04",
+        "fires": false
+      },
+      "dedupe_key": "0055217e60a329ec",
+      "timestamp": "2026-09-04T15:22:25.811735+00:00"
     }
   ],
-  "last_price": 145.59,
-  "last_price_date": "2026-09-03"
+  "last_price": 140.73,
+  "last_price_date": "2026-09-04"
 }

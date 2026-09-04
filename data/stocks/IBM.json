@@ -2,7 +2,7 @@
   "ticker": "IBM",
   "name": "IBM",
   "sector": "enterprise_tech",
-  "last_updated": "2026-09-03T23:32:11.155273+00:00",
+  "last_updated": "2026-09-04T15:22:25.769561+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -376,8 +376,42 @@
       },
       "dedupe_key": "384b6acf07782db8",
       "timestamp": "2026-09-03T15:26:04.383645+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~228.18 (2 prior touches) and closed back above it (reaction confirmed). Stop ~221.71, target ~271.33 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 228.18,
+        "zone_touches": 2,
+        "date": "2026-09-04",
+        "fires": true,
+        "stop_loss": 221.71,
+        "take_profit": 271.33,
+        "entry_reference_price": 234.115
+      },
+      "dedupe_key": "41a9a53b3a4df6d9",
+      "timestamp": "2026-09-04T15:22:25.769561+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 0.516) -- watch closer, not a standalone trigger, invalidation level ~242.9.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 0.516,
+        "invalidation_level": 242.9,
+        "date": "2026-09-04",
+        "fires": false
+      },
+      "dedupe_key": "0b28a906fbca85fc",
+      "timestamp": "2026-09-04T15:22:25.769561+00:00"
     }
   ],
-  "last_price": 234.71001,
-  "last_price_date": "2026-09-03"
+  "last_price": 234.115,
+  "last_price_date": "2026-09-04"
 }

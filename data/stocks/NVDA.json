@@ -2,7 +2,7 @@
   "ticker": "NVDA",
   "name": "NVIDIA",
   "sector": "semiconductors",
-  "last_updated": "2026-09-03T23:32:11.149864+00:00",
+  "last_updated": "2026-09-04T15:22:25.759183+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -474,8 +474,42 @@
       },
       "dedupe_key": "ce3951027ee64ce6",
       "timestamp": "2026-08-28T21:36:23.131145+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (230.47) on 2026-09-04 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-09-04",
+        "range_high": 230.47,
+        "close": 232.18,
+        "volume_multiple": 0.01359064433318891,
+        "fires": false
+      },
+      "dedupe_key": "e6869d2923ec04fe",
+      "timestamp": "2026-09-04T15:22:25.759183+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~215.65 (2 prior touches) and closed back above it (reaction confirmed). Stop ~208.27, target ~303.91 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 215.650005,
+        "zone_touches": 2,
+        "date": "2026-09-04",
+        "fires": true,
+        "stop_loss": 208.27,
+        "take_profit": 303.91,
+        "entry_reference_price": 232.18
+      },
+      "dedupe_key": "e4f02c1c6d2a1e64",
+      "timestamp": "2026-09-04T15:22:25.759183+00:00"
     }
   ],
-  "last_price": 228.39999,
-  "last_price_date": "2026-09-03"
+  "last_price": 232.18,
+  "last_price_date": "2026-09-04"
 }
