@@ -1,6 +1,6 @@
 {
   "ticker": "NVDA",
-  "last_updated": "2026-09-04T22:51:44.957056+00:00",
+  "last_updated": "2026-09-07T16:49:20.661666+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "NVDA",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 230.345,
+    "current_price": 230.36,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -43,15 +43,15 @@
     "low_60d": 189.8
   },
   "momentum": {
-    "rsi14": 60.38
+    "rsi14": 60.39
   },
   "volume": {
-    "up_down_volume_ratio_20d": 0.82
+    "up_down_volume_ratio_20d": 0.81
   },
   "consolidation": {
     "range_width_pct": 13.27,
-    "distance_from_high_pct": -1.88,
-    "distance_from_low_pct": 11.14
+    "distance_from_high_pct": -1.87,
+    "distance_from_low_pct": 11.15
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -61,8 +61,8 @@
   },
   "fundamentals": {
     "forward_pe": 18.10034,
-    "ev_ebitda_ttm": 26.9418,
-    "implied_forward_eps": 12.726,
+    "ev_ebitda_ttm": 27.6547,
+    "implied_forward_eps": 12.7268,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-09-03",
@@ -76,21 +76,24 @@
         "state": {
           "state": {
             "state": {
-              "status": "open",
-              "entry_date": "2026-09-04",
-              "entry_price": 232.18,
-              "n_at_entry": 7.32248873074745,
-              "exit_date": null,
-              "exit_price": null,
-              "outcome": null
+              "state": {
+                "status": "open",
+                "entry_date": "2026-09-04",
+                "entry_price": 232.18,
+                "n_at_entry": 7.32248873074745,
+                "exit_date": null,
+                "exit_price": null,
+                "outcome": null
+              },
+              "signal": {
+                "resolution": null,
+                "entry_fired": true,
+                "filtered": false,
+                "entry_price": 232.18,
+                "system": "system1"
+              }
             },
-            "signal": {
-              "resolution": null,
-              "entry_fired": true,
-              "filtered": false,
-              "entry_price": 232.18,
-              "system": "system1"
-            }
+            "signal": null
           },
           "signal": null
         },
@@ -103,21 +106,24 @@
         "state": {
           "state": {
             "state": {
-              "status": "open",
-              "entry_date": "2026-09-04",
-              "entry_price": 232.18,
-              "n_at_entry": 7.32248873074745,
-              "exit_date": null,
-              "exit_price": null,
-              "outcome": null
+              "state": {
+                "status": "open",
+                "entry_date": "2026-09-04",
+                "entry_price": 232.18,
+                "n_at_entry": 7.32248873074745,
+                "exit_date": null,
+                "exit_price": null,
+                "outcome": null
+              },
+              "signal": {
+                "resolution": null,
+                "entry_fired": true,
+                "filtered": false,
+                "entry_price": 232.18,
+                "system": "system2"
+              }
             },
-            "signal": {
-              "resolution": null,
-              "entry_fired": true,
-              "filtered": false,
-              "entry_price": 232.18,
-              "system": "system2"
-            }
+            "signal": null
           },
           "signal": null
         },
