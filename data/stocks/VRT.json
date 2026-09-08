@@ -2,7 +2,7 @@
   "ticker": "VRT",
   "name": "Vertiv",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-09-07T22:53:02.348684+00:00",
+  "last_updated": "2026-09-08T15:35:35.299902+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -516,8 +516,26 @@
       },
       "dedupe_key": "26d8a548dc46113d",
       "timestamp": "2026-09-04T15:22:25.775795+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~274.05 (2 prior touches) and closed back above it (reaction confirmed). Stop ~260.08, target ~389.16 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 274.05499,
+        "zone_touches": 2,
+        "date": "2026-09-08",
+        "fires": true,
+        "stop_loss": 260.08,
+        "take_profit": 389.16,
+        "entry_reference_price": 292.35
+      },
+      "dedupe_key": "c41ca676dc67c9d5",
+      "timestamp": "2026-09-08T15:35:35.299902+00:00"
     }
   ],
-  "last_price": 280.53,
-  "last_price_date": "2026-09-04"
+  "last_price": 292.35,
+  "last_price_date": "2026-09-08"
 }
