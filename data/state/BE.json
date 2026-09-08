@@ -1,6 +1,6 @@
 {
   "ticker": "BE",
-  "last_updated": "2026-09-08T18:59:01.329377+00:00",
+  "last_updated": "2026-09-08T21:33:42.560679+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "BE",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 282.25,
+    "current_price": 277.22,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -21,37 +21,37 @@
     "atr_units_from_stop": null
   },
   "trend": {
-    "sma20": 222.12,
-    "sma20_slope_5d_pct": 1.84,
+    "sma20": 221.87,
+    "sma20_slope_5d_pct": 1.72,
     "price_vs_sma20": "above",
-    "sma50": 227.08,
-    "sma50_slope_5d_pct": -3.02,
+    "sma50": 226.98,
+    "sma50_slope_5d_pct": -3.06,
     "price_vs_sma50": "above",
-    "sma200": 192.14,
-    "sma200_slope_5d_pct": 1.71,
+    "sma200": 192.11,
+    "sma200_slope_5d_pct": 1.7,
     "price_vs_sma200": "above"
   },
   "volatility": {
     "atr14": 20.1,
-    "atr14_pct_of_price": 7.12,
-    "realized_vol_20d_annualized_pct": 85.25
+    "atr14_pct_of_price": 7.25,
+    "realized_vol_20d_annualized_pct": 82.39
   },
   "range": {
-    "high_20d": 283.8,
+    "high_20d": 283.83,
     "low_20d": 185.93,
     "high_60d": 351.28,
     "low_60d": 157.33
   },
   "momentum": {
-    "rsi14": 70.33
+    "rsi14": 69.3
   },
   "volume": {
-    "up_down_volume_ratio_20d": 1.11
+    "up_down_volume_ratio_20d": 1.36
   },
   "consolidation": {
-    "range_width_pct": 52.64,
-    "distance_from_high_pct": -0.55,
-    "distance_from_low_pct": 51.8
+    "range_width_pct": 52.65,
+    "distance_from_high_pct": -2.33,
+    "distance_from_low_pct": 49.1
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -62,7 +62,7 @@
   "fundamentals": {
     "forward_pe": 94.66865036430602,
     "ev_ebitda_ttm": 221.3491,
-    "implied_forward_eps": 2.9815,
+    "implied_forward_eps": 2.9283,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-09-04",
@@ -70,13 +70,13 @@
   },
   "turtle": {
     "gate_open": true,
-    "n": 21.373,
+    "n": 21.375,
     "system1": {
       "state": {
         "status": "open",
         "entry_date": "2026-09-08",
-        "entry_price": 282.25,
-        "n_at_entry": 21.373391866058288,
+        "entry_price": 277.22,
+        "n_at_entry": 21.374891366058286,
         "exit_date": null,
         "exit_price": null,
         "outcome": null
@@ -85,7 +85,7 @@
         "resolution": null,
         "entry_fired": true,
         "filtered": false,
-        "entry_price": 282.25,
+        "entry_price": 277.22,
         "system": "system1"
       }
     },
@@ -324,7 +324,10 @@
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     "state": {
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "state": {
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         "state": {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "state": {},
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "state": {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            "state": {},
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            "signal": null
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          },
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "signal": null
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         },
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         "signal": null
@@ -797,14 +800,14 @@
     },
     "position_plan": {
       "unit_prices": [
-        282.25,
-        292.94,
-        303.62,
-        314.31
+        277.22,
+        287.91,
+        298.59,
+        309.28
       ],
       "units_reached": 1,
-      "stop_price": 239.5,
-      "n_at_entry": 21.373
+      "stop_price": 234.47,
+      "n_at_entry": 21.375
     },
     "unit_size": null
   },
