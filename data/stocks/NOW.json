@@ -2,7 +2,7 @@
   "ticker": "NOW",
   "name": "ServiceNow",
   "sector": "enterprise_tech",
-  "last_updated": "2026-09-08T23:39:55.306312+00:00",
+  "last_updated": "2026-09-09T15:30:59.091556+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -238,8 +238,23 @@
       },
       "dedupe_key": "0055217e60a329ec",
       "timestamp": "2026-09-04T15:22:25.811735+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "golden_cross",
+      "fires": false,
+      "description": "50/200 golden cross on 2026-09-09 but WITHOUT volume expansion (not yet confirmed).",
+      "details": {
+        "type": "golden_cross",
+        "cross_date": "2026-09-09",
+        "cross_index": 259,
+        "volume_expansion": false,
+        "fires": false
+      },
+      "dedupe_key": "56c4afaac9a4526e",
+      "timestamp": "2026-09-09T15:30:59.091556+00:00"
     }
   ],
-  "last_price": 134.21001,
-  "last_price_date": "2026-09-08"
+  "last_price": 132.505,
+  "last_price_date": "2026-09-09"
 }
