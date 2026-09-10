@@ -2,7 +2,7 @@
   "ticker": "BSX",
   "name": "Boston Scientific",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-09-10T18:41:59.838845+00:00",
+  "last_updated": "2026-09-10T21:12:46.601861+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -771,8 +771,26 @@
       },
       "dedupe_key": "5ad8e90c0448cf43",
       "timestamp": "2026-09-10T15:26:05.121910+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~42.38 (4 prior touches) and closed back above it (reaction confirmed). Stop ~40.5, target ~50.9 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 42.375,
+        "zone_touches": 4,
+        "date": "2026-09-10",
+        "fires": true,
+        "stop_loss": 40.5,
+        "take_profit": 50.9,
+        "entry_reference_price": 43.099998
+      },
+      "dedupe_key": "0a444b6588dc9d17",
+      "timestamp": "2026-09-10T21:12:46.601861+00:00"
     }
   ],
-  "last_price": 43.205,
+  "last_price": 43.099998,
   "last_price_date": "2026-09-10"
 }
