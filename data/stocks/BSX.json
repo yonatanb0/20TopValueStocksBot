@@ -2,7 +2,7 @@
   "ticker": "BSX",
   "name": "Boston Scientific",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-09-09T23:30:50.267658+00:00",
+  "last_updated": "2026-09-10T15:26:05.121910+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -742,8 +742,37 @@
       },
       "dedupe_key": "e6d9b4b9f6cdc770",
       "timestamp": "2026-09-09T15:30:59.069104+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (2.8%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 2.8,
+        "close": 44.07,
+        "low_52w": 42.2,
+        "high_52w": 108.07
+      },
+      "dedupe_key": "041c3dc287195381",
+      "timestamp": "2026-09-10T15:26:05.121910+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-09-10",
+        "fires": false
+      },
+      "dedupe_key": "5ad8e90c0448cf43",
+      "timestamp": "2026-09-10T15:26:05.121910+00:00"
     }
   ],
-  "last_price": 44.96,
-  "last_price_date": "2026-09-09"
+  "last_price": 44.07,
+  "last_price_date": "2026-09-10"
 }

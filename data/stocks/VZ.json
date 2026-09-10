@@ -2,7 +2,7 @@
   "ticker": "VZ",
   "name": "Verizon",
   "sector": "telecom",
-  "last_updated": "2026-09-09T23:30:50.274272+00:00",
+  "last_updated": "2026-09-10T15:26:05.126960+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -452,8 +452,23 @@
       },
       "dedupe_key": "5e885a93ec6dccb3",
       "timestamp": "2026-09-09T15:30:59.076074+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-09-10",
+        "fires": false
+      },
+      "dedupe_key": "690e3b4f845d816b",
+      "timestamp": "2026-09-10T15:26:05.126960+00:00"
     }
   ],
-  "last_price": 49.74,
-  "last_price_date": "2026-09-09"
+  "last_price": 50.075,
+  "last_price_date": "2026-09-10"
 }

@@ -2,7 +2,7 @@
   "ticker": "MDT",
   "name": "Medtronic",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-09-09T23:30:50.264781+00:00",
+  "last_updated": "2026-09-10T15:26:05.119704+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -238,8 +238,23 @@
       },
       "dedupe_key": "e44386027cc08636",
       "timestamp": "2026-09-09T21:22:24.481613+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-09-10",
+        "fires": false
+      },
+      "dedupe_key": "984f64d4d4c4ce63",
+      "timestamp": "2026-09-10T15:26:05.119704+00:00"
     }
   ],
-  "last_price": 91.89,
-  "last_price_date": "2026-09-09"
+  "last_price": 91.545,
+  "last_price_date": "2026-09-10"
 }
