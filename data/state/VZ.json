@@ -1,6 +1,6 @@
 {
   "ticker": "VZ",
-  "last_updated": "2026-09-14T17:12:28.654297+00:00",
+  "last_updated": "2026-09-14T20:59:23.273678+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "VZ",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 51.225,
+    "current_price": 51.295,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -22,36 +22,36 @@
   },
   "trend": {
     "sma20": 49.9,
-    "sma20_slope_5d_pct": 1.42,
+    "sma20_slope_5d_pct": 1.43,
     "price_vs_sma20": "above",
     "sma50": 47.1,
-    "sma50_slope_5d_pct": 1.48,
+    "sma50_slope_5d_pct": 1.49,
     "price_vs_sma50": "above",
     "sma200": 45.95,
-    "sma200_slope_5d_pct": 0.51,
+    "sma200_slope_5d_pct": 0.52,
     "price_vs_sma200": "above"
   },
   "volatility": {
-    "atr14": 0.92,
-    "atr14_pct_of_price": 1.8,
-    "realized_vol_20d_annualized_pct": 14.89
+    "atr14": 0.93,
+    "atr14_pct_of_price": 1.81,
+    "realized_vol_20d_annualized_pct": 15.01
   },
   "range": {
-    "high_20d": 51.45,
+    "high_20d": 51.49,
     "low_20d": 48.0,
-    "high_60d": 51.45,
+    "high_60d": 51.49,
     "low_60d": 40.76
   },
   "momentum": {
-    "rsi14": 66.89
+    "rsi14": 67.26
   },
   "volume": {
-    "up_down_volume_ratio_20d": 0.58
+    "up_down_volume_ratio_20d": 0.63
   },
   "consolidation": {
-    "range_width_pct": 7.18,
-    "distance_from_high_pct": -0.43,
-    "distance_from_low_pct": 6.72
+    "range_width_pct": 7.27,
+    "distance_from_high_pct": -0.38,
+    "distance_from_low_pct": 6.86
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -62,7 +62,7 @@
   "fundamentals": {
     "forward_pe": 8.96289,
     "ev_ebitda_ttm": 7.8472,
-    "implied_forward_eps": 5.7152,
+    "implied_forward_eps": 5.723,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-09-03",
@@ -70,13 +70,13 @@
   },
   "turtle": {
     "gate_open": true,
-    "n": 0.973,
+    "n": 0.975,
     "system1": {
       "state": {
         "status": "open",
         "entry_date": "2026-09-14",
-        "entry_price": 51.225,
-        "n_at_entry": 0.9732195507320712,
+        "entry_price": 51.295,
+        "n_at_entry": 0.9754695507320713,
         "exit_date": null,
         "exit_price": null,
         "outcome": null
@@ -85,7 +85,7 @@
         "resolution": null,
         "entry_fired": true,
         "filtered": false,
-        "entry_price": 51.225,
+        "entry_price": 51.295,
         "system": "system1"
       }
     },
@@ -93,8 +93,8 @@
       "state": {
         "status": "open",
         "entry_date": "2026-09-14",
-        "entry_price": 51.225,
-        "n_at_entry": 0.9732195507320712,
+        "entry_price": 51.295,
+        "n_at_entry": 0.9754695507320713,
         "exit_date": null,
         "exit_price": null,
         "outcome": null
@@ -103,20 +103,20 @@
         "resolution": null,
         "entry_fired": true,
         "filtered": false,
-        "entry_price": 51.225,
+        "entry_price": 51.295,
         "system": "system2"
       }
     },
     "position_plan": {
       "unit_prices": [
-        51.23,
-        51.71,
-        52.2,
-        52.68
+        51.3,
+        51.78,
+        52.27,
+        52.76
       ],
       "units_reached": 1,
-      "stop_price": 49.28,
-      "n_at_entry": 0.973
+      "stop_price": 49.35,
+      "n_at_entry": 0.975
     },
     "unit_size": null
   },
