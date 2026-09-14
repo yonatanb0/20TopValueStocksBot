@@ -2,7 +2,7 @@
   "ticker": "VRT",
   "name": "Vertiv",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-09-11T23:32:20.976272+00:00",
+  "last_updated": "2026-09-14T17:12:20.092602+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -597,8 +597,54 @@
       },
       "dedupe_key": "a425f46b2cded2bd",
       "timestamp": "2026-09-11T15:27:41.559067+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~249.36 (2 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 249.36,
+        "zone_touches": 2,
+        "date": "2026-09-14",
+        "fires": false
+      },
+      "dedupe_key": "732d003c3d2f238a",
+      "timestamp": "2026-09-14T17:12:20.092602+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 0.295) -- watch closer, not a standalone trigger, invalidation level ~254.74.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 0.295,
+        "invalidation_level": 254.74,
+        "date": "2026-09-14",
+        "fires": false
+      },
+      "dedupe_key": "f6c6926741ad7686",
+      "timestamp": "2026-09-14T17:12:20.092602+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-09-14",
+        "fires": false
+      },
+      "dedupe_key": "04b6e6278d94e3d8",
+      "timestamp": "2026-09-14T17:12:20.092602+00:00"
     }
   ],
-  "last_price": 257.059998,
-  "last_price_date": "2026-09-11"
+  "last_price": 238.23,
+  "last_price_date": "2026-09-14"
 }

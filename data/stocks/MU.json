@@ -2,7 +2,7 @@
   "ticker": "MU",
   "name": "Micron Technology",
   "sector": "semiconductors",
-  "last_updated": "2026-09-11T23:32:21.010328+00:00",
+  "last_updated": "2026-09-14T17:12:20.130111+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -80,8 +80,57 @@
       },
       "dedupe_key": "1e614039f2499823",
       "timestamp": "2026-09-03T15:26:04.424330+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~889.63 (2 prior touches) and closed back above it (reaction confirmed). Stop ~836.31, target ~1199.91 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 889.63498,
+        "zone_touches": 2,
+        "date": "2026-09-14",
+        "fires": true,
+        "stop_loss": 836.31,
+        "take_profit": 1199.91,
+        "entry_reference_price": 927.21
+      },
+      "dedupe_key": "5c0daa09ae749573",
+      "timestamp": "2026-09-14T17:12:20.130111+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 0.655) -- watch closer, not a standalone trigger, invalidation level ~982.77.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 0.655,
+        "invalidation_level": 982.77,
+        "date": "2026-09-14",
+        "fires": false
+      },
+      "dedupe_key": "6e68111f6e69d02e",
+      "timestamp": "2026-09-14T17:12:20.130111+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-09-14",
+        "fires": false
+      },
+      "dedupe_key": "2ce6387eb4685a88",
+      "timestamp": "2026-09-14T17:12:20.130111+00:00"
     }
   ],
-  "last_price": 975.26001,
-  "last_price_date": "2026-09-11"
+  "last_price": 927.21,
+  "last_price_date": "2026-09-14"
 }

@@ -2,7 +2,7 @@
   "ticker": "ISRG",
   "name": "Intuitive Surgical",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-09-11T23:32:20.993925+00:00",
+  "last_updated": "2026-09-14T17:12:20.110274+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -673,8 +673,37 @@
       },
       "dedupe_key": "f1a05de6b1e5542b",
       "timestamp": "2026-09-11T15:27:41.576791+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (17.1%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 17.1,
+        "close": 375.64,
+        "low_52w": 328.57001,
+        "high_52w": 603.88
+      },
+      "dedupe_key": "1657ab3594401580",
+      "timestamp": "2026-09-14T17:12:20.110274+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-09-14",
+        "fires": false
+      },
+      "dedupe_key": "d2507d5705d68812",
+      "timestamp": "2026-09-14T17:12:20.110274+00:00"
     }
   ],
-  "last_price": 369.14999,
-  "last_price_date": "2026-09-11"
+  "last_price": 375.64,
+  "last_price_date": "2026-09-14"
 }
