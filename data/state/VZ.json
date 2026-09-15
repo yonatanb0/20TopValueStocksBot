@@ -1,6 +1,6 @@
 {
   "ticker": "VZ",
-  "last_updated": "2026-09-15T15:52:36.361005+00:00",
+  "last_updated": "2026-09-15T19:22:41.229740+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "VZ",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 51.41,
+    "current_price": 51.47,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -22,7 +22,7 @@
   },
   "trend": {
     "sma20": 50.07,
-    "sma20_slope_5d_pct": 1.42,
+    "sma20_slope_5d_pct": 1.43,
     "price_vs_sma20": "above",
     "sma50": 47.29,
     "sma50_slope_5d_pct": 1.72,
@@ -32,26 +32,26 @@
     "price_vs_sma200": "above"
   },
   "volatility": {
-    "atr14": 0.89,
-    "atr14_pct_of_price": 1.73,
+    "atr14": 0.9,
+    "atr14_pct_of_price": 1.75,
     "realized_vol_20d_annualized_pct": 14.37
   },
   "range": {
-    "high_20d": 51.55,
+    "high_20d": 51.67,
     "low_20d": 48.41,
-    "high_60d": 51.55,
+    "high_60d": 51.67,
     "low_60d": 40.76
   },
   "momentum": {
-    "rsi14": 67.88
+    "rsi14": 68.2
   },
   "volume": {
     "up_down_volume_ratio_20d": 0.71
   },
   "consolidation": {
-    "range_width_pct": 6.48,
-    "distance_from_high_pct": -0.26,
-    "distance_from_low_pct": 6.2
+    "range_width_pct": 6.73,
+    "distance_from_high_pct": -0.39,
+    "distance_from_low_pct": 6.32
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -62,7 +62,7 @@
   "fundamentals": {
     "forward_pe": 8.96289,
     "ev_ebitda_ttm": 7.8472,
-    "implied_forward_eps": 5.7359,
+    "implied_forward_eps": 5.7426,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-09-03",
@@ -70,46 +70,52 @@
   },
   "turtle": {
     "gate_open": true,
-    "n": 0.948,
+    "n": 0.954,
     "system1": {
       "state": {
         "state": {
-          "status": "open",
-          "entry_date": "2026-09-14",
-          "entry_price": 51.29,
-          "n_at_entry": 0.9754695507320713,
-          "exit_date": null,
-          "exit_price": null,
-          "outcome": null
+          "state": {
+            "status": "open",
+            "entry_date": "2026-09-14",
+            "entry_price": 51.29,
+            "n_at_entry": 0.9754695507320713,
+            "exit_date": null,
+            "exit_price": null,
+            "outcome": null
+          },
+          "signal": {
+            "resolution": null,
+            "entry_fired": true,
+            "filtered": false,
+            "entry_price": 51.29,
+            "system": "system1"
+          }
         },
-        "signal": {
-          "resolution": null,
-          "entry_fired": true,
-          "filtered": false,
-          "entry_price": 51.29,
-          "system": "system1"
-        }
+        "signal": null
       },
       "signal": null
     },
     "system2": {
       "state": {
         "state": {
-          "status": "open",
-          "entry_date": "2026-09-14",
-          "entry_price": 51.29,
-          "n_at_entry": 0.9754695507320713,
-          "exit_date": null,
-          "exit_price": null,
-          "outcome": null
+          "state": {
+            "status": "open",
+            "entry_date": "2026-09-14",
+            "entry_price": 51.29,
+            "n_at_entry": 0.9754695507320713,
+            "exit_date": null,
+            "exit_price": null,
+            "outcome": null
+          },
+          "signal": {
+            "resolution": null,
+            "entry_fired": true,
+            "filtered": false,
+            "entry_price": 51.29,
+            "system": "system2"
+          }
         },
-        "signal": {
-          "resolution": null,
-          "entry_fired": true,
-          "filtered": false,
-          "entry_price": 51.29,
-          "system": "system2"
-        }
+        "signal": null
       },
       "signal": null
     },
