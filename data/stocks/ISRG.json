@@ -2,7 +2,7 @@
   "ticker": "ISRG",
   "name": "Intuitive Surgical",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-09-14T23:41:05.082479+00:00",
+  "last_updated": "2026-09-15T15:52:26.676804+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -702,8 +702,22 @@
       },
       "dedupe_key": "d2507d5705d68812",
       "timestamp": "2026-09-14T17:12:20.110274+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (17.2%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 17.2,
+        "close": 375.88,
+        "low_52w": 328.57001,
+        "high_52w": 603.88
+      },
+      "dedupe_key": "346fde880185e381",
+      "timestamp": "2026-09-15T15:52:26.676804+00:00"
     }
   ],
-  "last_price": 377.94,
-  "last_price_date": "2026-09-14"
+  "last_price": 375.88,
+  "last_price_date": "2026-09-15"
 }
