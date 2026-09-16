@@ -2,7 +2,7 @@
   "ticker": "GOOG",
   "name": "Alphabet",
   "sector": "enterprise_tech",
-  "last_updated": "2026-09-15T22:27:04.861215+00:00",
+  "last_updated": "2026-09-16T15:44:05.627511+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -634,8 +634,42 @@
       },
       "dedupe_key": "569a2744328cd1c0",
       "timestamp": "2026-09-15T15:52:26.633032+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~336.89 (7 prior touches) and closed back above it (reaction confirmed). Stop ~329.22, target ~381.82 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 336.88500285714287,
+        "zone_touches": 7,
+        "date": "2026-09-16",
+        "fires": true,
+        "stop_loss": 329.22,
+        "take_profit": 381.82,
+        "entry_reference_price": 342.37
+      },
+      "dedupe_key": "304e5bfe3d5e2203",
+      "timestamp": "2026-09-16T15:44:05.627511+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator buy turn (value -0.17) -- watch closer, not a standalone trigger, invalidation level ~331.4.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "buy",
+        "value": -0.17,
+        "invalidation_level": 331.4,
+        "date": "2026-09-16",
+        "fires": false
+      },
+      "dedupe_key": "f138e49a261c9e9b",
+      "timestamp": "2026-09-16T15:44:05.627511+00:00"
     }
   ],
-  "last_price": 341.42999,
-  "last_price_date": "2026-09-15"
+  "last_price": 342.37,
+  "last_price_date": "2026-09-16"
 }

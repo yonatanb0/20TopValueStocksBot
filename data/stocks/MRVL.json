@@ -2,7 +2,7 @@
   "ticker": "MRVL",
   "name": "Marvell Technology",
   "sector": "semiconductors",
-  "last_updated": "2026-09-15T22:27:04.916728+00:00",
+  "last_updated": "2026-09-16T15:44:05.658856+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -263,8 +263,26 @@
       },
       "dedupe_key": "ded2831d06cedd06",
       "timestamp": "2026-09-15T15:52:26.689922+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~221.68 (2 prior touches) and closed back above it (reaction confirmed). Stop ~206.96, target ~294.32 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 221.68,
+        "zone_touches": 2,
+        "date": "2026-09-16",
+        "fires": true,
+        "stop_loss": 206.96,
+        "take_profit": 294.32,
+        "entry_reference_price": 228.8
+      },
+      "dedupe_key": "57f2aec7624e61b2",
+      "timestamp": "2026-09-16T15:44:05.658856+00:00"
     }
   ],
-  "last_price": 221.7,
-  "last_price_date": "2026-09-15"
+  "last_price": 228.8,
+  "last_price_date": "2026-09-16"
 }
