@@ -2,7 +2,7 @@
   "ticker": "INTC",
   "name": "Intel",
   "sector": "semiconductors",
-  "last_updated": "2026-09-16T22:13:03.278740+00:00",
+  "last_updated": "2026-09-17T15:51:27.146877+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -186,8 +186,24 @@
       },
       "dedupe_key": "fce3782480fbd3bd",
       "timestamp": "2026-09-01T15:43:43.312654+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (106.69) on 2026-09-17 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-09-17",
+        "range_high": 106.69,
+        "close": 110.445,
+        "volume_multiple": 0.03915624863463862,
+        "fires": false
+      },
+      "dedupe_key": "a1c2263accedded5",
+      "timestamp": "2026-09-17T15:51:27.146877+00:00"
     }
   ],
-  "last_price": 101.050003,
-  "last_price_date": "2026-09-16"
+  "last_price": 110.445,
+  "last_price_date": "2026-09-17"
 }
