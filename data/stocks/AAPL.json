@@ -2,7 +2,7 @@
   "ticker": "AAPL",
   "name": "Apple",
   "sector": "enterprise_tech",
-  "last_updated": "2026-09-18T21:14:27.831536+00:00",
+  "last_updated": "2026-09-18T23:21:03.467121+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -294,8 +294,23 @@
       },
       "dedupe_key": "8d2156a7d23c9174",
       "timestamp": "2026-09-17T22:26:21.441469+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Distribution volume detected. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": true,
+        "trendline_break": false,
+        "date": "2026-09-18",
+        "fires": false
+      },
+      "dedupe_key": "2bbee6c67cf4a853",
+      "timestamp": "2026-09-18T23:21:03.467121+00:00"
     }
   ],
-  "last_price": 335.59,
+  "last_price": 336.13,
   "last_price_date": "2026-09-18"
 }

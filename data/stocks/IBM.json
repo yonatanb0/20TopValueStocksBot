@@ -2,7 +2,7 @@
   "ticker": "IBM",
   "name": "IBM",
   "sector": "enterprise_tech",
-  "last_updated": "2026-09-18T21:14:27.839242+00:00",
+  "last_updated": "2026-09-18T23:21:03.475161+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -566,8 +566,23 @@
       },
       "dedupe_key": "6bd66599203489d7",
       "timestamp": "2026-09-18T15:23:11.254460+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Distribution volume detected. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": true,
+        "trendline_break": false,
+        "date": "2026-09-18",
+        "fires": false
+      },
+      "dedupe_key": "e6d8cdbea680a93f",
+      "timestamp": "2026-09-18T23:21:03.475161+00:00"
     }
   ],
-  "last_price": 229.60001,
+  "last_price": 229.55,
   "last_price_date": "2026-09-18"
 }
