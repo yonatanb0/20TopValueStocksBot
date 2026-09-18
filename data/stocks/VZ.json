@@ -2,7 +2,7 @@
   "ticker": "VZ",
   "name": "Verizon",
   "sector": "telecom",
-  "last_updated": "2026-09-17T22:26:21.462875+00:00",
+  "last_updated": "2026-09-18T15:23:11.281982+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -546,8 +546,38 @@
       },
       "dedupe_key": "ff775796d703a631",
       "timestamp": "2026-09-17T22:26:21.462875+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~48.97 (2 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 48.97,
+        "zone_touches": 2,
+        "date": "2026-09-18",
+        "fires": false
+      },
+      "dedupe_key": "3af10a3384df7229",
+      "timestamp": "2026-09-18T15:23:11.281982+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-09-18",
+        "fires": false
+      },
+      "dedupe_key": "86167d6a9964c495",
+      "timestamp": "2026-09-18T15:23:11.281982+00:00"
     }
   ],
-  "last_price": 48.33,
-  "last_price_date": "2026-09-17"
+  "last_price": 48.06,
+  "last_price_date": "2026-09-18"
 }
