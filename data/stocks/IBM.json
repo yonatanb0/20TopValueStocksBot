@@ -2,7 +2,7 @@
   "ticker": "IBM",
   "name": "IBM",
   "sector": "enterprise_tech",
-  "last_updated": "2026-09-18T23:21:03.475161+00:00",
+  "last_updated": "2026-09-21T17:21:32.201173+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -581,8 +581,41 @@
       },
       "dedupe_key": "e6d8cdbea680a93f",
       "timestamp": "2026-09-18T23:21:03.475161+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~228.49 (3 prior touches) and closed back above it (reaction confirmed). Stop ~221.04, target ~254.14 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 228.48667,
+        "zone_touches": 3,
+        "date": "2026-09-21",
+        "fires": true,
+        "stop_loss": 221.04,
+        "take_profit": 254.14,
+        "entry_reference_price": 229.315
+      },
+      "dedupe_key": "d1504e79a09c3682",
+      "timestamp": "2026-09-21T17:21:32.201173+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-09-21",
+        "fires": false
+      },
+      "dedupe_key": "5019416b7b43f1ae",
+      "timestamp": "2026-09-21T17:21:32.201173+00:00"
     }
   ],
-  "last_price": 229.55,
-  "last_price_date": "2026-09-18"
+  "last_price": 229.315,
+  "last_price_date": "2026-09-21"
 }

@@ -2,7 +2,7 @@
   "ticker": "ISRG",
   "name": "Intuitive Surgical",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-09-18T23:21:03.500376+00:00",
+  "last_updated": "2026-09-21T17:21:32.215736+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -744,8 +744,58 @@
       },
       "dedupe_key": "f67dc7dc8f09408d",
       "timestamp": "2026-09-17T15:51:27.184820+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (394.91) on 2026-09-21 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-09-21",
+        "range_high": 394.91,
+        "close": 399.145,
+        "volume_multiple": 0.044750570484766605,
+        "fires": false
+      },
+      "dedupe_key": "5701881653e0bde9",
+      "timestamp": "2026-09-21T17:21:32.215736+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~397.10 (2 prior touches) and closed back above it (reaction confirmed). Stop ~385.44, target ~440.26 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 397.09999,
+        "zone_touches": 2,
+        "date": "2026-09-21",
+        "fires": true,
+        "stop_loss": 385.44,
+        "take_profit": 440.26,
+        "entry_reference_price": 399.145
+      },
+      "dedupe_key": "97e7186cccda697f",
+      "timestamp": "2026-09-21T17:21:32.215736+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator buy turn (value -0.185) -- watch closer, not a standalone trigger, invalidation level ~379.41.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "buy",
+        "value": -0.185,
+        "invalidation_level": 379.41,
+        "date": "2026-09-21",
+        "fires": false
+      },
+      "dedupe_key": "51729e7768dd49e3",
+      "timestamp": "2026-09-21T17:21:32.215736+00:00"
     }
   ],
-  "last_price": 393.32999,
-  "last_price_date": "2026-09-18"
+  "last_price": 399.145,
+  "last_price_date": "2026-09-21"
 }

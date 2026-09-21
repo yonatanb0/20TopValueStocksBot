@@ -2,7 +2,7 @@
   "ticker": "ETN",
   "name": "Eaton",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-09-18T23:21:03.485419+00:00",
+  "last_updated": "2026-09-21T17:21:32.207037+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -600,8 +600,40 @@
       },
       "dedupe_key": "05ff32e91739f166",
       "timestamp": "2026-09-17T15:51:27.170320+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (430.25) on 2026-09-21 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-09-21",
+        "range_high": 430.25,
+        "close": 435.51,
+        "volume_multiple": 0.03195498407914246,
+        "fires": false
+      },
+      "dedupe_key": "820639b676626283",
+      "timestamp": "2026-09-21T17:21:32.207037+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator buy turn (value -0.459) -- watch closer, not a standalone trigger, invalidation level ~412.47.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "buy",
+        "value": -0.459,
+        "invalidation_level": 412.47,
+        "date": "2026-09-21",
+        "fires": false
+      },
+      "dedupe_key": "ecfb187d4f0a404a",
+      "timestamp": "2026-09-21T17:21:32.207037+00:00"
     }
   ],
-  "last_price": 424.76999,
-  "last_price_date": "2026-09-18"
+  "last_price": 435.51,
+  "last_price_date": "2026-09-21"
 }
