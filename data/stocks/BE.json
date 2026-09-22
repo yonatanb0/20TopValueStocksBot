@@ -2,7 +2,7 @@
   "ticker": "BE",
   "name": "Bloom Energy",
   "sector": "clean_energy",
-  "last_updated": "2026-09-22T00:10:10.274297+00:00",
+  "last_updated": "2026-09-22T15:54:56.579589+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -293,8 +293,39 @@
       },
       "dedupe_key": "5bccb461cd389c96",
       "timestamp": "2026-09-21T17:21:32.202999+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-09-22",
+        "fires": false
+      },
+      "dedupe_key": "d62620bffe7da9cc",
+      "timestamp": "2026-09-22T15:54:56.579589+00:00"
+    },
+    {
+      "category": "macro",
+      "type": "macro_sector_turning",
+      "fires": false,
+      "description": "Sector 'clean_energy' macro signal (subsidy): \"Brazil's Petrobras board approves joining diesel subsidy program - Reuters\" -- confirm before treating the macro gate as open.",
+      "details": {
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPTkJTQ2FrelAyRV9KWFRpajBrMlJOZDAtNFhyR3pha0E4V1YxbGpxR3JaOXhfUWJOT0JLNm1uN1RfUE5QY294TFd1eXZxbWFxOXFNRVcxTHBXWTNYSjVKTjl5X1F1MUN6ZFp4Yjg0Y3pHdjZrQXl5enlVNFdVU1ZBT0dZTW9Oci1zN2x2VFBnT1FpQ0VoaFRpTkVEcEdoT3lnVm1IV2hxTnptc2JfOTNGaFdzaGFBdw?oc=5",
+        "title": "Brazil's Petrobras board approves joining diesel subsidy program - Reuters",
+        "matched": [
+          "subsidy"
+        ],
+        "published": "2026-09-19T18:15:00+00:00"
+      },
+      "dedupe_key": "40bc27305706dd6b",
+      "timestamp": "2026-09-22T15:54:56.579589+00:00"
     }
   ],
-  "last_price": 272.89001,
-  "last_price_date": "2026-09-21"
+  "last_price": 279.76,
+  "last_price_date": "2026-09-22"
 }

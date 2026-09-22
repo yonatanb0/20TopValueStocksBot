@@ -2,7 +2,7 @@
   "ticker": "ETN",
   "name": "Eaton",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-09-22T00:10:10.279827+00:00",
+  "last_updated": "2026-09-22T15:54:56.586400+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -632,8 +632,24 @@
       },
       "dedupe_key": "ecfb187d4f0a404a",
       "timestamp": "2026-09-21T17:21:32.207037+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (438.26) on 2026-09-22 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-09-22",
+        "range_high": 438.26001,
+        "close": 441.95,
+        "volume_multiple": 0.019068390640141777,
+        "fires": false
+      },
+      "dedupe_key": "db9376c05c572393",
+      "timestamp": "2026-09-22T15:54:56.586400+00:00"
     }
   ],
-  "last_price": 435.42999,
-  "last_price_date": "2026-09-21"
+  "last_price": 441.95,
+  "last_price_date": "2026-09-22"
 }

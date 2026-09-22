@@ -2,7 +2,7 @@
   "ticker": "NOW",
   "name": "ServiceNow",
   "sector": "enterprise_tech",
-  "last_updated": "2026-09-22T00:10:10.307507+00:00",
+  "last_updated": "2026-09-22T15:54:56.620831+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -253,8 +253,23 @@
       },
       "dedupe_key": "56c4afaac9a4526e",
       "timestamp": "2026-09-09T15:30:59.091556+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-09-22",
+        "fires": false
+      },
+      "dedupe_key": "0ec320fc6ff8a337",
+      "timestamp": "2026-09-22T15:54:56.620831+00:00"
     }
   ],
-  "last_price": 137.67999,
-  "last_price_date": "2026-09-21"
+  "last_price": 135.35,
+  "last_price_date": "2026-09-22"
 }

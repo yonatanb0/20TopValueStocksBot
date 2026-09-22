@@ -2,7 +2,7 @@
   "ticker": "MRVL",
   "name": "Marvell Technology",
   "sector": "semiconductors",
-  "last_updated": "2026-09-22T00:10:10.302928+00:00",
+  "last_updated": "2026-09-22T15:54:56.614723+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -333,8 +333,24 @@
       },
       "dedupe_key": "3bc20e8f1a0b3b58",
       "timestamp": "2026-09-21T21:09:53.694089+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (261.18) on 2026-09-22 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-09-22",
+        "range_high": 261.17999,
+        "close": 262.865,
+        "volume_multiple": 0.011870784632125524,
+        "fires": false
+      },
+      "dedupe_key": "86fa6597853507af",
+      "timestamp": "2026-09-22T15:54:56.614723+00:00"
     }
   ],
-  "last_price": 257.38,
-  "last_price_date": "2026-09-21"
+  "last_price": 262.865,
+  "last_price_date": "2026-09-22"
 }
