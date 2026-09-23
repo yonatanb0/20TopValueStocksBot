@@ -2,7 +2,7 @@
   "ticker": "CSCO",
   "name": "Cisco",
   "sector": "enterprise_tech",
-  "last_updated": "2026-09-22T22:25:26.292925+00:00",
+  "last_updated": "2026-09-23T15:44:21.806063+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -729,8 +729,38 @@
       },
       "dedupe_key": "42f767121aebf9dc",
       "timestamp": "2026-09-22T15:54:56.572475+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~107.51 (4 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 107.50999999999999,
+        "zone_touches": 4,
+        "date": "2026-09-23",
+        "fires": false
+      },
+      "dedupe_key": "002db03516de22f2",
+      "timestamp": "2026-09-23T15:44:21.806063+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-09-23",
+        "fires": false
+      },
+      "dedupe_key": "b91b16e36f36e25d",
+      "timestamp": "2026-09-23T15:44:21.806063+00:00"
     }
   ],
-  "last_price": 106.44,
-  "last_price_date": "2026-09-22"
+  "last_price": 106.08,
+  "last_price_date": "2026-09-23"
 }
