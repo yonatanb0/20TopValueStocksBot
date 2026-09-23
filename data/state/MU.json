@@ -1,6 +1,6 @@
 {
   "ticker": "MU",
-  "last_updated": "2026-09-23T15:44:33.684562+00:00",
+  "last_updated": "2026-09-23T19:19:59.606145+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "MU",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 1076.78,
+    "current_price": 1068.69,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -21,20 +21,20 @@
     "atr_units_from_stop": null
   },
   "trend": {
-    "sma20": 979.94,
-    "sma20_slope_5d_pct": 2.56,
+    "sma20": 979.53,
+    "sma20_slope_5d_pct": 2.51,
     "price_vs_sma20": "above",
-    "sma50": 933.61,
-    "sma50_slope_5d_pct": 0.8,
+    "sma50": 933.44,
+    "sma50_slope_5d_pct": 0.78,
     "price_vs_sma50": "above",
-    "sma200": 652.73,
-    "sma200_slope_5d_pct": 3.19,
+    "sma200": 652.69,
+    "sma200_slope_5d_pct": 3.18,
     "price_vs_sma200": "above"
   },
   "volatility": {
-    "atr14": 49.39,
-    "atr14_pct_of_price": 4.59,
-    "realized_vol_20d_annualized_pct": 50.18
+    "atr14": 49.83,
+    "atr14_pct_of_price": 4.66,
+    "realized_vol_20d_annualized_pct": 50.74
   },
   "range": {
     "high_20d": 1105.45,
@@ -43,15 +43,15 @@
     "low_60d": 737.88
   },
   "momentum": {
-    "rsi14": 62.93
+    "rsi14": 61.71
   },
   "volume": {
     "up_down_volume_ratio_20d": 1.41
   },
   "consolidation": {
     "range_width_pct": 22.47,
-    "distance_from_high_pct": -2.59,
-    "distance_from_low_pct": 19.3
+    "distance_from_high_pct": -3.33,
+    "distance_from_low_pct": 18.4
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -62,7 +62,7 @@
   "fundamentals": {
     "forward_pe": 5.86615,
     "ev_ebitda_ttm": 17.5126,
-    "implied_forward_eps": 183.5582,
+    "implied_forward_eps": 182.1791,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
@@ -70,46 +70,52 @@
   },
   "turtle": {
     "gate_open": true,
-    "n": 53.2,
+    "n": 53.508,
     "system1": {
       "state": {
         "state": {
-          "status": "open",
-          "entry_date": "2026-09-22",
-          "entry_price": 1096.16003,
-          "n_at_entry": 54.16566544668416,
-          "exit_date": null,
-          "exit_price": null,
-          "outcome": null
+          "state": {
+            "status": "open",
+            "entry_date": "2026-09-22",
+            "entry_price": 1096.16003,
+            "n_at_entry": 54.16566544668416,
+            "exit_date": null,
+            "exit_price": null,
+            "outcome": null
+          },
+          "signal": {
+            "resolution": null,
+            "entry_fired": true,
+            "filtered": false,
+            "entry_price": 1096.16003,
+            "system": "system1"
+          }
         },
-        "signal": {
-          "resolution": null,
-          "entry_fired": true,
-          "filtered": false,
-          "entry_price": 1096.16003,
-          "system": "system1"
-        }
+        "signal": null
       },
       "signal": null
     },
     "system2": {
       "state": {
         "state": {
-          "status": "open",
-          "entry_date": "2026-09-22",
-          "entry_price": 1096.16003,
-          "n_at_entry": 54.16566544668416,
-          "exit_date": null,
-          "exit_price": null,
-          "outcome": null
+          "state": {
+            "status": "open",
+            "entry_date": "2026-09-22",
+            "entry_price": 1096.16003,
+            "n_at_entry": 54.16566544668416,
+            "exit_date": null,
+            "exit_price": null,
+            "outcome": null
+          },
+          "signal": {
+            "resolution": null,
+            "entry_fired": true,
+            "filtered": false,
+            "entry_price": 1096.16003,
+            "system": "system2"
+          }
         },
-        "signal": {
-          "resolution": null,
-          "entry_fired": true,
-          "filtered": false,
-          "entry_price": 1096.16003,
-          "system": "system2"
-        }
+        "signal": null
       },
       "signal": null
     },
