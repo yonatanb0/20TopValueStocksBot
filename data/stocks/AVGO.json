@@ -2,7 +2,7 @@
   "ticker": "AVGO",
   "name": "Broadcom",
   "sector": "semiconductors",
-  "last_updated": "2026-09-23T22:22:33.338426+00:00",
+  "last_updated": "2026-09-24T16:05:26.117019+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -742,8 +742,23 @@
       },
       "dedupe_key": "e7fe2b82110478eb",
       "timestamp": "2026-09-23T15:44:21.844664+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~357.28 (3 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 357.27999,
+        "zone_touches": 3,
+        "date": "2026-09-24",
+        "fires": false
+      },
+      "dedupe_key": "cd5fe8215815e1ad",
+      "timestamp": "2026-09-24T16:05:26.117019+00:00"
     }
   ],
-  "last_price": 354.98999,
-  "last_price_date": "2026-09-23"
+  "last_price": 347.87,
+  "last_price_date": "2026-09-24"
 }

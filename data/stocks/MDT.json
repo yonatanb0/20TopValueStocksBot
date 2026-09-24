@@ -2,7 +2,7 @@
   "ticker": "MDT",
   "name": "Medtronic",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-09-23T22:22:33.319733+00:00",
+  "last_updated": "2026-09-24T16:05:26.085889+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -364,8 +364,38 @@
       },
       "dedupe_key": "64333ac4e5106011",
       "timestamp": "2026-09-23T15:44:21.821899+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~90.10 (2 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 90.1,
+        "zone_touches": 2,
+        "date": "2026-09-24",
+        "fires": false
+      },
+      "dedupe_key": "721051cb05b894a7",
+      "timestamp": "2026-09-24T16:05:26.085889+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-09-24",
+        "fires": false
+      },
+      "dedupe_key": "4f91fce0f6bdec63",
+      "timestamp": "2026-09-24T16:05:26.085889+00:00"
     }
   ],
-  "last_price": 89.3,
-  "last_price_date": "2026-09-23"
+  "last_price": 89.21,
+  "last_price_date": "2026-09-24"
 }
