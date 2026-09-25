@@ -2,7 +2,7 @@
   "ticker": "BE",
   "name": "Bloom Energy",
   "sector": "clean_energy",
-  "last_updated": "2026-09-24T23:04:04.097998+00:00",
+  "last_updated": "2026-09-25T16:05:42.731025+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -388,8 +388,73 @@
       },
       "dedupe_key": "52923c5f4ce26e74",
       "timestamp": "2026-09-24T16:05:26.071041+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (288.00) on 2026-09-25 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-09-25",
+        "range_high": 288.0,
+        "close": 291.77,
+        "volume_multiple": 0.017529091510107956,
+        "fires": false
+      },
+      "dedupe_key": "090fe35e9a1e5019",
+      "timestamp": "2026-09-25T16:05:42.731025+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~248.40 (2 prior touches) and closed back above it (reaction confirmed). Stop ~229.27, target ~479.27 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 248.39500650000002,
+        "zone_touches": 2,
+        "date": "2026-09-25",
+        "fires": true,
+        "stop_loss": 229.27,
+        "take_profit": 479.27,
+        "entry_reference_price": 291.77
+      },
+      "dedupe_key": "212712749f49a08c",
+      "timestamp": "2026-09-25T16:05:42.731025+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 1.053) -- watch closer, not a standalone trigger, invalidation level ~313.98.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 1.053,
+        "invalidation_level": 313.98,
+        "date": "2026-09-25",
+        "fires": false
+      },
+      "dedupe_key": "85d5cc39a1db45f7",
+      "timestamp": "2026-09-25T16:05:42.731025+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-09-25",
+        "fires": false
+      },
+      "dedupe_key": "9aae3c10a6c09a85",
+      "timestamp": "2026-09-25T16:05:42.731025+00:00"
     }
   ],
-  "last_price": 266.64999,
-  "last_price_date": "2026-09-24"
+  "last_price": 291.77,
+  "last_price_date": "2026-09-25"
 }

@@ -2,7 +2,7 @@
   "ticker": "GOOG",
   "name": "Alphabet",
   "sector": "enterprise_tech",
-  "last_updated": "2026-09-24T23:04:04.079904+00:00",
+  "last_updated": "2026-09-25T16:05:42.708830+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -755,8 +755,26 @@
       },
       "dedupe_key": "ccacbdbb6486412d",
       "timestamp": "2026-09-24T16:05:26.047928+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~336.89 (7 prior touches) and closed back above it (reaction confirmed). Stop ~328.4, target ~381.48 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 336.88500285714287,
+        "zone_touches": 7,
+        "date": "2026-09-25",
+        "fires": true,
+        "stop_loss": 328.4,
+        "take_profit": 381.48,
+        "entry_reference_price": 341.67
+      },
+      "dedupe_key": "1ba3735da20919d3",
+      "timestamp": "2026-09-25T16:05:42.708830+00:00"
     }
   ],
-  "last_price": 339.01001,
-  "last_price_date": "2026-09-24"
+  "last_price": 341.67,
+  "last_price_date": "2026-09-25"
 }
