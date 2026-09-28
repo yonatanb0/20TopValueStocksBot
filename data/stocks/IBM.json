@@ -2,7 +2,7 @@
   "ticker": "IBM",
   "name": "IBM",
   "sector": "enterprise_tech",
-  "last_updated": "2026-09-25T23:20:36.448307+00:00",
+  "last_updated": "2026-09-28T18:55:29.467930+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -724,8 +724,52 @@
       },
       "dedupe_key": "a2bec71f13212167",
       "timestamp": "2026-09-25T20:03:44.114570+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~228.49 (3 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 228.48667,
+        "zone_touches": 3,
+        "date": "2026-09-28",
+        "fires": false
+      },
+      "dedupe_key": "5d73afe8c64e83e5",
+      "timestamp": "2026-09-28T18:55:29.467930+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (16.5%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 16.5,
+        "close": 221.12,
+        "low_52w": 199.19,
+        "high_52w": 332.45999
+      },
+      "dedupe_key": "a19aeff251740e40",
+      "timestamp": "2026-09-28T18:55:29.467930+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-09-28",
+        "fires": false
+      },
+      "dedupe_key": "0ec8540c6b5be9b3",
+      "timestamp": "2026-09-28T18:55:29.467930+00:00"
     }
   ],
-  "last_price": 225.50999,
-  "last_price_date": "2026-09-25"
+  "last_price": 221.12,
+  "last_price_date": "2026-09-28"
 }
