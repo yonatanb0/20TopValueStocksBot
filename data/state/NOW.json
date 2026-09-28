@@ -1,6 +1,6 @@
 {
   "ticker": "NOW",
-  "last_updated": "2026-09-28T18:56:17.567038+00:00",
+  "last_updated": "2026-09-28T23:37:46.002599+00:00",
   "has_thesis": true,
   "position": {
     "ticker": "NOW",
@@ -11,21 +11,21 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 131.18,
+    "current_price": 131.45,
     "entry_price": null,
     "stop_price": 81.24,
     "target_price": 140.25,
     "pct_from_entry": null,
-    "pct_from_stop": 61.47,
-    "pct_from_target": -6.47,
-    "atr_units_from_stop": 8.21
+    "pct_from_stop": 61.8,
+    "pct_from_target": -6.27,
+    "atr_units_from_stop": 8.26
   },
   "trend": {
-    "sma20": 138.08,
-    "sma20_slope_5d_pct": 0.67,
+    "sma20": 138.09,
+    "sma20_slope_5d_pct": 0.68,
     "price_vs_sma20": "below",
     "sma50": 126.35,
-    "sma50_slope_5d_pct": 2.5,
+    "sma50_slope_5d_pct": 2.51,
     "price_vs_sma50": "above",
     "sma200": 116.43,
     "sma200_slope_5d_pct": -0.7,
@@ -34,24 +34,24 @@
   "volatility": {
     "atr14": 6.08,
     "atr14_pct_of_price": 4.63,
-    "realized_vol_20d_annualized_pct": 52.15
+    "realized_vol_20d_annualized_pct": 52.02
   },
   "range": {
     "high_20d": 149.6,
-    "low_20d": 126.81,
+    "low_20d": 126.76,
     "high_60d": 149.6,
     "low_60d": 91.53
   },
   "momentum": {
-    "rsi14": 46.75
+    "rsi14": 47.01
   },
   "volume": {
-    "up_down_volume_ratio_20d": 1.04
+    "up_down_volume_ratio_20d": 1.13
   },
   "consolidation": {
-    "range_width_pct": 17.97,
-    "distance_from_high_pct": -12.31,
-    "distance_from_low_pct": 3.45
+    "range_width_pct": 18.02,
+    "distance_from_high_pct": -12.13,
+    "distance_from_low_pct": 3.7
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": "~October 2026",
@@ -60,9 +60,9 @@
     "days_since_review_due": -3
   },
   "fundamentals": {
-    "forward_pe": 33.30112571162679,
+    "forward_pe": 32.20107377837145,
     "ev_ebitda_ttm": 52.7972,
-    "implied_forward_eps": 3.9392,
+    "implied_forward_eps": 4.0822,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-07-30",
@@ -70,7 +70,7 @@
   },
   "turtle": {
     "gate_open": false,
-    "n": 6.174,
+    "n": 6.176,
     "system1": {
       "state": {
         "state": {
@@ -139,21 +139,24 @@
                                                                                                                                       "state": {
                                                                                                                                         "state": {
                                                                                                                                           "state": {
-                                                                                                                                            "status": "open",
-                                                                                                                                            "entry_date": "2026-08-31",
-                                                                                                                                            "entry_price": 147.99001,
-                                                                                                                                            "n_at_entry": 6.528387456750556,
-                                                                                                                                            "exit_date": null,
-                                                                                                                                            "exit_price": null,
-                                                                                                                                            "outcome": null
+                                                                                                                                            "state": {
+                                                                                                                                              "status": "open",
+                                                                                                                                              "entry_date": "2026-08-31",
+                                                                                                                                              "entry_price": 147.99001,
+                                                                                                                                              "n_at_entry": 6.528387456750556,
+                                                                                                                                              "exit_date": null,
+                                                                                                                                              "exit_price": null,
+                                                                                                                                              "outcome": null
+                                                                                                                                            },
+                                                                                                                                            "signal": {
+                                                                                                                                              "resolution": null,
+                                                                                                                                              "entry_fired": true,
+                                                                                                                                              "filtered": false,
+                                                                                                                                              "entry_price": 147.99001,
+                                                                                                                                              "system": "system1"
+                                                                                                                                            }
                                                                                                                                           },
-                                                                                                                                          "signal": {
-                                                                                                                                            "resolution": null,
-                                                                                                                                            "entry_fired": true,
-                                                                                                                                            "filtered": false,
-                                                                                                                                            "entry_price": 147.99001,
-                                                                                                                                            "system": "system1"
-                                                                                                                                          }
+                                                                                                                                          "signal": null
                                                                                                                                         },
                                                                                                                                         "signal": null
                                                                                                                                       },
@@ -355,21 +358,24 @@
                                                                                                                                       "state": {
                                                                                                                                         "state": {
                                                                                                                                           "state": {
-                                                                                                                                            "status": "open",
-                                                                                                                                            "entry_date": "2026-08-31",
-                                                                                                                                            "entry_price": 147.99001,
-                                                                                                                                            "n_at_entry": 6.528387456750556,
-                                                                                                                                            "exit_date": null,
-                                                                                                                                            "exit_price": null,
-                                                                                                                                            "outcome": null
+                                                                                                                                            "state": {
+                                                                                                                                              "status": "open",
+                                                                                                                                              "entry_date": "2026-08-31",
+                                                                                                                                              "entry_price": 147.99001,
+                                                                                                                                              "n_at_entry": 6.528387456750556,
+                                                                                                                                              "exit_date": null,
+                                                                                                                                              "exit_price": null,
+                                                                                                                                              "outcome": null
+                                                                                                                                            },
+                                                                                                                                            "signal": {
+                                                                                                                                              "resolution": null,
+                                                                                                                                              "entry_fired": true,
+                                                                                                                                              "filtered": false,
+                                                                                                                                              "entry_price": 147.99001,
+                                                                                                                                              "system": "system2"
+                                                                                                                                            }
                                                                                                                                           },
-                                                                                                                                          "signal": {
-                                                                                                                                            "resolution": null,
-                                                                                                                                            "entry_fired": true,
-                                                                                                                                            "filtered": false,
-                                                                                                                                            "entry_price": 147.99001,
-                                                                                                                                            "system": "system2"
-                                                                                                                                          }
+                                                                                                                                          "signal": null
                                                                                                                                         },
                                                                                                                                         "signal": null
                                                                                                                                       },
