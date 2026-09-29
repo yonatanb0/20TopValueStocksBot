@@ -2,7 +2,7 @@
   "ticker": "VRT",
   "name": "Vertiv",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-09-28T23:37:35.757083+00:00",
+  "last_updated": "2026-09-29T17:12:41.391582+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -790,8 +790,39 @@
       },
       "dedupe_key": "69a09f6bd5be0eaa",
       "timestamp": "2026-09-28T18:55:29.472892+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~249.36 (2 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 249.36,
+        "zone_touches": 2,
+        "date": "2026-09-29",
+        "fires": false
+      },
+      "dedupe_key": "3e1aa33f18b35680",
+      "timestamp": "2026-09-29T17:12:41.391582+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator buy turn (value -0.088) -- watch closer, not a standalone trigger, invalidation level ~232.75.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "buy",
+        "value": -0.088,
+        "invalidation_level": 232.75,
+        "date": "2026-09-29",
+        "fires": false
+      },
+      "dedupe_key": "fff297501494329e",
+      "timestamp": "2026-09-29T17:12:41.391582+00:00"
     }
   ],
-  "last_price": 244.039993,
-  "last_price_date": "2026-09-28"
+  "last_price": 248.22,
+  "last_price_date": "2026-09-29"
 }

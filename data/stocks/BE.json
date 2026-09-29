@@ -2,7 +2,7 @@
   "ticker": "BE",
   "name": "Bloom Energy",
   "sector": "clean_energy",
-  "last_updated": "2026-09-28T23:37:35.754200+00:00",
+  "last_updated": "2026-09-29T17:12:41.387481+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -486,8 +486,24 @@
       },
       "dedupe_key": "a0d4f476108a0d36",
       "timestamp": "2026-09-28T18:55:29.470322+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (292.72) on 2026-09-29 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-09-29",
+        "range_high": 292.72,
+        "close": 296.42,
+        "volume_multiple": 0.024345211559550037,
+        "fires": false
+      },
+      "dedupe_key": "4be72eda6bec1063",
+      "timestamp": "2026-09-29T17:12:41.387481+00:00"
     }
   ],
-  "last_price": 262.87,
-  "last_price_date": "2026-09-28"
+  "last_price": 296.42,
+  "last_price_date": "2026-09-29"
 }
