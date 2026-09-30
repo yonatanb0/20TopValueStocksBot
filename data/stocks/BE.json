@@ -2,7 +2,7 @@
   "ticker": "BE",
   "name": "Bloom Energy",
   "sector": "clean_energy",
-  "last_updated": "2026-09-30T17:10:50.034856+00:00",
+  "last_updated": "2026-09-30T21:27:39.311825+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -502,8 +502,23 @@
       },
       "dedupe_key": "4be72eda6bec1063",
       "timestamp": "2026-09-29T17:12:41.387481+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Distribution volume detected. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": true,
+        "trendline_break": false,
+        "date": "2026-09-30",
+        "fires": false
+      },
+      "dedupe_key": "e7588edaebf8908b",
+      "timestamp": "2026-09-30T21:27:39.311825+00:00"
     }
   ],
-  "last_price": 279.965,
+  "last_price": 276.95999,
   "last_price_date": "2026-09-30"
 }
