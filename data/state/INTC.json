@@ -1,6 +1,6 @@
 {
   "ticker": "INTC",
-  "last_updated": "2026-09-29T21:26:44.996618+00:00",
+  "last_updated": "2026-09-30T00:46:16.722889+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "INTC",
@@ -61,7 +61,7 @@
   },
   "fundamentals": {
     "forward_pe": 63.01586,
-    "ev_ebitda_ttm": 38.4216,
+    "ev_ebitda_ttm": 39.0098,
     "implied_forward_eps": 1.8397,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
@@ -80,21 +80,24 @@
                 "state": {
                   "state": {
                     "state": {
-                      "status": "open",
-                      "entry_date": "2026-09-24",
-                      "entry_price": 127.39,
-                      "n_at_entry": 6.433305254534088,
-                      "exit_date": null,
-                      "exit_price": null,
-                      "outcome": null
+                      "state": {
+                        "status": "open",
+                        "entry_date": "2026-09-24",
+                        "entry_price": 127.39,
+                        "n_at_entry": 6.433305254534088,
+                        "exit_date": null,
+                        "exit_price": null,
+                        "outcome": null
+                      },
+                      "signal": {
+                        "resolution": null,
+                        "entry_fired": true,
+                        "filtered": false,
+                        "entry_price": 127.39,
+                        "system": "system1"
+                      }
                     },
-                    "signal": {
-                      "resolution": null,
-                      "entry_fired": true,
-                      "filtered": false,
-                      "entry_price": 127.39,
-                      "system": "system1"
-                    }
+                    "signal": null
                   },
                   "signal": null
                 },
@@ -119,21 +122,24 @@
                 "state": {
                   "state": {
                     "state": {
-                      "status": "open",
-                      "entry_date": "2026-09-24",
-                      "entry_price": 127.39,
-                      "n_at_entry": 6.433305254534088,
-                      "exit_date": null,
-                      "exit_price": null,
-                      "outcome": null
+                      "state": {
+                        "status": "open",
+                        "entry_date": "2026-09-24",
+                        "entry_price": 127.39,
+                        "n_at_entry": 6.433305254534088,
+                        "exit_date": null,
+                        "exit_price": null,
+                        "outcome": null
+                      },
+                      "signal": {
+                        "resolution": null,
+                        "entry_fired": true,
+                        "filtered": false,
+                        "entry_price": 127.39,
+                        "system": "system2"
+                      }
                     },
-                    "signal": {
-                      "resolution": null,
-                      "entry_fired": true,
-                      "filtered": false,
-                      "entry_price": 127.39,
-                      "system": "system2"
-                    }
+                    "signal": null
                   },
                   "signal": null
                 },

@@ -1,6 +1,6 @@
 {
   "ticker": "BE",
-  "last_updated": "2026-09-29T21:26:45.031850+00:00",
+  "last_updated": "2026-09-30T00:46:16.748016+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "BE",
@@ -60,9 +60,9 @@
     "days_since_review_due": null
   },
   "fundamentals": {
-    "forward_pe": 97.40258537223409,
-    "ev_ebitda_ttm": 229.9424,
-    "implied_forward_eps": 2.9902,
+    "forward_pe": 107.91837406194384,
+    "ev_ebitda_ttm": 254.7555,
+    "implied_forward_eps": 2.6988,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-09-04",
@@ -74,42 +74,48 @@
     "system1": {
       "state": {
         "state": {
-          "status": "open",
-          "entry_date": "2026-09-29",
-          "entry_price": 296.42,
-          "n_at_entry": 21.367920703144822,
-          "exit_date": null,
-          "exit_price": null,
-          "outcome": null
+          "state": {
+            "status": "open",
+            "entry_date": "2026-09-29",
+            "entry_price": 296.42,
+            "n_at_entry": 21.367920703144822,
+            "exit_date": null,
+            "exit_price": null,
+            "outcome": null
+          },
+          "signal": {
+            "resolution": null,
+            "entry_fired": true,
+            "filtered": false,
+            "entry_price": 296.42,
+            "system": "system1"
+          }
         },
-        "signal": {
-          "resolution": null,
-          "entry_fired": true,
-          "filtered": false,
-          "entry_price": 296.42,
-          "system": "system1"
-        }
+        "signal": null
       },
       "signal": null
     },
     "system2": {
       "state": {
         "state": {
-          "status": "open",
-          "entry_date": "2026-09-29",
-          "entry_price": 296.42,
-          "n_at_entry": 21.367920703144822,
-          "exit_date": null,
-          "exit_price": null,
-          "outcome": null
+          "state": {
+            "status": "open",
+            "entry_date": "2026-09-29",
+            "entry_price": 296.42,
+            "n_at_entry": 21.367920703144822,
+            "exit_date": null,
+            "exit_price": null,
+            "outcome": null
+          },
+          "signal": {
+            "resolution": null,
+            "entry_fired": true,
+            "filtered": false,
+            "entry_price": 296.42,
+            "system": "system2"
+          }
         },
-        "signal": {
-          "resolution": null,
-          "entry_fired": true,
-          "filtered": false,
-          "entry_price": 296.42,
-          "system": "system2"
-        }
+        "signal": null
       },
       "signal": null
     },
