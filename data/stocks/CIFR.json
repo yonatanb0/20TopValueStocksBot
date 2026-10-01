@@ -2,7 +2,7 @@
   "ticker": "CIFR",
   "name": "Cipher Mining",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-10-01T00:49:59.036387+00:00",
+  "last_updated": "2026-10-01T17:40:57.395327+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -549,8 +549,57 @@
       },
       "dedupe_key": "bc8476463649e3ea",
       "timestamp": "2026-09-30T21:27:39.339481+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~14.87 (2 prior touches) and closed back above it (reaction confirmed). Stop ~13.45, target ~21.73 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 14.870000000000001,
+        "zone_touches": 2,
+        "date": "2026-10-01",
+        "fires": true,
+        "stop_loss": 13.45,
+        "take_profit": 21.73,
+        "entry_reference_price": 15.52
+      },
+      "dedupe_key": "9db9f2bd67c72cc5",
+      "timestamp": "2026-10-01T17:40:57.395327+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 0.821) -- watch closer, not a standalone trigger, invalidation level ~17.79.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 0.821,
+        "invalidation_level": 17.79,
+        "date": "2026-10-01",
+        "fires": false
+      },
+      "dedupe_key": "d7a3a35c56723150",
+      "timestamp": "2026-10-01T17:40:57.395327+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-10-01",
+        "fires": false
+      },
+      "dedupe_key": "a9826221a615d886",
+      "timestamp": "2026-10-01T17:40:57.395327+00:00"
     }
   ],
-  "last_price": 15.825,
-  "last_price_date": "2026-09-30"
+  "last_price": 15.52,
+  "last_price_date": "2026-10-01"
 }
