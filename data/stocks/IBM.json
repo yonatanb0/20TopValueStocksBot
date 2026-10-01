@@ -2,7 +2,7 @@
   "ticker": "IBM",
   "name": "IBM",
   "sector": "enterprise_tech",
-  "last_updated": "2026-10-01T17:40:57.363689+00:00",
+  "last_updated": "2026-10-01T22:01:21.464556+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -856,8 +856,22 @@
       },
       "dedupe_key": "fa53a9bd2ab30074",
       "timestamp": "2026-10-01T17:40:57.363689+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (19.9%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 19.9,
+        "close": 225.75,
+        "low_52w": 199.19,
+        "high_52w": 332.45999
+      },
+      "dedupe_key": "e15c15a137d48036",
+      "timestamp": "2026-10-01T22:01:21.464556+00:00"
     }
   ],
-  "last_price": 228.09,
+  "last_price": 225.75,
   "last_price_date": "2026-10-01"
 }
