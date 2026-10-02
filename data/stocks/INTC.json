@@ -2,7 +2,7 @@
   "ticker": "INTC",
   "name": "Intel",
   "sector": "semiconductors",
-  "last_updated": "2026-10-02T17:00:31.697964+00:00",
+  "last_updated": "2026-10-02T21:10:33.362330+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -249,8 +249,23 @@
       },
       "dedupe_key": "00a8bf13c2e361ac",
       "timestamp": "2026-09-24T20:01:35.004032+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Distribution volume detected. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": true,
+        "trendline_break": false,
+        "date": "2026-10-02",
+        "fires": false
+      },
+      "dedupe_key": "226197a41f1f5f42",
+      "timestamp": "2026-10-02T21:10:33.362330+00:00"
     }
   ],
-  "last_price": 121.39,
+  "last_price": 119.33,
   "last_price_date": "2026-10-02"
 }
