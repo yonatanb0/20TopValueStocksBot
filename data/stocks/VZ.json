@@ -2,7 +2,7 @@
   "ticker": "VZ",
   "name": "Verizon",
   "sector": "telecom",
-  "last_updated": "2026-10-01T22:01:21.495611+00:00",
+  "last_updated": "2026-10-02T17:00:31.742574+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -702,8 +702,26 @@
       },
       "dedupe_key": "d8c9b8baf0e94223",
       "timestamp": "2026-10-01T17:40:57.389255+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~45.12 (2 prior touches) and closed back above it (reaction confirmed). Stop ~44.22, target ~51.02 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 45.120000000000005,
+        "zone_touches": 2,
+        "date": "2026-10-02",
+        "fires": true,
+        "stop_loss": 44.22,
+        "take_profit": 51.02,
+        "entry_reference_price": 45.92
+      },
+      "dedupe_key": "0593549ec5488241",
+      "timestamp": "2026-10-02T17:00:31.742574+00:00"
     }
   ],
-  "last_price": 45.97,
-  "last_price_date": "2026-10-01"
+  "last_price": 45.92,
+  "last_price_date": "2026-10-02"
 }

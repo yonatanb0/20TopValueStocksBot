@@ -2,7 +2,7 @@
   "ticker": "IBM",
   "name": "IBM",
   "sector": "enterprise_tech",
-  "last_updated": "2026-10-01T22:01:21.464556+00:00",
+  "last_updated": "2026-10-02T17:00:31.711956+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -870,8 +870,37 @@
       },
       "dedupe_key": "e15c15a137d48036",
       "timestamp": "2026-10-01T22:01:21.464556+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (17.1%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 17.1,
+        "close": 222.01,
+        "low_52w": 199.19,
+        "high_52w": 332.45999
+      },
+      "dedupe_key": "c9c79e2545257ba2",
+      "timestamp": "2026-10-02T17:00:31.711956+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-10-02",
+        "fires": false
+      },
+      "dedupe_key": "85867c30be333aca",
+      "timestamp": "2026-10-02T17:00:31.711956+00:00"
     }
   ],
-  "last_price": 225.75,
-  "last_price_date": "2026-10-01"
+  "last_price": 222.01,
+  "last_price_date": "2026-10-02"
 }
