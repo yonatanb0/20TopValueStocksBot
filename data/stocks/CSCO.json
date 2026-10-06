@@ -2,7 +2,7 @@
   "ticker": "CSCO",
   "name": "Cisco",
   "sector": "enterprise_tech",
-  "last_updated": "2026-10-06T01:03:02.600247+00:00",
+  "last_updated": "2026-10-06T17:34:07.889265+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -925,8 +925,42 @@
       },
       "dedupe_key": "2e7effe45a337ac7",
       "timestamp": "2026-10-06T01:03:02.600247+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (113.19) on 2026-10-06 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-10-06",
+        "range_high": 113.19,
+        "close": 116.2,
+        "volume_multiple": 0.017722489871922438,
+        "fires": false
+      },
+      "dedupe_key": "5568270c3622fcde",
+      "timestamp": "2026-10-06T17:34:07.889265+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~107.51 (4 prior touches) and closed back above it (reaction confirmed). Stop ~104.88, target ~150.16 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 107.50999999999999,
+        "zone_touches": 4,
+        "date": "2026-10-06",
+        "fires": true,
+        "stop_loss": 104.88,
+        "take_profit": 150.16,
+        "entry_reference_price": 116.2
+      },
+      "dedupe_key": "b75527556b62006b",
+      "timestamp": "2026-10-06T17:34:07.889265+00:00"
     }
   ],
-  "last_price": 112.82,
-  "last_price_date": "2026-10-05"
+  "last_price": 116.2,
+  "last_price_date": "2026-10-06"
 }

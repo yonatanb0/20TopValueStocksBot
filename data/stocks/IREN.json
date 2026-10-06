@@ -2,7 +2,7 @@
   "ticker": "IREN",
   "name": "IREN Limited",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-10-06T01:03:02.634138+00:00",
+  "last_updated": "2026-10-06T17:34:07.923325+00:00",
   "signal_log": [
     {
       "category": "macro",
@@ -341,8 +341,26 @@
       },
       "dedupe_key": "abb37729b5087b68",
       "timestamp": "2026-10-06T01:03:02.634138+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~39.41 (2 prior touches) and closed back above it (reaction confirmed). Stop ~36.78, target ~56.86 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 39.405,
+        "zone_touches": 2,
+        "date": "2026-10-06",
+        "fires": true,
+        "stop_loss": 36.78,
+        "take_profit": 56.86,
+        "entry_reference_price": 41.8
+      },
+      "dedupe_key": "1b89e616c099be2c",
+      "timestamp": "2026-10-06T17:34:07.923325+00:00"
     }
   ],
-  "last_price": 40.48,
-  "last_price_date": "2026-10-05"
+  "last_price": 41.8,
+  "last_price_date": "2026-10-06"
 }

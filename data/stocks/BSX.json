@@ -2,7 +2,7 @@
   "ticker": "BSX",
   "name": "Boston Scientific",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-10-06T01:03:02.623527+00:00",
+  "last_updated": "2026-10-06T17:34:07.912328+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -1313,8 +1313,52 @@
       },
       "dedupe_key": "f66bdb9d1d870db9",
       "timestamp": "2026-10-06T01:03:02.623527+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~42.50 (6 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 42.5,
+        "zone_touches": 6,
+        "date": "2026-10-06",
+        "fires": false
+      },
+      "dedupe_key": "de67dc45922d4c02",
+      "timestamp": "2026-10-06T17:34:07.912328+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (0.6%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 0.6,
+        "close": 42.315,
+        "low_52w": 41.94,
+        "high_52w": 105.65
+      },
+      "dedupe_key": "abd4ace29f3cf603",
+      "timestamp": "2026-10-06T17:34:07.912328+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-10-06",
+        "fires": false
+      },
+      "dedupe_key": "3a8c07d611ce75ca",
+      "timestamp": "2026-10-06T17:34:07.912328+00:00"
     }
   ],
-  "last_price": 42.4,
-  "last_price_date": "2026-10-05"
+  "last_price": 42.315,
+  "last_price_date": "2026-10-06"
 }
