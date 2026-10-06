@@ -2,7 +2,7 @@
   "ticker": "INTC",
   "name": "Intel",
   "sector": "semiconductors",
-  "last_updated": "2026-10-03T00:33:07.311568+00:00",
+  "last_updated": "2026-10-06T01:03:02.589781+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -264,8 +264,39 @@
       },
       "dedupe_key": "226197a41f1f5f42",
       "timestamp": "2026-10-02T21:10:33.362330+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 1.128) -- watch closer, not a standalone trigger, invalidation level ~124.51.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 1.128,
+        "invalidation_level": 124.51,
+        "date": "2026-10-05",
+        "fires": false
+      },
+      "dedupe_key": "aea4f0181e91c10f",
+      "timestamp": "2026-10-06T01:03:02.589781+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-10-05",
+        "fires": false
+      },
+      "dedupe_key": "9d5c725f01154e14",
+      "timestamp": "2026-10-06T01:03:02.589781+00:00"
     }
   ],
-  "last_price": 119.33,
-  "last_price_date": "2026-10-02"
+  "last_price": 116.19,
+  "last_price_date": "2026-10-05"
 }

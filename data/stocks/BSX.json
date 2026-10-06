@@ -2,7 +2,7 @@
   "ticker": "BSX",
   "name": "Boston Scientific",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-10-03T00:33:07.347817+00:00",
+  "last_updated": "2026-10-06T01:03:02.623527+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -1269,8 +1269,52 @@
       },
       "dedupe_key": "9cc6ad29b1bfec69",
       "timestamp": "2026-10-02T21:10:33.398748+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~42.50 (6 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 42.5,
+        "zone_touches": 6,
+        "date": "2026-10-05",
+        "fires": false
+      },
+      "dedupe_key": "7c09ebc072bbb208",
+      "timestamp": "2026-10-06T01:03:02.623527+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (0.7%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 0.7,
+        "close": 42.4,
+        "low_52w": 41.94,
+        "high_52w": 105.65
+      },
+      "dedupe_key": "8496897143989b1b",
+      "timestamp": "2026-10-06T01:03:02.623527+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-10-05",
+        "fires": false
+      },
+      "dedupe_key": "f66bdb9d1d870db9",
+      "timestamp": "2026-10-06T01:03:02.623527+00:00"
     }
   ],
-  "last_price": 42.6,
-  "last_price_date": "2026-10-02"
+  "last_price": 42.4,
+  "last_price_date": "2026-10-05"
 }
