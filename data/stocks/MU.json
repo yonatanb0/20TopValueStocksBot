@@ -2,7 +2,7 @@
   "ticker": "MU",
   "name": "Micron Technology",
   "sector": "semiconductors",
-  "last_updated": "2026-10-06T21:53:55.425097+00:00",
+  "last_updated": "2026-10-07T18:06:05.904464+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -257,8 +257,24 @@
       },
       "dedupe_key": "57e7ef17a4e97521",
       "timestamp": "2026-10-06T21:53:55.425097+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 0.471) -- watch closer, not a standalone trigger, invalidation level ~1144.9.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 0.471,
+        "invalidation_level": 1144.9,
+        "date": "2026-10-07",
+        "fires": false
+      },
+      "dedupe_key": "5ba3434d30c63059",
+      "timestamp": "2026-10-07T18:06:05.904464+00:00"
     }
   ],
-  "last_price": 1045.56006,
-  "last_price_date": "2026-10-06"
+  "last_price": 1085.63,
+  "last_price_date": "2026-10-07"
 }

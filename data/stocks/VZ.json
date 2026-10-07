@@ -2,7 +2,7 @@
   "ticker": "VZ",
   "name": "Verizon",
   "sector": "telecom",
-  "last_updated": "2026-10-06T21:53:55.417161+00:00",
+  "last_updated": "2026-10-07T18:06:05.889793+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -756,8 +756,42 @@
       },
       "dedupe_key": "3ddab1593baad96c",
       "timestamp": "2026-10-06T17:34:07.919915+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~45.12 (2 prior touches) and closed back above it (reaction confirmed). Stop ~44.27, target ~51.17 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 45.120000000000005,
+        "zone_touches": 2,
+        "date": "2026-10-07",
+        "fires": true,
+        "stop_loss": 44.27,
+        "take_profit": 51.17,
+        "entry_reference_price": 45.995
+      },
+      "dedupe_key": "f959a989dd7ee007",
+      "timestamp": "2026-10-07T18:06:05.889793+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator buy turn (value -1.467) -- watch closer, not a standalone trigger, invalidation level ~44.94.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "buy",
+        "value": -1.467,
+        "invalidation_level": 44.94,
+        "date": "2026-10-07",
+        "fires": false
+      },
+      "dedupe_key": "710f10f6dbb30636",
+      "timestamp": "2026-10-07T18:06:05.889793+00:00"
     }
   ],
-  "last_price": 45.97,
-  "last_price_date": "2026-10-06"
+  "last_price": 45.995,
+  "last_price_date": "2026-10-07"
 }

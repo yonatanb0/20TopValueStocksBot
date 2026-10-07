@@ -2,7 +2,7 @@
   "ticker": "ISRG",
   "name": "Intuitive Surgical",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-10-06T21:53:55.414839+00:00",
+  "last_updated": "2026-10-07T18:06:05.884770+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -1066,8 +1066,41 @@
       },
       "dedupe_key": "ad3013b8dc270350",
       "timestamp": "2026-10-06T17:34:07.916216+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~394.72 (2 prior touches) and closed back above it (reaction confirmed). Stop ~383.2, target ~511.84 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 394.72,
+        "zone_touches": 2,
+        "date": "2026-10-07",
+        "fires": true,
+        "stop_loss": 383.2,
+        "take_profit": 511.84,
+        "entry_reference_price": 415.36
+      },
+      "dedupe_key": "63c1ddbb6de5dfae",
+      "timestamp": "2026-10-07T18:06:05.884770+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-10-07",
+        "fires": false
+      },
+      "dedupe_key": "b6163fd990174491",
+      "timestamp": "2026-10-07T18:06:05.884770+00:00"
     }
   ],
-  "last_price": 404.85001,
-  "last_price_date": "2026-10-06"
+  "last_price": 415.36,
+  "last_price_date": "2026-10-07"
 }
