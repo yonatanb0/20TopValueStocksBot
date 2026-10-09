@@ -1,6 +1,6 @@
 {
   "ticker": "BSX",
-  "last_updated": "2026-10-09T17:41:52.120205+00:00",
+  "last_updated": "2026-10-09T21:54:19.887635+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "BSX",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 42.325,
+    "current_price": 42.745,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -21,20 +21,20 @@
     "atr_units_from_stop": null
   },
   "trend": {
-    "sma20": 43.48,
-    "sma20_slope_5d_pct": -1.5,
+    "sma20": 43.5,
+    "sma20_slope_5d_pct": -1.46,
     "price_vs_sma20": "below",
-    "sma50": 46.53,
-    "sma50_slope_5d_pct": -0.74,
+    "sma50": 46.54,
+    "sma50_slope_5d_pct": -0.72,
     "price_vs_sma50": "below",
     "sma200": 60.41,
-    "sma200_slope_5d_pct": -2.15,
+    "sma200_slope_5d_pct": -2.14,
     "price_vs_sma200": "below"
   },
   "volatility": {
     "atr14": 1.23,
-    "atr14_pct_of_price": 2.9,
-    "realized_vol_20d_annualized_pct": 25.9
+    "atr14_pct_of_price": 2.87,
+    "realized_vol_20d_annualized_pct": 26.51
   },
   "range": {
     "high_20d": 45.74,
@@ -43,15 +43,15 @@
     "low_60d": 41.39
   },
   "momentum": {
-    "rsi14": 38.02
+    "rsi14": 41.18
   },
   "volume": {
-    "up_down_volume_ratio_20d": 1.36
+    "up_down_volume_ratio_20d": 1.43
   },
   "consolidation": {
     "range_width_pct": 10.51,
-    "distance_from_high_pct": -7.47,
-    "distance_from_low_pct": 2.26
+    "distance_from_high_pct": -6.55,
+    "distance_from_low_pct": 3.27
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -62,7 +62,7 @@
   "fundamentals": {
     "forward_pe": 12.891802389889932,
     "ev_ebitda_ttm": 14.3548,
-    "implied_forward_eps": 3.2831,
+    "implied_forward_eps": 3.3157,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-09-04",
@@ -70,7 +70,7 @@
   },
   "turtle": {
     "gate_open": true,
-    "n": 1.33,
+    "n": 1.331,
     "system1": {
       "state": {
         "state": {
@@ -295,21 +295,24 @@
                                                                                                                                                                                                                                                                                                                                                                                                                                                               "state": {
                                                                                                                                                                                                                                                                                                                                                                                                                                                                 "state": {
                                                                                                                                                                                                                                                                                                                                                                                                                                                                   "state": {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "status": "open",
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "entry_date": "2026-08-14",
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "entry_price": 52.57,
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "n_at_entry": 1.6620522279361452,
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "exit_date": null,
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "exit_price": null,
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "outcome": null
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "state": {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "status": "open",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "entry_date": "2026-08-14",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "entry_price": 52.57,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "n_at_entry": 1.6620522279361452,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "exit_date": null,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "exit_price": null,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "outcome": null
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    },
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "signal": {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "resolution": null,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "entry_fired": true,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "filtered": false,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "entry_price": 52.57,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "system": "system1"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
                                                                                                                                                                                                                                                                                                                                                                                                                                                                   },
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                  "signal": {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "resolution": null,
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "entry_fired": true,
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "filtered": false,
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "entry_price": 52.57,
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "system": "system1"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                  }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                  "signal": null
                                                                                                                                                                                                                                                                                                                                                                                                                                                                 },
                                                                                                                                                                                                                                                                                                                                                                                                                                                                 "signal": null
                                                                                                                                                                                                                                                                                                                                                                                                                                                               },
@@ -1055,7 +1058,10 @@
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "state": {
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         "state": {
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "state": {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            "state": {},
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            "state": {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              "state": {},
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              "signal": null
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            },
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             "signal": null
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           },
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "signal": null
