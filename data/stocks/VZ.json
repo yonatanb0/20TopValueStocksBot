@@ -2,7 +2,7 @@
   "ticker": "VZ",
   "name": "Verizon",
   "sector": "telecom",
-  "last_updated": "2026-10-08T23:24:08.466322+00:00",
+  "last_updated": "2026-10-09T17:41:41.333063+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -808,8 +808,41 @@
       },
       "dedupe_key": "62badd46f8a55719",
       "timestamp": "2026-10-08T18:08:31.708784+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~41.05 (2 prior touches) and closed back above it (reaction confirmed). Stop ~39.85, target ~44.99 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 41.05,
+        "zone_touches": 2,
+        "date": "2026-10-09",
+        "fires": true,
+        "stop_loss": 39.85,
+        "take_profit": 44.99,
+        "entry_reference_price": 41.135
+      },
+      "dedupe_key": "b9636ae25744edc2",
+      "timestamp": "2026-10-09T17:41:41.333063+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-10-09",
+        "fires": false
+      },
+      "dedupe_key": "36937de2b0b22936",
+      "timestamp": "2026-10-09T17:41:41.333063+00:00"
     }
   ],
-  "last_price": 46.35,
-  "last_price_date": "2026-10-08"
+  "last_price": 41.135,
+  "last_price_date": "2026-10-09"
 }
