@@ -2,7 +2,7 @@
   "ticker": "MDT",
   "name": "Medtronic",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-10-09T21:54:12.206871+00:00",
+  "last_updated": "2026-10-12T20:34:05.647583+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -529,8 +529,42 @@
       },
       "dedupe_key": "083ee970d8cf0b26",
       "timestamp": "2026-10-07T23:08:07.926137+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~85.33 (2 prior touches) and closed back above it (reaction confirmed). Stop ~82.95, target ~118.43 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 85.325,
+        "zone_touches": 2,
+        "date": "2026-10-12",
+        "fires": true,
+        "stop_loss": 82.95,
+        "take_profit": 118.43,
+        "entry_reference_price": 91.82
+      },
+      "dedupe_key": "82ad239e24cc9dc0",
+      "timestamp": "2026-10-12T20:34:05.647583+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator buy turn (value -1.212) -- watch closer, not a standalone trigger, invalidation level ~88.77.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "buy",
+        "value": -1.212,
+        "invalidation_level": 88.77,
+        "date": "2026-10-12",
+        "fires": false
+      },
+      "dedupe_key": "2b30f6e9bd14cf22",
+      "timestamp": "2026-10-12T20:34:05.647583+00:00"
     }
   ],
-  "last_price": 88.48,
-  "last_price_date": "2026-10-09"
+  "last_price": 91.82,
+  "last_price_date": "2026-10-12"
 }
