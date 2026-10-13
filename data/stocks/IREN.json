@@ -2,7 +2,7 @@
   "ticker": "IREN",
   "name": "IREN Limited",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-10-13T02:15:04.229822+00:00",
+  "last_updated": "2026-10-13T18:38:43.750372+00:00",
   "signal_log": [
     {
       "category": "macro",
@@ -490,8 +490,37 @@
       },
       "dedupe_key": "8d59fb9249791708",
       "timestamp": "2026-10-12T20:34:05.663752+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (11.8%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 11.8,
+        "close": 34.595,
+        "low_52w": 28.93,
+        "high_52w": 76.87
+      },
+      "dedupe_key": "f864b9322d81b08c",
+      "timestamp": "2026-10-13T18:38:43.750372+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-10-13",
+        "fires": false
+      },
+      "dedupe_key": "bcab64bc4f15a5f7",
+      "timestamp": "2026-10-13T18:38:43.750372+00:00"
     }
   ],
-  "last_price": 34.8,
-  "last_price_date": "2026-10-12"
+  "last_price": 34.595,
+  "last_price_date": "2026-10-13"
 }
