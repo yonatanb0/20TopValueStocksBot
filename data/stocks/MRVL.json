@@ -2,7 +2,7 @@
   "ticker": "MRVL",
   "name": "Marvell Technology",
   "sector": "semiconductors",
-  "last_updated": "2026-10-13T23:07:30.222827+00:00",
+  "last_updated": "2026-10-14T16:08:17.872053+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -457,8 +457,39 @@
       },
       "dedupe_key": "f984550fe9de77a7",
       "timestamp": "2026-10-13T18:38:43.757611+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 0.55) -- watch closer, not a standalone trigger, invalidation level ~280.4.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 0.55,
+        "invalidation_level": 280.4,
+        "date": "2026-10-14",
+        "fires": false
+      },
+      "dedupe_key": "3dcb55543ec91d3c",
+      "timestamp": "2026-10-14T16:08:17.872053+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-10-14",
+        "fires": false
+      },
+      "dedupe_key": "b548372f3a064c02",
+      "timestamp": "2026-10-14T16:08:17.872053+00:00"
     }
   ],
-  "last_price": 268.72501,
-  "last_price_date": "2026-10-13"
+  "last_price": 253.57,
+  "last_price_date": "2026-10-14"
 }
