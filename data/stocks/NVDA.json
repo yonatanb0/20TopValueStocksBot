@@ -2,7 +2,7 @@
   "ticker": "NVDA",
   "name": "NVIDIA",
   "sector": "semiconductors",
-  "last_updated": "2026-10-14T23:17:20.334704+00:00",
+  "last_updated": "2026-10-15T15:55:42.973704+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -868,8 +868,57 @@
       },
       "dedupe_key": "7b285eb7fe17de71",
       "timestamp": "2026-10-14T16:08:17.822621+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~215.65 (2 prior touches) and closed back above it (reaction confirmed). Stop ~209.64, target ~240.32 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 215.650005,
+        "zone_touches": 2,
+        "date": "2026-10-15",
+        "fires": true,
+        "stop_loss": 209.64,
+        "take_profit": 240.32,
+        "entry_reference_price": 217.31
+      },
+      "dedupe_key": "ac519b165225963e",
+      "timestamp": "2026-10-15T15:55:42.973704+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 0.18) -- watch closer, not a standalone trigger, invalidation level ~223.48.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 0.18,
+        "invalidation_level": 223.48,
+        "date": "2026-10-15",
+        "fires": false
+      },
+      "dedupe_key": "394cb5efb5cf19ab",
+      "timestamp": "2026-10-15T15:55:42.973704+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-10-15",
+        "fires": false
+      },
+      "dedupe_key": "9ae1fd77f6eaccd2",
+      "timestamp": "2026-10-15T15:55:42.973704+00:00"
     }
   ],
-  "last_price": 221.3,
-  "last_price_date": "2026-10-14"
+  "last_price": 217.31,
+  "last_price_date": "2026-10-15"
 }

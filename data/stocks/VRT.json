@@ -2,7 +2,7 @@
   "ticker": "VRT",
   "name": "Vertiv",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-10-14T23:17:20.353822+00:00",
+  "last_updated": "2026-10-15T15:55:42.989336+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1067,8 +1067,39 @@
       },
       "dedupe_key": "1bf70ebea41314ff",
       "timestamp": "2026-10-14T16:08:17.839729+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 0.053) -- watch closer, not a standalone trigger, invalidation level ~227.18.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 0.053,
+        "invalidation_level": 227.18,
+        "date": "2026-10-15",
+        "fires": false
+      },
+      "dedupe_key": "b55b268c8bb19ab3",
+      "timestamp": "2026-10-15T15:55:42.989336+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-10-15",
+        "fires": false
+      },
+      "dedupe_key": "aae2d0db715c38da",
+      "timestamp": "2026-10-15T15:55:42.989336+00:00"
     }
   ],
-  "last_price": 222.83,
-  "last_price_date": "2026-10-14"
+  "last_price": 209.405,
+  "last_price_date": "2026-10-15"
 }

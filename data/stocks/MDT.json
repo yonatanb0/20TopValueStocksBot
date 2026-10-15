@@ -2,7 +2,7 @@
   "ticker": "MDT",
   "name": "Medtronic",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-10-14T23:17:20.365565+00:00",
+  "last_updated": "2026-10-15T15:55:42.998908+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -599,8 +599,42 @@
       },
       "dedupe_key": "87d729b1d06ab5a4",
       "timestamp": "2026-10-14T16:08:17.850303+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (94.72) on 2026-10-15 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-10-15",
+        "range_high": 94.72,
+        "close": 95.425,
+        "volume_multiple": 0.013717711799601521,
+        "fires": false
+      },
+      "dedupe_key": "bca10cf3407d0737",
+      "timestamp": "2026-10-15T15:55:42.998908+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~90.10 (2 prior touches) and closed back above it (reaction confirmed). Stop ~87.73, target ~118.51 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 90.1,
+        "zone_touches": 2,
+        "date": "2026-10-15",
+        "fires": true,
+        "stop_loss": 87.73,
+        "take_profit": 118.51,
+        "entry_reference_price": 95.425
+      },
+      "dedupe_key": "eb855813202cec26",
+      "timestamp": "2026-10-15T15:55:42.998908+00:00"
     }
   ],
-  "last_price": 94.23,
-  "last_price_date": "2026-10-14"
+  "last_price": 95.425,
+  "last_price_date": "2026-10-15"
 }

@@ -2,7 +2,7 @@
   "ticker": "BE",
   "name": "Bloom Energy",
   "sector": "clean_energy",
-  "last_updated": "2026-10-14T23:17:20.350360+00:00",
+  "last_updated": "2026-10-15T15:55:42.985844+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -565,8 +565,38 @@
       },
       "dedupe_key": "dc221f2e01cc4e22",
       "timestamp": "2026-10-14T16:08:17.836601+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~249.36 (3 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 249.36333766666667,
+        "zone_touches": 3,
+        "date": "2026-10-15",
+        "fires": false
+      },
+      "dedupe_key": "816ae5f800d7c1bc",
+      "timestamp": "2026-10-15T15:55:42.985844+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-10-15",
+        "fires": false
+      },
+      "dedupe_key": "52109c331c0f8c62",
+      "timestamp": "2026-10-15T15:55:42.985844+00:00"
     }
   ],
-  "last_price": 239.34,
-  "last_price_date": "2026-10-14"
+  "last_price": 230.74,
+  "last_price_date": "2026-10-15"
 }

@@ -2,7 +2,7 @@
   "ticker": "CIFR",
   "name": "Cipher Mining",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-10-14T23:17:20.384986+00:00",
+  "last_updated": "2026-10-15T15:55:43.014613+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -886,8 +886,37 @@
       },
       "dedupe_key": "bc5e707ccf131fcc",
       "timestamp": "2026-10-14T16:08:17.868160+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (2.7%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 2.7,
+        "close": 9.375,
+        "low_52w": 8.8,
+        "high_52w": 30.14
+      },
+      "dedupe_key": "ef855c92887b835f",
+      "timestamp": "2026-10-15T15:55:43.014613+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-10-15",
+        "fires": false
+      },
+      "dedupe_key": "5e50c5b48820a454",
+      "timestamp": "2026-10-15T15:55:43.014613+00:00"
     }
   ],
-  "last_price": 9.94,
-  "last_price_date": "2026-10-14"
+  "last_price": 9.375,
+  "last_price_date": "2026-10-15"
 }
