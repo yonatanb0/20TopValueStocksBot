@@ -2,7 +2,7 @@
   "ticker": "MU",
   "name": "Micron Technology",
   "sector": "semiconductors",
-  "last_updated": "2026-10-15T22:41:10.070162+00:00",
+  "last_updated": "2026-10-16T15:44:16.073050+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -363,8 +363,41 @@
       },
       "dedupe_key": "49514849da5caf42",
       "timestamp": "2026-10-15T15:55:43.020388+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~893.96 (3 prior touches) and closed back above it (reaction confirmed). Stop ~845.86, target ~1059.18 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 893.9566466666666,
+        "zone_touches": 3,
+        "date": "2026-10-16",
+        "fires": true,
+        "stop_loss": 845.86,
+        "take_profit": 1059.18,
+        "entry_reference_price": 899.19
+      },
+      "dedupe_key": "00f0db8de4978cb8",
+      "timestamp": "2026-10-16T15:44:16.073050+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-10-16",
+        "fires": false
+      },
+      "dedupe_key": "cbcd0cdf05ca8c35",
+      "timestamp": "2026-10-16T15:44:16.073050+00:00"
     }
   ],
-  "last_price": 931.23999,
-  "last_price_date": "2026-10-15"
+  "last_price": 899.19,
+  "last_price_date": "2026-10-16"
 }

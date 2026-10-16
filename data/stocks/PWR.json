@@ -2,7 +2,7 @@
   "ticker": "PWR",
   "name": "Quanta Services",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-10-15T22:41:10.039948+00:00",
+  "last_updated": "2026-10-16T15:44:16.042222+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1164,8 +1164,39 @@
       },
       "dedupe_key": "fc0ff929109b826a",
       "timestamp": "2026-10-15T15:55:42.995592+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 0.891) -- watch closer, not a standalone trigger, invalidation level ~664.54.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 0.891,
+        "invalidation_level": 664.54,
+        "date": "2026-10-16",
+        "fires": false
+      },
+      "dedupe_key": "6ddd68d3dde2000d",
+      "timestamp": "2026-10-16T15:44:16.042222+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-10-16",
+        "fires": false
+      },
+      "dedupe_key": "f42a95c4e681e4bf",
+      "timestamp": "2026-10-16T15:44:16.042222+00:00"
     }
   ],
-  "last_price": 642.070007,
-  "last_price_date": "2026-10-15"
+  "last_price": 632.0,
+  "last_price_date": "2026-10-16"
 }

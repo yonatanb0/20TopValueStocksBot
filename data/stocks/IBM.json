@@ -2,7 +2,7 @@
   "ticker": "IBM",
   "name": "IBM",
   "sector": "enterprise_tech",
-  "last_updated": "2026-10-15T22:41:10.025778+00:00",
+  "last_updated": "2026-10-16T15:44:16.025690+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1025,8 +1025,26 @@
       },
       "dedupe_key": "8e936ae76b6d611c",
       "timestamp": "2026-10-15T15:55:42.982762+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~228.49 (3 prior touches) and closed back above it (reaction confirmed). Stop ~222.26, target ~258.94 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 228.48667,
+        "zone_touches": 3,
+        "date": "2026-10-16",
+        "fires": true,
+        "stop_loss": 222.26,
+        "take_profit": 258.94,
+        "entry_reference_price": 231.43
+      },
+      "dedupe_key": "67e672279fc2eb07",
+      "timestamp": "2026-10-16T15:44:16.025690+00:00"
     }
   ],
-  "last_price": 234.070007,
-  "last_price_date": "2026-10-15"
+  "last_price": 231.43,
+  "last_price_date": "2026-10-16"
 }

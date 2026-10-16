@@ -2,7 +2,7 @@
   "ticker": "AVGO",
   "name": "Broadcom",
   "sector": "semiconductors",
-  "last_updated": "2026-10-15T22:41:10.076037+00:00",
+  "last_updated": "2026-10-16T15:44:16.080268+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1061,8 +1061,39 @@
       },
       "dedupe_key": "8fb00fd7265f8472",
       "timestamp": "2026-10-15T15:55:43.025794+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~345.64 (4 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 345.64250200000004,
+        "zone_touches": 4,
+        "date": "2026-10-16",
+        "fires": false
+      },
+      "dedupe_key": "3b37642e19b3476b",
+      "timestamp": "2026-10-16T15:44:16.080268+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 0.767) -- watch closer, not a standalone trigger, invalidation level ~352.04.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 0.767,
+        "invalidation_level": 352.04,
+        "date": "2026-10-16",
+        "fires": false
+      },
+      "dedupe_key": "0a7811ebdcd30634",
+      "timestamp": "2026-10-16T15:44:16.080268+00:00"
     }
   ],
-  "last_price": 344.32999,
-  "last_price_date": "2026-10-15"
+  "last_price": 335.71,
+  "last_price_date": "2026-10-16"
 }
