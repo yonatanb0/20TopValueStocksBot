@@ -2,7 +2,7 @@
   "ticker": "ISRG",
   "name": "Intuitive Surgical",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-10-16T22:08:09.542186+00:00",
+  "last_updated": "2026-10-19T17:55:21.618593+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -1131,8 +1131,24 @@
       },
       "dedupe_key": "45b2880f65d82485",
       "timestamp": "2026-10-12T20:34:05.655866+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 0.695) -- watch closer, not a standalone trigger, invalidation level ~445.26.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 0.695,
+        "invalidation_level": 445.26,
+        "date": "2026-10-19",
+        "fires": false
+      },
+      "dedupe_key": "397cc29260adf678",
+      "timestamp": "2026-10-19T17:55:21.618593+00:00"
     }
   ],
-  "last_price": 426.70999,
-  "last_price_date": "2026-10-16"
+  "last_price": 433.72,
+  "last_price_date": "2026-10-19"
 }
