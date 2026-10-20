@@ -2,7 +2,7 @@
   "ticker": "IBM",
   "name": "IBM",
   "sector": "enterprise_tech",
-  "last_updated": "2026-10-19T21:50:56.387561+00:00",
+  "last_updated": "2026-10-20T15:59:34.805421+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1061,8 +1061,42 @@
       },
       "dedupe_key": "8d533bcefec1b7ee",
       "timestamp": "2026-10-19T17:55:21.589831+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (238.38) on 2026-10-20 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-10-20",
+        "range_high": 238.38,
+        "close": 239.575,
+        "volume_multiple": 0.031130700360690433,
+        "fires": false
+      },
+      "dedupe_key": "6a7c37a8ca9489a2",
+      "timestamp": "2026-10-20T15:59:34.805421+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~228.49 (3 prior touches) and closed back above it (reaction confirmed). Stop ~222.08, target ~292.06 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 228.48667,
+        "zone_touches": 3,
+        "date": "2026-10-20",
+        "fires": true,
+        "stop_loss": 222.08,
+        "take_profit": 292.06,
+        "entry_reference_price": 239.575
+      },
+      "dedupe_key": "ff0483ec52d9f82c",
+      "timestamp": "2026-10-20T15:59:34.805421+00:00"
     }
   ],
-  "last_price": 236.39,
-  "last_price_date": "2026-10-19"
+  "last_price": 239.575,
+  "last_price_date": "2026-10-20"
 }
