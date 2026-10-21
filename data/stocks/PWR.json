@@ -2,7 +2,7 @@
   "ticker": "PWR",
   "name": "Quanta Services",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-10-20T22:48:25.431109+00:00",
+  "last_updated": "2026-10-21T16:16:17.070402+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1225,8 +1225,73 @@
       },
       "dedupe_key": "ed2661ee1fca0b21",
       "timestamp": "2026-10-20T15:59:34.820728+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~602.58 (4 prior touches) and closed back above it (reaction confirmed). Stop ~576.14, target ~684.94 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 602.5775125,
+        "zone_touches": 4,
+        "date": "2026-10-21",
+        "fires": true,
+        "stop_loss": 576.14,
+        "take_profit": 684.94,
+        "entry_reference_price": 603.34
+      },
+      "dedupe_key": "c4b5570182a02c67",
+      "timestamp": "2026-10-21T16:16:17.070402+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-10-21",
+        "fires": false
+      },
+      "dedupe_key": "6b92891ba567e3e0",
+      "timestamp": "2026-10-21T16:16:17.070402+00:00"
+    },
+    {
+      "category": "macro",
+      "type": "macro_sector_turning",
+      "fires": false,
+      "description": "Sector 'ai_data_center_infra' macro signal (power demand): \"Half of India's coal plants run critically low on fuel as power demand surges - Reuters\" -- confirm before treating the macro gate as open.",
+      "details": {
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOazNuSjVoOWdWeU9fY0hvSjV6UEpBQjNpVTZhaFg1Y3NXZUdobzk4Wk54a0ZMdHAtTk1CV1Z6OWstTlJ1dDdoSzV6aFZlRFpsVjRjdExPVDNrS2x3WTBSR3N2NThhRnRnYVJZdmkzN0ttNzFOdE9rTnkwS2pYdTNBWDFOcVZyb2xYRF9IU0F3S25fczdoWElJaFh3ajVndWF2bTFMeEVVLUlxbllnQUhxbjJBemxGS1MybXlZ?oc=5",
+        "title": "Half of India's coal plants run critically low on fuel as power demand surges - Reuters",
+        "matched": [
+          "power demand"
+        ],
+        "published": "2026-10-21T01:25:00+00:00"
+      },
+      "dedupe_key": "0d0c33032fb0eba0",
+      "timestamp": "2026-10-21T16:16:17.070402+00:00"
+    },
+    {
+      "category": "macro",
+      "type": "macro_sector_turning",
+      "fires": false,
+      "description": "Sector 'ai_data_center_infra' macro signal (rate cut): \"Bank of Israel to pause rate cuts ahead of October 27 election - Reuters\" -- confirm before treating the macro gate as open.",
+      "details": {
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUVQ5UjE5RFoyXzlHb3ZYbVAtbFRSUnMyYzhYZ1N1QWktUmtLZXpNY3JyRlpYNUFONmg0MGQ3Zzk1NV8yNTE1NkRrS0liYU1vZXdsUkxvdlY1VDNQVEVkcHVCRXJjcDlZcS1KaU83aEdLOGlLYklsNGdaVnVWa0EzTVRzeWVmRVFVVmpuSTk5VUgzYTFZY29hN2h3ZndiRnc5RUdGNHd6ZFVHY3c?oc=5",
+        "title": "Bank of Israel to pause rate cuts ahead of October 27 election - Reuters",
+        "matched": [
+          "rate cut"
+        ],
+        "published": "2026-10-20T12:23:47+00:00"
+      },
+      "dedupe_key": "376e8859fe1ca786",
+      "timestamp": "2026-10-21T16:16:17.070402+00:00"
     }
   ],
-  "last_price": 596.0,
-  "last_price_date": "2026-10-20"
+  "last_price": 603.34,
+  "last_price_date": "2026-10-21"
 }

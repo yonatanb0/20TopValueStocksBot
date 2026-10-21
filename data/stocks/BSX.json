@@ -2,7 +2,7 @@
   "ticker": "BSX",
   "name": "Boston Scientific",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-10-20T22:48:25.438852+00:00",
+  "last_updated": "2026-10-21T16:16:17.078168+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -1693,8 +1693,38 @@
       },
       "dedupe_key": "198489cab4989a9a",
       "timestamp": "2026-10-20T15:59:34.828431+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (4.9%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 4.9,
+        "close": 44.545,
+        "low_52w": 41.39,
+        "high_52w": 105.65
+      },
+      "dedupe_key": "2226f05ed28f55dc",
+      "timestamp": "2026-10-21T16:16:17.078168+00:00"
+    },
+    {
+      "category": "macro",
+      "type": "macro_sector_turning",
+      "fires": false,
+      "description": "Sector 'healthcare_medtech' macro signal (rate cut): \"Bank of Israel to pause rate cuts ahead of October 27 election - Reuters\" -- confirm before treating the macro gate as open.",
+      "details": {
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUVQ5UjE5RFoyXzlHb3ZYbVAtbFRSUnMyYzhYZ1N1QWktUmtLZXpNY3JyRlpYNUFONmg0MGQ3Zzk1NV8yNTE1NkRrS0liYU1vZXdsUkxvdlY1VDNQVEVkcHVCRXJjcDlZcS1KaU83aEdLOGlLYklsNGdaVnVWa0EzTVRzeWVmRVFVVmpuSTk5VUgzYTFZY29hN2h3ZndiRnc5RUdGNHd6ZFVHY3c?oc=5",
+        "title": "Bank of Israel to pause rate cuts ahead of October 27 election - Reuters",
+        "matched": [
+          "rate cut"
+        ],
+        "published": "2026-10-20T12:23:47+00:00"
+      },
+      "dedupe_key": "2ecfefeb010430a4",
+      "timestamp": "2026-10-21T16:16:17.078168+00:00"
     }
   ],
-  "last_price": 45.58,
-  "last_price_date": "2026-10-20"
+  "last_price": 44.545,
+  "last_price_date": "2026-10-21"
 }

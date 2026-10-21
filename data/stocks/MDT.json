@@ -2,7 +2,7 @@
   "ticker": "MDT",
   "name": "Medtronic",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-10-20T22:48:25.435110+00:00",
+  "last_updated": "2026-10-21T16:16:17.074452+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -633,8 +633,24 @@
       },
       "dedupe_key": "eb855813202cec26",
       "timestamp": "2026-10-15T15:55:42.998908+00:00"
+    },
+    {
+      "category": "macro",
+      "type": "macro_sector_turning",
+      "fires": false,
+      "description": "Sector 'healthcare_medtech' macro signal (rate cut): \"Bank of Israel to pause rate cuts ahead of October 27 election - Reuters\" -- confirm before treating the macro gate as open.",
+      "details": {
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUVQ5UjE5RFoyXzlHb3ZYbVAtbFRSUnMyYzhYZ1N1QWktUmtLZXpNY3JyRlpYNUFONmg0MGQ3Zzk1NV8yNTE1NkRrS0liYU1vZXdsUkxvdlY1VDNQVEVkcHVCRXJjcDlZcS1KaU83aEdLOGlLYklsNGdaVnVWa0EzTVRzeWVmRVFVVmpuSTk5VUgzYTFZY29hN2h3ZndiRnc5RUdGNHd6ZFVHY3c?oc=5",
+        "title": "Bank of Israel to pause rate cuts ahead of October 27 election - Reuters",
+        "matched": [
+          "rate cut"
+        ],
+        "published": "2026-10-20T12:23:47+00:00"
+      },
+      "dedupe_key": "0a62b660f1781682",
+      "timestamp": "2026-10-21T16:16:17.074452+00:00"
     }
   ],
-  "last_price": 94.63,
-  "last_price_date": "2026-10-20"
+  "last_price": 93.51,
+  "last_price_date": "2026-10-21"
 }

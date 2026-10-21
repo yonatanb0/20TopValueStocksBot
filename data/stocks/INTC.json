@@ -2,7 +2,7 @@
   "ticker": "INTC",
   "name": "Intel",
   "sector": "semiconductors",
-  "last_updated": "2026-10-20T22:48:25.401043+00:00",
+  "last_updated": "2026-10-21T16:16:17.039572+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -460,8 +460,39 @@
       },
       "dedupe_key": "056075d8ea77e4d6",
       "timestamp": "2026-10-20T15:59:34.790559+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-10-21",
+        "fires": false
+      },
+      "dedupe_key": "59676c013fe56362",
+      "timestamp": "2026-10-21T16:16:17.039572+00:00"
+    },
+    {
+      "category": "macro",
+      "type": "macro_sector_turning",
+      "fires": false,
+      "description": "Sector 'semiconductors' macro signal (rate cut): \"Bank of Israel to pause rate cuts ahead of October 27 election - Reuters\" -- confirm before treating the macro gate as open.",
+      "details": {
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUVQ5UjE5RFoyXzlHb3ZYbVAtbFRSUnMyYzhYZ1N1QWktUmtLZXpNY3JyRlpYNUFONmg0MGQ3Zzk1NV8yNTE1NkRrS0liYU1vZXdsUkxvdlY1VDNQVEVkcHVCRXJjcDlZcS1KaU83aEdLOGlLYklsNGdaVnVWa0EzTVRzeWVmRVFVVmpuSTk5VUgzYTFZY29hN2h3ZndiRnc5RUdGNHd6ZFVHY3c?oc=5",
+        "title": "Bank of Israel to pause rate cuts ahead of October 27 election - Reuters",
+        "matched": [
+          "rate cut"
+        ],
+        "published": "2026-10-20T12:23:47+00:00"
+      },
+      "dedupe_key": "f1a5b997cce2ebf7",
+      "timestamp": "2026-10-21T16:16:17.039572+00:00"
     }
   ],
-  "last_price": 91.69,
-  "last_price_date": "2026-10-20"
+  "last_price": 92.49,
+  "last_price_date": "2026-10-21"
 }

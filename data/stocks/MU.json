@@ -2,7 +2,7 @@
   "ticker": "MU",
   "name": "Micron Technology",
   "sector": "semiconductors",
-  "last_updated": "2026-10-20T22:48:25.462537+00:00",
+  "last_updated": "2026-10-21T16:16:17.101481+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -447,8 +447,42 @@
       },
       "dedupe_key": "46c47ac07f6051b9",
       "timestamp": "2026-10-20T15:59:34.851832+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~893.96 (3 prior touches) and closed back above it (reaction confirmed). Stop ~846.36, target ~1114.9 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 893.9566466666666,
+        "zone_touches": 3,
+        "date": "2026-10-21",
+        "fires": true,
+        "stop_loss": 846.36,
+        "take_profit": 1114.9,
+        "entry_reference_price": 913.495
+      },
+      "dedupe_key": "be5c1ea7231f4861",
+      "timestamp": "2026-10-21T16:16:17.101481+00:00"
+    },
+    {
+      "category": "macro",
+      "type": "macro_sector_turning",
+      "fires": false,
+      "description": "Sector 'semiconductors' macro signal (rate cut): \"Bank of Israel to pause rate cuts ahead of October 27 election - Reuters\" -- confirm before treating the macro gate as open.",
+      "details": {
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUVQ5UjE5RFoyXzlHb3ZYbVAtbFRSUnMyYzhYZ1N1QWktUmtLZXpNY3JyRlpYNUFONmg0MGQ3Zzk1NV8yNTE1NkRrS0liYU1vZXdsUkxvdlY1VDNQVEVkcHVCRXJjcDlZcS1KaU83aEdLOGlLYklsNGdaVnVWa0EzTVRzeWVmRVFVVmpuSTk5VUgzYTFZY29hN2h3ZndiRnc5RUdGNHd6ZFVHY3c?oc=5",
+        "title": "Bank of Israel to pause rate cuts ahead of October 27 election - Reuters",
+        "matched": [
+          "rate cut"
+        ],
+        "published": "2026-10-20T12:23:47+00:00"
+      },
+      "dedupe_key": "e282318613ef5b7d",
+      "timestamp": "2026-10-21T16:16:17.101481+00:00"
     }
   ],
-  "last_price": 896.070007,
-  "last_price_date": "2026-10-20"
+  "last_price": 913.495,
+  "last_price_date": "2026-10-21"
 }

@@ -2,7 +2,7 @@
   "ticker": "GOOG",
   "name": "Alphabet",
   "sector": "enterprise_tech",
-  "last_updated": "2026-10-20T22:48:25.396975+00:00",
+  "last_updated": "2026-10-21T16:16:17.035515+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1050,8 +1050,54 @@
       },
       "dedupe_key": "1f3b53ceda2de413",
       "timestamp": "2026-10-20T15:59:34.786506+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~333.05 (7 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 333.0521442857143,
+        "zone_touches": 7,
+        "date": "2026-10-21",
+        "fires": false
+      },
+      "dedupe_key": "a47c1c2dfa61a290",
+      "timestamp": "2026-10-21T16:16:17.035515+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-10-21",
+        "fires": false
+      },
+      "dedupe_key": "e7407cef3a62bb34",
+      "timestamp": "2026-10-21T16:16:17.035515+00:00"
+    },
+    {
+      "category": "macro",
+      "type": "macro_sector_turning",
+      "fires": false,
+      "description": "Sector 'enterprise_tech' macro signal (rate cut): \"Bank of Israel to pause rate cuts ahead of October 27 election - Reuters\" -- confirm before treating the macro gate as open.",
+      "details": {
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUVQ5UjE5RFoyXzlHb3ZYbVAtbFRSUnMyYzhYZ1N1QWktUmtLZXpNY3JyRlpYNUFONmg0MGQ3Zzk1NV8yNTE1NkRrS0liYU1vZXdsUkxvdlY1VDNQVEVkcHVCRXJjcDlZcS1KaU83aEdLOGlLYklsNGdaVnVWa0EzTVRzeWVmRVFVVmpuSTk5VUgzYTFZY29hN2h3ZndiRnc5RUdGNHd6ZFVHY3c?oc=5",
+        "title": "Bank of Israel to pause rate cuts ahead of October 27 election - Reuters",
+        "matched": [
+          "rate cut"
+        ],
+        "published": "2026-10-20T12:23:47+00:00"
+      },
+      "dedupe_key": "030910e9a03b9fe2",
+      "timestamp": "2026-10-21T16:16:17.035515+00:00"
     }
   ],
-  "last_price": 336.39999,
-  "last_price_date": "2026-10-20"
+  "last_price": 329.0,
+  "last_price_date": "2026-10-21"
 }
