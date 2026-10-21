@@ -1,6 +1,6 @@
 {
   "ticker": "IBM",
-  "last_updated": "2026-10-21T16:16:27.908795+00:00",
+  "last_updated": "2026-10-21T20:12:50.723132+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "IBM",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 243.995,
+    "current_price": 251.38,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -21,37 +21,37 @@
     "atr_units_from_stop": null
   },
   "trend": {
-    "sma20": 227.64,
-    "sma20_slope_5d_pct": 0.56,
+    "sma20": 228.01,
+    "sma20_slope_5d_pct": 0.72,
     "price_vs_sma20": "above",
-    "sma50": 232.24,
-    "sma50_slope_5d_pct": 0.06,
+    "sma50": 232.39,
+    "sma50_slope_5d_pct": 0.13,
     "price_vs_sma50": "above",
-    "sma200": 250.88,
-    "sma200_slope_5d_pct": -0.6,
-    "price_vs_sma200": "below"
+    "sma200": 250.92,
+    "sma200_slope_5d_pct": -0.58,
+    "price_vs_sma200": "above"
   },
   "volatility": {
-    "atr14": 6.36,
-    "atr14_pct_of_price": 2.61,
-    "realized_vol_20d_annualized_pct": 25.37
+    "atr14": 6.81,
+    "atr14_pct_of_price": 2.71,
+    "realized_vol_20d_annualized_pct": 28.47
   },
   "range": {
-    "high_20d": 245.22,
+    "high_20d": 251.61,
     "low_20d": 217.8,
     "high_60d": 251.82,
     "low_60d": 216.59
   },
   "momentum": {
-    "rsi14": 64.89
+    "rsi14": 69.82
   },
   "volume": {
     "up_down_volume_ratio_20d": 0.51
   },
   "consolidation": {
-    "range_width_pct": 12.59,
-    "distance_from_high_pct": -0.5,
-    "distance_from_low_pct": 12.03
+    "range_width_pct": 15.52,
+    "distance_from_high_pct": -0.09,
+    "distance_from_low_pct": 15.42
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -62,7 +62,7 @@
   "fundamentals": {
     "forward_pe": 17.90917,
     "ev_ebitda_ttm": 23.4275,
-    "implied_forward_eps": 13.624,
+    "implied_forward_eps": 14.0364,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-09-04",
@@ -70,13 +70,13 @@
   },
   "turtle": {
     "gate_open": true,
-    "n": 6.612,
+    "n": 6.931,
     "system1": {
       "state": {
         "status": "open",
         "entry_date": "2026-10-21",
-        "entry_price": 243.995,
-        "n_at_entry": 6.611946016119208,
+        "entry_price": 251.38,
+        "n_at_entry": 6.9314460161192075,
         "exit_date": null,
         "exit_price": null,
         "outcome": null
@@ -85,7 +85,7 @@
         "resolution": null,
         "entry_fired": true,
         "filtered": false,
-        "entry_price": 243.995,
+        "entry_price": 251.38,
         "system": "system1"
       }
     },
@@ -409,7 +409,10 @@
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               "state": {
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 "state": {
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   "state": {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "state": {},
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "state": {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "state": {},
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "signal": null
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    },
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     "signal": null
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   },
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   "signal": null
@@ -1052,14 +1055,14 @@
     },
     "position_plan": {
       "unit_prices": [
-        244.0,
-        247.3,
-        250.61,
-        253.91
+        251.38,
+        254.85,
+        258.31,
+        261.78
       ],
       "units_reached": 1,
-      "stop_price": 230.78,
-      "n_at_entry": 6.612
+      "stop_price": 237.52,
+      "n_at_entry": 6.931
     },
     "unit_size": null
   },
