@@ -2,7 +2,7 @@
   "ticker": "IBM",
   "name": "IBM",
   "sector": "enterprise_tech",
-  "last_updated": "2026-10-22T16:14:51.563488+00:00",
+  "last_updated": "2026-10-22T20:09:39.438579+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1145,8 +1145,24 @@
       },
       "dedupe_key": "5393900ee7a3aac5",
       "timestamp": "2026-10-21T16:16:17.054522+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (251.75) on 2026-10-22 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-10-22",
+        "range_high": 251.75,
+        "close": 252.27,
+        "volume_multiple": 0.12119447224364127,
+        "fires": false
+      },
+      "dedupe_key": "76cb0e1d9eb39948",
+      "timestamp": "2026-10-22T20:09:39.438579+00:00"
     }
   ],
-  "last_price": 249.135,
+  "last_price": 252.27,
   "last_price_date": "2026-10-22"
 }
