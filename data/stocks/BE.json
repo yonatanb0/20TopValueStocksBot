@@ -2,7 +2,7 @@
   "ticker": "BE",
   "name": "Bloom Energy",
   "sector": "clean_energy",
-  "last_updated": "2026-10-21T23:22:51.920631+00:00",
+  "last_updated": "2026-10-22T16:14:51.565763+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -671,8 +671,39 @@
       },
       "dedupe_key": "43ee15a663d148a4",
       "timestamp": "2026-10-21T16:16:17.058583+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-10-22",
+        "fires": false
+      },
+      "dedupe_key": "b2f6e8705bbc8d54",
+      "timestamp": "2026-10-22T16:14:51.565763+00:00"
+    },
+    {
+      "category": "macro",
+      "type": "macro_sector_turning",
+      "fires": false,
+      "description": "Sector 'clean_energy' macro signal (subsidy): \"Nigeria says private capital to drive next growth phase, petrol subsidy gone - Reuters\" -- confirm before treating the macro gate as open.",
+      "details": {
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQOUJTb3c0eUxoUUVtTGQybDhrSHByRjVzSWFMV0JzV0VjTEY5STBqMEh4c1VnMkRycFcwY1JjYW1XUTdGaERyazgxR0tYRXBXTi1YYU5iS2dFeThfMGxpMmJ0bVl3UUhQQ2tHWlMzelBYOHlzN3BQbGdhbzRucXRBTGVRXzNGM0tsay1SY2pQSG5oMjRHQVF1STZsc0s4ZkJ6YTNsUHVfZms2eDhKWWpTa2ZYY3pBSnZ0Y2N6UFJB?oc=5",
+        "title": "Nigeria says private capital to drive next growth phase, petrol subsidy gone - Reuters",
+        "matched": [
+          "subsidy"
+        ],
+        "published": "2026-10-21T14:00:43+00:00"
+      },
+      "dedupe_key": "ba959efb29714cf7",
+      "timestamp": "2026-10-22T16:14:51.565763+00:00"
     }
   ],
-  "last_price": 238.53,
-  "last_price_date": "2026-10-21"
+  "last_price": 218.325,
+  "last_price_date": "2026-10-22"
 }

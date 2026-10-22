@@ -2,7 +2,7 @@
   "ticker": "INTC",
   "name": "Intel",
   "sector": "semiconductors",
-  "last_updated": "2026-10-21T23:22:51.909937+00:00",
+  "last_updated": "2026-10-22T16:14:51.555014+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -491,8 +491,41 @@
       },
       "dedupe_key": "f1a5b997cce2ebf7",
       "timestamp": "2026-10-21T16:16:17.039572+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~85.43 (2 prior touches) and closed back above it (reaction confirmed). Stop ~79.76, target ~111.24 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 85.43,
+        "zone_touches": 2,
+        "date": "2026-10-22",
+        "fires": true,
+        "stop_loss": 79.76,
+        "take_profit": 111.24,
+        "entry_reference_price": 87.63
+      },
+      "dedupe_key": "22797a2325e82c9c",
+      "timestamp": "2026-10-22T16:14:51.555014+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-10-22",
+        "fires": false
+      },
+      "dedupe_key": "b5d5094566f0e030",
+      "timestamp": "2026-10-22T16:14:51.555014+00:00"
     }
   ],
-  "last_price": 92.96,
-  "last_price_date": "2026-10-21"
+  "last_price": 87.63,
+  "last_price_date": "2026-10-22"
 }

@@ -2,7 +2,7 @@
   "ticker": "AVGO",
   "name": "Broadcom",
   "sector": "semiconductors",
-  "last_updated": "2026-10-21T23:22:51.948065+00:00",
+  "last_updated": "2026-10-22T16:14:51.594504+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1152,8 +1152,22 @@
       },
       "dedupe_key": "06b651e38dee8afe",
       "timestamp": "2026-10-21T16:16:17.108096+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (17.3%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 17.3,
+        "close": 325.51,
+        "low_52w": 289.95999,
+        "high_52w": 495.0
+      },
+      "dedupe_key": "e7ba26b011905fba",
+      "timestamp": "2026-10-22T16:14:51.594504+00:00"
     }
   ],
-  "last_price": 337.79999,
-  "last_price_date": "2026-10-21"
+  "last_price": 325.51,
+  "last_price_date": "2026-10-22"
 }

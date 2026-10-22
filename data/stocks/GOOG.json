@@ -2,7 +2,7 @@
   "ticker": "GOOG",
   "name": "Alphabet",
   "sector": "enterprise_tech",
-  "last_updated": "2026-10-21T23:22:51.907627+00:00",
+  "last_updated": "2026-10-22T16:14:51.552495+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1096,8 +1096,38 @@
       },
       "dedupe_key": "030910e9a03b9fe2",
       "timestamp": "2026-10-21T16:16:17.035515+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~333.05 (7 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 333.0521442857143,
+        "zone_touches": 7,
+        "date": "2026-10-22",
+        "fires": false
+      },
+      "dedupe_key": "03ae86abf1a51195",
+      "timestamp": "2026-10-22T16:14:51.552495+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-10-22",
+        "fires": false
+      },
+      "dedupe_key": "2523698be3bc6748",
+      "timestamp": "2026-10-22T16:14:51.552495+00:00"
     }
   ],
-  "last_price": 330.95001,
-  "last_price_date": "2026-10-21"
+  "last_price": 323.565,
+  "last_price_date": "2026-10-22"
 }
