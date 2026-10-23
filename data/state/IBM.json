@@ -1,6 +1,6 @@
 {
   "ticker": "IBM",
-  "last_updated": "2026-10-23T16:06:27.266959+00:00",
+  "last_updated": "2026-10-23T19:59:40.196147+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "IBM",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 253.94,
+    "current_price": 253.93,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -46,7 +46,7 @@
     "rsi14": 71.4
   },
   "volume": {
-    "up_down_volume_ratio_20d": 0.95
+    "up_down_volume_ratio_20d": 0.96
   },
   "consolidation": {
     "range_width_pct": 17.68,
@@ -62,7 +62,7 @@
   "fundamentals": {
     "forward_pe": 17.90917,
     "ev_ebitda_ttm": 23.8801,
-    "implied_forward_eps": 14.1793,
+    "implied_forward_eps": 14.1788,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-09-04",
@@ -74,42 +74,48 @@
     "system1": {
       "state": {
         "state": {
-          "status": "open",
-          "entry_date": "2026-10-22",
-          "entry_price": 252.11,
-          "n_at_entry": 7.347048882573944,
-          "exit_date": null,
-          "exit_price": null,
-          "outcome": null
+          "state": {
+            "status": "open",
+            "entry_date": "2026-10-22",
+            "entry_price": 252.11,
+            "n_at_entry": 7.347048882573944,
+            "exit_date": null,
+            "exit_price": null,
+            "outcome": null
+          },
+          "signal": {
+            "resolution": null,
+            "entry_fired": true,
+            "filtered": false,
+            "entry_price": 252.11,
+            "system": "system1"
+          }
         },
-        "signal": {
-          "resolution": null,
-          "entry_fired": true,
-          "filtered": false,
-          "entry_price": 252.11,
-          "system": "system1"
-        }
+        "signal": null
       },
       "signal": null
     },
     "system2": {
       "state": {
         "state": {
-          "status": "open",
-          "entry_date": "2026-10-22",
-          "entry_price": 252.11,
-          "n_at_entry": 7.347048882573944,
-          "exit_date": null,
-          "exit_price": null,
-          "outcome": null
+          "state": {
+            "status": "open",
+            "entry_date": "2026-10-22",
+            "entry_price": 252.11,
+            "n_at_entry": 7.347048882573944,
+            "exit_date": null,
+            "exit_price": null,
+            "outcome": null
+          },
+          "signal": {
+            "resolution": null,
+            "entry_fired": true,
+            "filtered": false,
+            "entry_price": 252.11,
+            "system": "system2"
+          }
         },
-        "signal": {
-          "resolution": null,
-          "entry_fired": true,
-          "filtered": false,
-          "entry_price": 252.11,
-          "system": "system2"
-        }
+        "signal": null
       },
       "signal": null
     },
