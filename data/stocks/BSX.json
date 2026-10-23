@@ -2,7 +2,7 @@
   "ticker": "BSX",
   "name": "Boston Scientific",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-10-22T23:25:16.277471+00:00",
+  "last_updated": "2026-10-23T16:05:46.193861+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -1737,8 +1737,22 @@
       },
       "dedupe_key": "a67e3d356fbe3c86",
       "timestamp": "2026-10-22T16:14:51.577355+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (6.3%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 6.3,
+        "close": 45.45,
+        "low_52w": 41.39,
+        "high_52w": 105.65
+      },
+      "dedupe_key": "5de209ddd61db3b7",
+      "timestamp": "2026-10-23T16:05:46.193861+00:00"
     }
   ],
-  "last_price": 46.0099983,
-  "last_price_date": "2026-10-22"
+  "last_price": 45.45,
+  "last_price_date": "2026-10-23"
 }
