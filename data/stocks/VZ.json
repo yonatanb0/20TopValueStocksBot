@@ -2,7 +2,7 @@
   "ticker": "VZ",
   "name": "Verizon",
   "sector": "telecom",
-  "last_updated": "2026-10-23T22:52:26.255079+00:00",
+  "last_updated": "2026-10-26T17:50:18.054942+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -926,8 +926,24 @@
       },
       "dedupe_key": "df54d271c5d3bc68",
       "timestamp": "2026-10-23T22:52:26.255079+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "eps_revision_proxy",
+      "fires": false,
+      "description": "Headline suggests positive estimate revision (raises guidance): \"Verizon beats profit estimates, raises guidance\" -- verify against actual analyst EPS revisions.",
+      "details": {
+        "url": "https://finnhub.io/api/news?id=b982613c4842bc756198ae6865e7f4483c72b3e0d4632c510e5fe7d2e8a25989",
+        "headline": "Verizon beats profit estimates, raises guidance",
+        "matched_keywords": [
+          "raises guidance"
+        ],
+        "published": "2026-10-26T11:47:27+00:00"
+      },
+      "dedupe_key": "3f2e1c556a6fac7a",
+      "timestamp": "2026-10-26T17:50:18.054942+00:00"
     }
   ],
-  "last_price": 44.62,
-  "last_price_date": "2026-10-23"
+  "last_price": 43.075,
+  "last_price_date": "2026-10-26"
 }

@@ -2,7 +2,7 @@
   "ticker": "MU",
   "name": "Micron Technology",
   "sector": "semiconductors",
-  "last_updated": "2026-10-23T22:52:26.269230+00:00",
+  "last_updated": "2026-10-26T17:50:18.066337+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -511,8 +511,26 @@
       },
       "dedupe_key": "6a18266c0fd369ba",
       "timestamp": "2026-10-23T16:05:46.209996+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~893.96 (3 prior touches) and closed back above it (reaction confirmed). Stop ~846.82, target ~1100.9 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 893.9566466666666,
+        "zone_touches": 3,
+        "date": "2026-10-26",
+        "fires": true,
+        "stop_loss": 846.82,
+        "take_profit": 1100.9,
+        "entry_reference_price": 910.34
+      },
+      "dedupe_key": "4150c679ade37355",
+      "timestamp": "2026-10-26T17:50:18.066337+00:00"
     }
   ],
-  "last_price": 877.60992,
-  "last_price_date": "2026-10-23"
+  "last_price": 910.34,
+  "last_price_date": "2026-10-26"
 }

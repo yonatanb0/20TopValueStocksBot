@@ -2,7 +2,7 @@
   "ticker": "NVDA",
   "name": "NVIDIA",
   "sector": "semiconductors",
-  "last_updated": "2026-10-23T22:52:26.213439+00:00",
+  "last_updated": "2026-10-26T17:50:18.022180+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1128,8 +1128,41 @@
       },
       "dedupe_key": "ce7b4444e08a57b0",
       "timestamp": "2026-10-23T16:05:46.170711+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~208.09 (2 prior touches) and closed back above it (reaction confirmed). Stop ~201.98, target ~257.56 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 208.089995,
+        "zone_touches": 2,
+        "date": "2026-10-26",
+        "fires": true,
+        "stop_loss": 201.98,
+        "take_profit": 257.56,
+        "entry_reference_price": 215.875
+      },
+      "dedupe_key": "f5c7a7da03c1ebfd",
+      "timestamp": "2026-10-26T17:50:18.022180+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-10-26",
+        "fires": false
+      },
+      "dedupe_key": "0e8e5f0259fe869e",
+      "timestamp": "2026-10-26T17:50:18.022180+00:00"
     }
   ],
-  "last_price": 210.9975,
-  "last_price_date": "2026-10-23"
+  "last_price": 215.875,
+  "last_price_date": "2026-10-26"
 }
