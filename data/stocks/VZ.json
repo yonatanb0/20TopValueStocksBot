@@ -2,7 +2,7 @@
   "ticker": "VZ",
   "name": "Verizon",
   "sector": "telecom",
-  "last_updated": "2026-10-26T17:50:18.054942+00:00",
+  "last_updated": "2026-10-26T22:03:15.335265+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -942,8 +942,39 @@
       },
       "dedupe_key": "3f2e1c556a6fac7a",
       "timestamp": "2026-10-26T17:50:18.054942+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Distribution volume detected. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": true,
+        "trendline_break": false,
+        "date": "2026-10-26",
+        "fires": false
+      },
+      "dedupe_key": "e5449a8cf2d52a11",
+      "timestamp": "2026-10-26T22:03:15.335265+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "eps_revision_proxy",
+      "fires": false,
+      "description": "Headline suggests positive estimate revision (raises guidance): \"Verizon Beats and Raises Guidance While Warning the FCC About SpaceX\u2019s Phone Network\" -- verify against actual analyst EPS revisions.",
+      "details": {
+        "url": "https://finnhub.io/api/news?id=5291c3007c7a35083eb42f68889ef08ab0fa84e13f2ce5c21be8c12db956b721",
+        "headline": "Verizon Beats and Raises Guidance While Warning the FCC About SpaceX\u2019s Phone Network",
+        "matched_keywords": [
+          "raises guidance"
+        ],
+        "published": "2026-10-26T18:19:57+00:00"
+      },
+      "dedupe_key": "3d8e95f5c8d65e72",
+      "timestamp": "2026-10-26T22:03:15.335265+00:00"
     }
   ],
-  "last_price": 43.075,
+  "last_price": 43.099998,
   "last_price_date": "2026-10-26"
 }
