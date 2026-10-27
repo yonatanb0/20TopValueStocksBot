@@ -2,7 +2,7 @@
   "ticker": "INTC",
   "name": "Intel",
   "sector": "semiconductors",
-  "last_updated": "2026-10-26T22:03:15.286738+00:00",
+  "last_updated": "2026-10-27T17:00:31.851856+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -590,8 +590,26 @@
       },
       "dedupe_key": "ee19d659f093d255",
       "timestamp": "2026-10-26T17:50:18.019340+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~85.17 (3 prior touches) and closed back above it (reaction confirmed). Stop ~79.64, target ~136.1 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 85.17,
+        "zone_touches": 3,
+        "date": "2026-10-27",
+        "fires": true,
+        "stop_loss": 79.64,
+        "take_profit": 136.1,
+        "entry_reference_price": 93.755
+      },
+      "dedupe_key": "e1a7109e3c6eee01",
+      "timestamp": "2026-10-27T17:00:31.851856+00:00"
     }
   ],
-  "last_price": 90.47,
-  "last_price_date": "2026-10-26"
+  "last_price": 93.755,
+  "last_price_date": "2026-10-27"
 }
