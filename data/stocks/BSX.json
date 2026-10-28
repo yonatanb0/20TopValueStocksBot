@@ -2,7 +2,7 @@
   "ticker": "BSX",
   "name": "Boston Scientific",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-10-28T17:35:27.083681+00:00",
+  "last_updated": "2026-10-28T21:54:49.603521+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -1793,8 +1793,39 @@
       },
       "dedupe_key": "8f30499270b109e5",
       "timestamp": "2026-10-28T17:35:27.083681+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Distribution volume detected. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": true,
+        "trendline_break": false,
+        "date": "2026-10-28",
+        "fires": false
+      },
+      "dedupe_key": "797fee58b5f5f070",
+      "timestamp": "2026-10-28T21:54:49.603521+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "guidance_rollover",
+      "fires": false,
+      "description": "EXIT WATCH -- headline suggests guidance rollover (guidance cut): \"Boston Scientific Sinks 12% as Cyberattack Forces Guidance Cut: \u201cA Challenging Year\u201d\"",
+      "details": {
+        "url": "https://finnhub.io/api/news?id=6b22c740322c9cd2a00bbe35fe111f9e1435e071d81f51f3bc26c6cfb6226d16",
+        "headline": "Boston Scientific Sinks 12% as Cyberattack Forces Guidance Cut: \u201cA Challenging Year\u201d",
+        "matched_keywords": [
+          "guidance cut"
+        ],
+        "published": "2026-10-28T18:06:20+00:00"
+      },
+      "dedupe_key": "156f7f8f99dcda65",
+      "timestamp": "2026-10-28T21:54:49.603521+00:00"
     }
   ],
-  "last_price": 43.29,
+  "last_price": 42.43,
   "last_price_date": "2026-10-28"
 }
