@@ -1,6 +1,6 @@
 {
   "ticker": "ISRG",
-  "last_updated": "2026-10-27T21:08:54.093675+00:00",
+  "last_updated": "2026-10-28T00:34:05.148300+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "ISRG",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 445.92,
+    "current_price": 445.88,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -32,7 +32,7 @@
     "price_vs_sma200": "above"
   },
   "volatility": {
-    "atr14": 12.72,
+    "atr14": 12.71,
     "atr14_pct_of_price": 2.85,
     "realized_vol_20d_annualized_pct": 28.9
   },
@@ -43,15 +43,15 @@
     "low_60d": 345.25
   },
   "momentum": {
-    "rsi14": 65.65
+    "rsi14": 65.62
   },
   "volume": {
-    "up_down_volume_ratio_20d": 1.75
+    "up_down_volume_ratio_20d": 1.59
   },
   "consolidation": {
     "range_width_pct": 17.93,
-    "distance_from_high_pct": -2.82,
-    "distance_from_low_pct": 14.6
+    "distance_from_high_pct": -2.83,
+    "distance_from_low_pct": 14.59
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -62,7 +62,7 @@
   "fundamentals": {
     "forward_pe": 34.27433,
     "ev_ebitda_ttm": 42.9434,
-    "implied_forward_eps": 13.0103,
+    "implied_forward_eps": 13.0092,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-10-13",
@@ -70,28 +70,31 @@
   },
   "turtle": {
     "gate_open": true,
-    "n": 12.482,
+    "n": 12.47,
     "system1": {
       "state": {
         "state": {
           "state": {
             "state": {
               "state": {
-                "status": "open",
-                "entry_date": "2026-10-23",
-                "entry_price": 452.29001,
-                "n_at_entry": 12.838993704127768,
-                "exit_date": null,
-                "exit_price": null,
-                "outcome": null
+                "state": {
+                  "status": "open",
+                  "entry_date": "2026-10-23",
+                  "entry_price": 452.29001,
+                  "n_at_entry": 12.838993704127768,
+                  "exit_date": null,
+                  "exit_price": null,
+                  "outcome": null
+                },
+                "signal": {
+                  "resolution": null,
+                  "entry_fired": true,
+                  "filtered": false,
+                  "entry_price": 452.29001,
+                  "system": "system1"
+                }
               },
-              "signal": {
-                "resolution": null,
-                "entry_fired": true,
-                "filtered": false,
-                "entry_price": 452.29001,
-                "system": "system1"
-              }
+              "signal": null
             },
             "signal": null
           },
@@ -107,21 +110,24 @@
           "state": {
             "state": {
               "state": {
-                "status": "open",
-                "entry_date": "2026-10-23",
-                "entry_price": 452.29001,
-                "n_at_entry": 12.838993704127768,
-                "exit_date": null,
-                "exit_price": null,
-                "outcome": null
+                "state": {
+                  "status": "open",
+                  "entry_date": "2026-10-23",
+                  "entry_price": 452.29001,
+                  "n_at_entry": 12.838993704127768,
+                  "exit_date": null,
+                  "exit_price": null,
+                  "outcome": null
+                },
+                "signal": {
+                  "resolution": null,
+                  "entry_fired": true,
+                  "filtered": false,
+                  "entry_price": 452.29001,
+                  "system": "system2"
+                }
               },
-              "signal": {
-                "resolution": null,
-                "entry_fired": true,
-                "filtered": false,
-                "entry_price": 452.29001,
-                "system": "system2"
-              }
+              "signal": null
             },
             "signal": null
           },
