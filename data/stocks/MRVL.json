@@ -2,7 +2,7 @@
   "ticker": "MRVL",
   "name": "Marvell Technology",
   "sector": "semiconductors",
-  "last_updated": "2026-10-29T17:45:20.635682+00:00",
+  "last_updated": "2026-10-29T22:11:14.975289+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -654,8 +654,41 @@
       },
       "dedupe_key": "7569fe4dc7afc0f3",
       "timestamp": "2026-10-28T17:35:27.104667+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~212.37 (2 prior touches) and closed back above it (reaction confirmed). Stop ~195.5, target ~286.86 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 212.365005,
+        "zone_touches": 2,
+        "date": "2026-10-29",
+        "fires": true,
+        "stop_loss": 195.5,
+        "take_profit": 286.86,
+        "entry_reference_price": 218.34
+      },
+      "dedupe_key": "d1b184f8889e21b8",
+      "timestamp": "2026-10-29T22:11:14.975289+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Distribution volume detected. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": true,
+        "trendline_break": false,
+        "date": "2026-10-29",
+        "fires": false
+      },
+      "dedupe_key": "24f617ffca49ed2d",
+      "timestamp": "2026-10-29T22:11:14.975289+00:00"
     }
   ],
-  "last_price": 221.11,
+  "last_price": 218.34,
   "last_price_date": "2026-10-29"
 }
