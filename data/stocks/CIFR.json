@@ -2,7 +2,7 @@
   "ticker": "CIFR",
   "name": "Cipher Mining",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-10-28T21:54:49.619893+00:00",
+  "last_updated": "2026-10-29T17:45:20.631730+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1208,8 +1208,22 @@
       },
       "dedupe_key": "d142326247f63271",
       "timestamp": "2026-10-28T17:35:27.100398+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (3.5%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 3.5,
+        "close": 8.255,
+        "low_52w": 7.46,
+        "high_52w": 30.14
+      },
+      "dedupe_key": "ab0c5eb412d3de37",
+      "timestamp": "2026-10-29T17:45:20.631730+00:00"
     }
   ],
-  "last_price": 8.87,
-  "last_price_date": "2026-10-28"
+  "last_price": 8.255,
+  "last_price_date": "2026-10-29"
 }

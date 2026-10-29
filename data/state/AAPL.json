@@ -1,6 +1,6 @@
 {
   "ticker": "AAPL",
-  "last_updated": "2026-10-28T21:54:59.746058+00:00",
+  "last_updated": "2026-10-29T17:45:30.345348+00:00",
   "has_thesis": true,
   "position": {
     "ticker": "AAPL",
@@ -11,58 +11,58 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 343.82999,
+    "current_price": 349.585,
     "entry_price": null,
     "stop_price": 276.79,
     "target_price": 395.6,
     "pct_from_entry": null,
-    "pct_from_stop": 24.22,
-    "pct_from_target": -13.09,
-    "atr_units_from_stop": 10.88
+    "pct_from_stop": 26.3,
+    "pct_from_target": -11.63,
+    "atr_units_from_stop": 11.61
   },
   "trend": {
-    "sma20": 340.61,
-    "sma20_slope_5d_pct": 0.78,
+    "sma20": 341.57,
+    "sma20_slope_5d_pct": 0.89,
     "price_vs_sma20": "above",
-    "sma50": 331.73,
-    "sma50_slope_5d_pct": 1.23,
+    "sma50": 332.39,
+    "sma50_slope_5d_pct": 1.15,
     "price_vs_sma50": "above",
-    "sma200": 295.69,
+    "sma200": 296.14,
     "sma200_slope_5d_pct": 0.73,
     "price_vs_sma200": "above"
   },
   "volatility": {
-    "atr14": 6.16,
+    "atr14": 6.27,
     "atr14_pct_of_price": 1.79,
-    "realized_vol_20d_annualized_pct": 13.63
+    "realized_vol_20d_annualized_pct": 14.12
   },
   "range": {
     "high_20d": 351.73,
-    "low_20d": 325.81,
+    "low_20d": 330.61,
     "high_60d": 351.73,
     "low_60d": 300.57
   },
   "momentum": {
-    "rsi14": 56.11
+    "rsi14": 61.99
   },
   "volume": {
-    "up_down_volume_ratio_20d": 1.04
+    "up_down_volume_ratio_20d": 0.94
   },
   "consolidation": {
-    "range_width_pct": 7.96,
-    "distance_from_high_pct": -2.25,
-    "distance_from_low_pct": 5.53
+    "range_width_pct": 6.39,
+    "distance_from_high_pct": -0.61,
+    "distance_from_low_pct": 5.74
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": "2026-07-30, after market close (Q3 FY26 -- Tim Cook's last as CEO)",
-    "days_to_next_earnings": -119,
+    "days_to_next_earnings": -120,
     "next_review_date_approx": "2026-10",
-    "days_since_review_due": 27
+    "days_since_review_due": 28
   },
   "fundamentals": {
     "forward_pe": 35.33932,
-    "ev_ebitda_ttm": 30.3324,
-    "implied_forward_eps": 9.7294,
+    "ev_ebitda_ttm": 30.3033,
+    "implied_forward_eps": 9.8922,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-09-03",
@@ -70,7 +70,7 @@
   },
   "turtle": {
     "gate_open": true,
-    "n": 6.398,
+    "n": 6.458,
     "system1": {
       "state": {
         "state": {
@@ -83,21 +83,24 @@
                       "state": {
                         "state": {
                           "state": {
-                            "status": "open",
-                            "entry_date": "2026-10-22",
-                            "entry_price": 348.22,
-                            "n_at_entry": 6.631244795745745,
-                            "exit_date": null,
-                            "exit_price": null,
-                            "outcome": null
+                            "state": {
+                              "status": "open",
+                              "entry_date": "2026-10-22",
+                              "entry_price": 348.22,
+                              "n_at_entry": 6.631244795745745,
+                              "exit_date": null,
+                              "exit_price": null,
+                              "outcome": null
+                            },
+                            "signal": {
+                              "resolution": null,
+                              "entry_fired": true,
+                              "filtered": false,
+                              "entry_price": 348.22,
+                              "system": "system1"
+                            }
                           },
-                          "signal": {
-                            "resolution": null,
-                            "entry_fired": true,
-                            "filtered": false,
-                            "entry_price": 348.22,
-                            "system": "system1"
-                          }
+                          "signal": null
                         },
                         "signal": null
                       },
@@ -131,21 +134,24 @@
                       "state": {
                         "state": {
                           "state": {
-                            "status": "open",
-                            "entry_date": "2026-10-22",
-                            "entry_price": 348.22,
-                            "n_at_entry": 6.631244795745745,
-                            "exit_date": null,
-                            "exit_price": null,
-                            "outcome": null
+                            "state": {
+                              "status": "open",
+                              "entry_date": "2026-10-22",
+                              "entry_price": 348.22,
+                              "n_at_entry": 6.631244795745745,
+                              "exit_date": null,
+                              "exit_price": null,
+                              "outcome": null
+                            },
+                            "signal": {
+                              "resolution": null,
+                              "entry_fired": true,
+                              "filtered": false,
+                              "entry_price": 348.22,
+                              "system": "system2"
+                            }
                           },
-                          "signal": {
-                            "resolution": null,
-                            "entry_fired": true,
-                            "filtered": false,
-                            "entry_price": 348.22,
-                            "system": "system2"
-                          }
+                          "signal": null
                         },
                         "signal": null
                       },

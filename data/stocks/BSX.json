@@ -2,7 +2,7 @@
   "ticker": "BSX",
   "name": "Boston Scientific",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-10-28T21:54:49.603521+00:00",
+  "last_updated": "2026-10-29T17:45:20.614465+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -1824,8 +1824,38 @@
       },
       "dedupe_key": "156f7f8f99dcda65",
       "timestamp": "2026-10-28T21:54:49.603521+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (3.6%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 3.6,
+        "close": 41.925,
+        "low_52w": 39.57,
+        "high_52w": 105.65
+      },
+      "dedupe_key": "a6fb41f5afa0dd6b",
+      "timestamp": "2026-10-29T17:45:20.614465+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "guidance_rollover",
+      "fires": false,
+      "description": "EXIT WATCH -- headline suggests guidance rollover (guidance cut): \"Boston Scientific (BSX) Could Be 27% Below Fair Value After Earnings Guidance Cut\"",
+      "details": {
+        "url": "https://finnhub.io/api/news?id=2ad9eaae525e0b71212769ac113ab95322246e8512b8afaa132afce0b659f76e",
+        "headline": "Boston Scientific (BSX) Could Be 27% Below Fair Value After Earnings Guidance Cut",
+        "matched_keywords": [
+          "guidance cut"
+        ],
+        "published": "2026-10-29T10:16:10+00:00"
+      },
+      "dedupe_key": "6907977b267a55be",
+      "timestamp": "2026-10-29T17:45:20.614465+00:00"
     }
   ],
-  "last_price": 42.43,
-  "last_price_date": "2026-10-28"
+  "last_price": 41.925,
+  "last_price_date": "2026-10-29"
 }

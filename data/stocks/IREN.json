@@ -2,7 +2,7 @@
   "ticker": "IREN",
   "name": "IREN Limited",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-10-28T21:54:49.616154+00:00",
+  "last_updated": "2026-10-29T17:45:20.627995+00:00",
   "signal_log": [
     {
       "category": "macro",
@@ -870,8 +870,38 @@
       },
       "dedupe_key": "520a75c19088e16f",
       "timestamp": "2026-10-28T17:35:27.096530+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator buy turn (value -1.133) -- watch closer, not a standalone trigger, invalidation level ~23.02.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "buy",
+        "value": -1.133,
+        "invalidation_level": 23.02,
+        "date": "2026-10-29",
+        "fires": false
+      },
+      "dedupe_key": "e72e770e94222ea7",
+      "timestamp": "2026-10-29T17:45:20.627995+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (5.0%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 5.0,
+        "close": 26.4,
+        "low_52w": 23.72,
+        "high_52w": 76.87
+      },
+      "dedupe_key": "39ea8be3b518fd4d",
+      "timestamp": "2026-10-29T17:45:20.627995+00:00"
     }
   ],
-  "last_price": 28.84,
-  "last_price_date": "2026-10-28"
+  "last_price": 26.4,
+  "last_price_date": "2026-10-29"
 }
