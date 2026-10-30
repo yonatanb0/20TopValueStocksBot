@@ -2,7 +2,7 @@
   "ticker": "MDT",
   "name": "Medtronic",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-10-29T22:11:14.948890+00:00",
+  "last_updated": "2026-10-30T17:25:30.151106+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -681,8 +681,24 @@
       },
       "dedupe_key": "e273d479a020fabb",
       "timestamp": "2026-10-29T22:11:14.948890+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (97.20) on 2026-10-30 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-10-30",
+        "range_high": 97.2,
+        "close": 97.28,
+        "volume_multiple": 0.011573386255220053,
+        "fires": false
+      },
+      "dedupe_key": "dc8807341a78537b",
+      "timestamp": "2026-10-30T17:25:30.151106+00:00"
     }
   ],
-  "last_price": 97.11,
-  "last_price_date": "2026-10-29"
+  "last_price": 97.28,
+  "last_price_date": "2026-10-30"
 }

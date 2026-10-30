@@ -2,7 +2,7 @@
   "ticker": "NVDA",
   "name": "NVIDIA",
   "sector": "semiconductors",
-  "last_updated": "2026-10-29T22:11:14.915525+00:00",
+  "last_updated": "2026-10-30T17:25:30.124173+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1227,8 +1227,38 @@
       },
       "dedupe_key": "a2e222362e76f092",
       "timestamp": "2026-10-29T17:45:20.578283+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~215.65 (2 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 215.650005,
+        "zone_touches": 2,
+        "date": "2026-10-30",
+        "fires": false
+      },
+      "dedupe_key": "d31aabe616f9371f",
+      "timestamp": "2026-10-30T17:25:30.124173+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-10-30",
+        "fires": false
+      },
+      "dedupe_key": "924d3daff0f73b4d",
+      "timestamp": "2026-10-30T17:25:30.124173+00:00"
     }
   ],
-  "last_price": 213.66,
-  "last_price_date": "2026-10-29"
+  "last_price": 203.49,
+  "last_price_date": "2026-10-30"
 }

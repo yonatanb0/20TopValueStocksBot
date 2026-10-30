@@ -2,7 +2,7 @@
   "ticker": "GOOG",
   "name": "Alphabet",
   "sector": "enterprise_tech",
-  "last_updated": "2026-10-29T22:11:14.907483+00:00",
+  "last_updated": "2026-10-30T17:25:30.117530+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1215,8 +1215,37 @@
       },
       "dedupe_key": "086e5fa0475522d6",
       "timestamp": "2026-10-29T17:45:20.570470+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (4.4%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 4.4,
+        "close": 277.215,
+        "low_52w": 271.41,
+        "high_52w": 404.47
+      },
+      "dedupe_key": "dc4319ba5412e0a1",
+      "timestamp": "2026-10-30T17:25:30.117530+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-10-30",
+        "fires": false
+      },
+      "dedupe_key": "e358fc89c8c92ca3",
+      "timestamp": "2026-10-30T17:25:30.117530+00:00"
     }
   ],
-  "last_price": 282.32001,
-  "last_price_date": "2026-10-29"
+  "last_price": 277.215,
+  "last_price_date": "2026-10-30"
 }

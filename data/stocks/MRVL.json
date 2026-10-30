@@ -2,7 +2,7 @@
   "ticker": "MRVL",
   "name": "Marvell Technology",
   "sector": "semiconductors",
-  "last_updated": "2026-10-29T22:11:14.975289+00:00",
+  "last_updated": "2026-10-30T17:25:30.171471+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -687,8 +687,38 @@
       },
       "dedupe_key": "24f617ffca49ed2d",
       "timestamp": "2026-10-29T22:11:14.975289+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~212.37 (2 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 212.365005,
+        "zone_touches": 2,
+        "date": "2026-10-30",
+        "fires": false
+      },
+      "dedupe_key": "b8918ad86cc80028",
+      "timestamp": "2026-10-30T17:25:30.171471+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-10-30",
+        "fires": false
+      },
+      "dedupe_key": "81143549ff01fa2e",
+      "timestamp": "2026-10-30T17:25:30.171471+00:00"
     }
   ],
-  "last_price": 218.34,
-  "last_price_date": "2026-10-29"
+  "last_price": 193.99,
+  "last_price_date": "2026-10-30"
 }
