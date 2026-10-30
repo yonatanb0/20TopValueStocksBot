@@ -2,7 +2,7 @@
   "ticker": "BE",
   "name": "Bloom Energy",
   "sector": "clean_energy",
-  "last_updated": "2026-10-30T17:25:30.137225+00:00",
+  "last_updated": "2026-10-30T21:43:01.996056+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -747,8 +747,41 @@
       },
       "dedupe_key": "a5354ed60983a40b",
       "timestamp": "2026-10-27T17:00:31.871373+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~196.05 (2 prior touches) and closed back above it (reaction confirmed). Stop ~176.34, target ~283.56 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 196.050005,
+        "zone_touches": 2,
+        "date": "2026-10-30",
+        "fires": true,
+        "stop_loss": 176.34,
+        "take_profit": 283.56,
+        "entry_reference_price": 203.145
+      },
+      "dedupe_key": "4aa9c5cea8210ec5",
+      "timestamp": "2026-10-30T21:43:01.996056+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Distribution volume detected. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": true,
+        "trendline_break": false,
+        "date": "2026-10-30",
+        "fires": false
+      },
+      "dedupe_key": "ebf6f14a36b0a74c",
+      "timestamp": "2026-10-30T21:43:01.996056+00:00"
     }
   ],
-  "last_price": 199.77,
+  "last_price": 203.145,
   "last_price_date": "2026-10-30"
 }

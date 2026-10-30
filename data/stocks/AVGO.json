@@ -2,7 +2,7 @@
   "ticker": "AVGO",
   "name": "Broadcom",
   "sector": "semiconductors",
-  "last_updated": "2026-10-30T17:25:30.180025+00:00",
+  "last_updated": "2026-10-30T21:43:02.050118+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1271,8 +1271,23 @@
       },
       "dedupe_key": "7551a62f5a91a551",
       "timestamp": "2026-10-30T17:25:30.180025+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Distribution volume detected. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": true,
+        "trendline_break": false,
+        "date": "2026-10-30",
+        "fires": false
+      },
+      "dedupe_key": "cf6b9eba298c1ce2",
+      "timestamp": "2026-10-30T21:43:02.050118+00:00"
     }
   ],
-  "last_price": 323.6,
+  "last_price": 326.17001,
   "last_price_date": "2026-10-30"
 }

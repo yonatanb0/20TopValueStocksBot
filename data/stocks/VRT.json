@@ -2,7 +2,7 @@
   "ticker": "VRT",
   "name": "Vertiv",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-10-30T17:25:30.140811+00:00",
+  "last_updated": "2026-10-30T21:43:02.000695+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1313,8 +1313,23 @@
       },
       "dedupe_key": "8c14d79e9fccd113",
       "timestamp": "2026-10-30T17:25:30.140811+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Distribution volume detected. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": true,
+        "trendline_break": false,
+        "date": "2026-10-30",
+        "fires": false
+      },
+      "dedupe_key": "38ffddd6f13e786c",
+      "timestamp": "2026-10-30T21:43:02.000695+00:00"
     }
   ],
-  "last_price": 232.06,
+  "last_price": 232.59,
   "last_price_date": "2026-10-30"
 }
