@@ -2,7 +2,7 @@
   "ticker": "MU",
   "name": "Micron Technology",
   "sector": "semiconductors",
-  "last_updated": "2026-10-30T21:43:02.043049+00:00",
+  "last_updated": "2026-11-02T21:00:33.924378+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -598,8 +598,38 @@
       },
       "dedupe_key": "349f579506a33c87",
       "timestamp": "2026-10-30T21:43:02.043049+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~853.62 (2 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 853.625,
+        "zone_touches": 2,
+        "date": "2026-11-02",
+        "fires": false
+      },
+      "dedupe_key": "3a0202ca66f344fb",
+      "timestamp": "2026-11-02T21:00:33.924378+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-11-02",
+        "fires": false
+      },
+      "dedupe_key": "c9fa40d53c35fe03",
+      "timestamp": "2026-11-02T21:00:33.924378+00:00"
     }
   ],
-  "last_price": 884.89001,
-  "last_price_date": "2026-10-30"
+  "last_price": 833.42,
+  "last_price_date": "2026-11-02"
 }

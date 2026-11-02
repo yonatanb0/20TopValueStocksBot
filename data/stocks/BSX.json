@@ -2,7 +2,7 @@
   "ticker": "BSX",
   "name": "Boston Scientific",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-10-30T21:43:02.017718+00:00",
+  "last_updated": "2026-11-02T21:00:33.901211+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -1898,8 +1898,56 @@
       },
       "dedupe_key": "a17869cb83806d2d",
       "timestamp": "2026-10-30T21:43:02.017718+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~42.55 (5 prior touches) and closed back above it (reaction confirmed). Stop ~40.98, target ~53.7 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 42.55,
+        "zone_touches": 5,
+        "date": "2026-11-02",
+        "fires": true,
+        "stop_loss": 40.98,
+        "take_profit": 53.7,
+        "entry_reference_price": 44.16
+      },
+      "dedupe_key": "b26403a8916e683b",
+      "timestamp": "2026-11-02T21:00:33.901211+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 0.899) -- watch closer, not a standalone trigger, invalidation level ~45.79.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 0.899,
+        "invalidation_level": 45.79,
+        "date": "2026-11-02",
+        "fires": false
+      },
+      "dedupe_key": "05f3668604b516dc",
+      "timestamp": "2026-11-02T21:00:33.901211+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (6.9%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 6.9,
+        "close": 44.16,
+        "low_52w": 39.57,
+        "high_52w": 105.65
+      },
+      "dedupe_key": "8abdb23d02d4fc00",
+      "timestamp": "2026-11-02T21:00:33.901211+00:00"
     }
   ],
-  "last_price": 41.97,
-  "last_price_date": "2026-10-30"
+  "last_price": 44.16,
+  "last_price_date": "2026-11-02"
 }

@@ -2,7 +2,7 @@
   "ticker": "CIFR",
   "name": "Cipher Mining",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-10-30T21:43:02.035010+00:00",
+  "last_updated": "2026-11-02T21:00:33.917245+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1251,8 +1251,38 @@
       },
       "dedupe_key": "d8f47ce43e52e3a1",
       "timestamp": "2026-10-30T21:43:02.035010+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator buy turn (value -0.932) -- watch closer, not a standalone trigger, invalidation level ~4.94.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "buy",
+        "value": -0.932,
+        "invalidation_level": 4.94,
+        "date": "2026-11-02",
+        "fires": false
+      },
+      "dedupe_key": "4c45c13faa6d9ae5",
+      "timestamp": "2026-11-02T21:00:33.917245+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (1.0%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 1.0,
+        "close": 6.845,
+        "low_52w": 6.62,
+        "high_52w": 30.14
+      },
+      "dedupe_key": "af048c8221d23b87",
+      "timestamp": "2026-11-02T21:00:33.917245+00:00"
     }
   ],
-  "last_price": 7.285,
-  "last_price_date": "2026-10-30"
+  "last_price": 6.845,
+  "last_price_date": "2026-11-02"
 }
