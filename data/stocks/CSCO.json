@@ -2,7 +2,7 @@
   "ticker": "CSCO",
   "name": "Cisco",
   "sector": "enterprise_tech",
-  "last_updated": "2026-11-03T18:47:11.568288+00:00",
+  "last_updated": "2026-11-03T23:47:03.793788+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1333,8 +1333,23 @@
       },
       "dedupe_key": "a5ca0bdc7a1b7919",
       "timestamp": "2026-11-03T18:47:11.568288+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-11-03",
+        "fires": false
+      },
+      "dedupe_key": "f55c39ac1b8b28e5",
+      "timestamp": "2026-11-03T23:47:03.793788+00:00"
     }
   ],
-  "last_price": 103.645,
+  "last_price": 102.97,
   "last_price_date": "2026-11-03"
 }
