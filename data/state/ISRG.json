@@ -1,6 +1,6 @@
 {
   "ticker": "ISRG",
-  "last_updated": "2026-11-03T02:47:18.344700+00:00",
+  "last_updated": "2026-11-03T18:47:21.747603+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "ISRG",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 436.87,
+    "current_price": 442.505,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -21,20 +21,20 @@
     "atr_units_from_stop": null
   },
   "trend": {
-    "sma20": 431.9,
-    "sma20_slope_5d_pct": 2.24,
+    "sma20": 433.78,
+    "sma20_slope_5d_pct": 2.28,
     "price_vs_sma20": "above",
-    "sma50": 402.7,
-    "sma50_slope_5d_pct": 1.39,
+    "sma50": 404.08,
+    "sma50_slope_5d_pct": 1.45,
     "price_vs_sma50": "above",
-    "sma200": 432.54,
-    "sma200_slope_5d_pct": -0.69,
+    "sma200": 432.08,
+    "sma200_slope_5d_pct": -0.64,
     "price_vs_sma200": "above"
   },
   "volatility": {
-    "atr14": 13.1,
-    "atr14_pct_of_price": 3.0,
-    "realized_vol_20d_annualized_pct": 27.56
+    "atr14": 12.75,
+    "atr14_pct_of_price": 2.88,
+    "realized_vol_20d_annualized_pct": 27.57
   },
   "range": {
     "high_20d": 458.88,
@@ -43,15 +43,15 @@
     "low_60d": 345.25
   },
   "momentum": {
-    "rsi14": 56.63
+    "rsi14": 59.38
   },
   "volume": {
-    "up_down_volume_ratio_20d": 1.51
+    "up_down_volume_ratio_20d": 1.65
   },
   "consolidation": {
     "range_width_pct": 15.01,
-    "distance_from_high_pct": -4.8,
-    "distance_from_low_pct": 9.49
+    "distance_from_high_pct": -3.57,
+    "distance_from_low_pct": 10.91
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -61,8 +61,8 @@
   },
   "fundamentals": {
     "forward_pe": 35.28209,
-    "ev_ebitda_ttm": 41.166,
-    "implied_forward_eps": 12.3822,
+    "ev_ebitda_ttm": 41.6512,
+    "implied_forward_eps": 12.5419,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-10-13",
@@ -70,7 +70,7 @@
   },
   "turtle": {
     "gate_open": true,
-    "n": 12.79,
+    "n": 12.556,
     "system1": {
       "state": {
         "state": {
@@ -86,21 +86,24 @@
                             "state": {
                               "state": {
                                 "state": {
-                                  "status": "open",
-                                  "entry_date": "2026-10-23",
-                                  "entry_price": 452.29001,
-                                  "n_at_entry": 12.838993704127768,
-                                  "exit_date": null,
-                                  "exit_price": null,
-                                  "outcome": null
+                                  "state": {
+                                    "status": "open",
+                                    "entry_date": "2026-10-23",
+                                    "entry_price": 452.29001,
+                                    "n_at_entry": 12.838993704127768,
+                                    "exit_date": null,
+                                    "exit_price": null,
+                                    "outcome": null
+                                  },
+                                  "signal": {
+                                    "resolution": null,
+                                    "entry_fired": true,
+                                    "filtered": false,
+                                    "entry_price": 452.29001,
+                                    "system": "system1"
+                                  }
                                 },
-                                "signal": {
-                                  "resolution": null,
-                                  "entry_fired": true,
-                                  "filtered": false,
-                                  "entry_price": 452.29001,
-                                  "system": "system1"
-                                }
+                                "signal": null
                               },
                               "signal": null
                             },
@@ -143,21 +146,24 @@
                             "state": {
                               "state": {
                                 "state": {
-                                  "status": "open",
-                                  "entry_date": "2026-10-23",
-                                  "entry_price": 452.29001,
-                                  "n_at_entry": 12.838993704127768,
-                                  "exit_date": null,
-                                  "exit_price": null,
-                                  "outcome": null
+                                  "state": {
+                                    "status": "open",
+                                    "entry_date": "2026-10-23",
+                                    "entry_price": 452.29001,
+                                    "n_at_entry": 12.838993704127768,
+                                    "exit_date": null,
+                                    "exit_price": null,
+                                    "outcome": null
+                                  },
+                                  "signal": {
+                                    "resolution": null,
+                                    "entry_fired": true,
+                                    "filtered": false,
+                                    "entry_price": 452.29001,
+                                    "system": "system2"
+                                  }
                                 },
-                                "signal": {
-                                  "resolution": null,
-                                  "entry_fired": true,
-                                  "filtered": false,
-                                  "entry_price": 452.29001,
-                                  "system": "system2"
-                                }
+                                "signal": null
                               },
                               "signal": null
                             },

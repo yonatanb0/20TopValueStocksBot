@@ -2,7 +2,7 @@
   "ticker": "ETN",
   "name": "Eaton",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-11-03T02:47:07.958234+00:00",
+  "last_updated": "2026-11-03T18:47:11.584991+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1119,8 +1119,40 @@
       },
       "dedupe_key": "0f1b3648df68ce7e",
       "timestamp": "2026-11-02T21:00:33.889261+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "eps_revision_proxy",
+      "fires": false,
+      "description": "Headline suggests positive estimate revision (raises guidance): \"Eaton Corporation plc Reports Record Third Quarter 2026 Results, Raises Guidance, and Details \u20ac810 million COL Group Acquisition\" -- verify against actual analyst EPS revisions.",
+      "details": {
+        "url": "https://finnhub.io/api/news?id=66c144d7a7ac7a10716152b00729fcf38df5ce40fe41539d0a949ffd045efbc8",
+        "headline": "Eaton Corporation plc Reports Record Third Quarter 2026 Results, Raises Guidance, and Details \u20ac810 million COL Group Acquisition",
+        "matched_keywords": [
+          "raises guidance"
+        ],
+        "published": "2026-11-03T14:02:24+00:00"
+      },
+      "dedupe_key": "8bf2698104909919",
+      "timestamp": "2026-11-03T18:47:11.584991+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "eps_revision_proxy",
+      "fires": false,
+      "description": "Headline suggests positive estimate revision (beats estimates): \"Eaton beats estimates on strong demand\" -- verify against actual analyst EPS revisions.",
+      "details": {
+        "url": "https://finnhub.io/api/news?id=eff66d37f417c14b725efbaa30d10827b666e00ee80ac21b7d35dd14dcdb0db8",
+        "headline": "Eaton beats estimates on strong demand",
+        "matched_keywords": [
+          "beats estimates"
+        ],
+        "published": "2026-11-03T12:10:09+00:00"
+      },
+      "dedupe_key": "069cf10d393b28ed",
+      "timestamp": "2026-11-03T18:47:11.584991+00:00"
     }
   ],
-  "last_price": 366.070007,
-  "last_price_date": "2026-11-02"
+  "last_price": 391.43,
+  "last_price_date": "2026-11-03"
 }

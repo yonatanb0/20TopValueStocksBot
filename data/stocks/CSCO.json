@@ -2,7 +2,7 @@
   "ticker": "CSCO",
   "name": "Cisco",
   "sector": "enterprise_tech",
-  "last_updated": "2026-11-03T02:47:07.948998+00:00",
+  "last_updated": "2026-11-03T18:47:11.568288+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1318,8 +1318,23 @@
       },
       "dedupe_key": "eb1ae03d9a7500bc",
       "timestamp": "2026-11-02T21:00:33.873944+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~104.05 (2 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 104.045,
+        "zone_touches": 2,
+        "date": "2026-11-03",
+        "fires": false
+      },
+      "dedupe_key": "a5ca0bdc7a1b7919",
+      "timestamp": "2026-11-03T18:47:11.568288+00:00"
     }
   ],
-  "last_price": 101.61,
-  "last_price_date": "2026-11-02"
+  "last_price": 103.645,
+  "last_price_date": "2026-11-03"
 }

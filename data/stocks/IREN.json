@@ -2,7 +2,7 @@
   "ticker": "IREN",
   "name": "IREN Limited",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-11-03T02:47:07.972730+00:00",
+  "last_updated": "2026-11-03T18:47:11.610488+00:00",
   "signal_log": [
     {
       "category": "macro",
@@ -943,8 +943,22 @@
       },
       "dedupe_key": "25a073f54bb65b03",
       "timestamp": "2026-11-02T21:00:33.913178+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (4.5%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 4.5,
+        "close": 24.33,
+        "low_52w": 21.864,
+        "high_52w": 76.87
+      },
+      "dedupe_key": "7623ce4409127466",
+      "timestamp": "2026-11-03T18:47:11.610488+00:00"
     }
   ],
-  "last_price": 22.02,
-  "last_price_date": "2026-11-02"
+  "last_price": 24.33,
+  "last_price_date": "2026-11-03"
 }
