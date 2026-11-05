@@ -2,7 +2,7 @@
   "ticker": "BE",
   "name": "Bloom Energy",
   "sector": "clean_energy",
-  "last_updated": "2026-11-04T19:01:17.531939+00:00",
+  "last_updated": "2026-11-05T00:11:58.787368+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -828,8 +828,39 @@
       },
       "dedupe_key": "75b520e53463cf94",
       "timestamp": "2026-11-04T19:01:17.531939+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator buy turn (value -1.142) -- watch closer, not a standalone trigger, invalidation level ~170.29.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "buy",
+        "value": -1.142,
+        "invalidation_level": 170.29,
+        "date": "2026-11-04",
+        "fires": false
+      },
+      "dedupe_key": "67b48406b918dc47",
+      "timestamp": "2026-11-05T00:11:58.787368+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Distribution volume detected. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": true,
+        "trendline_break": false,
+        "date": "2026-11-04",
+        "fires": false
+      },
+      "dedupe_key": "a2c9a7377aaa6d71",
+      "timestamp": "2026-11-05T00:11:58.787368+00:00"
     }
   ],
-  "last_price": 195.76,
+  "last_price": 200.39999,
   "last_price_date": "2026-11-04"
 }
