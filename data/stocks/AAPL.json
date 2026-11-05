@@ -2,7 +2,7 @@
   "ticker": "AAPL",
   "name": "Apple",
   "sector": "enterprise_tech",
-  "last_updated": "2026-11-05T00:11:58.776380+00:00",
+  "last_updated": "2026-11-05T19:12:47.485233+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -527,8 +527,23 @@
       },
       "dedupe_key": "6b7d47376e2c9c27",
       "timestamp": "2026-11-05T00:11:58.776380+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-11-05",
+        "fires": false
+      },
+      "dedupe_key": "21fa1c925cf1d772",
+      "timestamp": "2026-11-05T19:12:47.485233+00:00"
     }
   ],
-  "last_price": 349.51001,
-  "last_price_date": "2026-11-04"
+  "last_price": 343.575,
+  "last_price_date": "2026-11-05"
 }

@@ -2,7 +2,7 @@
   "ticker": "AVGO",
   "name": "Broadcom",
   "sector": "semiconductors",
-  "last_updated": "2026-11-05T00:11:58.832381+00:00",
+  "last_updated": "2026-11-05T19:12:47.536970+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1332,8 +1332,52 @@
       },
       "dedupe_key": "08513f7ad2fce4d1",
       "timestamp": "2026-11-04T19:01:17.562660+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~319.76 (2 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 319.765,
+        "zone_touches": 2,
+        "date": "2026-11-05",
+        "fires": false
+      },
+      "dedupe_key": "0b80e5e0d147d397",
+      "timestamp": "2026-11-05T19:12:47.536970+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (3.4%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 3.4,
+        "close": 297.0,
+        "low_52w": 289.95999,
+        "high_52w": 495.0
+      },
+      "dedupe_key": "8fbc352d6271d578",
+      "timestamp": "2026-11-05T19:12:47.536970+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-11-05",
+        "fires": false
+      },
+      "dedupe_key": "a7e9d60d41563edc",
+      "timestamp": "2026-11-05T19:12:47.536970+00:00"
     }
   ],
-  "last_price": 325.48001,
-  "last_price_date": "2026-11-04"
+  "last_price": 297.0,
+  "last_price_date": "2026-11-05"
 }
