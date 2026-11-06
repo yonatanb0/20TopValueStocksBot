@@ -2,7 +2,7 @@
   "ticker": "CIFR",
   "name": "Cipher Mining",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-11-05T19:12:47.524856+00:00",
+  "last_updated": "2026-11-06T00:19:32.239687+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1338,8 +1338,23 @@
       },
       "dedupe_key": "52df28ae12f8819b",
       "timestamp": "2026-11-05T19:12:47.524856+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Distribution volume detected. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": true,
+        "trendline_break": false,
+        "date": "2026-11-05",
+        "fires": false
+      },
+      "dedupe_key": "d6b9d26927618cf6",
+      "timestamp": "2026-11-06T00:19:32.239687+00:00"
     }
   ],
-  "last_price": 5.555,
+  "last_price": 5.55,
   "last_price_date": "2026-11-05"
 }
