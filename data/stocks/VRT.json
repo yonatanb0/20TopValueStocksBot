@@ -2,7 +2,7 @@
   "ticker": "VRT",
   "name": "Vertiv",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-11-06T00:19:32.212598+00:00",
+  "last_updated": "2026-11-06T18:40:10.194520+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1387,8 +1387,22 @@
       },
       "dedupe_key": "6f02af2fb210491c",
       "timestamp": "2026-11-06T00:19:32.212598+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (14.1%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 14.1,
+        "close": 180.61,
+        "low_52w": 147.82001,
+        "high_52w": 379.935
+      },
+      "dedupe_key": "55f99064af7eecfe",
+      "timestamp": "2026-11-06T18:40:10.194520+00:00"
     }
   ],
-  "last_price": 176.73,
-  "last_price_date": "2026-11-05"
+  "last_price": 180.61,
+  "last_price_date": "2026-11-06"
 }

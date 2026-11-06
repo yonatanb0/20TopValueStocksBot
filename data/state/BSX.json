@@ -1,6 +1,6 @@
 {
   "ticker": "BSX",
-  "last_updated": "2026-11-06T00:19:43.437656+00:00",
+  "last_updated": "2026-11-06T18:40:18.449263+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "BSX",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 44.64,
+    "current_price": 43.37,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -21,20 +21,20 @@
     "atr_units_from_stop": null
   },
   "trend": {
-    "sma20": 44.21,
-    "sma20_slope_5d_pct": 1.08,
-    "price_vs_sma20": "above",
-    "sma50": 44.41,
-    "sma50_slope_5d_pct": -1.18,
-    "price_vs_sma50": "above",
-    "sma200": 55.6,
-    "sma200_slope_5d_pct": -2.07,
+    "sma20": 44.25,
+    "sma20_slope_5d_pct": 1.23,
+    "price_vs_sma20": "below",
+    "sma50": 44.35,
+    "sma50_slope_5d_pct": -1.0,
+    "price_vs_sma50": "below",
+    "sma200": 55.36,
+    "sma200_slope_5d_pct": -2.04,
     "price_vs_sma200": "below"
   },
   "volatility": {
-    "atr14": 1.78,
-    "atr14_pct_of_price": 3.99,
-    "realized_vol_20d_annualized_pct": 43.94
+    "atr14": 1.79,
+    "atr14_pct_of_price": 4.13,
+    "realized_vol_20d_annualized_pct": 45.05
   },
   "range": {
     "high_20d": 46.97,
@@ -43,15 +43,15 @@
     "low_60d": 39.57
   },
   "momentum": {
-    "rsi14": 51.61
+    "rsi14": 46.86
   },
   "volume": {
-    "up_down_volume_ratio_20d": 1.52
+    "up_down_volume_ratio_20d": 1.44
   },
   "consolidation": {
     "range_width_pct": 18.7,
-    "distance_from_high_pct": -4.96,
-    "distance_from_low_pct": 12.81
+    "distance_from_high_pct": -7.66,
+    "distance_from_low_pct": 9.6
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -62,7 +62,7 @@
   "fundamentals": {
     "forward_pe": 14.114227862573456,
     "ev_ebitda_ttm": 15.2545,
-    "implied_forward_eps": 3.1628,
+    "implied_forward_eps": 3.0728,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-09-04",
@@ -70,7 +70,7 @@
   },
   "turtle": {
     "gate_open": true,
-    "n": 1.682,
+    "n": 1.695,
     "system1": {
       "state": {
         "state": {
@@ -103,21 +103,24 @@
                                                               "state": {
                                                                 "state": {
                                                                   "state": {
-                                                                    "status": "open",
-                                                                    "entry_date": "2026-10-20",
-                                                                    "entry_price": 45.77,
-                                                                    "n_at_entry": 1.301906251236955,
-                                                                    "exit_date": null,
-                                                                    "exit_price": null,
-                                                                    "outcome": null
+                                                                    "state": {
+                                                                      "status": "open",
+                                                                      "entry_date": "2026-10-20",
+                                                                      "entry_price": 45.77,
+                                                                      "n_at_entry": 1.301906251236955,
+                                                                      "exit_date": null,
+                                                                      "exit_price": null,
+                                                                      "outcome": null
+                                                                    },
+                                                                    "signal": {
+                                                                      "resolution": null,
+                                                                      "entry_fired": true,
+                                                                      "filtered": false,
+                                                                      "entry_price": 45.77,
+                                                                      "system": "system1"
+                                                                    }
                                                                   },
-                                                                  "signal": {
-                                                                    "resolution": null,
-                                                                    "entry_fired": true,
-                                                                    "filtered": false,
-                                                                    "entry_price": 45.77,
-                                                                    "system": "system1"
-                                                                  }
+                                                                  "signal": null
                                                                 },
                                                                 "signal": null
                                                               },
@@ -526,7 +529,10 @@
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     "state": {
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "state": {
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         "state": {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "state": {},
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "state": {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            "state": {},
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            "signal": null
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          },
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "signal": null
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         },
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         "signal": null
