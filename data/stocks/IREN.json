@@ -2,7 +2,7 @@
   "ticker": "IREN",
   "name": "IREN Limited",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-11-06T23:31:20.710398+00:00",
+  "last_updated": "2026-11-09T21:44:18.574746+00:00",
   "signal_log": [
     {
       "category": "macro",
@@ -1029,8 +1029,37 @@
       },
       "dedupe_key": "5a95e0adc602c5a5",
       "timestamp": "2026-11-06T18:40:10.224649+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (7.9%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 7.9,
+        "close": 21.385,
+        "low_52w": 17.155,
+        "high_52w": 70.707
+      },
+      "dedupe_key": "0429640b6b1b4928",
+      "timestamp": "2026-11-09T21:44:18.574746+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Distribution volume detected. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": true,
+        "trendline_break": false,
+        "date": "2026-11-09",
+        "fires": false
+      },
+      "dedupe_key": "5b2a0bc7366b191d",
+      "timestamp": "2026-11-09T21:44:18.574746+00:00"
     }
   ],
-  "last_price": 21.64,
-  "last_price_date": "2026-11-06"
+  "last_price": 21.385,
+  "last_price_date": "2026-11-09"
 }
