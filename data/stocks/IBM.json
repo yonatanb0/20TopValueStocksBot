@@ -2,7 +2,7 @@
   "ticker": "IBM",
   "name": "IBM",
   "sector": "enterprise_tech",
-  "last_updated": "2026-11-09T21:44:18.553638+00:00",
+  "last_updated": "2026-11-10T19:01:31.636478+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1192,8 +1192,24 @@
       },
       "dedupe_key": "7312a06fc02128c9",
       "timestamp": "2026-10-30T21:43:01.991704+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 0.757) -- watch closer, not a standalone trigger, invalidation level ~253.31.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 0.757,
+        "invalidation_level": 253.31,
+        "date": "2026-11-10",
+        "fires": false
+      },
+      "dedupe_key": "ca2f5a32ab52c7ff",
+      "timestamp": "2026-11-10T19:01:31.636478+00:00"
     }
   ],
-  "last_price": 246.11,
-  "last_price_date": "2026-11-09"
+  "last_price": 244.8,
+  "last_price_date": "2026-11-10"
 }
