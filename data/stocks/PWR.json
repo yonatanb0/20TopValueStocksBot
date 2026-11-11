@@ -2,7 +2,7 @@
   "ticker": "PWR",
   "name": "Quanta Services",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-11-10T23:56:58.154800+00:00",
+  "last_updated": "2026-11-11T18:59:37.635298+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1479,8 +1479,26 @@
       },
       "dedupe_key": "8bafccd86e23a89f",
       "timestamp": "2026-11-06T00:19:32.219274+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~602.58 (4 prior touches) and closed back above it (reaction confirmed). Stop ~565.07, target ~764.51 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 602.5775125,
+        "zone_touches": 4,
+        "date": "2026-11-11",
+        "fires": true,
+        "stop_loss": 565.07,
+        "take_profit": 764.51,
+        "entry_reference_price": 614.93
+      },
+      "dedupe_key": "d1245d547726db1a",
+      "timestamp": "2026-11-11T18:59:37.635298+00:00"
     }
   ],
-  "last_price": 583.14001,
-  "last_price_date": "2026-11-10"
+  "last_price": 614.93,
+  "last_price_date": "2026-11-11"
 }

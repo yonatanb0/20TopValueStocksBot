@@ -2,7 +2,7 @@
   "ticker": "AAPL",
   "name": "Apple",
   "sector": "enterprise_tech",
-  "last_updated": "2026-11-10T23:56:58.134577+00:00",
+  "last_updated": "2026-11-11T18:59:37.610406+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -542,8 +542,24 @@
       },
       "dedupe_key": "21fa1c925cf1d772",
       "timestamp": "2026-11-05T19:12:47.485233+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator buy turn (value -0.435) -- watch closer, not a standalone trigger, invalidation level ~342.18.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "buy",
+        "value": -0.435,
+        "invalidation_level": 342.18,
+        "date": "2026-11-11",
+        "fires": false
+      },
+      "dedupe_key": "5f4ad4a4d253ac1b",
+      "timestamp": "2026-11-11T18:59:37.610406+00:00"
     }
   ],
-  "last_price": 348.51001,
-  "last_price_date": "2026-11-10"
+  "last_price": 354.93,
+  "last_price_date": "2026-11-11"
 }

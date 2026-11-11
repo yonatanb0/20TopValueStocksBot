@@ -2,7 +2,7 @@
   "ticker": "ETN",
   "name": "Eaton",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-11-10T23:56:58.151452+00:00",
+  "last_updated": "2026-11-11T18:59:37.630890+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1209,8 +1209,26 @@
       },
       "dedupe_key": "88b5a04de67017cd",
       "timestamp": "2026-11-06T18:40:10.198916+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~358.32 (2 prior touches) and closed back above it (reaction confirmed). Stop ~339.2, target ~446.3 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 358.32000500000004,
+        "zone_touches": 2,
+        "date": "2026-11-11",
+        "fires": true,
+        "stop_loss": 339.2,
+        "take_profit": 446.3,
+        "entry_reference_price": 365.975
+      },
+      "dedupe_key": "c0bd59fe96c9b302",
+      "timestamp": "2026-11-11T18:59:37.630890+00:00"
     }
   ],
-  "last_price": 354.22,
-  "last_price_date": "2026-11-10"
+  "last_price": 365.975,
+  "last_price_date": "2026-11-11"
 }

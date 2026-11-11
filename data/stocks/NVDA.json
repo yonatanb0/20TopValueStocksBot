@@ -2,7 +2,7 @@
   "ticker": "NVDA",
   "name": "NVIDIA",
   "sector": "semiconductors",
-  "last_updated": "2026-11-10T23:56:58.131138+00:00",
+  "last_updated": "2026-11-11T18:59:37.605268+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1438,8 +1438,37 @@
       },
       "dedupe_key": "b571880f42904db4",
       "timestamp": "2026-11-10T19:01:31.623217+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (16.1%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 16.1,
+        "close": 177.02,
+        "low_52w": 164.27,
+        "high_52w": 243.37
+      },
+      "dedupe_key": "c873e5a934999b9f",
+      "timestamp": "2026-11-11T18:59:37.605268+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-11-11",
+        "fires": false
+      },
+      "dedupe_key": "200edc17612cb0ac",
+      "timestamp": "2026-11-11T18:59:37.605268+00:00"
     }
   ],
-  "last_price": 168.89,
-  "last_price_date": "2026-11-10"
+  "last_price": 177.02,
+  "last_price_date": "2026-11-11"
 }
