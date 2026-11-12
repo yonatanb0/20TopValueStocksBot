@@ -2,7 +2,7 @@
   "ticker": "AAPL",
   "name": "Apple",
   "sector": "enterprise_tech",
-  "last_updated": "2026-11-12T01:17:07.234217+00:00",
+  "last_updated": "2026-11-12T19:18:34.812554+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -574,8 +574,40 @@
       },
       "dedupe_key": "81fc6af637e52893",
       "timestamp": "2026-11-12T01:17:07.234217+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (355.91) on 2026-11-12 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-11-12",
+        "range_high": 355.91,
+        "close": 355.98,
+        "volume_multiple": 0.02024851073638413,
+        "fires": false
+      },
+      "dedupe_key": "8997fdfa5b83cee2",
+      "timestamp": "2026-11-12T19:18:34.812554+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "eps_revision_proxy",
+      "fires": false,
+      "description": "Headline suggests positive estimate revision (raises outlook): \"Apple supplier Foxconn posts record profit, raises outlook\" -- verify against actual analyst EPS revisions.",
+      "details": {
+        "url": "https://finnhub.io/api/news?id=177d7291436d58221dc6875cd8cf1d33a82dc548e76ff2d93fa7b6bf80209066",
+        "headline": "Apple supplier Foxconn posts record profit, raises outlook",
+        "matched_keywords": [
+          "raises outlook"
+        ],
+        "published": "2026-11-12T14:48:30+00:00"
+      },
+      "dedupe_key": "ee937c3545a43dac",
+      "timestamp": "2026-11-12T19:18:34.812554+00:00"
     }
   ],
-  "last_price": 355.63,
-  "last_price_date": "2026-11-11"
+  "last_price": 355.98,
+  "last_price_date": "2026-11-12"
 }
