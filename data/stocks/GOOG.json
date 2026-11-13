@@ -2,7 +2,7 @@
   "ticker": "GOOG",
   "name": "Alphabet",
   "sector": "enterprise_tech",
-  "last_updated": "2026-11-13T00:30:21.685296+00:00",
+  "last_updated": "2026-11-13T18:55:34.409763+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1430,8 +1430,38 @@
       },
       "dedupe_key": "96319cbd6df6ec91",
       "timestamp": "2026-11-13T00:30:21.685296+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator buy turn (value -1.156) -- watch closer, not a standalone trigger, invalidation level ~282.28.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "buy",
+        "value": -1.156,
+        "invalidation_level": 282.28,
+        "date": "2026-11-13",
+        "fires": false
+      },
+      "dedupe_key": "64c88c888d55b267",
+      "timestamp": "2026-11-13T18:55:34.409763+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (16.0%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 16.0,
+        "close": 292.69,
+        "low_52w": 271.41,
+        "high_52w": 404.47
+      },
+      "dedupe_key": "c105e2577d1bbf3c",
+      "timestamp": "2026-11-13T18:55:34.409763+00:00"
     }
   ],
-  "last_price": 295.35001,
-  "last_price_date": "2026-11-12"
+  "last_price": 292.69,
+  "last_price_date": "2026-11-13"
 }

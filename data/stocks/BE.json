@@ -2,7 +2,7 @@
   "ticker": "BE",
   "name": "Bloom Energy",
   "sector": "clean_energy",
-  "last_updated": "2026-11-13T00:30:21.710121+00:00",
+  "last_updated": "2026-11-13T18:55:34.436206+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -892,8 +892,23 @@
       },
       "dedupe_key": "656028d2d5283371",
       "timestamp": "2026-11-12T19:18:34.824921+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~196.05 (2 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 196.050005,
+        "zone_touches": 2,
+        "date": "2026-11-13",
+        "fires": false
+      },
+      "dedupe_key": "f4e3dcb77cb0c3da",
+      "timestamp": "2026-11-13T18:55:34.436206+00:00"
     }
   ],
-  "last_price": 201.92999,
-  "last_price_date": "2026-11-12"
+  "last_price": 191.83,
+  "last_price_date": "2026-11-13"
 }

@@ -2,7 +2,7 @@
   "ticker": "PWR",
   "name": "Quanta Services",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-11-13T00:30:21.723631+00:00",
+  "last_updated": "2026-11-13T18:55:34.449549+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1515,8 +1515,39 @@
       },
       "dedupe_key": "2a7f1639208c7e34",
       "timestamp": "2026-11-12T19:18:34.838652+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~602.58 (4 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 602.5775125,
+        "zone_touches": 4,
+        "date": "2026-11-13",
+        "fires": false
+      },
+      "dedupe_key": "e174f055efc765d0",
+      "timestamp": "2026-11-13T18:55:34.449549+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator buy turn (value -0.501) -- watch closer, not a standalone trigger, invalidation level ~564.09.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "buy",
+        "value": -0.501,
+        "invalidation_level": 564.09,
+        "date": "2026-11-13",
+        "fires": false
+      },
+      "dedupe_key": "c1a5b52823b0398a",
+      "timestamp": "2026-11-13T18:55:34.449549+00:00"
     }
   ],
-  "last_price": 606.15997,
-  "last_price_date": "2026-11-12"
+  "last_price": 599.185,
+  "last_price_date": "2026-11-13"
 }
