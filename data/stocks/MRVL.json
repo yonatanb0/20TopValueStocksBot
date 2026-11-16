@@ -2,7 +2,7 @@
   "ticker": "MRVL",
   "name": "Marvell Technology",
   "sector": "semiconductors",
-  "last_updated": "2026-11-14T00:01:57.901944+00:00",
+  "last_updated": "2026-11-16T21:24:25.524965+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -822,8 +822,24 @@
       },
       "dedupe_key": "a9156a19f4eafd2c",
       "timestamp": "2026-11-09T21:44:18.579316+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator buy turn (value -1.164) -- watch closer, not a standalone trigger, invalidation level ~130.48.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "buy",
+        "value": -1.164,
+        "invalidation_level": 130.48,
+        "date": "2026-11-16",
+        "fires": false
+      },
+      "dedupe_key": "b763d34ee983d858",
+      "timestamp": "2026-11-16T21:24:25.524965+00:00"
     }
   ],
-  "last_price": 156.75999,
-  "last_price_date": "2026-11-13"
+  "last_price": 145.46,
+  "last_price_date": "2026-11-16"
 }

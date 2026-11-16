@@ -2,7 +2,7 @@
   "ticker": "MDT",
   "name": "Medtronic",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-11-14T00:01:57.875168+00:00",
+  "last_updated": "2026-11-16T21:24:25.508005+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -729,8 +729,24 @@
       },
       "dedupe_key": "84adc2f79d326774",
       "timestamp": "2026-11-04T19:01:17.541531+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator sell turn (value 0.804) -- watch closer, not a standalone trigger, invalidation level ~106.57.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "sell",
+        "value": 0.804,
+        "invalidation_level": 106.57,
+        "date": "2026-11-16",
+        "fires": false
+      },
+      "dedupe_key": "cecf708d934410a7",
+      "timestamp": "2026-11-16T21:24:25.508005+00:00"
     }
   ],
-  "last_price": 102.86,
-  "last_price_date": "2026-11-13"
+  "last_price": 102.9,
+  "last_price_date": "2026-11-16"
 }
