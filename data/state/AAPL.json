@@ -1,6 +1,6 @@
 {
   "ticker": "AAPL",
-  "last_updated": "2026-11-16T21:24:41.098345+00:00",
+  "last_updated": "2026-11-17T04:10:38.306515+00:00",
   "has_thesis": true,
   "position": {
     "ticker": "AAPL",
@@ -11,14 +11,14 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 352.76,
+    "current_price": 352.78,
     "entry_price": null,
     "stop_price": 276.79,
     "target_price": 395.6,
     "pct_from_entry": null,
     "pct_from_stop": 27.45,
-    "pct_from_target": -10.83,
-    "atr_units_from_stop": 9.45
+    "pct_from_target": -10.82,
+    "atr_units_from_stop": 9.44
   },
   "trend": {
     "sma20": 346.64,
@@ -32,7 +32,7 @@
     "price_vs_sma200": "above"
   },
   "volatility": {
-    "atr14": 8.04,
+    "atr14": 8.05,
     "atr14_pct_of_price": 2.28,
     "realized_vol_20d_annualized_pct": 28.16
   },
@@ -43,55 +43,58 @@
     "low_60d": 308.21
   },
   "momentum": {
-    "rsi14": 56.98
+    "rsi14": 57.0
   },
   "volume": {
-    "up_down_volume_ratio_20d": 0.96
+    "up_down_volume_ratio_20d": 0.87
   },
   "consolidation": {
     "range_width_pct": 10.91,
-    "distance_from_high_pct": -2.24,
-    "distance_from_low_pct": 8.43
+    "distance_from_high_pct": -2.23,
+    "distance_from_low_pct": 8.44
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": "2026-07-30, after market close (Q3 FY26 -- Tim Cook's last as CEO)",
-    "days_to_next_earnings": -138,
+    "days_to_next_earnings": -139,
     "next_review_date_approx": "2026-10",
-    "days_since_review_due": 46
+    "days_since_review_due": 47
   },
   "fundamentals": {
     "forward_pe": 35.75579,
-    "ev_ebitda_ttm": 30.4467,
-    "implied_forward_eps": 9.8658,
-    "estimate_revision_direction": "insufficient_history",
-    "estimate_revision_pct": null,
-    "estimate_baseline_date": "2026-09-03",
-    "estimate_baseline_implied_eps": 9.4177
+    "ev_ebitda_ttm": 30.1798,
+    "implied_forward_eps": 9.8664,
+    "estimate_revision_direction": "up",
+    "estimate_revision_pct": 4.76,
+    "estimate_baseline_date": "2026-11-17",
+    "estimate_baseline_implied_eps": 9.8664
   },
   "turtle": {
     "gate_open": true,
-    "n": 7.874,
+    "n": 7.877,
     "system1": {
       "state": {
         "state": {
           "state": {
             "state": {
               "state": {
-                "status": "open",
-                "entry_date": "2026-11-12",
-                "entry_price": 355.98,
-                "n_at_entry": 8.05604617838171,
-                "exit_date": null,
-                "exit_price": null,
-                "outcome": null
+                "state": {
+                  "status": "open",
+                  "entry_date": "2026-11-12",
+                  "entry_price": 355.98,
+                  "n_at_entry": 8.05604617838171,
+                  "exit_date": null,
+                  "exit_price": null,
+                  "outcome": null
+                },
+                "signal": {
+                  "resolution": null,
+                  "entry_fired": true,
+                  "filtered": false,
+                  "entry_price": 355.98,
+                  "system": "system1"
+                }
               },
-              "signal": {
-                "resolution": null,
-                "entry_fired": true,
-                "filtered": false,
-                "entry_price": 355.98,
-                "system": "system1"
-              }
+              "signal": null
             },
             "signal": null
           },
@@ -107,21 +110,24 @@
           "state": {
             "state": {
               "state": {
-                "status": "open",
-                "entry_date": "2026-11-12",
-                "entry_price": 355.98,
-                "n_at_entry": 8.05604617838171,
-                "exit_date": null,
-                "exit_price": null,
-                "outcome": null
+                "state": {
+                  "status": "open",
+                  "entry_date": "2026-11-12",
+                  "entry_price": 355.98,
+                  "n_at_entry": 8.05604617838171,
+                  "exit_date": null,
+                  "exit_price": null,
+                  "outcome": null
+                },
+                "signal": {
+                  "resolution": null,
+                  "entry_fired": true,
+                  "filtered": false,
+                  "entry_price": 355.98,
+                  "system": "system2"
+                }
               },
-              "signal": {
-                "resolution": null,
-                "entry_fired": true,
-                "filtered": false,
-                "entry_price": 355.98,
-                "system": "system2"
-              }
+              "signal": null
             },
             "signal": null
           },
