@@ -2,7 +2,7 @@
   "ticker": "BSX",
   "name": "Boston Scientific",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-11-17T04:10:28.046861+00:00",
+  "last_updated": "2026-11-17T20:12:14.278342+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -2203,8 +2203,55 @@
       },
       "dedupe_key": "7c9f4e2b0c8ed377",
       "timestamp": "2026-11-16T21:24:25.510410+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~42.65 (5 prior touches) and closed back above it (reaction confirmed). Stop ~41.05, target ~49.43 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 42.648,
+        "zone_touches": 5,
+        "date": "2026-11-17",
+        "fires": true,
+        "stop_loss": 41.05,
+        "take_profit": 49.43,
+        "entry_reference_price": 43.145
+      },
+      "dedupe_key": "a6cc35ba60d26de0",
+      "timestamp": "2026-11-17T20:12:14.278342+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (5.7%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 5.7,
+        "close": 43.145,
+        "low_52w": 39.57,
+        "high_52w": 102.71
+      },
+      "dedupe_key": "d5297cb346ede6d0",
+      "timestamp": "2026-11-17T20:12:14.278342+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-11-17",
+        "fires": false
+      },
+      "dedupe_key": "fedca12ef0d84f3a",
+      "timestamp": "2026-11-17T20:12:14.278342+00:00"
     }
   ],
-  "last_price": 43.69,
-  "last_price_date": "2026-11-16"
+  "last_price": 43.145,
+  "last_price_date": "2026-11-17"
 }
