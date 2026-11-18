@@ -2,7 +2,7 @@
   "ticker": "NVDA",
   "name": "NVIDIA",
   "sector": "semiconductors",
-  "last_updated": "2026-11-18T02:28:08.576046+00:00",
+  "last_updated": "2026-11-18T19:44:05.294091+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1599,8 +1599,22 @@
       },
       "dedupe_key": "dce6a8503a838db7",
       "timestamp": "2026-11-18T02:28:08.576046+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (2.2%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 2.2,
+        "close": 150.9,
+        "low_52w": 148.8,
+        "high_52w": 243.37
+      },
+      "dedupe_key": "5659f601d8f0dce2",
+      "timestamp": "2026-11-18T19:44:05.294091+00:00"
     }
   ],
-  "last_price": 155.46001,
-  "last_price_date": "2026-11-17"
+  "last_price": 150.9,
+  "last_price_date": "2026-11-18"
 }

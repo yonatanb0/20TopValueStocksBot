@@ -2,7 +2,7 @@
   "ticker": "NOW",
   "name": "ServiceNow",
   "sector": "enterprise_tech",
-  "last_updated": "2026-11-18T02:28:08.618495+00:00",
+  "last_updated": "2026-11-18T19:44:05.347031+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -556,8 +556,37 @@
       },
       "dedupe_key": "59178151198478d7",
       "timestamp": "2026-11-18T02:28:08.618495+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (9.4%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 9.4,
+        "close": 90.07,
+        "low_52w": 81.24,
+        "high_52w": 175.0
+      },
+      "dedupe_key": "f67110d9e92db7cb",
+      "timestamp": "2026-11-18T19:44:05.347031+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-11-18",
+        "fires": false
+      },
+      "dedupe_key": "3df3e07faddfc9d5",
+      "timestamp": "2026-11-18T19:44:05.347031+00:00"
     }
   ],
-  "last_price": 92.9,
-  "last_price_date": "2026-11-17"
+  "last_price": 90.07,
+  "last_price_date": "2026-11-18"
 }

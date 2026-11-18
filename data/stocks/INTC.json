@@ -2,7 +2,7 @@
   "ticker": "INTC",
   "name": "Intel",
   "sector": "semiconductors",
-  "last_updated": "2026-11-18T02:28:08.573658+00:00",
+  "last_updated": "2026-11-18T19:44:05.291051+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -757,8 +757,22 @@
       },
       "dedupe_key": "ed50a337c0f3e98c",
       "timestamp": "2026-11-17T20:12:14.244938+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (19.5%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 19.5,
+        "close": 54.21,
+        "low_52w": 32.89,
+        "high_52w": 142.35001
+      },
+      "dedupe_key": "f5cbdb365230470f",
+      "timestamp": "2026-11-18T19:44:05.291051+00:00"
     }
   ],
-  "last_price": 55.17,
-  "last_price_date": "2026-11-17"
+  "last_price": 54.21,
+  "last_price_date": "2026-11-18"
 }
