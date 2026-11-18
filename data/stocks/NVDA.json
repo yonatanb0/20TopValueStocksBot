@@ -2,7 +2,7 @@
   "ticker": "NVDA",
   "name": "NVIDIA",
   "sector": "semiconductors",
-  "last_updated": "2026-11-17T20:12:14.248032+00:00",
+  "last_updated": "2026-11-18T02:28:08.576046+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1568,8 +1568,39 @@
       },
       "dedupe_key": "2d30b9d6772b2b47",
       "timestamp": "2026-11-17T20:12:14.248032+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Distribution volume detected. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": true,
+        "trendline_break": false,
+        "date": "2026-11-17",
+        "fires": false
+      },
+      "dedupe_key": "52f8f47d042cd173",
+      "timestamp": "2026-11-18T02:28:08.576046+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "eps_revision_proxy",
+      "fires": false,
+      "description": "Headline suggests positive estimate revision (beats estimates): \"Jensen Huang\u2019s Last Quarter Beats Estimates: Can Nvidia Stock Recover Without Him?\" -- verify against actual analyst EPS revisions.",
+      "details": {
+        "url": "https://finnhub.io/api/news?id=ad8f70bd81dcde2c14856f7f842bdcbd6f63a3138c8076c39aeb0d26eb32a54f",
+        "headline": "Jensen Huang\u2019s Last Quarter Beats Estimates: Can Nvidia Stock Recover Without Him?",
+        "matched_keywords": [
+          "beats estimates"
+        ],
+        "published": "2026-11-17T21:41:26+00:00"
+      },
+      "dedupe_key": "dce6a8503a838db7",
+      "timestamp": "2026-11-18T02:28:08.576046+00:00"
     }
   ],
-  "last_price": 152.845,
+  "last_price": 155.46001,
   "last_price_date": "2026-11-17"
 }
