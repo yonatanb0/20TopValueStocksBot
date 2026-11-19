@@ -2,7 +2,7 @@
   "ticker": "NVDA",
   "name": "NVIDIA",
   "sector": "semiconductors",
-  "last_updated": "2026-11-18T19:44:05.294091+00:00",
+  "last_updated": "2026-11-19T01:35:32.649268+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1613,8 +1613,23 @@
       },
       "dedupe_key": "5659f601d8f0dce2",
       "timestamp": "2026-11-18T19:44:05.294091+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Distribution volume detected. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": true,
+        "trendline_break": false,
+        "date": "2026-11-18",
+        "fires": false
+      },
+      "dedupe_key": "ffb940dfc7dd212d",
+      "timestamp": "2026-11-19T01:35:32.649268+00:00"
     }
   ],
-  "last_price": 150.9,
+  "last_price": 150.96001,
   "last_price_date": "2026-11-18"
 }
