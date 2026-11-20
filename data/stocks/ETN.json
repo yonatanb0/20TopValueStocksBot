@@ -2,7 +2,7 @@
   "ticker": "ETN",
   "name": "Eaton",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-11-20T01:31:08.396025+00:00",
+  "last_updated": "2026-11-20T19:23:22.542949+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1332,8 +1332,22 @@
       },
       "dedupe_key": "2accd846bb91443c",
       "timestamp": "2026-11-19T19:44:18.105339+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (0.7%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 0.7,
+        "close": 310.77,
+        "low_52w": 309.61,
+        "high_52w": 478.0
+      },
+      "dedupe_key": "57b42b32fac36263",
+      "timestamp": "2026-11-20T19:23:22.542949+00:00"
     }
   ],
-  "last_price": 330.57001,
-  "last_price_date": "2026-11-19"
+  "last_price": 310.77,
+  "last_price_date": "2026-11-20"
 }
