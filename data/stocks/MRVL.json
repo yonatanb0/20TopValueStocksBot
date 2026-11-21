@@ -2,7 +2,7 @@
   "ticker": "MRVL",
   "name": "Marvell Technology",
   "sector": "semiconductors",
-  "last_updated": "2026-11-20T19:23:22.581177+00:00",
+  "last_updated": "2026-11-21T00:57:45.587280+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -838,8 +838,37 @@
       },
       "dedupe_key": "b763d34ee983d858",
       "timestamp": "2026-11-16T21:24:25.524965+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (19.9%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 19.9,
+        "close": 122.28,
+        "low_52w": 70.69,
+        "high_52w": 329.88
+      },
+      "dedupe_key": "2c6b12ce6669d16f",
+      "timestamp": "2026-11-21T00:57:45.587280+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Distribution volume detected. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": true,
+        "trendline_break": false,
+        "date": "2026-11-20",
+        "fires": false
+      },
+      "dedupe_key": "fcf003f2cb95d50c",
+      "timestamp": "2026-11-21T00:57:45.587280+00:00"
     }
   ],
-  "last_price": 124.32,
+  "last_price": 122.28,
   "last_price_date": "2026-11-20"
 }

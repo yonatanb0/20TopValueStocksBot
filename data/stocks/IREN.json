@@ -2,7 +2,7 @@
   "ticker": "IREN",
   "name": "IREN Limited",
   "sector": "ai_data_center_infra",
-  "last_updated": "2026-11-20T19:23:22.572804+00:00",
+  "last_updated": "2026-11-21T00:57:45.582612+00:00",
   "signal_log": [
     {
       "category": "macro",
@@ -1229,8 +1229,23 @@
       },
       "dedupe_key": "f7413ebad7062ab5",
       "timestamp": "2026-11-20T19:23:22.572804+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Distribution volume detected. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": true,
+        "trendline_break": false,
+        "date": "2026-11-20",
+        "fires": false
+      },
+      "dedupe_key": "8f146c589a1bb871",
+      "timestamp": "2026-11-21T00:57:45.582612+00:00"
     }
   ],
-  "last_price": 12.18,
+  "last_price": 11.82,
   "last_price_date": "2026-11-20"
 }
