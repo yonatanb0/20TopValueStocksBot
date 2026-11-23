@@ -2,7 +2,7 @@
   "ticker": "BSX",
   "name": "Boston Scientific",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-11-21T00:57:45.575126+00:00",
+  "last_updated": "2026-11-23T23:02:02.233358+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -2388,8 +2388,52 @@
       },
       "dedupe_key": "a82dc1915e04d951",
       "timestamp": "2026-11-20T19:23:22.555415+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~42.65 (5 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 42.648,
+        "zone_touches": 5,
+        "date": "2026-11-23",
+        "fires": false
+      },
+      "dedupe_key": "83c841de089d4faf",
+      "timestamp": "2026-11-23T23:02:02.233358+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (4.4%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 4.4,
+        "close": 42.335,
+        "low_52w": 39.57,
+        "high_52w": 101.91
+      },
+      "dedupe_key": "4d8ac7f8c54eccfe",
+      "timestamp": "2026-11-23T23:02:02.233358+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-11-23",
+        "fires": false
+      },
+      "dedupe_key": "a14f7515a185ebd7",
+      "timestamp": "2026-11-23T23:02:02.233358+00:00"
     }
   ],
-  "last_price": 41.98,
-  "last_price_date": "2026-11-20"
+  "last_price": 42.335,
+  "last_price_date": "2026-11-23"
 }

@@ -2,7 +2,7 @@
   "ticker": "AVGO",
   "name": "Broadcom",
   "sector": "semiconductors",
-  "last_updated": "2026-11-21T00:57:45.593408+00:00",
+  "last_updated": "2026-11-23T23:02:02.252149+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1662,8 +1662,52 @@
       },
       "dedupe_key": "86f1247b305ec1bb",
       "timestamp": "2026-11-20T19:23:22.591798+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": false,
+      "description": "Price touched demand zone ~345.64 (4 prior touches) -- watch for a close back above to confirm.",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 345.64250200000004,
+        "zone_touches": 4,
+        "date": "2026-11-23",
+        "fires": false
+      },
+      "dedupe_key": "dd3d303cb23e9181",
+      "timestamp": "2026-11-23T23:02:02.252149+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (11.6%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 11.6,
+        "close": 313.54001,
+        "low_52w": 289.76999,
+        "high_52w": 495.0
+      },
+      "dedupe_key": "b761f74ce882d04b",
+      "timestamp": "2026-11-23T23:02:02.252149+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": false,
+      "description": "EXIT WATCH: Uptrend trendline broken. One signal present -- watch closely.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": false,
+        "trendline_break": true,
+        "date": "2026-11-23",
+        "fires": false
+      },
+      "dedupe_key": "15bd3ad961e4eff5",
+      "timestamp": "2026-11-23T23:02:02.252149+00:00"
     }
   ],
-  "last_price": 304.41,
-  "last_price_date": "2026-11-20"
+  "last_price": 313.54001,
+  "last_price_date": "2026-11-23"
 }

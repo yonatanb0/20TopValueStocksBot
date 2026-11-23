@@ -2,7 +2,7 @@
   "ticker": "NOW",
   "name": "ServiceNow",
   "sector": "enterprise_tech",
-  "last_updated": "2026-11-21T00:57:45.591338+00:00",
+  "last_updated": "2026-11-23T23:02:02.250069+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -643,8 +643,22 @@
       },
       "dedupe_key": "5dcdbd565035b9f6",
       "timestamp": "2026-11-21T00:57:45.591338+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (11.2%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 11.2,
+        "close": 91.725,
+        "low_52w": 81.24,
+        "high_52w": 175.0
+      },
+      "dedupe_key": "74a7d159a2404c34",
+      "timestamp": "2026-11-23T23:02:02.250069+00:00"
     }
   ],
-  "last_price": 87.61,
-  "last_price_date": "2026-11-20"
+  "last_price": 91.725,
+  "last_price_date": "2026-11-23"
 }
