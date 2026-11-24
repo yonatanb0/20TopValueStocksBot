@@ -2,7 +2,7 @@
   "ticker": "AVGO",
   "name": "Broadcom",
   "sector": "semiconductors",
-  "last_updated": "2026-11-23T23:02:02.252149+00:00",
+  "last_updated": "2026-11-24T21:41:29.682660+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1706,8 +1706,37 @@
       },
       "dedupe_key": "15bd3ad961e4eff5",
       "timestamp": "2026-11-23T23:02:02.252149+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (5.6%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 5.6,
+        "close": 301.23001,
+        "low_52w": 289.76999,
+        "high_52w": 495.0
+      },
+      "dedupe_key": "2e28eeb0c41224d1",
+      "timestamp": "2026-11-24T21:41:29.682660+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "distribution_and_trendline_break",
+      "fires": true,
+      "description": "EXIT WATCH: Distribution volume detected. Uptrend trendline broken. Both confirmed -- thesis likely invalidated.",
+      "details": {
+        "type": "distribution_and_trendline_break",
+        "distribution_volume": true,
+        "trendline_break": true,
+        "date": "2026-11-24",
+        "fires": true
+      },
+      "dedupe_key": "d8a9c9fcc98312c6",
+      "timestamp": "2026-11-24T21:41:29.682660+00:00"
     }
   ],
-  "last_price": 313.54001,
-  "last_price_date": "2026-11-23"
+  "last_price": 301.23001,
+  "last_price_date": "2026-11-24"
 }

@@ -2,7 +2,7 @@
   "ticker": "CSCO",
   "name": "Cisco",
   "sector": "enterprise_tech",
-  "last_updated": "2026-11-23T23:02:02.216807+00:00",
+  "last_updated": "2026-11-24T21:41:29.625212+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1453,8 +1453,24 @@
       },
       "dedupe_key": "ca93f0e47045c41b",
       "timestamp": "2026-11-21T00:57:45.558749+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator buy turn (value -0.693) -- watch closer, not a standalone trigger, invalidation level ~89.64.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "buy",
+        "value": -0.693,
+        "invalidation_level": 89.64,
+        "date": "2026-11-24",
+        "fires": false
+      },
+      "dedupe_key": "0bd88b44d4ef149d",
+      "timestamp": "2026-11-24T21:41:29.625212+00:00"
     }
   ],
-  "last_price": 96.85,
-  "last_price_date": "2026-11-23"
+  "last_price": 94.010002,
+  "last_price_date": "2026-11-24"
 }

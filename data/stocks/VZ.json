@@ -2,7 +2,7 @@
   "ticker": "VZ",
   "name": "Verizon",
   "sector": "telecom",
-  "last_updated": "2026-11-23T23:02:02.238975+00:00",
+  "last_updated": "2026-11-24T21:41:29.661239+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -1009,8 +1009,42 @@
       },
       "dedupe_key": "c2f77dd107136e77",
       "timestamp": "2026-10-30T17:25:30.161718+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "range_breakout",
+      "fires": false,
+      "description": "Closed above 20-day range high (47.15) on 2026-11-24 but volume didn't confirm.",
+      "details": {
+        "type": "range_breakout",
+        "date": "2026-11-24",
+        "range_high": 47.15,
+        "close": 47.16,
+        "volume_multiple": 0.8567232546298181,
+        "fires": false
+      },
+      "dedupe_key": "49a752e2fe960ef6",
+      "timestamp": "2026-11-24T21:41:29.661239+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "demand_zone_reaction",
+      "fires": true,
+      "description": "Price touched demand zone ~45.09 (2 prior touches) and closed back above it (reaction confirmed). Stop ~44.01, target ~56.61 (3:1 reward:risk).",
+      "details": {
+        "type": "demand_zone_reaction",
+        "zone_level": 45.085001000000005,
+        "zone_touches": 2,
+        "date": "2026-11-24",
+        "fires": true,
+        "stop_loss": 44.01,
+        "take_profit": 56.61,
+        "entry_reference_price": 47.16
+      },
+      "dedupe_key": "a04eaf4be447a4ee",
+      "timestamp": "2026-11-24T21:41:29.661239+00:00"
     }
   ],
-  "last_price": 46.471,
-  "last_price_date": "2026-11-23"
+  "last_price": 47.16,
+  "last_price_date": "2026-11-24"
 }
