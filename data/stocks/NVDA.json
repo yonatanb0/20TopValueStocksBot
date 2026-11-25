@@ -2,7 +2,7 @@
   "ticker": "NVDA",
   "name": "NVIDIA",
   "sector": "semiconductors",
-  "last_updated": "2026-11-25T04:35:47.476611+00:00",
+  "last_updated": "2026-11-25T20:49:12.342527+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1701,8 +1701,38 @@
       },
       "dedupe_key": "8c8a3bf2bc404b77",
       "timestamp": "2026-11-24T21:41:29.616923+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator buy turn (value -1.404) -- watch closer, not a standalone trigger, invalidation level ~134.63.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "buy",
+        "value": -1.404,
+        "invalidation_level": 134.63,
+        "date": "2026-11-25",
+        "fires": false
+      },
+      "dedupe_key": "bf879dbca9ab6041",
+      "timestamp": "2026-11-25T20:49:12.342527+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (19.6%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 19.6,
+        "close": 147.82,
+        "low_52w": 124.5,
+        "high_52w": 243.37
+      },
+      "dedupe_key": "e4984e67bc3486ca",
+      "timestamp": "2026-11-25T20:49:12.342527+00:00"
     }
   ],
-  "last_price": 155.38,
-  "last_price_date": "2026-11-24"
+  "last_price": 147.82,
+  "last_price_date": "2026-11-25"
 }

@@ -1,6 +1,6 @@
 {
   "ticker": "ISRG",
-  "last_updated": "2026-11-25T04:35:55.982566+00:00",
+  "last_updated": "2026-11-25T20:49:21.660414+00:00",
   "has_thesis": false,
   "position": {
     "ticker": "ISRG",
@@ -11,7 +11,7 @@
     "unrealized_pnl": 0
   },
   "price_vs_plan": {
-    "current_price": 434.45999,
+    "current_price": 427.79,
     "entry_price": null,
     "stop_price": null,
     "target_price": null,
@@ -21,20 +21,20 @@
     "atr_units_from_stop": null
   },
   "trend": {
-    "sma20": 439.79,
-    "sma20_slope_5d_pct": -1.61,
+    "sma20": 438.97,
+    "sma20_slope_5d_pct": -1.71,
     "price_vs_sma20": "below",
-    "sma50": 425.42,
-    "sma50_slope_5d_pct": 1.14,
+    "sma50": 426.33,
+    "sma50_slope_5d_pct": 1.03,
     "price_vs_sma50": "above",
-    "sma200": 427.03,
-    "sma200_slope_5d_pct": -0.39,
+    "sma200": 426.7,
+    "sma200_slope_5d_pct": -0.4,
     "price_vs_sma200": "above"
   },
   "volatility": {
-    "atr14": 15.54,
-    "atr14_pct_of_price": 3.58,
-    "realized_vol_20d_annualized_pct": 51.44
+    "atr14": 15.58,
+    "atr14_pct_of_price": 3.64,
+    "realized_vol_20d_annualized_pct": 51.69
   },
   "range": {
     "high_20d": 485.85,
@@ -43,15 +43,15 @@
     "low_60d": 345.25
   },
   "momentum": {
-    "rsi14": 51.17
+    "rsi14": 48.66
   },
   "volume": {
-    "up_down_volume_ratio_20d": 0.62
+    "up_down_volume_ratio_20d": 0.57
   },
   "consolidation": {
     "range_width_pct": 22.14,
-    "distance_from_high_pct": -10.58,
-    "distance_from_low_pct": 9.22
+    "distance_from_high_pct": -11.95,
+    "distance_from_low_pct": 7.54
   },
   "catalysts_and_review": {
     "next_earnings_date_approx": null,
@@ -61,8 +61,8 @@
   },
   "fundamentals": {
     "forward_pe": 35.28209,
-    "ev_ebitda_ttm": 39.5908,
-    "implied_forward_eps": 12.3139,
+    "ev_ebitda_ttm": 41.4106,
+    "implied_forward_eps": 12.1248,
     "estimate_revision_direction": "insufficient_history",
     "estimate_revision_pct": null,
     "estimate_baseline_date": "2026-10-13",
@@ -70,7 +70,7 @@
   },
   "turtle": {
     "gate_open": false,
-    "n": 14.929,
+    "n": 14.985,
     "system1": {
       "state": {
         "state": {
@@ -99,21 +99,24 @@
                                                       "state": {
                                                         "state": {
                                                           "state": {
-                                                            "status": "open",
-                                                            "entry_date": "2026-11-04",
-                                                            "entry_price": 482.10001,
-                                                            "n_at_entry": 14.25122503768722,
-                                                            "exit_date": null,
-                                                            "exit_price": null,
-                                                            "outcome": null
+                                                            "state": {
+                                                              "status": "open",
+                                                              "entry_date": "2026-11-04",
+                                                              "entry_price": 482.10001,
+                                                              "n_at_entry": 14.25122503768722,
+                                                              "exit_date": null,
+                                                              "exit_price": null,
+                                                              "outcome": null
+                                                            },
+                                                            "signal": {
+                                                              "resolution": null,
+                                                              "entry_fired": true,
+                                                              "filtered": false,
+                                                              "entry_price": 482.10001,
+                                                              "system": "system1"
+                                                            }
                                                           },
-                                                          "signal": {
-                                                            "resolution": null,
-                                                            "entry_fired": true,
-                                                            "filtered": false,
-                                                            "entry_price": 482.10001,
-                                                            "system": "system1"
-                                                          }
+                                                          "signal": null
                                                         },
                                                         "signal": null
                                                       },
@@ -195,21 +198,24 @@
                                                       "state": {
                                                         "state": {
                                                           "state": {
-                                                            "status": "open",
-                                                            "entry_date": "2026-11-04",
-                                                            "entry_price": 482.10001,
-                                                            "n_at_entry": 14.25122503768722,
-                                                            "exit_date": null,
-                                                            "exit_price": null,
-                                                            "outcome": null
+                                                            "state": {
+                                                              "status": "open",
+                                                              "entry_date": "2026-11-04",
+                                                              "entry_price": 482.10001,
+                                                              "n_at_entry": 14.25122503768722,
+                                                              "exit_date": null,
+                                                              "exit_price": null,
+                                                              "outcome": null
+                                                            },
+                                                            "signal": {
+                                                              "resolution": null,
+                                                              "entry_fired": true,
+                                                              "filtered": false,
+                                                              "entry_price": 482.10001,
+                                                              "system": "system2"
+                                                            }
                                                           },
-                                                          "signal": {
-                                                            "resolution": null,
-                                                            "entry_fired": true,
-                                                            "filtered": false,
-                                                            "entry_price": 482.10001,
-                                                            "system": "system2"
-                                                          }
+                                                          "signal": null
                                                         },
                                                         "signal": null
                                                       },
