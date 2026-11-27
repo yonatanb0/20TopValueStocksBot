@@ -2,7 +2,7 @@
   "ticker": "ISRG",
   "name": "Intuitive Surgical",
   "sector": "healthcare_medtech",
-  "last_updated": "2026-11-27T03:17:17.016196+00:00",
+  "last_updated": "2026-11-27T20:27:33.331249+00:00",
   "signal_log": [
     {
       "category": "fundamental",
@@ -1452,8 +1452,23 @@
       },
       "dedupe_key": "2fb13bbec3ccd396",
       "timestamp": "2026-11-24T21:41:29.657075+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "golden_cross",
+      "fires": false,
+      "description": "50/200 golden cross on 2026-11-27 but WITHOUT volume expansion (not yet confirmed).",
+      "details": {
+        "type": "golden_cross",
+        "cross_date": "2026-11-27",
+        "cross_index": 259,
+        "volume_expansion": false,
+        "fires": false
+      },
+      "dedupe_key": "94d9fed13631f105",
+      "timestamp": "2026-11-27T20:27:33.331249+00:00"
     }
   ],
-  "last_price": 427.17999,
-  "last_price_date": "2026-11-25"
+  "last_price": 430.57999,
+  "last_price_date": "2026-11-27"
 }

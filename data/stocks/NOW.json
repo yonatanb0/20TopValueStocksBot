@@ -2,7 +2,7 @@
   "ticker": "NOW",
   "name": "ServiceNow",
   "sector": "enterprise_tech",
-  "last_updated": "2026-11-27T03:17:17.040695+00:00",
+  "last_updated": "2026-11-27T20:27:33.351139+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -685,8 +685,38 @@
       },
       "dedupe_key": "10e827921375d508",
       "timestamp": "2026-11-25T20:49:12.409455+00:00"
+    },
+    {
+      "category": "technical",
+      "type": "two_pole_turn",
+      "fires": false,
+      "description": "Two-Pole Oscillator buy turn (value -0.665) -- watch closer, not a standalone trigger, invalidation level ~86.54.",
+      "details": {
+        "type": "two_pole_turn",
+        "direction": "buy",
+        "value": -0.665,
+        "invalidation_level": 86.54,
+        "date": "2026-11-27",
+        "fires": false
+      },
+      "dedupe_key": "76c0ab890b36a340",
+      "timestamp": "2026-11-27T20:27:33.351139+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (12.4%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 12.4,
+        "close": 92.895,
+        "low_52w": 81.24,
+        "high_52w": 175.0
+      },
+      "dedupe_key": "ab0ea9edf98316b3",
+      "timestamp": "2026-11-27T20:27:33.351139+00:00"
     }
   ],
-  "last_price": 92.16,
-  "last_price_date": "2026-11-25"
+  "last_price": 92.895,
+  "last_price_date": "2026-11-27"
 }

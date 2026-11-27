@@ -2,7 +2,7 @@
   "ticker": "GOOG",
   "name": "Alphabet",
   "sector": "enterprise_tech",
-  "last_updated": "2026-11-27T03:17:16.964816+00:00",
+  "last_updated": "2026-11-27T20:27:33.289231+00:00",
   "signal_log": [
     {
       "category": "technical",
@@ -1587,8 +1587,22 @@
       },
       "dedupe_key": "f23fb075512497c9",
       "timestamp": "2026-11-25T20:49:12.333641+00:00"
+    },
+    {
+      "category": "fundamental",
+      "type": "valuation_override_52w",
+      "fires": true,
+      "description": "Trading in bottom 20% of its 52-week range (8.2%) -- 'on sale' proxy, reevaluate regardless of macro gate.",
+      "details": {
+        "pct_of_52w_range": 8.2,
+        "close": 272.44,
+        "low_52w": 260.69199,
+        "high_52w": 404.47
+      },
+      "dedupe_key": "d9ad767354ecaa91",
+      "timestamp": "2026-11-27T20:27:33.289231+00:00"
     }
   ],
-  "last_price": 270.98001,
-  "last_price_date": "2026-11-25"
+  "last_price": 272.44,
+  "last_price_date": "2026-11-27"
 }
